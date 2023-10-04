@@ -1,0 +1,59 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #707070;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  font-size: 3.125vw;
+  line-height: 3.6458333333vw;
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../images/PagesProjets/page_expansion/header_expansion.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tertiaryMenu {
+  display: none;
+}
+
+#main .project-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2.65625vw;
+}
+#main .intro-expansion .partie1 {
+  display: flex;
+  margin-bottom: 6.2015503876vw;
+}
+#main .intro-expansion .partie1 .text {
+  width: 75.6589147287%;
+  margin-left: 5.5333333333vw;
+}
+#main .intro-expansion .partie1 .img-hearth {
+  width: 18.7596899225%;
+  background-color: coral;
+}
+
+/*# sourceMappingURL=projet_expansion.css.map */

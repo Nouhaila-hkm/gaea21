@@ -1,0 +1,88 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .project-title .project-logo {
+  width: 13.9534883721%;
+}
+#main .project-title h2 {
+  font-size: 2.6041666667vw;
+  line-height: 2.6041666667vw;
+  font-weight: 600;
+  position: relative;
+  top: 0.7751937984vw;
+  padding-left: 0.625vw;
+}
+#main .intro-pdi {
+  display: flex;
+  flex-direction: column;
+}
+#main .intro-pdi .partie1 {
+  display: flex;
+  margin-bottom: 0.0620155039vw;
+}
+#main .intro-pdi .partie1 .text1 {
+  width: 78.6046511628%;
+  padding-left: 3.023255814vw;
+}
+#main .intro-pdi .partie1 .img-histogramme {
+  width: 15.1937984496%;
+  position: relative;
+  bottom: 0.625vw;
+}
+#main .intro-pdi .partie1 .img-histogramme .img-graphique {
+  width: 100%;
+}
+#main .intro-pdi .partie2 {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1.8229166667vw;
+}
+#main .intro-pdi .partie2 .text2 {
+  padding-right: 2.03125vw;
+  width: 83.023255814%;
+}
+#main .intro-pdi .partie2 .img-ecologie {
+  width: 12.8682170543%;
+}
+#main .intro-pdi .partie2 .img-ecologie .img-mainverte {
+  width: 100%;
+}
+#main .acteurs {
+  margin-top: 4.3229166667vw;
+}
+#main .acteurs .list-acteur {
+  margin-top: 0.8854166667vw;
+}
+#main .acteurs .list-acteur .acteur .disc {
+  display: inline-block;
+  width: 1.1627906977%;
+  height: 0.7291666667vw;
+  background: black;
+  margin: 0 1.1627906977vw;
+  border-radius: 50%;
+}
+#main .partie3 p:first-of-type {
+  margin-bottom: 2.6041666667vw;
+}
+#main .partie3 ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.5503875969vw;
+}
+#main .partie3 ul li img {
+  display: block;
+  width: 3.2558139535%;
+}
+#main .partie3 p:nth-of-type(2) {
+  margin-bottom: 0.8854166667vw;
+}
+
+/*# sourceMappingURL=projetGaea21_PDI.css.map */

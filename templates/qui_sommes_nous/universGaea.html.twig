@@ -1,0 +1,106 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	{# <link rel="stylesheet" href="{{asset('style/quiSommesNous/historique/historique.css')}}"> #}
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/universGaea/universGaea.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/UniversGaea
+{% endblock %}
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>L’univers de gaea21</h2>
+		</div>
+	</div>
+	<div class="_background"></div>
+
+{% endblock %}
+
+
+{% block main %}
+
+	<section class="text-content">
+		
+		<p class="description">Entre solution collective (transition écologique) et développement durable (réduction de l’impact individuel), l’univers gaea21 vise à promouvoir les liens entre communautés humaines, modes de vie et environnement dans une perspective soutenable et accessible à tous.</p>
+		<h2>Découvrez les projets de gaea21</h2>
+	</section>
+
+	<section id="project-box">
+		<div class="smallBox" data-title="Répertoire Vert" data-link="/projets/RA/RV" data-image="{{asset('images/PagesProjets/page_ra/image_rv.png')}}"></div>
+		<div class="smallBox" data-title="Sustainability in a Box" data-link="/projets/RA/SIB" data-image="{{asset('images/PagesProjets/page_ra/image_sib.png')}}"></div>
+		<div class="smallBox" data-title="Pré-analyse" data-link="/projets/RA/PA" data-image="{{asset('images/PagesProjets/page_ra/image_pa.png')}}"></div>
+		<div class="smallBox" data-title="Green Coaching Communes" data-link="/projets/RA/GCC" data-image="{{asset('images/PagesProjets/page_ra/image_gcc.png')}}"></div>
+		<div class="smallBox" data-title="eco&#8209;minds" data-link="/projets/RA/Eco-minds" data-image="{{asset('images/PagesProjets/page_ra/image_em.png')}}"></div>
+		<div class="smallBox" data-title="Take action program" data-link="/projets/RA/TA" data-image="{{asset('images/PagesProjets/page_ra/image_ta.png')}}"></div>
+		<div class="smallBox" data-title="Green Event Series" data-link="/projets/RA/GES" data-image="{{asset('images/PagesProjets/page_ra/image_ges.png')}}"></div>
+		<div class="smallBox" data-title="Plateforme des initiatives" data-link="/projets/RA/PDI" data-image="{{asset('images/PagesProjets/page_ra/image_pdi.png')}}"></div>
+		<div class="smallBox" data-title="Coaching Télétravail" data-link="/projets/RA/Coaching-teletravail" data-image="{{asset('images/PagesProjets/page_ra/image_ct.png')}}"></div>
+		<div class="smallBox" data-title="Sustainable Living Program" data-link="/projets/RA/SLP" data-image="{{asset('images/PagesProjets/page_ra/image_slp.png')}}"></div>
+		<div class="smallBox" data-title="Sustainable City Event" data-link="/projets/RA/SCE" data-image="{{asset('images/PagesProjets/page_ra/image_sce.png')}}"></div>
+	</section>
+
+    <section class="last-content">
+            <p>gaea21 propose également 17 communautés, toutes étroitement liées et complémentaires. En rejoignant une communauté, il est possible de faire partie de toutes les autres. Découvrez les communautés gaea21:</p>
+            <div 
+                class="largeBtn" 
+                data-txt="Nos communautés" 
+                data-link="#"
+                >
+	        </div>
+   </section>
+   <section class="space"></section>
+    <section class="franchise">
+        <article>
+            <img class="franchise_img" src="{{ asset('images/QuiSommesNous/universGaea/franchise.png') }}">
+        </article>
+        <article>
+            <h2>Franchise gaea21 (Thonon)</h2>
+            <div class="links-container">
+                <ul class="links">
+                    <li><a href="https://www.linkedin.com/company/gaea21/" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/in.png')}}"></a></li>
+                    <li><a href="https://twitter.com/gaea21org?lang=fr" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/twitter.png')}}"></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCT800bAYYvR0unxjEHo2ZQQ/videos?app=desktop&view=0&sort=dd&shelf_id=0" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/youtube.png')}}"></a></li>
+                    <li><a href="https://www.facebook.com/Gaea21/" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/facebook48.png')}}"></a></li> 
+                    <li><a href="https://www.instagram.com/gaea21org/?hl=fr" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/instagram.png')}}"></a></li>
+                </ul>  
+            </div> 
+
+                    <div class="decouvrir">
+  <a class="lien" href="#">
+    <p>En savoir plus</p>
+    {# <span> #}
+       <img src="{{asset('images/QuiSommesNous/universGaea/fleche.svg')}}">
+    {# </span> #}
+  </a> 
+</div>
+
+            
+            <p class="font-weight">Vous souhaitez également créer une franchise gaea21? Contactez-nous pour nous faire part de votre projet !</p>
+            <div 
+                class="largeBtn" 
+                data-txt="Nous contacter" 
+                data-link="{{ path("form_build", { 
+					'formInfo': 'universgaea', 
+                    
+
+				})}}""
+                
+                >
+	        </div>
+        </article>
+    </section>
+    
+
+		{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			<script src="{{ asset('js/pagesHistorique/story.js') }}" ></script>
+		{% endblock %}
+

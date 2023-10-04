@@ -1,0 +1,18 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.disciplines {
+  margin-left: 27.2916666667vw;
+  margin-top: 3%;
+  width: 50vw;
+}
+
+.dimension_card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+/*# sourceMappingURL=transdisciplinaire.css.map */

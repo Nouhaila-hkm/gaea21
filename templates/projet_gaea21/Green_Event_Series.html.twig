@@ -1,0 +1,116 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/GES/projetGaea21_GES.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/GES
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<div class="logo">
+			<img class="project-logo" src="{{asset('images/icone_svg_png/logoGES.png')}}" alt='logo SLP'>
+		</div>
+		<h2>Green Events Series<h2>
+	</div>
+
+		<section class="intro-ges">
+			<article class="partie1">
+				<div class="text">
+					<p>Les événements, comme toute activité, ont un impact environnemental. <br>De nos jours, il existe une multitude d'événements et de rassemblements permettant d'échanger et se divertir. Un concert moyen dans un stade en Europe émet 25 tonne de CO2.<br>Et si le loisir devenait un engagement durable&nbsp;?</p>
+					<p>Nous somme convaincus que les individus peuvent avoir un impact positif sur le plan durable grâce à des changements de comportements dans leur quotidien.</p>
+				</div>
+				<div class="img-calendrier">
+					<img src="{{asset('images/PagesProjets/page_ges/img-calendrier.png')}}" alt="image d'un calendrier">
+				</div>
+			</article>
+			<article class="partie2">
+				<p class="text"><b>Green Events Series</b> est une agence événementielle qui organise des activités collectives, festives, sportives et ludiques et responsables. Ainsi, des activités sont proposées à la communauté local, dans l'optique de sensibiliser à la santé publique, au sport, à l'alimentaion et au développement durable, ainsi que de favoriser les rencontres entre membres de la communauté <b>GES</b> et collaborateurs de gaea21.</p>
+				<div class="img-activites">
+					<img src="{{asset('images/PagesProjets/page_ges/img-activites.png')}}" alt='Horloge qui indique le temps qui passe'>
+				</div>
+			</article>
+		</section>
+		<section class="impacts">
+			<p class="intro-impact">D'où l'importance de mettre en avant les différents types d'impacts&nbsp;:</p>
+			<ul class="listDesImpacts">
+				<li>
+					<div class="img-impact"><img src="{{asset('images/PagesProjets/page_ges/coeur.png')}}" alt=""></div> <p class="description"><b>Santé</b> (hypertensions, obésité, dépression, anxiété et espérance de vie)</p>
+				</li>
+				<li>
+					<div class="img-impact"><img src="{{asset('images/PagesProjets/page_ges/groupe.png')}}" alt=""></div> <p class="description"><b>Sociaux</b> (relations, aussi intergénérationnelle, échanges)</p>
+				</li>
+				<li>
+					<div class="img-impact"><img src="{{asset('images/PagesProjets/page_ges/eco.png')}}" alt=""></div> <p><b class="description">Environnementaux</b> (sensibilation au développement durable dans ses habitudes de consommation alimentaire et de déplacement)</p>
+				</li>
+				<li>
+					<div class="img-impact"><img src="{{asset('images/PagesProjets/page_ges/argent.png')}}" alt=""></div> <p class="description"><b>Économique (consomm'acteurs, création d'emplois, diminution des coûts de santé)</b> (hypertensions, obésité, dépression, anxiété et espérance de vie)</p>
+				</li>
+			</ul>
+
+			<p class="list-participants">Ceux sont aussi&nbsp;:</p>
+			<ul class="asso">
+				<li class="participants">
+					<div><img src="{{asset('images/PagesProjets/page_ges/fleche.png')}}" alt=""></div><p>Plus de 400 participants.</p>
+				</li>
+				<li class="participants">
+					<div><img src="{{asset('images/PagesProjets/page_ges/fleche.png')}}" alt=""></div><p>Une série d'événements et de manifestations que nous souhaitons pérreniser et étendre sur l'ensemble de l'année.</p>
+				</li>
+				<li class="participants">
+					<div><img src="{{asset('images/PagesProjets/page_ges/fleche.png')}}" alt=""></div><p>Une plateforme d'échange socioculturels liées à un mode de vie véhiculant des valeurs de vie saine, de sport et d'éco-conscience que nous souhaitons développer dans le cadre d'un réseau vert composé d'entreprises, d'organisation non gouvernementales, d'administrations, de familles et d'individus.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="phraseDeFin">
+			<p>Les partenaires doivent faciliter la mise en place d'événement de grande qualité mais toujours en suivant une ligne éco-responsable, c'est à dire avec la volonté d'éveiller une conscience écologique et de stimuler le passage à l'action au niveau des entreprises, associations et individus.</p>
+			<p>En GES, nous vous proposons plusieurs services qui permettent aux entreprises ou à chaque organisme, groupe, individu souhaitant organiser un événement de mesurer son propre impact écologique.</p>
+		</section>
+
+
+{% endblock %}
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Green Events Series' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Green Event Series'  
+				})}}" >
+	</div>
+{% endblock %}

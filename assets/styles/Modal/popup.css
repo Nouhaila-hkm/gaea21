@@ -1,0 +1,40 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.poplink {
+  color: white !important;
+}
+
+.modele {
+  margin-top: 3%;
+}
+
+.pop {
+  width: 35%;
+  margin-top: 4%;
+}
+
+.ppop {
+  text-align: center;
+  font-size: 12vw;
+  color: red;
+}
+
+.h2pop {
+  text-align: center;
+  font-size: 2vw;
+}
+
+.popbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.ReactModal__Overlay--after-open {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/*# sourceMappingURL=popup.css.map */

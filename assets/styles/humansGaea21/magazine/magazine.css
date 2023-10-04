@@ -1,0 +1,372 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#magazine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#magazine .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+#magazine .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#magazine .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#magazine .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#magazine .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+#magazine .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+#magazine footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+#magazine .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+#magazine .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+#magazine .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+#magazine .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+#magazine #MagazineHumans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#magazine #MagazineHumans h1 {
+  margin-top: 0;
+  margin-bottom: 4.1666666667vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #98984C;
+}
+#magazine canvas {
+  height: 100%;
+  width: 100%;
+}
+#magazine .MagazineSection {
+  height: 36.4583333333vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#magazine .MagazineSection * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#magazine .MagazineSection .book {
+  position: relative;
+  width: 35.625%;
+  height: 35.5729166667vw;
+  transition: transform 1s;
+}
+#magazine .MagazineSection .paper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  perspective: 1500px;
+}
+#magazine .MagazineSection .front, #magazine .MagazineSection .back {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 2px solid #98984C !important;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transform-origin: left;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+#magazine .MagazineSection .front {
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-left: 3px solid #98984C;
+}
+#magazine .MagazineSection .back {
+  z-index: 0;
+}
+#magazine .MagazineSection .front-content, #magazine .MagazineSection .back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#magazine .MagazineSection .back-content {
+  transform: rotateY(180deg);
+}
+#magazine .MagazineSection .flipped .front, #magazine .MagazineSection .flipped .back {
+  transform: rotateY(-180deg);
+}
+#magazine .MagazineSection img {
+  cursor: pointer;
+  height: 1.875vw;
+  margin-left: 0.5208333333%;
+  margin-right: 0.5208333333%;
+}
+#magazine #Archive {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3.8541666667vw !important;
+}
+#magazine #Archive .miniatures {
+  width: 22.1875%;
+  height: 14.0625vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1.1979166667%;
+  margin-right: 1.1979166667%;
+}
+#magazine #Archive .miniatures p {
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+}
+#magazine #Archive .miniatureMois {
+  height: 11.0416666667vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1.1458333333vw;
+  border: 2px solid #98984C;
+}
+#magazine #Archive .miniatureMois .page1 {
+  border-right: 0.09px solid #98984C;
+  padding-right: 1px;
+}
+#magazine #Archive .miniatureMois .page2 {
+  border-left: 0.09px solid #98984C;
+  padding-left: 1px;
+}
+#magazine #goArchive {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#magazine #btnArchive {
+  height: 2.34375vw;
+  width: 15.7291666667%;
+  margin-top: 5.46875vw;
+  margin-bottom: 1.0416666667vw;
+  padding-left: 1.3020833333%;
+  padding-right: 1.3020833333%;
+  font-size: 1.3020833333vw;
+  font-weight: bold;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+}
+#magazine #btnArchive:hover {
+  background-color: #98984C;
+  color: white;
+}
+#magazine .contenueArchive {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+#magazine .contenueArchive .menuArchive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 18%;
+  margin-left: 7.2916666667%;
+}
+#magazine .contenueArchive .month, #magazine .contenueArchive .year {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#magazine .contenueArchive .month p, #magazine .contenueArchive .year p {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0;
+  padding: 0%;
+  margin-right: 0.5208333333% !important;
+}
+#magazine .contenueArchive #listeMonth, #magazine .contenueArchive #listeAnnee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#magazine .contenueArchive #listeMonth .valide, #magazine .contenueArchive #listeAnnee .valide {
+  color: #98984C;
+}
+#magazine .contenueArchive .select {
+  width: 62.5%;
+  margin-bottom: 2.8645833333vw;
+  background-color: #F6F6F6;
+  border-radius: 1.0416666667vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#magazine .contenueArchive .select .selected {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 90% !important;
+  border-bottom: 2px solid #98984C;
+  cursor: default !important;
+}
+#magazine .contenueArchive .select .selected .row {
+  height: 1.0416666667vw;
+  transform: rotate(90deg);
+  margin: 0;
+}
+#magazine .contenueArchive .select p {
+  margin: 0 !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  cursor: pointer;
+}
+#magazine .contenueArchive #magazinebook {
+  width: 100%;
+}
+#magazine .contenueArchive #magazinebook .book {
+  width: 43%;
+}
+#magazine html, #magazine body {
+  height: 100%;
+  width: 100%;
+}
+#magazine .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+#magazine .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+#magazine .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+#magazine #HeaderMagazine {
+  width: 100%;
+  padding-top: 2.8645833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#magazine #HeaderMagazine h1 {
+  margin-top: 0;
+  margin-bottom: 4.1666666667vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #98984C;
+}
+#magazine #HeaderMagazine p {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  width: 57.2916666667%;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  text-align: left;
+  margin-bottom: 2.4479166667vw;
+}/*# sourceMappingURL=magazine.css.map */

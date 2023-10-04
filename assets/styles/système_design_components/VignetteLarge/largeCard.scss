@@ -1,0 +1,129 @@
+@use "sass:math";
+@import "../../_function";
+
+._large-card-container {
+  width: 100%;
+  height: 100%;
+
+  ._large-card {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    border-radius: 23px;
+    overflow: hidden;
+    position: relative;
+
+    ._overlay {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      transition: background-color 0.3s ease;
+      z-index: 1;
+    }
+
+    &:hover ._overlay {
+      background: rgba(0, 0, 0, .25)
+    }
+
+    ._card-content {
+
+      ._card-header,
+      ._card-description {
+        padding: 0 pxToVw(38px, 1920);
+      }
+
+      ._card-header {
+        font-size: pxToVw(30, 1920);
+        line-height: pxToVw(37, 1920);
+        margin-top: pxToVw(50px, 1920);
+
+        h3 {
+          margin: 0;
+          font-weight: bold;
+        }
+      }
+
+      ._card-description {
+        color: #6F6F6F;
+        font-size: pxToVw(21, 1920);
+        line-height: pxToVw(30, 1920);
+        margin-top: pxToVw(36.8px, 1920);
+      }
+
+      ._container-img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        overflow: hidden;
+
+        ._img {
+          width: 100%;
+        }
+      }
+    }
+
+    ._large-btn-large-card {
+      background-color: white;
+
+      font-size: pxToVw(21, 1920);
+      padding: pxToVw(21, 1920) pxToVw(42, 1920);
+      z-index: 2;
+      color: black !important;
+      text-decoration: none !important;
+      border-radius: 50px;
+      border: none;
+      position: absolute;
+      top: pxToVw(475, 1920);
+      left: pxToVw(136.5px, 1920);
+      opacity: 0;
+      display: inline-flex;
+      align-items: center;
+      transition: all .3s ease;
+
+      .chevron-btn {
+        height: pxToVw(27, 1920);
+      }
+
+      &:hover {
+        background-color: rgb(224, 224, 224);
+      }
+    }
+
+    &:hover ._large-btn-large-card {
+      opacity: 1;
+    }
+  }
+}
+
+._disabled-large-card {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1) !important;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 2;
+
+  ._large-card {
+    opacity: 0;
+  }
+
+  &::after {
+    content: "Bientôt disponible";
+    position: absolute;
+    top: pxToVw(311px, 1920);
+    left: pxToVw(128.85px, 1920);
+
+    padding: 1.0677083333vw 1.3880208333vw;
+    background: white;
+    font-size: 1.09375vw;
+    z-index: 2;
+  }
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}

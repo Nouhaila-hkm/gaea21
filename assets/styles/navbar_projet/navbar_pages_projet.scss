@@ -1,0 +1,121 @@
+@use '../function';
+
+
+.alice-carousel {
+  box-sizing: border-box;
+
+  width: function.pxToPourcent(1920,1920);
+
+  font-size: function.pxToVw(24, 1920);
+
+  position: relative;
+
+  border-bottom: 1px solid #ccc;
+
+  &__wrapper {
+    width: 80%;
+    margin: 0 auto;
+    // border-bottom: 1px solid #ccc;
+    padding: function.pxToVw(15, 1920) 0;
+    position: relative;
+
+  }
+
+  &__dots {
+    display: none;
+  }
+
+  &__stage {
+    width: 100%;
+    padding: function.pxToVw(15, 1920);
+    // margin-left: function.pxToVw(146,1920);
+  }
+
+  &__stage-item {
+    width: auto !important;
+    display: inline-block;
+
+    line-height: calc(29/24);
+    // border: 1px solid red;
+
+    .item {
+      padding-right: function.pxToVw(120, 1920);
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 13px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          // font-weight: bold;
+          background-color: #989751;
+          color: white;
+        }
+      }
+    }
+
+    li:first-of-type {
+      margin-left: function.pxToVw(50, 1920);
+    }
+  }
+
+  &__next-btn {
+    width: initial;
+    padding: 0;
+    // display: hidden;
+    position: absolute;
+    top: function.pxToVw(17, 1920);
+    right: function.pxToVw(72, 1920);
+
+
+      &-item{
+        color: black;
+        transform: scale(1);
+        transition: scale 0.5s ease;
+      }
+
+    &-item:hover {
+      color: black;
+      transform: scale(1.1);
+    }
+
+    &-item span::after {
+      position: relative;
+      content: '\00BB' !important;
+      text-transform: capitalize;
+      font-size: function.pxToVw(30, 1920);
+    }
+  }
+
+  &__prev-btn {
+    width: initial;
+    padding: 0;
+
+    position: absolute;
+    top: function.pxToVw(17, 1920);
+    // top:17px;
+    left: function.pxToVw(72, 1920);
+
+
+    &-item{
+      color: black;
+      transform: scale(1);
+      transition: scale 0.5s ease;
+    }
+
+    &-item:hover {
+      color: black;
+      transform: scale(1.1);
+    }
+
+    &-item span::after {
+      position: relative;
+      content: '\00AB' !important;
+      text-transform: capitalize;
+      font-size: function.pxToVw(30, 1920);
+
+    }
+  }
+}

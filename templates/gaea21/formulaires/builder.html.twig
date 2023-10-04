@@ -1,0 +1,17 @@
+{% include "base.html.twig" %}
+
+{% block stylesheets  %}
+    {{ encore_entry_link_tags('formBuilder') }}
+{% endblock %}
+
+{% block javascripts  %}
+    {{ encore_entry_script_tags('formBuilder') }}
+{% endblock %}
+
+{% block title %}
+{% endblock %}
+
+{% block body %}
+    <div id="formBuilder" data-form={{formToBuild ? formToBuild.id : "empty form"}}></div>
+{% endblock %}
+

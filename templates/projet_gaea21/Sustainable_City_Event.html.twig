@@ -1,0 +1,201 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/SCE/projetGaea21_SCE.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/SCE
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<h2>Sustainable City Event<h2>
+	</div>
+
+	<section class="intro-sce">
+		<article class="partie1">
+			<p>Il est désormais évident que notre planète est confrontée aux graves <b>conséquences du réchauffement climatique.</b> 
+			Pour éviter que celles-ci ne deviennent irréversibles, il est primordial <b>d’agir à grande échelle</b> en accord avec 
+			les <b>17 Objectifs de Développement Durable (ODD)</b> définis par les Nations Unies.</p> 
+			
+			<p>Néanmoins, la plupart des initiatives de changement échouent par manque de collaboration entre les principaux acteurs. 
+			Pour cette raison, <b>il est essentiel que les acteurs du développement durable</b> (administrations, associations, entreprises, etc.) <b>collaborent</b>, <b>se rencontrent</b> et <b>créent des synergies</b> afin que leurs initiatives deviennent réellement efficaces. 
+			En apportant des <b>solutions concrètes</b>, chaque individu 
+			pourra <b>produire un impact positif</b> sur la société et sur son environnement.</p>
+		</article>
+
+		<article class="partie2">
+			<div class="img-city"><img src="{{asset('images/PagesProjets/page_sce/ville.png')}}" alt=""></div>
+			<p>De nos jours, plusieurs villes mettent en place le développement durable de manière empirique.<br> Elles sont alors confrontées à une situation d'urgence climatique et ne disposent pas d'un modèle leur permettant d'avoir des solutions concrètes pour faire face à leurs problèmes.</p>
+		</article>
+
+		<article class="partie3">
+			<p>C’est dans cette optique que gaea21 a conçu le <b>projet Expansion</b>. Celui-ci a pour but de faire une <b>cartographie des villes</b> en fonction des <b>17 Objectifs de Développement Durable.</b></p>
+			<p>Il s'agit d'un programme de recherche qui se déroule en <b>5 étapes</b> réparties en 2 catégories&nbsp;:</p>
+		</article>
+
+		<article id="categories">
+
+				<div class='categorie1'>
+					<p class="first">1. Création et développement du projet</p>
+
+					<div class="text">
+						<div class="fleche-svg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="41.932" height="19.406" viewBox="0 0 41.932 19.406">
+								<g id="Groupe_1913" data-name="Groupe 1913" transform="translate(-418.5 -2253.796)">
+									<path id="Tracé_1698" data-name="Tracé 1698" d="M3160.916-542.5h20.211" transform="translate(-2740.916 2806)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+									<path id="Polygone_1" data-name="Polygone 1" d="M9.2,0l9.2,19.721H0Z" transform="translate(459.932 2254.296) rotate(90)" fill="#989751" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+								</g>
+							</svg>
+						</div>
+						<p class="initial">Établissement de critère d’analyse pour recenser les principaux acteurs impliqués dans 
+						<b>les 17 Objectifs de Développement Durable</b> définis par les Nations Unies.</p>
+					</div>
+
+					{# à afficher au click #}
+					<div class="developper"> 
+
+						<div class="text">
+							<div class="fleche-svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="41.932" height="19.406" viewBox="0 0 41.932 19.406">
+									<g id="Groupe_1913" data-name="Groupe 1913" transform="translate(-418.5 -2253.796)">
+										<path id="Tracé_1698" data-name="Tracé 1698" d="M3160.916-542.5h20.211" transform="translate(-2740.916 2806)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+										<path id="Polygone_1" data-name="Polygone 1" d="M9.2,0l9.2,19.721H0Z" transform="translate(459.932 2254.296) rotate(90)" fill="#989751" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+									</g>
+								</svg>
+							</div>
+							<p><b>Datamining</b> réalisé dans le but d’établir un rapport d’analyse spécifique à chaque objectif.</p>
+						</div>
+
+						<div class="text">
+							<div class="fleche-svg">
+								<svg xmlns="http://www.w3.org/2000/svg" width="41.932" height="19.406" viewBox="0 0 41.932 19.406">
+									<g id="Groupe_1913" data-name="Groupe 1913" transform="translate(-418.5 -2253.796)">
+										<path id="Tracé_1698" data-name="Tracé 1698" d="M3160.916-542.5h20.211" transform="translate(-2740.916 2806)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+										<path id="Polygone_1" data-name="Polygone 1" d="M9.2,0l9.2,19.721H0Z" transform="translate(459.932 2254.296) rotate(90)" fill="#989751" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+									</g>
+								</svg>
+							</div>
+							<p><b>Analyse systémique</b> mise en place afin de créer un <b>éco-diagnostic systémique</b> des villes, 
+							autrement dit une <b>cartographie</b> des relations systémiques et synergiques possibles entre les acteurs et les projets. 
+							Identification de toutes les <b>thématiques</b> et de tous les <b>acteurs.</b> 
+							Identification de tous les programmes et projets mis en œuvre. 
+							<b>Mesure des impacts</b> par acteur, thématiques et impacts croisés. 
+							<b>Détermination des manques et besoins</b> pour avoir un résultat global.</p>
+						</div>
+
+					</div>
+					
+					<div class="btn-plus">+</div>
+				 	<div class="btn-moins">-</div> 
+				</div>
+
+				<div class="categorie2">
+					<p class="second">2. Déploiement du projet / mise en place du programme</p>
+
+					<div class="text">
+						<div class="fleche-svg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="41.932" height="19.406" viewBox="0 0 41.932 19.406">
+								<g id="Groupe_1913" data-name="Groupe 1913" transform="translate(-418.5 -2253.796)">
+									<path id="Tracé_1698" data-name="Tracé 1698" d="M3160.916-542.5h20.211" transform="translate(-2740.916 2806)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+									<path id="Polygone_1" data-name="Polygone 1" d="M9.2,0l9.2,19.721H0Z" transform="translate(459.932 2254.296) rotate(90)" fill="#989751" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+								</g>
+							</svg>
+						</div>
+							<p>Une fois cette identification terminée, <b>gaea21</b> peut <b>entrer en matière</b> sur les moyens à mettre en œuvre pour que les acteurs puissent 
+								collaborer plus efficacement entre eux. <span class='troiPetitsPoints'>...</span><span class='suite'>Les acteurs concernés sont ensuite contactés par l’association pour participer au <b>Sustainable City Event.</b> 
+						Le rôle de <b>gaea21</b> est de préparer ces rencontres à travers une série de <b>workshops sur une semaine.</b>
+						Les acteurs apprendront ainsi à travailler ensemble de manière 
+						<b>synergique et transversale</b> afin de créer un modèle de collaboration systémique qui pourra être validé et mis en place.</span></p>		
+					</div>
+
+
+					<div class=" text-adevelopper">
+						<div class="fleche-svg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="41.932" height="19.406" viewBox="0 0 41.932 19.406">
+								<g id="Groupe_1913" data-name="Groupe 1913" transform="translate(-418.5 -2253.796)">
+									<path id="Tracé_1698" data-name="Tracé 1698" d="M3160.916-542.5h20.211" transform="translate(-2740.916 2806)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+									<path id="Polygone_1" data-name="Polygone 1" d="M9.2,0l9.2,19.721H0Z" transform="translate(459.932 2254.296) rotate(90)" fill="#989751" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+								</g>
+							</svg>
+						</div>
+							<p><b>gaea21</b> offre un <b>accompagnement et coaching</b> pour suivre les projets transversaux
+							entre les différents acteurs.</p>
+					</div>
+					<div class="btn-plus">+</div>
+					<div class="btn-moins">-</div> 
+				</div>
+		</article>
+
+		<article class="partie3">
+			<p>Par conséquent, <b>l'objectif de gaea21</b> est de <b>créer un programme</b> de mise en œuvre concrète des objectifs définis par les Nations Unies.
+			 Ce programme s'articule sur des <b>propositions collaboratives systémiques</b>,
+			 afin d'encourager ces acteurs à coopérer pour mieux coordonner leurs actions,
+			 et les rendre plus efficaces et adaptées aux besoins de la ville.</p>
+
+			<div class="article">
+				<p><b>Le projet Expansion</b> a déjà complété <b>l’étape 1</b> et se concentre actuellement sur <b>les étapes 2 et 3</b>.
+			  L'association a également identifié <b>6 villes de référence</b> 
+			 (Vancouver, Copenhague, Stockholm, Amsterdam, Dublin, Madrid) ainsi que ses principaux acteurs.
+			 Elle sera bientôt en mesure de les contacter afin de créer le contenu qui sera abordé lors des workshops.</p>
+			
+			<div class="img-map">
+				<img src="{{asset('images/PagesProjets/page_sce/geoloc.png')}}" alt="pin de géolocalisation">
+			</div>
+			</div>
+		</article>
+	</section>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Sustainability City Event' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Suistainability City Event'  
+				})}}" >
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	<script src="{{ asset('js/pages_projets/projetgaea21_SCE.js') }}"></script>
+{% endblock %}
+

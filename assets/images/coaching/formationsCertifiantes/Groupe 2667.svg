@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="174" height="175" viewBox="0 0 174 175">
+  <defs>
+    <filter id="Rectangle_3243" x="0" y="0" width="174" height="175" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#343434" flood-opacity="0.702"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_2667" data-name="Groupe 2667" transform="translate(-1261 -4027)">
+    <g transform="matrix(1, 0, 0, 1, 1261, 4027)" filter="url(#Rectangle_3243)">
+      <rect id="Rectangle_3243-2" data-name="Rectangle 3243" width="156" height="157" rx="13" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="noun-people-768961" transform="translate(1303.751 4099.084)">
+      <path id="Tracé_1735" data-name="Tracé 1735" d="M202.432,151.246a8.075,8.075,0,0,0,2.619-6,8.185,8.185,0,1,0-16.369,0,8.073,8.073,0,0,0,2.619,6,14.768,14.768,0,0,0-9.058,11.786,33.076,33.076,0,0,0-6.984-3.056,15.126,15.126,0,0,0,7.42-13.1,15.278,15.278,0,1,0-23.135,13.1,25.149,25.149,0,0,0-6.984,3.056,14.77,14.77,0,0,0-9.058-11.786,8.075,8.075,0,0,0,2.619-6,8.185,8.185,0,1,0-16.369,0,8.073,8.073,0,0,0,2.619,6,14.822,14.822,0,0,0-9.167,13.641,1.637,1.637,0,1,0,3.273,0,11.458,11.458,0,1,1,22.917,0v.327a28.833,28.833,0,0,0-10.913,22.59,1.637,1.637,0,0,0,3.273,0,25.645,25.645,0,1,1,51.291,0,1.637,1.637,0,0,0,3.273,0,28.672,28.672,0,0,0-10.913-22.59v-.327a11.459,11.459,0,1,1,22.918,0,1.637,1.637,0,1,0,3.273,0,14.822,14.822,0,0,0-9.166-13.641Zm-69.406-6a4.911,4.911,0,1,1,4.911,4.911A4.89,4.89,0,0,1,133.026,145.244Zm22.372,1.637a12,12,0,1,1,12,12A11.97,11.97,0,0,1,155.4,146.881Zm36.558-1.637a4.911,4.911,0,1,1,4.911,4.911A4.89,4.89,0,0,1,191.956,145.244Z" transform="translate(-123.205 -131.603)" fill="#98984b"/>
+    </g>
+    <text id="Participer" transform="translate(1297 4054)" fill="#98984b" font-size="24" font-family="ArialMT, Arial"><tspan x="-50" y="22">Participer</tspan></text>
+  </g>
+</svg>

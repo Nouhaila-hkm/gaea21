@@ -1,0 +1,421 @@
+@use "sass:math";
+@import "../../_function";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+
+}
+
+.headerAccompagnement{
+    display: flex;
+    height: pxToVw(768,1920);
+    color: white;
+}
+
+#header1,#header2{
+    width: 50%;
+}
+
+#header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3D56;
+    
+    article{
+        width: 70%;
+
+        h1{
+            font-size: pxToVw(50,1920);
+        }
+
+    }
+}
+
+#header2{
+    background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+    background-position: center;
+}
+
+.listeLiens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: pxToVw(120,1920);
+    border: 1px solid grey;
+    margin-bottom: pxToVw(60,1920);
+    ul{
+        display: flex;
+        gap: pxToVw(115,1920);
+        font-size: pxToVw(25,1920);
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+main{
+    width:pxToPourcent(1554, 1920); 
+    margin: 0 auto;
+
+    #prevArrow{
+        display: block;
+        width: pxToVw(170,1920);
+    }
+}
+
+
+#cycles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 61.5px;
+}
+
+#cycles>div{
+    width: pxToVw(464,1920);
+    height: pxToVw(280,1920);
+    margin: 10px;
+}
+
+#projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/projet.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+}
+
+#humain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+#statistiques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+
+
+.projet{
+    margin-top: pxToVw(90,1920);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    .projetDesc{
+        font-size: pxToVw(28,1920);
+        margin-bottom: pxToVw(15,1920);
+    }
+    h2{
+        font-size: pxToVw(50,1920);
+        margin-bottom: pxToVw(45,1920);
+
+        span{
+            color: #98984B;
+        }
+    }
+
+    .stepsContainer{
+        margin-top: 200px;
+        display: flex;
+        text-align: center;
+        
+        .pointille{
+            margin-left: 5px;
+            margin-top: 13px;
+            height: 4px;
+            background-color: #7A7A7A;
+            width: 12px;
+        }
+        .pointilleAv{
+            margin-right: 5px;
+            margin-top: 13px;
+            height: 4px;
+            width: 12px;
+            background-color: #98984B;
+        }
+
+        .progressContainer::before{
+            content: "";
+            background-color: #7A7A7A;
+            color: #7A7A7A;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 100%;
+            z-index: -1;
+            transition: .4s ease;
+        }
+
+
+        .progressContainer{
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            position: relative;
+            margin-bottom: 30px;
+        
+            .progression{
+                background-color: #98984B;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                height: 4px;
+                width: 0%;
+                z-index: -1;
+                transition: .4s ease;
+            }
+
+            .circle {
+                background-color: white;
+                color: #999;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 3px solid lightgrey;
+                transition: .4s ease;
+
+                .avant{
+                    position: absolute;
+                    bottom: 46px;
+                    transform: rotate(308deg);
+                    margin-left: 65px;
+                    width: 100%;
+
+                }
+                
+
+                .pendant{
+                    text-align: left;
+                    position: absolute;
+                    bottom: pxToVw(123,1920);
+                    transform: rotate(308deg);
+                    margin-left: pxToVw(172,1920);
+                    width: pxToVw(250,1920);
+
+                }
+
+                .apres{
+                    text-align: left;
+                    position: absolute;
+                    bottom: pxToVw(125,1920);
+                    transform: rotate(308deg);
+                    margin-left:  pxToVw(182,1920);
+                    width:  pxToVw(255,1920);
+
+                }
+                
+            }
+
+            .circle.active{
+                border-color: #98984B;
+                background-color: #98984B;
+                color: #98984B;
+            }
+
+        }
+    }
+
+
+}
+
+#carrousel{
+    width: pxToVw(1540,1920);
+    height: auto;
+    margin: 0 auto;
+    // border: 4px solid black;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    overflow:hidden;
+
+    #g,#d{
+        margin-top: pxToVw(200,1920);
+        display: flex;
+        justify-content: center;
+    }
+
+    #container{
+        display: flex;
+        height: auto;
+        width: pxToVw(1290,1920);
+        // border: 1px solid red;
+        overflow: scroll;
+        scroll-behavior: smooth;
+
+        .slide {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            flex: 1 0 100%;
+            font-size: 60px;
+
+            .center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .slideImg{
+                width: pxToVw(438,1920);
+                margin-right: pxToVw(66,1920);
+
+                .avant1{
+                    width: 100%;
+                    height: 80%;
+                }
+
+                .avant2{
+                    width: pxToVw(191,1920);
+                    height:pxToVw(125,1920);
+                    margin-bottom: pxToVw(83,1920);
+                }
+
+                .avant3{
+                    width: 100%;
+                    height: pxToVw(238,1920);
+                }
+
+                // COMPETENCE METIER
+
+                .pendant1{
+                    width: pxToVw(312,1920);
+                    height:pxToVw(157,1920);
+                    margin-bottom: pxToVw(83,1920);
+                }
+
+                .pendant2{
+                    width: pxToVw(406,1920);
+                    height:pxToVw(297,1920);
+                }
+                
+                // SUIVI RH  
+
+                .pendant3{
+                    width: 100%;
+                    height:pxToVw(253,1920);
+                }
+
+                // EVAL HEBDO
+
+                .pendant4{
+                    width: 100%;
+                    height:pxToVw(347,1920);
+                    margin-bottom: pxToVw(116,1920);
+                }
+
+                .pendant5{
+                    width: pxToVw(432,1920);
+                    height:pxToVw(263,1920);
+                }
+
+                // VALIDATION PLAN FORMATION
+
+                .apres1{
+                    width: pxToVw(293,1920);
+                    height: pxToVw(353,1920);
+                }
+
+                // SUIVI PLAN CARRIERE 
+
+                .apres2{
+                    width: pxToVw(501,1920);
+                    height: pxToVw(380,1920);
+                }
+            }
+            
+            .slideContent{
+                width: 60%;
+
+                h3{
+                    color: #98984B;
+                    font-size: pxToVw(30,1920);
+                    margin-bottom: pxToVw(18,1920);
+                }
+                p{
+                    font-size: pxToVw(25,1920);
+                }
+                ul{
+                    margin-top: pxToVw(18,1920);
+                }
+                ul li{
+                    list-style-type: disc;
+                    margin-left: pxToVw(81,1920);
+                    margin-bottom: pxToVw(5,1920);
+                }
+                ul li::marker{
+                    font-size: pxToVw(30,1920);
+                }
+            }
+        }
+    }
+
+    #container {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    }
+     
+    /* WebKit */
+    #container::-webkit-scrollbar { 
+        width: 0;
+        height: 0;
+    }
+
+    button{
+        width: 66px;
+        height: 66px;
+        border-radius: 50px;
+        background-color: #98984B;
+        border: 0px;
+        padding: 5px;
+        cursor: pointer;
+        a{
+            color: white !important;
+            font-size: 43px;
+            height: 8.73px;
+            cursor: pointer;
+        }
+    }
+
+    button:active{
+        transform: scale(0.98);
+    }
+
+    button:focus{
+        outline:0;
+    }
+
+    button:disabled{
+        background-color: #999;
+        cursor: not-allowed;
+    }
+}

@@ -1,0 +1,121 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#footer {
+  box-sizing: border-box;
+  padding-left: 0;
+  border-top: none;
+}
+#footer a {
+  color: black !important;
+}
+#footer ._container {
+  width: 80.9375vw;
+  margin-left: 9.53125vw;
+  margin-top: 4.1666666667vw;
+}
+#footer ._container ._display {
+  display: flex;
+}
+#footer ._container ._display ._logo {
+  width: 8.75vw;
+  margin-right: 3.0729166667vw;
+  display: block;
+}
+#footer ._container ._display ._logo img {
+  width: 100%;
+}
+#footer ._container ._display ._menu {
+  margin-bottom: 2.8645833333vw;
+  display: flex;
+}
+#footer ._container ._display ._menu h4 {
+  font-size: 0.9375vw !important;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 1.4583333333vw;
+}
+#footer ._container ._display ._menu ul {
+  font-size: 0.8333333333vw !important;
+  line-height: 0.9375vw;
+}
+#footer ._container ._display ._menu ul li {
+  width: 100%;
+}
+#footer ._container ._display ._menu ul li a {
+  display: block;
+  width: 8.4375vw;
+}
+#footer ._container ._display ._menu:last-child {
+  margin-right: 0;
+}
+#footer ._container ._display ._menu .list {
+  width: 9.4270833333vw;
+  margin-right: 3.8020833333vw;
+}
+#footer ._container ._display ._menu .list:last-of-type {
+  margin-right: 0;
+}
+#footer ._container ._display ._menu .list li {
+  margin-bottom: 0.5208333333vw;
+}
+#footer ._container ._display ._menu .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footer ._container ._display ._menu .contact h4 {
+  font-size: 0.9375vw !important;
+  font-weight: bold;
+  margin: 0;
+}
+#footer ._container ._partages {
+  font-size: 1.0416666667vw !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #98984B;
+  padding-bottom: 0.78125vw;
+}
+#footer ._container ._partages .plan {
+  text-decoration: underline;
+}
+#footer ._container ._partages .reseau {
+  display: flex;
+  align-items: center;
+}
+#footer ._container ._partages .reseau .links {
+  display: flex;
+}
+#footer ._container ._partages .reseau .link {
+  width: 2.2916666667vw;
+  width: 2.2916666667vw;
+  overflow: hidden;
+}
+#footer ._container ._partages .reseau .fa {
+  border: 1px green solid;
+  width: 0.5208333333vw;
+  height: 0.5208333333vw;
+}
+#footer ._container .copyright {
+  font-size: 1.0416666667vw !important;
+  text-align: end;
+  margin-top: 1.953125vw;
+  margin-bottom: 1.0416666667vw;
+}
+#footer ._container .cgu {
+  font-size: 1.0416666667vw !important;
+}
+#footer ._container .cgu ._items {
+  background: #F5F5EE;
+  display: flex;
+  justify-content: center;
+  padding: 2.4479166667vw 0;
+}
+#footer ._container .cgu ._items .item {
+  margin-right: 4.3229166667vw;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=gaeaFooters.css.map */

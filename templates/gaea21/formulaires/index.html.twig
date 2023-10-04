@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Forms' %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('ShowForms') }}
+{% endblock %}
+
+{% block body %}
+
+	<div id="ShowForms"></div>
+
+	{% block javascripts %}
+		<script src="{{ asset('js/inscription.js') }}"></script>
+		<script src="{{ asset('js/visualComponents.js') }}"></script>
+		<script src="{{ asset('js/desInscription.js') }}"></script>
+		<script src="{{ asset('js/redirect.js') }}"></script>
+		<script src="{{ asset('js/login.js') }}"></script>
+		<script src="{{ asset('js/updateAccount.js') }}"></script>
+		<script src="{{ asset('js/updatePassword.js') }}"></script>
+		<script src="{{ asset('js/reinitPassword.js') }}"></script>
+		<script src="{{ asset('js/reinitPasswordLost.js') }}"></script>
+		{{ encore_entry_script_tags('ShowForms') }}
+	{% endblock %}
+
+{% endblock %}

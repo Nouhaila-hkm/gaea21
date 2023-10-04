@@ -1,0 +1,35 @@
+@use "sass:math";
+@import "../../_function";
+
+
+#header {
+
+    ._backgroundparticipation {
+        background-image: url("../../../../images/PagesProjets/participer/participer_header.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .participation {
+        background-color: #49A496 !important;
+    }
+
+}
+
+#main, #encartProjet, #ProjetCarousel, #vignettes {
+    display: none;
+}
+
+.title_participation {
+    text-align: center;
+    font-size: pxToVw(50, 1920);
+    font-weight: 600;
+}
+
+.text_participation {
+    text-align: center;
+    margin-left: pxToPourcent(315, 1920);
+    margin-right: pxToPourcent(315, 1920);
+}

@@ -1,0 +1,323 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.componentForms {
+  font-family: Helvetica;
+  padding-bottom: 100px;
+  padding-top: 30px;
+}
+.componentForms ul {
+  width: 49.1666666667%;
+  height: 100% !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4.1666666667%;
+  grid-row-gap: 4.1666666667%;
+}
+.componentForms ul li {
+  display: block;
+  height: 5.0520833333% !important;
+}
+.componentForms ul li div {
+  display: flex;
+  flex-direction: column;
+}
+
+.twoSize {
+  grid-column: 1/span 2;
+}
+
+.componentFormDiv {
+  margin: 0.4166666667%;
+}
+
+.labelForm {
+  font-size: 1.25vw !important;
+  padding-bottom: 0.4166666667% !important;
+  color: black;
+  height: auto !important;
+}
+
+.inputForm {
+  margin-bottom: 0 !important;
+  font-size: 1.0416666667vw !important;
+  color: #495057;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 0.078125vw solid #ced4da !important;
+  border-radius: 0.1rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+  text-indent: 0.5208333333vw;
+}
+
+.loginput {
+  font-size: 1.6666666667vw !important;
+}
+
+.inputForm:focus {
+  color: #495057 !important;
+  background-color: #fff !important;
+  border-color: #969749 !important;
+  box-shadow: 0 0 0 0.1rem rgb(150, 151, 73) !important;
+}
+
+#createforms {
+  background-color: #fff !important;
+  height: 150vh !important;
+  margin-top: -1.5rem;
+}
+
+.radioForm {
+  margin-top: 10px !important;
+  vertical-align: baseline !important;
+  display: flex;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-around;
+}
+.radioForm div {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.inputRadio {
+  position: initial !important;
+  opacity: initial !important;
+  pointer-events: auto !important;
+  margin-left: 0.5208333333% !important;
+  width: 30px !important;
+}
+
+.labelRadio {
+  color: #495057 !important;
+  margin-left: 0.2604166667% !important;
+  font-size: 0.78125vw !important;
+  font-size: 14px !important;
+  color: black;
+  font-weight: 400;
+  height: auto !important;
+}
+
+select {
+  display: inherit !important;
+}
+
+select.selectForm, input.inputForm {
+  padding: 0 0 0 0 !important;
+  outline: 0px !important;
+}
+
+input[type=phone].inputForm:focus {
+  box-shadow: 0 0 0 0.1rem rgb(150, 151, 73) !important;
+}
+
+.selectForm {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 3rem;
+  padding-left: 1rem !important;
+  font-size: 15px !important;
+  font-style: italic !important;
+  color: #495057;
+  background-color: #fff !important;
+  background-clip: padding-box;
+  border: 1.5px solid #ced4da !important;
+  border-radius: 0.1rem !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out !important;
+}
+
+.selectForm:focus {
+  color: #495057 !important;
+  background-color: #fff !important;
+  border: 0.078125vw solid #ced4da !important;
+  box-shadow: 0 0 0 0.15rem rgb(150, 151, 73) !important;
+  padding: 0 0 0 0 !important;
+}
+
+.passwordForm {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+.passwordForm div {
+  width: 48%;
+}
+
+.componentForms input[type=phone] {
+  height: 3.2rem !important;
+}
+.componentForms input[type=phone] input[type=phone]:checked {
+  box-shadow: 0 0 0 0.1rem rgb(150, 151, 73) !important;
+}
+.componentForms .sectionformbutton {
+  margin-top: 4.5714285714% !important;
+  display: flex;
+  justify-content: center;
+}
+.componentForms .sectionformbutton button {
+  margin-top: 7em !important;
+  border-color: initial;
+  background-color: #969749 !important;
+  color: white;
+  padding: 0.8rem 3.5rem;
+  font-size: 1.25vw !important;
+}
+.componentForms .sectionformbutton2 {
+  margin-top: 4.5714285714% !important;
+  display: flex;
+  justify-content: center;
+}
+.componentForms .sectionformbutton2 button {
+  margin-top: 8em !important;
+  border-color: initial;
+  background-color: #969749 !important;
+  color: white;
+  padding: 0.8rem 3.5rem;
+  font-size: 1.25vw !important;
+}
+.componentForms .pass-wrapper {
+  position: relative;
+  display: flex;
+}
+.componentForms i {
+  position: absolute;
+  bottom: 3%;
+  display: inline-block;
+  font-size: 25px;
+  right: 3%;
+}
+.componentForms i:hover {
+  color: #969749;
+  cursor: pointer;
+}
+
+.containerFlashMessage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flashMessage {
+  width: 31em;
+  text-align: center !important;
+  margin-top: 1.5em !important;
+  color: #969749 !important;
+  font-weight: bold !important;
+}
+
+.errorMessageContainer {
+  width: 50%;
+  height: 30px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.successMessageContainer {
+  width: 50%;
+  height: 30px;
+  background-color: darkgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.Message {
+  color: #ffffff !important;
+  font-weight: bold !important;
+  font-size: 1.2em !important;
+}
+
+.grey.lighten-2 {
+  background-color: white !important;
+}
+
+.formRegistration {
+  position: relative;
+}
+
+.returnHomepageLink {
+  position: absolute !important;
+  color: black !important;
+  text-decoration: none !important;
+  font-size: 1.25vw !important;
+  bottom: 0 !important;
+  cursor: pointer !important;
+  padding-left: 10px;
+  padding-bottom: 6px;
+}
+
+.returnHomepageLink:hover {
+  color: #969749 !important;
+  text-decoration: underline !important;
+}
+
+.returnHomepageLinkLoginPageWrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.returnHomepageLinkLoginPage {
+  border-color: red !important;
+  font-size: 1.25vw !important;
+  color: black !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+}
+
+.returnHomepageLinkLoginPage:hover {
+  color: #969749 !important;
+  text-decoration: underline !important;
+}
+
+.componentForms .loginsectionformbutton button {
+  margin-top: 0.2rem !important;
+}
+
+.componentForms .forgotpasswordsectionformbutton button {
+  margin-top: 3rem !important;
+}
+
+.componentForms .updateaccountsectionformbutton button {
+  margin-top: 5rem !important;
+}
+
+.componentForms .updatepasswordsectionformbutton button {
+  margin-top: 1rem !important;
+}
+
+@media screen and (max-width: 1000px) {
+  .passwordForm {
+    flex-direction: column !important;
+  }
+  .passwordForm div {
+    width: 100%;
+  }
+  .passwordForm div:first-of-type {
+    margin-bottom: 2.34375% !important;
+  }
+  .componentForms ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .componentForms .sectionformbutton {
+    margin-top: 10.4166666667% !important;
+  }
+  .componentForms .sectionformbutton2 {
+    margin-top: 66.6666666667% !important;
+  }
+  .twoSize {
+    grid-column: 1;
+  }
+  .labelForm {
+    font-size: 2.0833333333vw !important;
+  }
+}/*# sourceMappingURL=createforms.css.map */

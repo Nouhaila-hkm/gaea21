@@ -1,0 +1,223 @@
+@use "sass:math";
+@import "../../_function";
+
+#tertiaryMenu {
+  display: none;
+}
+
+#projects,#vignettes{
+  display: none;
+}
+
+#encartProjet{
+  display: none;
+}
+
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+        
+        background-color: #5681B9;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(215, 1920);
+            text-align: left;
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(36px, 1920);
+                
+            }
+        }
+    }
+
+    ._background {
+        background-image: url("../../../../images/QuiSommesNous/universGaea/header_universGaea.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#main {
+  margin-top: pxToVw(21, 1920);
+  // border: 1px solid black;
+
+  .text-content {
+    // border: 1px solid black;
+    margin: 0 auto;
+    text-align: justify;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+
+      margin-bottom: pxToVw(55, 1920);
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .description {
+      margin-bottom: pxToVw(120, 1920);
+    }
+
+    
+  }
+
+  .space{
+    width: pxToVw(1554, 1920);
+    height: pxToVw(183, 1920);
+    //background-color: black;
+    background-image: url("../../../../images/QuiSommesNous/universGaea/space.png");
+    margin-left:pxToVw(-140, 1920);
+    margin-top: pxToVw(59, 1920);
+    border-radius: 14px;
+  }
+
+  .last-content{
+    p{
+        margin-top: pxToVw(110, 1920);
+        text-align: center;
+    }
+
+    .largeBtn{
+        margin-top: pxToVw(39, 1920);
+        text-align: center;
+        p{
+            margin-top: 0;
+        }
+    }
+
+   
+}
+
+.franchise{
+    display:flex;
+    margin-top: pxToVw(158, 1920);
+    margin-left:pxToVw(-140, 1920);
+    
+    width: pxToVw(1554, 1920);
+    article:first-child{
+        
+        width: pxToVw(658, 1920);
+        flex-shrink: 0;
+        height: pxToVw(589, 1920);
+
+        .franchise_img{
+            width: 100%;
+        }
+    }
+
+    article:last-child{
+        margin-left: pxToVw(85, 1920);
+        padding-right:pxToVw(183, 1920);
+        //flex-shrink: 0;
+        width: pxToVw(830, 1920);
+        h2{
+            text-align: left;
+            margin-bottom: pxToVw(50, 1920);
+            width: pxToVw(658, 1920);
+            //font-size: pxToVw(0, 1920);
+            
+        }
+        .font-style{
+            text-align: left;
+            margin-bottom: pxToVw(33, 1920);
+            //font-size: pxToVw(28, 1920);
+            width: pxToVw(800, 1920);
+            
+        }
+
+        .font-weight{
+            font-weight: bold;
+            margin-bottom: pxToVw(20, 1920);
+            width: pxToVw(800, 1920);
+            margin-top: pxToVw(49, 1920);
+          
+        }
+        .links-container{
+            display: flex;
+            justify-content: end;
+        
+        .links {
+            width: pxToPourcent(218.96,423);
+            
+            display: flex;
+            justify-content: end;
+            //gap: pxToVw(1,423);
+            align-items: center;
+            position: relative;
+            margin-bottom: -1rem;
+            margin-right: pxToVw(-160, 1920);
+        }
+
+        .link {
+            width: pxToPourcent(270,423);
+        }
+    }
+
+        // .know-plus{
+        //     margin-bottom: pxToVw(79, 1920);
+        //     color: #98984B !important;
+        // }
+        .decouvrir{
+            .lien{
+              display: inline-flex;
+              align-items:center;
+              gap: 1px;
+              
+              &:hover{
+                border-bottom: 1px solid #98984B;
+              }
+              p{
+                display: inline-block;
+                padding-right:4px;
+                color: #98984B !important;
+              }
+              img{
+                position: relative;
+                top: -1px;
+                
+              }
+            //   span{
+            //     display: inline-block;
+            //     position: relative;
+            //     top: 1px;
+            //   }
+            }
+          }
+    }
+
+    
+}
+
+  #project-box {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: pxToVw(54px,1920);
+
+    
+  }
+
+  
+
+
+}
+
+#organizationDebut, #organizationFin{
+    display:none
+}

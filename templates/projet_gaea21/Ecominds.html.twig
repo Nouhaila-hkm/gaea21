@@ -1,0 +1,131 @@
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+{{encore_entry_link_tags('SmallBoxPopupApp') }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/EM/projetGaea21_EM.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/eco-minds
+{% endblock %}
+
+
+
+{% block main %}
+	<div class="project-title">
+		<div class="logo">
+			<img class="project-logo" src="{{asset('images/icone_svg_png/logo-ecominds.png')}}" alt='logo eco-minds'>
+		</div>
+		<h2>eco-minds<h2>
+	</div>
+
+	<section class="intro-ecominds">
+		<p><b>eco-minds</b> est une agence de communication responsable 360 
+		qui offre <b>des services</b> et <b>des prestations</b> destinées aux&nbsp;:</p>
+		<div class="cercle">
+			<img src="{{asset('images/PagesProjets/page_em/cercle.png')}}" alt=""> 
+		</div>
+
+		<p>ou autres organismes souhaitant s’engager dans une démarche plus durable afin de véhiculer des valeurs éco-responsables. 
+		Les prestations proposées par <b>eco-minds</b> touchent à la 
+		communication globale et s'inscrivent dans <b>une démarche sociale, durable et éco-consciente.</b></p> 
+		
+		<p>Le monde de la communication est majoritairement dominé par de grosses 
+		structures se préoccupant peu des petits budgets et proposant des devis à des prix souvent inabordables.<br> 
+		eco-minds veut faire évoluer les choses en proposant&nbsp;:</p>
+
+		<div class="avantages-ecominds">
+			<div class="tarifs">
+				<div class="euro">
+					<img src="{{asset('images/PagesProjets/page_em/monnaie.png')}}" alt="">
+				</div>
+				<p><b>> des tarifs solidaires</b></p>
+			</div>
+
+			<div class="package">
+				<div class="paquet">
+					<img src="{{asset('images/PagesProjets/page_em/paquet.png')}}" alt="">
+				</div>
+				<p><b>> un système de packages</b></p>
+			</div>
+
+			<div class="contrat">
+				<div class="contract">
+					<img src="{{asset('images/PagesProjets/page_em/contrat.png')}}" alt="">
+
+				</div>
+				<p><b>> des contrats d'accompagnement</b></p>
+			</div>
+		</div>
+		
+			<p><b>eco-minds</b> offre ainsi des solutions aux petites entités, ayant peu de moyens d’être entendues et d’avoir une communication efficace.</p> 
+			<p>En mettant en évidence les <b>10 dimensions de Green Coaching</b> (présentées ci-dessous), 
+			eco-minds met un point d’honneur à stimuler l’accès à une information 
+			sensibilisatrice et à développer la conscience écologique et les outils de durabilité de toutes les structures ou individus qui 
+			communiquent.</p>
+
+		<div class="dimensions">
+			<img src="{{asset('images/PagesProjets/page_em/10dimensions.png')}}" alt="les dix dimensions de gaea21"> 
+		</div>
+
+		<p>Les prestations d'<b>eco-minds offerte&nbsp;:</b></p>
+
+		<div class="smallBox_popup_em"></div>
+
+	</section>
+
+
+
+	
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'eco-minds' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'eco-minds'  
+				})}}" >
+	</div>
+{% endblock %}
+
+ {% block javascripts %}
+{{parent()}}
+
+{{ encore_entry_script_tags('SmallBoxPopupApp') }}
+
+{% endblock %}

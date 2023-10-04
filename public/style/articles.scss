@@ -1,0 +1,489 @@
+@use "sass:math";
+
+@import 'common.css';
+
+$vw-viewport: 1920;
+@function vw($height){
+    @return math.div($height, $vw-viewport)* 100vw;
+}
+
+/* Section ( section )
+  Une section occupe l'écran sur toutes sa largeur.
+  @abstract
+  @modifiers
+    _dark : si l'image est sombre
+*/
+  .section{
+    width: 100%;
+    --text-back: white;
+    --text-back2: #EBEAE6;
+    --text-color: black;
+    --text-color-weak: #6F6F6F;
+    --text-color2: #98984B;
+
+    --text-special: #E0DDC9;
+    --text-special2: #378A61;
+
+    --text-negative: #ff0000;
+
+    color: var(--text-color);
+    background-color: var(--text-back);
+
+    padding: 0;
+    padding-left: vw(249);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &._dark{
+      --text-back: #201D1D;
+      --text-back2: #282424;
+      --text-color: white;
+      --text-color2: #ABAB59;
+
+      --text-special: #1C4530;
+      --text-special2: #43A875;
+    }
+  }
+/* */
+
+
+/* Image Text ( section -imagetext )
+  @extend Section(section)
+  @shape (h2|p)*
+*/
+  .section.-imagetext{
+    background-size: cover;
+    padding-top: vw(51);
+    padding-bottom: vw(34);
+    *{
+      margin-left: vw(782);
+      margin-top: vw(22);
+      margin-bottom: vw(22);
+    }
+    h2{
+      font-size: vw(54);
+      font-weight: bold;
+    }
+    p{
+      font-size: vw(30);
+      width: vw(788);
+    }
+  }
+/* */
+
+
+/* Button List ( section -buttonlist )
+  @extend Section(section)
+  @shape a*
+*/
+  .section.-buttonlist{
+    background-size: cover;
+    padding-left: vw(249);
+    padding-right: vw(249);
+    align-items: center;
+    height: vw(120);
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: solid vw(1) var(--text-color);
+    border-bottom: solid vw(1) var(--text-color);
+    a{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: vw(142);
+      height: vw(64);
+      font-size: vw(25);
+      border-radius: vw(10);
+      transition: 0.2s;
+      cursor: pointer;
+
+      &._selected{
+        background-color: var(--text-special);
+      }
+      &::before{
+        position: absolute;
+        top: vw(92);
+        content:"";
+        display: block;
+        height: vw(4);
+        width: 120%;
+        left:-10%;
+        background-color: var(--text-color2);
+        opacity: 0;
+        transition: 0.2s;
+      }
+      &:hover::before{
+        opacity: 1;
+      }
+      &:hover{
+        color: var(--text-color2);
+      }
+
+    }
+  }
+/* */
+
+
+/* Button Stack ( section -buttonstack )
+  @extend Section(section)
+  @shape a*
+*/
+  .section.-buttonstack{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: vw(54);
+    padding-bottom: vw(15);
+    a{
+      background-color: var(--text-back2);
+
+      margin-top: vw(21);
+      margin-right: vw(70);
+      margin-bottom: vw(21);
+      padding: vw(15);
+      border-radius: vw(10);
+
+      font-size: vw(30);
+      font-weight: bold;
+
+      cursor: pointer;
+
+      &._selected{
+        background-color: var(--text-special2);
+        color: var(--text-back);
+      }
+      transition: transform 0.2s;
+      &:hover{
+        transform: scale(1.05,1.05);
+      }
+    }
+  }
+/* */
+
+/* Search Bar Section ( section -seachbar )
+  @extend Section(section)
+  @shape (<div>(input[type=search]|img)*</div>)*
+*/
+  .section.-searchbar{
+    display: flex;
+    flex-direction: row;
+    padding-top: vw(15);
+    padding-bottom: vw(15);
+    align-items: center;
+    &>*{
+      display: flex;
+      flex-direction: row;
+      height: vw(70);
+      border-radius: vw(10);
+      box-shadow: vw(1) vw(1) vw(8) vw(-5) var(--text-color);
+      align-items: center;
+      margin-left: vw(10);
+      margin-right: vw(10);
+      transition: 0.5s;
+    }
+    &>*>*{
+      margin-left: vw(23);
+      margin-right: vw(23);
+    }
+    &>*>input{
+      border: none;
+      outline: none;
+      font-size: vw(30);
+      width: vw(270);
+      height: auto;
+      margin: 0;
+      &:focus{
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+    &>*>img{
+      width: vw(31.5);
+      height: vw(31.5);
+    }
+    &>*>a.tag{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: vw(25);
+      padding: vw(4);
+      padding-left: vw(20);
+      padding-right: vw(20);
+      border-radius: vw(10);
+      box-shadow: vw(1) vw(1) vw(8) vw(-5) var(--text-color);
+      cursor: pointer;
+      &::after{
+        content: "x";
+        font-weight: bold;
+        font-size: vw(30);
+        padding: none;
+        padding-left: vw(15);
+      }
+      transition: 0.5s;
+      &:hover{
+        background-color: var(--text-negative);
+        color: var(--text-back);
+      }
+    }
+    &>*>a.button{
+      display: flex;
+      width: vw(31.5);
+      height: vw(31.5);
+      padding: 0;
+      cursor: pointer;
+      &>img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      transition: 0.5s;
+      &:hover{
+        transform: scale(1.3,1.3);
+      }
+    }
+  }
+/* */
+
+/* Article List Section ( section -articlelist )
+  @extend Section(section)
+  @shape (<>(h3|p|a|.tags|img)*</>)*
+  @modifiers
+    _small
+*/
+  .section.-articlelist{
+    /* SMALL */
+    &._small{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      &>*{
+        width: vw(650);
+        margin-bottom: vw(58.5); padding-bottom: vw(4.5);
+        &>*{
+          margin-top: vw(3.825); margin-bottom: vw(3.825);
+        }
+        &>h3{ font-size: vw(22.5); }
+        &>p{
+          font-size: vw(12.6); line-height: vw(14.4);
+        }
+        &>span{ font-size: vw(12.6); }
+        &>a{
+          font-size: vw(18); margin-left: vw(3.6);
+          margin-right: vw(3.6); height: vw(24.75);
+        }
+        &>*.tags{
+          font-size: vw(9); margin-top: vw(22.5);
+          &>*{ margin-right: vw(2.25); }
+          &::before{ margin-right: vw(6.75); }
+        }
+        &>img{
+          width: vw(270);
+          height: vw(141);
+          &+p{
+            width: vw(360); padding-left: vw(29); padding-right: vw(22.5);
+          }
+        }
+      }
+    }
+    /* */
+
+    display: flex;
+    flex-direction: column;
+    padding-right: vw(249);
+    &>*{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      margin-bottom: vw(130);
+      padding-bottom: vw(10);
+      &::before{
+        content: "";
+        background-color: var(--text-back2);
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+        height: vw(3);
+        width: 84%;
+      }
+      &>*{
+        margin-top: vw(8.5);
+        margin-bottom: vw(8.5);
+      }
+      &>h3{
+        font-size: vw(50);
+        font-weight: bold;
+        color: var(--text-special2);
+        width: 100%;
+      }
+      &>p{
+        width: auto;
+        font-size: vw(28);
+        line-height: vw(32);
+        &>strong{
+          font-size: inherit;
+          font-weight: bold;
+        }
+        &>em{
+          font-size: inherit;
+        }
+      }
+      &>span{
+        display: block;
+        font-size: vw(28);
+        font-style: italic;
+        font-weight: lighter;
+        width: 100%;
+        color: var(--text-color-weak);
+      }
+      &>a{
+        display: flex;
+        font-size: vw(35);
+        font-weight: bold;
+        margin-left: vw(8);
+        margin-right: vw(8);
+
+        padding: 0;
+        padding-left: vw(12);
+        padding-right: vw(12);
+
+        height: vw(55);
+        &>img{
+          margin: 0;
+          width: auto;
+          height: 70%;
+          align-self: center;
+        }
+        &>*:not(:last-child){
+          margin-right: vw(10);
+          text-align: center;
+        }
+      }
+      &>*.tags{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        font-size: vw(20);
+        margin-top: vw(50);
+        cursor: pointer;
+        &>a{
+          font-size: inherit;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+        &>*{
+          margin-right: vw(5);
+        }
+        &::before{
+          content: "";
+          display: flex;
+          align-self: center;
+          height: 1em;
+          width: 1em;
+          margin-right: vw(15);
+
+          background-image: url("../Image/smallicons/link.svg");
+          background-size: cover;
+        }
+      }
+      &>img{
+        width: vw(604);
+        height: vw(317);
+        align-self: center;
+        &+p{
+          width: vw(800);
+          padding-left: vw(64);
+          padding-right: vw(50);
+        }
+      }
+    }
+  }
+  /* Page Number ( section -pagenumber )
+    @extend Section(section)
+    @shape (span|a)*
+  */
+    .section.-pagenumber{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-right: vw(249);
+      padding-bottom: vw(133);
+      &>*{
+        margin-left: vw(6);
+        margin-right: vw(6);
+      }
+      &>span{
+        font-size: vw(60);
+        font-weight: bold;
+      }
+      &>a{
+        font-size: vw(22);
+        color: var(--text-color-weak);
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+          transform: scale(1.4,1.4);
+        }
+      }
+    }
+
+    /*Section menu article*/
+.topbar {
+  background-color: white !important;
+}
+
+.btn-floating i{
+  width: auto;
+}
+
+.btn-floating.btn-large i{
+  height: 0;
+}
+
+.white-text{
+  background-color: rgb(152,152,77);
+}
+
+.ulTopbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin : auto;
+}
+
+.liTopbar {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: larger;
+}
+
+
+.topbar{
+  top: 0px;
+  left: 0px;
+  width: pxToPourcent(1920px, 1920px);
+  height: pxToVw(120px, 1920px);
+  font-size: pxToVw(20px, 1920px) !important;
+}
+
+.liTopbar{
+  font-size: pxToVw(20px, 1920px) !important;
+}
+
+.material-icons.black-text.medium{
+  display: block !important;
+
+}
+  /* */
+/* */

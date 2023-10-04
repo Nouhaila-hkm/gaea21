@@ -1,0 +1,70 @@
+.contenueArchive {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.contenueArchive .menuArchive {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 18%;
+  margin-left: pxToPourcent(140px, 1920px);
+}
+.contenueArchive .month, .contenueArchive .year {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.contenueArchive .month p, .contenueArchive .year p {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  margin: 0;
+  padding: 0%;
+  margin-right: pxToPourcent(10px, 1920px) !important;
+}
+.contenueArchive #listeMonth, .contenueArchive #listeAnnee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contenueArchive #listeMonth .valide, .contenueArchive #listeAnnee .valide {
+  color: #98984C;
+}
+.contenueArchive .select {
+  width: pxToPourcent(1200px, 1920px);
+  margin-bottom: pxToVw(55px, 1920px);
+  background-color: #F6F6F6;
+  border-radius: pxToVw(20px, 1920px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenueArchive .select .selected {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 90% !important;
+  border-bottom: 2px solid #98984C;
+  cursor: default !important;
+}
+.contenueArchive .select .selected .row {
+  height: pxToVw(20px, 1920px);
+  transform: rotate(90deg);
+  margin: 0;
+}
+.contenueArchive .select p {
+  margin: 0 !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  cursor: pointer;
+}
+.contenueArchive #magazinebook {
+  width: 100%;
+}
+.contenueArchive #magazinebook .book {
+  width: 43%;
+}/*# sourceMappingURL=pageArchive.css.map */

@@ -1,0 +1,59 @@
+{% extends 'gaea21/gaeaBase.html.twig' %}
+
+
+
+{% block title %}Page profile de {{app.user.username}}{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+    {{ encore_entry_link_tags('showUser') }}
+    {{ encore_entry_link_tags('updateAccountForm') }}
+    {{ encore_entry_link_tags('updatePasswordForm') }}
+		{{ encore_entry_link_tags('topBar') }}
+{% endblock %}
+
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+<img class="header" src="/Image/user-profil/header-user-profil.png">
+
+
+<img class="avatar" src="/Image/user-profil/pexels-pixabay-354951.png">
+
+<div class="boxname">
+<p class="username">{{ app.user.firstname }} {{ app.user.lastname }}</p>
+</div>
+
+
+<h2 class="profil">Bienvenue sur votre profil</h2>
+<div class='box'>
+<div class='inside-box'>
+    <ul>
+        {% if is_granted('ROLE_ADMIN') %}
+            <li><a class="box-link" href="{{ path('admin_utilisateurs') }}">Liste des utilisateurs</a></li>
+        {% endif %}
+        {% if is_granted('ROLE_RH') %}
+            <li><a class="box-link" href="{{ path('listAnnounce') }}">Vos annonces</a></li>
+        {% endif %}
+        <li><a class="box-link" href="{{ path('home') }}">Accueil</a></li>
+        <div id='showUser'></div>
+        <li><a class="box-link" href="{{ path('app_logout') }}">Se déconnecter</a></li>
+    </ul>
+
+    </div>
+    <div class="box2">
+        <div class="form" id="updateAccountForm" data-id="{{ app.user.gaeauserid }}" data-email="{{ app.user.email }}"></div>
+        <div class="form hidden" id="updatePasswordForm" data-email="{{ app.user.email }}"></div>
+    </div>
+</div>
+
+{% block javascripts %}
+	{{ parent() }}
+    {{ encore_entry_script_tags('showUser') }}
+    {{ encore_entry_script_tags('updateAccountForm') }}
+    {{ encore_entry_script_tags('updatePasswordForm') }}
+
+{% endblock %}
+
+{% endblock %}

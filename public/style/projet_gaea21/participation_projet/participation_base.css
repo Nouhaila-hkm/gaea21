@@ -1,0 +1,32 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header ._backgroundparticipation {
+  background-image: url("../../../../images/PagesProjets/participer/participer_header.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .participation {
+  background-color: #49A496 !important;
+}
+
+#main, #encartProjet, #ProjetCarousel, #vignettes {
+  display: none;
+}
+
+.title_participation {
+  text-align: center;
+  font-size: 2.6041666667vw;
+  font-weight: 600;
+}
+
+.text_participation {
+  text-align: center;
+  margin-left: 16.40625%;
+  margin-right: 16.40625%;
+}
+
+/*# sourceMappingURL=participation_base.css.map */

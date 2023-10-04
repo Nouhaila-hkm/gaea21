@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %} 
+
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('reseau') }} 
+    {{ encore_entry_link_tags('header') }}
+    {{ encore_entry_link_tags('offres-reseau-details') }}
+    
+    
+{% endblock %}
+
+{% block body %}
+  
+    <div id="reseau">
+ 
+{% include "/emploi_et_stage/header.html.twig" %}
+
+ <section class="reseau-1">
+
+            <div class="img-1">
+                <img class='res-img' src="{{ asset('Image/emploi_et_stage/icon-loupe.svg')}}"/>
+                <p id='p-img'>Réseau</p>
+            </div>
+
+            <div class="p-t"><b>Offres reseau gaea21</b></div>
+             <p id='p-img'>Réseau</p>
+
+        </section>
+       
+
+       <div class="return-link">
+       <a href="{{ path('app_offre') }}"> <img src="{{ asset('Image/emploi_et_stage/offres/arrow-left.svg')}}" alt=""> Retour aux résultats de recherche</a> 
+       </div>
+
+       <div id="offres-reseau-details"></div>
+
+       
+       </div>
+
+
+    <footer>
+        {% block footer %}
+            {% include "/gaea21/footer.html.twig" %}
+        {% endblock %}
+    </footer>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+    {{encore_entry_script_tags('offres-reseau-details')}}
+{% endblock %}

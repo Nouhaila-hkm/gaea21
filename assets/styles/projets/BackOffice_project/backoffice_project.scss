@@ -1,0 +1,102 @@
+@import "../../function";
+h2 {
+	font-size: pxToVw(20, 1920);
+	padding-top: pxToVw(25, 1920);
+	padding-bottom: pxToVw(25, 1920);
+}
+
+.trigger-drop-content:hover {
+	background-color: rgb(233, 233, 233);
+}
+
+.trigger-drop-content.selected {
+	img {
+		transition: transform 0.3s ease;
+		transform: rotate(90deg);
+	}
+}
+
+.trigger-drop-content {
+	cursor: pointer;
+	img {
+		width: pxToVw(27, 1920);
+		height: pxToVw(25, 1920);
+		transform: rotate(0deg);
+		transition: transform 0.3s ease;
+	}
+}
+
+tr.project-content {
+	background: #ffff;
+}
+.btn {
+	margin-top: 25px;
+	margin-right: 15px;
+	a {
+		color: rgb(255, 255, 255) !important;
+	}
+}
+
+.formulaires,
+.annonces {
+	padding-left: pxToVw(95px, 1920);
+	padding-bottom: pxToVw(15px, 1920);
+	.formulaires-items {
+		.table-secondary {
+			tr > td {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				border-bottom: solid #dddd 2px;
+			}
+		}
+		.btn {
+			margin-top: 25px;
+			margin-left: 15px;
+			.btn-primary {
+				background-color: cadetblue;
+			}
+			a {
+				color: rgb(255, 255, 255) !important;
+			}
+		}
+	}
+}
+
+.modal-form {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+
+	.modal-main {
+		position: fixed;
+		background-color: white;
+		width: 50%;
+		height: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border: 1px solid black;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.modal-content {
+		width: 80%;
+	}
+
+	.close-btn {
+		position: absolute;
+		top: 5px;
+		right: 10px;
+		font-size: 20px;
+		border: none;
+
+		cursor: pointer;
+	}
+}

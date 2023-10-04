@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="107" viewBox="0 0 190 107">
+  <defs>
+    <filter id="_3_5_" x="0" y="0" width="190" height="107" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_3_5_2" x="0" y="0" width="190" height="107" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.373" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_3_5_)">
+      <text id="_3_5_3" data-name="3,5 %" transform="translate(92 80)" fill="#494736" font-size="80" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-88" y="0">3,5 %</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#_3_5_2)">
+      <text id="_3_5_4" data-name="3,5 %" transform="translate(92 80)" fill="#fff" font-size="80" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-weight="700"><tspan x="-88" y="0">3,5 %</tspan></text>
+    </g>
+  </g>
+</svg>

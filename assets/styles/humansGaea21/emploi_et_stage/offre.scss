@@ -1,0 +1,558 @@
+@import '../../function';
+
+
+
+#offre {
+
+
+    .return-link {
+        margin-top: pxToVw(50px, 1920px);
+        a {
+            font-size: pxToVw(30px, 1920px);
+        }
+        img{
+            height: pxToVw(20px, 1920px);
+            margin-right: pxToVw(20px, 1920px);
+        }
+    }
+ 
+    .offre-1 {
+        display: flex;
+       
+    }
+
+    .img-1 {
+        margin-left:pxToVw(183px, 1920px);
+        margin-top:pxToVw(80px, 1920px);
+        width: pxToVw(113px, 1920px);
+        height: pxToVw(112px, 1920px);
+        background-color :#989756;
+
+        border-radius: pxToVw(10px, 1920px);
+
+    }
+
+    .p-t {
+        margin-top : pxToVw(100px, 1920px);
+        margin-left : pxToVw(50px, 1920px);
+        margin-bottom : pxToVw(100px, 1920px);
+        font-size: pxToVw(50px, 1920px);
+    }
+
+    .offre-img {
+        margin-left : pxToVw(25px, 1920px);
+        margin-top : pxToVw(15px, 1920px);
+        width: pxToVw(63px, 1920px);
+        height: pxToVw(63px, 1920px);
+        
+    }
+
+    #p-img {
+        margin-left : pxToVw(18px, 1920px);
+        
+        color : white;
+        
+        font-size : pxToVw(20px, 1920px);
+
+    
+    }
+
+
+    .links {
+        display: flex;
+    
+        margin-left: pxToVw(183px, 1920px);
+        margin-right: pxToVw(183px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+        margin-bottom: pxToVw(76px, 1920px);
+         
+        .left {
+            display: flex;
+            
+                .tabgaea21, .tabReseau {
+                    margin-right: pxToVw(40px, 1920px);
+                    font-weight: bold;
+                    color: rgba($color: #000000, $alpha: 0.45);
+                    font-size: pxToVw(30px, 1920px);
+                    cursor: pointer;
+                    border: none;
+                    
+                    &:hover {
+                        color: #98984B;
+                        border-bottom: pxToVw(4px, 1920px) solid #98984B;     
+                    }
+
+                   
+                }
+                .tabReseau {
+                    &:hover {
+                        color:#49A496;
+                        border-bottom: pxToVw(4px, 1920px) solid #49A496;
+                    }
+
+                }
+                .active-gaea21 {
+                    color: #98984B;
+                    border-bottom: pxToVw(4px, 1920px) solid #98984B;
+                }
+                .active-reseau {
+                    color: #49A496;
+                    border-bottom: pxToVw(4px, 1920px) solid #49A496;
+                }
+        
+            }
+       
+        .right{
+            margin-left: pxToVw(500px, 1920px);
+          
+            
+            a{
+                color: #98984B;
+
+            }
+        
+        }
+
+
+        .link-reseau {
+            a {
+               color:#49A496; 
+            }
+            
+        }
+    }
+
+    .inputs {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: pxToVw(140px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+    
+    }
+
+    input {
+        border: none;
+        border-radius: pxToVw(24px, 1920px);
+        width: pxToVw(378px, 1920px);
+        height: pxToVw(88px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        margin-right: pxToVw(14px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+
+        &::placeholder {
+            font-size: pxToVw(30px, 1920px);
+            padding-left: pxToVw(20px, 1920px);
+            color: rgba($color: #000000, $alpha: 0.45);
+        }
+    }
+
+    .search-button {
+        background-color: #98984B;
+        border-radius: pxToVw(24px, 1920px);
+        border: none;
+        width: pxToVw(311px, 1920px);
+        height: pxToVw(88px, 1920px);
+        color: white;
+        font-size: pxToVw(30px, 1920px);
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        margin-top: pxToVw(37px, 1920px);
+        margin-bottom: pxToVw(37px, 1920px);
+        // margin-left: pxToVw(48px, 1920px); with alert button
+        margin-left: pxToVw(1420px, 1920px);
+
+        img {
+            width: pxToVw(44px, 1920px);
+        }
+
+
+      
+    }
+    .reset-button {
+        background-color: #98984B;
+        border-radius: 1.25vw;
+        border: none;
+        width: pxToVw(311px, 1920px);
+        height: pxToVw(100px, 1920px); 
+        color: white;
+        font-size: 1.5625vw;
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 1.927vw;
+        margin-bottom: 1.97vw;
+        margin-left: 73.95vw;
+        padding: 15px;
+        padding-bottom: 20px;
+        min-height: 30px;
+        min-width: 120px;
+        transition: all 0.5s;
+        
+    }
+
+    .reseau {
+        background-color: #49A496;
+    }
+
+    .alert-button {
+        box-shadow: 0px 3px 6px #00000029;
+        border: none;
+        background-color: white;
+        font-size: pxToVw(30px, 1920px);
+        color:#000000;
+        width: pxToVw(482px, 1920px);
+        border-radius: pxToVw(24px, 1920px);
+        height: pxToVw(88px, 1920px);
+        margin-left: pxToVw(896px, 1920px);
+        font-weight: 700;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-top: pxToVw(37px, 1920px);
+        margin-bottom: pxToVw(37px, 1920px);
+
+        img {
+            margin-right: pxToVw(20px, 1920px);
+            width: pxToVw(50px, 1920px);
+           
+        }
+
+    } 
+
+    select {
+        display: flex;
+        border: none;
+        border-radius: pxToVw(24px, 1920px);
+        width: pxToVw(378px, 1920px);
+        height: pxToVw(88px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        margin-right: pxToVw(14px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+        color: rgba($color: #000000, $alpha: 0.45);
+        padding-left: pxToVw(20px, 1920px);
+        outline: none;
+        background: white !important;
+
+        option {
+            background: white !important;
+        }
+
+    }
+
+    .filter {
+        margin-left: pxToVw(1360px, 1920px);
+        
+    }
+
+
+
+    .offres-container {
+
+        h3 {
+            font-size: pxToVw(40px, 1920px);
+            font-weight: bold;
+            margin-bottom: pxToVw(49px, 1920px);
+            margin-top: pxToVw(64px, 1920px);
+        }
+       
+     
+        margin-right: pxToVw(183px, 1920px);
+        margin-left:pxToVw(183px, 1920px);
+
+        .cards {
+            display: flex;
+           flex-wrap: wrap;
+           gap: pxToVw(100px, 1920px);
+           justify-content: space-evenly;
+
+
+
+            .card {
+             
+                height: pxToVw(314px, 1920px);
+                width: pxToVw(682px, 1920px);
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: pxToVw(24px, 1920px);
+                // margin-bottom: pxToVw(79px, 1920px);
+
+                .row-1 {
+                    display: flex;
+                    margin-bottom: pxToVw(60px, 1920px);
+
+                    .job-title {
+                    font-size: pxToVw(25px, 1920px);
+                    font-weight: 700;
+                    width: pxToVw(590px, 1920px);
+                    margin-left: pxToVw(40px, 1920px);
+                    padding-top: pxToVw(40px, 1920px);
+
+                }
+                    .icon {
+                        margin-right: pxToVw(40px, 1920px);
+                        padding-top: pxToVw(40px, 1920px);
+                        margin-left: pxToVw(60px, 1920px);
+                        width: pxToVw(112px, 1920px);
+                        height: pxToVw(106px, 1920px);
+                    }
+                }
+
+                .row-2 {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .logo {
+                        margin-left: pxToVw(40px, 1920px);
+                        margin-right: pxToVw(60px, 1920px);
+                        width: pxToVw(168px, 1920px);
+                        height: pxToVw(51px, 1920px);
+                    }
+                    .modality {
+                        margin-right: pxToVw(30px, 1920px);
+                        font-size: pxToVw(30px, 1920px);
+                        text-align: end;           
+                    }
+                }
+
+                .published-at {
+                    margin-left: pxToVw(40px, 1920px);
+                    margin-top: pxToVw(32px, 1920px);
+                    font-size: pxToVw(20px, 1920px);
+                }
+                
+                
+            }
+        }
+    }
+
+
+
+    //offres-details styling
+
+    .return-link {
+        font-size: pxToVw(30px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+    }
+
+    .card-details {
+        height: pxToVw(314px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: pxToVw(24px, 1920px);
+        margin-right: pxToVw(183px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+        margin-top: pxToVw(40px, 1920px);
+
+
+        .row-1 {
+
+            display: flex;
+            margin-bottom: pxToVw(30px, 1920px);
+
+             .job-title {
+            font-size: pxToVw(25px, 1920px);
+            font-weight: bold;
+            padding-top: pxToVw(40px, 1920px);
+            margin-left: pxToVw(40px, 1920px);
+            width: pxToVw(850px, 1920px);
+        }
+
+            .candidate-button {
+                background-color: #98984B;
+                border-radius: pxToVw(24px, 1920px);
+                border: none;
+                width: pxToVw(311px, 1920px);
+                height: pxToVw(88px, 1920px);
+                color: white;
+                font-size: pxToVw(30px, 1920px);
+                vertical-align: middle;
+                text-align: center;
+                cursor: pointer;
+                margin-top: pxToVw(37px, 1920px);
+                margin-left: pxToVw(444px, 1920px);
+        
+            }
+        }
+
+        img {
+            width: pxToVw(306px, 1920px);
+            height: pxToVw(93px, 1920px);
+            margin-left: pxToVw(40px, 1920px);
+        }
+
+        .row-3 {
+            display: flex;
+            justify-content: space-between;
+            margin-right: pxToVw(40px, 1920px);
+            margin-left: pxToVw(40px, 1920px);
+            margin-top: pxToVw(40px, 1920px);
+            padding-bottom: pxToVw(40px, 1920px);
+
+            .published_at {
+                font-size: pxToVw(20px, 1920px);
+            }
+
+            .modality {
+                font-size: pxToVw(30px, 1920px);
+                margin-left: pxToVw(1100px, 1920px);
+                // margin-bottom: pxToVw(60px, 1920px);
+            }
+        }
+       
+
+    }
+
+
+
+
+    .accordion-title {
+        display: flex;
+        height: pxToVw(106px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: pxToVw(24px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+        margin-right: pxToVw(183px, 1920px);
+        margin-top: pxToVw(24px, 1920px);
+        justify-content: center;
+        align-items: center;
+       
+
+         &:hover {
+            background-color: #98984B;
+            color: white;
+
+            .chevron-img {
+                filter: brightness(0) invert(1);
+            }
+         }
+
+    
+        .title {
+            justify-content: center;
+            font-size: pxToVw(30px, 1920px);
+            font-weight: bold;
+            margin-left: pxToVw(100px, 1920px);
+        }
+        .chevron {
+           margin-left: auto;
+           margin-right: pxToVw(40px, 1920px);
+       
+        }
+        .chevron.rotate {
+            transform:rotate(180deg);
+        }
+
+    }
+
+    .accordion-title.active {
+        background-color: #98984B;
+        color: white;
+
+        .chevron-img {
+            filter: brightness(0) invert(1);
+        }
+     }
+
+    .accordion-content {
+        box-shadow: 0px 3px 6px #00000029;
+        border-bottom-left-radius: pxToVw(24px, 1920px);
+        border-bottom-right-radius: pxToVw(24px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+        margin-right: pxToVw(183px, 1920px);
+        padding-bottom: pxToVw(50px, 1920px);
+
+        .text-container {
+            font-size: pxToVw(30px, 1920px);
+            text-align: justify;
+
+        //   height: pxToVw(100px, 1920px);
+            .text {
+            margin-left: pxToVw(50px, 1920px);
+            margin-right: pxToVw(50px, 1920px);
+            padding-top: pxToVw(42px, 1920px);
+        
+            
+        } 
+
+        .bulletpoint {
+            margin-left: pxToVw(87px, 1920px);
+            margin-right: pxToVw(108px, 1920px);
+            // margin-bottom: pxToVw(30px, 1920px);
+
+            img {
+                margin-right: pxToVw(37px, 1920px);
+                height: pxToVw(16px, 1920px);
+            }
+        }
+        }
+       
+        
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+
+
+       .candidate-button-bottom {
+        
+        background-color: #98984B;
+        border-radius: pxToVw(24px, 1920px);
+        border: none;
+        width: pxToVw(311px, 1920px);
+        height: pxToVw(88px, 1920px);
+        color: white;
+        font-size: pxToVw(30px, 1920px);
+    
+        cursor: pointer;
+        margin-top: pxToVw(84px, 1920px);
+        margin-bottom: pxToVw(72px, 1920px);
+       
+    } 
+    }
+
+    //pagination styling
+
+
+    nav {
+        box-shadow: none !important;
+    }
+    .pagination-container{
+        background-color: white;
+        text-align: center;
+        display: flex;
+        margin-top: pxToVw(100px, 1920px);
+
+        ul {
+            margin: auto;  
+            .page-link {
+              padding: pxToVw(10px, 1920px) pxToVw(15px, 1920px) !important;
+              margin-right: pxToVw(20px, 1920px);
+              cursor: pointer;
+            }
+            
+             .page-link.active {
+                 background-color:#000000 !important;
+                 border-radius: 50%;
+                 color: white !important;
+                 width: pxToVw(16px, 1920px) !important;
+                 
+                
+             }
+             a {
+                display: inline;
+            }
+     }
+    }
+
+    .no-offers {
+        height: pxToVw(400px, 1920px);
+    
+        .title {
+            margin-top: pxToVw(150px, 1920px);
+            text-align: center;
+            font-size: pxToVw(40px, 1920px);
+            color: rgba($color: #000000, $alpha: 0.45);
+        }
+    }
+
+}

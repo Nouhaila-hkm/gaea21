@@ -1,0 +1,1126 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#humansGaea21 .gaeaLife {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#humansGaea21 .titleGaeaLife {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#humansGaea21 .carouselLife {
+  height: 39.0625vw !important;
+  width: 100%;
+  background-color: white !important;
+  opacity: 1;
+}
+#humansGaea21 .carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+#humansGaea21 .carousel-item {
+  width: 120%;
+}
+#humansGaea21 .imagesGaeaLife {
+  width: 137.96875% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  z-index: 0;
+  background-color: white !important;
+}
+#humansGaea21 .lifeImage {
+  height: 335px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+#humansGaea21 .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#humansGaea21 .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  margin-top: 43px;
+}
+#humansGaea21 .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#humansGaea21 .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #989655;
+  border-radius: 50% 50% 50% 50%;
+}
+#humansGaea21 .modalLife {
+  position: relative !important;
+  height: 28.6458333333vw;
+  z-index: 2;
+  opacity: 1;
+  background-color: white;
+}
+#humansGaea21 .closeModal {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start !important;
+  padding-right: 1.0416666667%;
+  color: white;
+}
+#humansGaea21 .imgModal {
+  height: 92%;
+}
+#humansGaea21 .titreModal {
+  position: absolute;
+  top: 26.5625vw;
+  margin: 0 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3020833333vw;
+}
+#humansGaea21 .grandModal {
+  background-color: rgba(77, 77, 77, 0.7);
+  width: 100%;
+  height: 94%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#humansGaea21 .gaeaVideo {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#humansGaea21 .titleGaeaVideo {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#humansGaea21 #carouselGaeaVideo {
+  height: 46.875vw !important;
+}
+#humansGaea21 .itemVideo {
+  width: 80% !important;
+}
+#humansGaea21 .videosGaea {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+#humansGaea21 .video {
+  background-color: lightgray;
+  border-radius: 10px;
+  height: 22.4479166667vw;
+  width: 26.0416666667% !important;
+  margin-left: 0.78125%;
+  margin-right: 0.78125%;
+  margin-bottom: 1.0416666667vw;
+  padding-top: 16.71875vw;
+  padding-left: 1.6145833333%;
+}
+#humansGaea21 .videoTitle, #humansGaea21 .videoSubTitle {
+  background-color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 0.9375vw;
+  margin: 0;
+  padding: 7px;
+  padding-right: 0.78125%;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#humansGaea21 .videoTitle {
+  border-radius: 10px 10px 0 0;
+}
+#humansGaea21 .videoSubTitle {
+  border-radius: 0 10px 10px 10px;
+}
+#humansGaea21 .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#humansGaea21 .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  margin-top: 33px;
+}
+#humansGaea21 .scrollCercle {
+  height: 16px;
+  width: 71px;
+  margin-top: 38px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+}
+#humansGaea21 .gaeaContact {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#humansGaea21 .titleGaeaContacte {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#humansGaea21 .formContact {
+  width: 56.6666666667%;
+  padding-top: 3.75vw;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#humansGaea21 .formChamps {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.5%;
+  margin-bottom: 2.4479166667vw;
+  padding-right: 21.1458333333%;
+}
+#humansGaea21 .fromLabel, #humansGaea21 .messageLabel {
+  height: 1.875vw;
+  margin-right: 13px;
+  display: inline-block;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 1.5625vw;
+  color: black;
+}
+#humansGaea21 .champsCont {
+  height: 2.1875vw !important;
+  width: auto !important;
+  border-radius: 10px !important;
+  background-color: white !important;
+  border: 0px !important;
+  flex: 1 0 auto !important;
+}
+#humansGaea21 .champsMessage {
+  display: flex;
+  flex-direction: column;
+}
+#humansGaea21 .messageLabel {
+  margin-left: 2.5%;
+  margin-bottom: 1.09375vw;
+}
+#humansGaea21 .contMessage {
+  margin-left: 2.5% !important;
+  margin-right: 2.5% !important;
+  margin-bottom: 3.6458333333vw !important;
+  width: auto !important;
+  height: 19.0104166667vw;
+  border: 0;
+  border-radius: 15px;
+  background-color: white;
+}
+#humansGaea21 .send {
+  padding-left: 1.5625%;
+  padding-right: 1.5625%;
+  margin-bottom: 2.8645833333vw;
+  height: 1.875vw;
+  width: auto;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#humansGaea21 .send:hover {
+  background-color: #98984C;
+  color: white;
+}
+#humansGaea21 .butText {
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  margin-left: 1.40625%;
+  margin-right: 1.40625%;
+  margin-top: 0px;
+  margin-top: pxToVm(2px, 1920px);
+  margin-bottom: 0.1041666667vw;
+}
+#humansGaea21 footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+#humansGaea21 .titleGaeaFooter {
+  margin-top: 0;
+  margin-bottom: 2.2395833333vw;
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#humansGaea21 .linkedImage {
+  height: 4.1666666667vw !important;
+  margin-bottom: 4.4791666667vw;
+}
+#humansGaea21 .lifeImage {
+  height: 17.4479166667vw;
+  margin-left: 0.5208333333%;
+  margin-right: 0.5208333333%;
+  margin-bottom: 1.0416666667vw;
+}
+#humansGaea21 .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+#humansGaea21 .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+#humansGaea21 .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+#humansGaea21 .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+#humansGaea21 .section2, #humansGaea21 .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+#humansGaea21 .elemInfo {
+  width: 39.53125%;
+  height: 46.875vw;
+  margin-top: 5.4166666667vw;
+  margin-left: 3.4895833333%;
+  margin-right: 3.4895833333%;
+  padding-right: 7.7604166667%;
+  padding-left: 3.3333333333%;
+  padding-top: 1.7708333333vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 13px;
+  opacity: 1;
+  background-color: #F5F5F5;
+}
+#humansGaea21 .elemInfo:hover {
+  background-color: #98984C;
+}
+#humansGaea21 .elemInfo:hover .lastMot.lastLigne, #humansGaea21 .elemInfo:hover .infoTitre.lastLigne {
+  border-bottom: solid white 4px;
+}
+#humansGaea21 .elemInfo:hover .infoTitre, #humansGaea21 .elemInfo:hover .lastMot {
+  color: white;
+}
+#humansGaea21 .infoTitre, #humansGaea21 .lastMot {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  padding-right: 10px;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+}
+#humansGaea21 .lastMot {
+  padding: 0 0 0 0;
+}
+#humansGaea21 .divTitre {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+#humansGaea21 .lastMot.lastLigne, #humansGaea21 .infoTitre.lastLigne {
+  border-bottom: solid #989655 4px;
+  margin-bottom: 2.0833333333vw;
+}
+#humansGaea21 .infoContenue {
+  /* Layout Properties */
+  left: 10.5208333333%;
+  height: 15.1041666667vw;
+  overflow: hidden;
+  margin-bottom: 0.5729166667vw;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  /* UI Properties */
+  opacity: 1;
+}
+#humansGaea21 .infoImage {
+  margin-bottom: 2.1875vw;
+  height: 20.4166666667vw;
+}
+#humansGaea21 .temoignage {
+  width: 18.3854166667%;
+  height: 100% !important;
+  padding-top: 5.7291666667vw;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#humansGaea21 .divTemoignage {
+  background-color: white;
+}
+#humansGaea21 .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+#humansGaea21 .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#humansGaea21 .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#humansGaea21 .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#humansGaea21 .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+#humansGaea21 .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+#humansGaea21 html, #humansGaea21 body {
+  height: 100%;
+  width: 100%;
+}
+#humansGaea21 .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+#humansGaea21 .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+#humansGaea21 .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+
+#quiSommeNous .gaeaLife {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quiSommeNous .titleGaeaLife {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#quiSommeNous .carouselLife {
+  height: 39.0625vw !important;
+  width: 100%;
+  background-color: white !important;
+  opacity: 1;
+}
+#quiSommeNous .carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+#quiSommeNous .carousel-item {
+  width: 120%;
+}
+#quiSommeNous .imagesGaeaLife {
+  width: 137.96875% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  z-index: 0;
+  background-color: white !important;
+}
+#quiSommeNous .lifeImage {
+  height: 335px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+#quiSommeNous .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quiSommeNous .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  margin-top: 43px;
+}
+#quiSommeNous .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quiSommeNous .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #989655;
+  border-radius: 50% 50% 50% 50%;
+}
+#quiSommeNous .modalLife {
+  position: relative !important;
+  height: 28.6458333333vw;
+  z-index: 2;
+  opacity: 1;
+  background-color: white;
+}
+#quiSommeNous .closeModal {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start !important;
+  padding-right: 1.0416666667%;
+  color: white;
+}
+#quiSommeNous .imgModal {
+  height: 92%;
+}
+#quiSommeNous .titreModal {
+  position: absolute;
+  top: 26.5625vw;
+  margin: 0 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3020833333vw;
+}
+#quiSommeNous .grandModal {
+  background-color: rgba(77, 77, 77, 0.7);
+  width: 100%;
+  height: 94%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#quiSommeNous .gaeaVideo {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#quiSommeNous .titleGaeaVideo {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#quiSommeNous #carouselGaeaVideo {
+  height: 46.875vw !important;
+}
+#quiSommeNous .itemVideo {
+  width: 80% !important;
+}
+#quiSommeNous .videosGaea {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+#quiSommeNous .video {
+  background-color: lightgray;
+  border-radius: 10px;
+  height: 22.4479166667vw;
+  width: 26.0416666667% !important;
+  margin-left: 0.78125%;
+  margin-right: 0.78125%;
+  margin-bottom: 1.0416666667vw;
+  padding-top: 16.71875vw;
+  padding-left: 1.6145833333%;
+}
+#quiSommeNous .videoTitle, #quiSommeNous .videoSubTitle {
+  background-color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 0.9375vw;
+  margin: 0;
+  padding: 7px;
+  padding-right: 0.78125%;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#quiSommeNous .videoTitle {
+  border-radius: 10px 10px 0 0;
+}
+#quiSommeNous .videoSubTitle {
+  border-radius: 0 10px 10px 10px;
+}
+#quiSommeNous .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quiSommeNous .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  margin-top: 33px;
+}
+#quiSommeNous .scrollCercle {
+  height: 16px;
+  width: 71px;
+  margin-top: 38px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+}
+#quiSommeNous .gaeaContact {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quiSommeNous .titleGaeaContacte {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#quiSommeNous .formContact {
+  width: 56.6666666667%;
+  padding-top: 3.75vw;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#quiSommeNous .formChamps {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.5%;
+  margin-bottom: 2.4479166667vw;
+  padding-right: 21.1458333333%;
+}
+#quiSommeNous .fromLabel, #quiSommeNous .messageLabel {
+  height: 1.875vw;
+  margin-right: 13px;
+  display: inline-block;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 1.5625vw;
+  color: black;
+}
+#quiSommeNous .champsCont {
+  height: 2.1875vw !important;
+  width: auto !important;
+  border-radius: 10px !important;
+  background-color: white !important;
+  border: 0px !important;
+  flex: 1 0 auto !important;
+}
+#quiSommeNous .champsMessage {
+  display: flex;
+  flex-direction: column;
+}
+#quiSommeNous .messageLabel {
+  margin-left: 2.5%;
+  margin-bottom: 1.09375vw;
+}
+#quiSommeNous .contMessage {
+  margin-left: 2.5% !important;
+  margin-right: 2.5% !important;
+  margin-bottom: 3.6458333333vw !important;
+  width: auto !important;
+  height: 19.0104166667vw;
+  border: 0;
+  border-radius: 15px;
+  background-color: white;
+}
+#quiSommeNous .send {
+  padding-left: 1.5625%;
+  padding-right: 1.5625%;
+  margin-bottom: 2.8645833333vw;
+  height: 1.875vw;
+  width: auto;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#quiSommeNous .send:hover {
+  background-color: #98984C;
+  color: white;
+}
+#quiSommeNous .butText {
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  margin-left: 1.40625%;
+  margin-right: 1.40625%;
+  margin-top: 0px;
+  margin-top: pxToVm(2px, 1920px);
+  margin-bottom: 0.1041666667vw;
+}
+#quiSommeNous footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+#quiSommeNous .titleGaeaFooter {
+  margin-top: 0;
+  margin-bottom: 2.2395833333vw;
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#quiSommeNous .linkedImage {
+  height: 4.1666666667vw !important;
+  margin-bottom: 4.4791666667vw;
+}
+#quiSommeNous .lifeImage {
+  height: 17.4479166667vw;
+  margin-left: 0.5208333333%;
+  margin-right: 0.5208333333%;
+  margin-bottom: 1.0416666667vw;
+}
+#quiSommeNous .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+#quiSommeNous .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+#quiSommeNous .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+#quiSommeNous .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+#quiSommeNous .section2, #quiSommeNous .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+#quiSommeNous .elemInfo {
+  width: 39.53125%;
+  height: 46.875vw;
+  margin-top: 5.4166666667vw;
+  margin-left: 3.4895833333%;
+  margin-right: 3.4895833333%;
+  padding-right: 7.7604166667%;
+  padding-left: 3.3333333333%;
+  padding-top: 1.7708333333vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 13px;
+  opacity: 1;
+  background-color: #F5F5F5;
+}
+#quiSommeNous .elemInfo:hover {
+  background-color: #98984C;
+}
+#quiSommeNous .elemInfo:hover .lastMot.lastLigne, #quiSommeNous .elemInfo:hover .infoTitre.lastLigne {
+  border-bottom: solid white 4px;
+}
+#quiSommeNous .elemInfo:hover .infoTitre, #quiSommeNous .elemInfo:hover .lastMot {
+  color: white;
+}
+#quiSommeNous .infoTitre, #quiSommeNous .lastMot {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  padding-right: 10px;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+}
+#quiSommeNous .lastMot {
+  padding: 0 0 0 0;
+}
+#quiSommeNous .divTitre {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+#quiSommeNous .lastMot.lastLigne, #quiSommeNous .infoTitre.lastLigne {
+  border-bottom: solid #989655 4px;
+  margin-bottom: 2.0833333333vw;
+}
+#quiSommeNous .infoContenue {
+  /* Layout Properties */
+  left: 10.5208333333%;
+  height: 15.1041666667vw;
+  overflow: hidden;
+  margin-bottom: 0.5729166667vw;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  /* UI Properties */
+  opacity: 1;
+}
+#quiSommeNous .infoImage {
+  margin-bottom: 2.1875vw;
+  height: 20.4166666667vw;
+}
+#quiSommeNous .temoignage {
+  width: 18.3854166667%;
+  height: 100% !important;
+  padding-top: 5.7291666667vw;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+#quiSommeNous .divTemoignage {
+  background-color: white;
+}
+#quiSommeNous .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+#quiSommeNous .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#quiSommeNous .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#quiSommeNous .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#quiSommeNous .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+#quiSommeNous .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+#quiSommeNous #videoTem {
+  width: 90%;
+  background-color: white;
+  margin-right: 7.2916666667%;
+  margin-left: 0.78125%;
+  display: flex;
+  flex-direction: column;
+}
+#quiSommeNous #carouselGaeaVideo {
+  height: 78.125vw !important;
+}
+#quiSommeNous .carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+#quiSommeNous .itemVideo {
+  width: 80% !important;
+  background-color: white !important;
+}
+#quiSommeNous .videosGaea {
+  width: 100% !important;
+  background-color: white !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+}
+#quiSommeNous .videosGaea2 {
+  height: 76.9230769231vw;
+  margin-left: 11.5789473684%;
+  margin-right: 11.5789473684%;
+  margin-top: 5.2083333333vw;
+  margin-bottom: 20vw;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+#quiSommeNous .videosGaea .ved {
+  width: 25% !important;
+}
+#quiSommeNous .video {
+  background-color: lightgray;
+  border-radius: 10px;
+  height: 16.6145833333vw;
+  width: 44.2708333333% !important;
+  margin-left: 2.2395833333%;
+  margin-right: 2.2395833333%;
+  margin-bottom: 2.9166666667vw;
+  padding-top: 10.4166666667vw;
+  padding-left: 1.6145833333%;
+}
+#quiSommeNous .videoTitle, #quiSommeNous .videoSubTitle {
+  background-color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 0.9375vw;
+  margin: 0;
+  padding: 7px;
+  padding-right: 0.78125%;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#quiSommeNous .videoTitle {
+  border-radius: 10px 10px 0 0;
+}
+#quiSommeNous .videoSubTitle {
+  border-radius: 0 10px 10px 10px;
+}
+#quiSommeNous .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quiSommeNous .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+}
+#quiSommeNous .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#quiSommeNous .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #0E7263;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 1.3020833333%;
+  margin-left: 1.3020833333%;
+}
+#quiSommeNous html, #quiSommeNous body {
+  height: 100%;
+  width: 100%;
+}
+#quiSommeNous .sectionHead2 {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/quisomme.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+#quiSommeNous .p2 {
+  font-family: "Arial Black";
+  font-size: 2.0833333333vw;
+  color: Black;
+  font-weight: bold;
+  margin: 25px;
+}
+#quiSommeNous .p3 {
+  margin: 25px;
+}
+#quiSommeNous .p4 {
+  margin-left: 12.25%;
+  margin-top: 100px;
+}
+#quiSommeNous .p5 {
+  margin-left: 12.25%;
+  margin-top: 55px;
+  color: #808000;
+  font-weight: bold;
+  font-size: 2.6041666667vw;
+}
+#quiSommeNous .p6 {
+  margin-left: 12.25%;
+  margin-top: 20px;
+}
+#quiSommeNous .g1 {
+  border-radius: 0.5em;
+}
+#quiSommeNous .card {
+  width: 25em;
+  margin: 6em;
+  border: 0px;
+  opacity: 0.6;
+  background: Gainsboro;
+  height: 250px;
+}/*# sourceMappingURL=home.css.map */

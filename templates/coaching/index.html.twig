@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching
+{% endblock %}
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('topBar') }}
+	{{ encore_entry_link_tags('largeCardApp') }}
+	{{ encore_entry_link_tags('prevArrowApp') }}
+	{{ encore_entry_link_tags('topArrowApp') }}
+
+
+	{# <link href="{{'assets/styles/système_design_components/VignetteLarge/largeCard.scss'}}" rel="stylesheet"/> #}
+	<link href="{{ asset('style/coaching/coachingCarrieres/coachingCarrieres.css') }}" rel="stylesheet"/>
+{% endblock %}
+{% block body %}
+	{% include "/components/_topbar.html.twig" %}
+
+	{# HEADER #}
+
+	<section class="headerCarriere">
+		<div>
+			<h1>Coaching carrières / post-formation / réinsertion professionnelle</h1>
+			<p></p>
+		</div>
+	</section>
+
+	{# LISTE AVEC DES LIENS #}
+	<div class="listeLiens">
+		<ul>
+			<li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+			<li><a href="#">Gestion de carrières</a></li>
+			<li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+			<li><a href="#">Partenaires Formation / Emploi</a></li>
+		</ul>
+	</div>
+
+	{# MAIN #}
+	<main>
+
+
+		<div id="prevArrow" data-link="/"></div>
+
+		{# DE QUOI S'AGIT-IL #}
+		<section id="sagitil">
+
+			<h2>De quoi s'agit-il ?</h2>
+
+			<div>
+				<p>Le monde professionnel bouge vite, se transforme à la vitesse de l'éclair. Dans les années à venir, nous serons de plus en plus nombreux à "avoir plusieurs carrières". Cette nouvelle réalité du monde du travail est un chemin parfois semé d'embûches, mais il offre aussi plusieurs opportunités. Dans ce contexte complexe et changeant, gaea21 propose une gamme complète d'outils pour accompagner ceux qui souhaitent être les acteurs de leur propre parcours professionnel.</p>
+			</div>
+
+			<div>
+				<p>Pour gaea21, l'accompagnement tout au long de la carrière n'est pas un luxe, mais bien une nécessité. Formations certifiantes, formations complémentaires, stages, partenariats ou emploi au sein de l'association ? Pour les étudiants en fin de cursus, des travailleurs désireux de se réorienter ou des demandeurs d'emploi ? Il y a sûrement une combinaison gagnante pour vous chez gaea21 !
+				</p>
+			</div>
+
+		</section>
+
+		<section id="coachingVideos"></section>
+
+
+		{# CARDS #}
+		<section id="cards">
+
+			<div class="largeCard" data-title="Le modèle d'accompagnement de gaea21" data-description="Vous trouverez dans cette section un descriptif du modèle d'accompagnement qui s'articule autour du développement simultané de l'humain (développement personnel dans un cadre professionnel) et de la compétence (gestion de projets)." data-imgsrc="{{ asset('images/coaching/accompagnement/accompagnement2.png') }}" data-disabled="false" data-link="/coaching/projet"></div>
+
+			<div class="largeCard" data-title="Emploi / stage" data-description="Vous trouverez dans cette section les offres d'emploi et stages proposés par gaea21 ainsi que par les membres du réseau externe d'entreprises gaea21. En particulier, vous y trouverez les profils des personnes passées par gaea21 pour recrutement." data-imgsrc="{{ asset('images/coaching/emploi.png') }}" data-disabled="false" data-link="/emploi-et-stage"></div>
+
+			<div class="largeCard" data-title="Gestion de carrières" data-description="gaea21 propose un service d'accompagnement pour toutes les étapes de carrière et pour les personnes en transition professionnelle dans les domaines de l'économie verte, de l'économie circulaire et du développement durable." data-imgsrc="{{ asset('images/coaching/gestion_carriere.png') }}" data-disabled="true" data-link="#"></div>
+
+
+		</section>
+
+		<section id="cards">
+
+			<div class="largeCard" data-title="Partenaires Formation / Emploi" data-description="Vous trouverez dans cette section la liste des partenaires académiques et institutionnels avec lesquels gaea21 collabore." data-imgsrc="{{ asset('images/coaching/partenaire.png') }}" data-disabled="true" data-link="#"></div>
+
+			<div class="largeCard" data-title="Le modèle de formation gaea21" data-description="gaea21 propose des solutions introductives et appliquées autour du développement durable, de l'économie de la transition et de la gestion de la compétence." data-imgsrc="{{ asset('images/coaching/modele_formation.png') }}" data-disabled="true" data-link="#"></div>
+		</section>
+
+		<div id="topArrow" data-link=""></div>
+	</main>
+
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ encore_entry_script_tags('largeCardApp') }}
+	{{ encore_entry_script_tags('prevArrowApp') }}
+	{{ encore_entry_script_tags('topArrowApp') }}
+	{{ encore_entry_script_tags('CoachingVideos') }}
+{% endblock %}

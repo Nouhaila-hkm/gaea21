@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    <link href="{{ asset('style/coaching/av_pt_ap/av_pt_ap.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+    <a id="prevArrow" data-link="/coaching/projet"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section class="projet" id="projetAvant">
+        
+            <h2>Le Cycle de vie du gaeien / projet <span>avant</span> !</h2>
+            <div><p class="projetDesc">Descriptif des étapes d’identification des compétences et de mise en place de tout nouvel.lle arrivant.e dans le staff gaea21.</p></div>
+
+            <div class="stepsContainer">
+                
+                <div class="progressContainer">
+                
+                    <div class="progression" id="progression"></div>
+
+                    <div class="circle active"><p class="avant">Pré profil</p></div>
+
+                    <div class="circle"><p class="avant">Suivi académique</p></div>
+
+                    {# <div class="circle"><p>Test</p></div> #}
+
+
+                </div>
+
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+            </div>
+                    
+    </section>
+
+</main>
+
+<div id="carrousel">
+
+    <button id="g" disabled><a>&#8249;</a></button>
+
+    <div id="container">
+        <div class="slide">
+            <div class="slideImg"><img class="avant1"src="{{ asset('images/coaching/projet/pre_profil.svg') }}"></div>
+            <div class="slideContent">
+
+                <h3>Pré profil</h3>
+                <p>Dés l'arrivée d'une nouvelle personne chez gaea21, on établit son <b>pré-profil</b> c'est à dire son profil personnnalité, son profil compétences et son profil par rapport a son métier à partir d'un questionnaire. <br>
+                Ensuite une fois la personne engagée dans gaea21, on organise une séance d'accueil durant laquelle on détermine son <b> plan de formation</b> et son <b>plan de carrière</b>. Les projets sont attribués en fonction du besoin de développement, de consolidation, et de mise en expérience pratique des compétences et outils spécifiques (plan de formation) permettant de créer le profil le mieux adapté au plan de carrière pour chaque personne.</p>
+
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slideImg center">
+                <img class="avant2" src="{{ asset('images/coaching/projet/suivi_academique_top.png') }}">
+                <img class="avant3" src="{{ asset('images/coaching/projet/suivi_academique_bottom.png') }}">
+
+            </div>
+            <div class="slideContent">
+
+                <h3>Suivi académique</h3>
+                <p>A ce moment là , il y a aussi la mise en place d'un <b>suivi académique</b> quand la personne vient dans le cadre d'une université.<br>
+                On trouve deux acteurs qui se chargent du suivi académique :</p>
+                <ul>
+                    <li><p>un <b>coach</b> qui accompagne la personne sur la partie administrative (relation avec le professeur référent)</p></li>
+                    <li><p>un <b>membre de l'équipe Publications</b> responsable de son encadrement au niveau académique (rédaction mémoire, soutenance et éventuellement publication scientifique dans le cadre de gaea21). Un contact direct avec le responsable de la personne à l'université est établi dès le début et tout au long du stage.</p></li>
+                </ul>
+
+            </div>
+        </div>
+
+        {# <div class="slide">
+            <div class="slideImg"><img src="{{ asset('images/coaching/projet/pre_profil.svg') }}"></div>
+            <div class="slideContent">
+
+                <h3>Test</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod necessitatibus, magni officiis rerum amet officia. (TEXTE PENDANT)</p>
+
+            </div>
+        </div> #}
+        
+    </div>
+    
+    
+    <button id="d"><a id="lien_suivant">&#8250;</a></button>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('carrouselCoachingAvant') }}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+{% endblock %}

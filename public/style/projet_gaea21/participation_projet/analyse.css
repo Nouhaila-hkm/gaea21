@@ -1,0 +1,176 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main {
+  display: none;
+}
+
+#organizationFin {
+  display: none;
+}
+
+.img_toto {
+  width: 50vw;
+  margin-top: 3%;
+  margin-left: 21.71875vw;
+  margin-right: 23.5416666667vw;
+}
+
+.img_titre_analyse {
+  width: 50vw;
+  margin-top: 5%;
+  margin-left: 20.8333333333vw;
+  margin-right: 21.3541666667vw;
+}
+
+.img_cycle_vie {
+  width: 50vw;
+  margin-top: 3%;
+  margin-left: 25.1822916667vw;
+  margin-right: 28.046875vw;
+}
+
+.puces {
+  list-style-type: disc !important;
+  margin-left: 8.8541666667vw;
+  margin-right: 16.40625vw;
+}
+
+.img_lineaire {
+  width: 13vw;
+  margin-top: -15vw;
+  margin-bottom: 2vw;
+  margin-left: 78.125vw;
+  margin-right: 15.625vw;
+}
+
+.img_valeur {
+  width: 35vw;
+  margin-top: 2vw;
+  margin-left: 18.75vw;
+  margin-right: 46.875vw;
+  margin-bottom: 15vw;
+}
+
+.img_lean_branch {
+  width: 25vw;
+  margin-top: -55vw;
+  margin-left: 57.2916666667vw;
+  margin-right: 12.5vw;
+}
+
+.img_sir {
+  width: 35vw;
+  margin-top: 2vw;
+  margin-left: 16.40625vw;
+  margin-right: 16.40625vw;
+  margin-bottom: 2vw;
+}
+
+.lean_title {
+  margin-bottom: 3vw !important;
+}
+
+.lean_chevrons {
+  margin-left: 8.8541666667vw;
+  margin-right: 16.40625vw;
+}
+
+.img_behavior_sir {
+  width: 67.1875vw;
+  margin-top: 2vw;
+  margin-left: 16.40625%;
+  margin-right: 16.40625vw;
+  margin-bottom: 2vw;
+}
+
+.img_behavior {
+  width: 20vw;
+}
+
+.behavior_margin {
+  margin-left: 16.40625%;
+  margin-right: 16.40625%;
+  margin-top: 2vw;
+}
+
+.behavior_margineuh {
+  width: 34.4270833333vw;
+  margin-left: 16.40625vw;
+  margin-right: 6.0416666667vw;
+  height: 30vw;
+}
+
+.margin_behavior {
+  margin-right: 10.4166666667% !important;
+}
+
+.img_behavior_sir {
+  width: 67.1875vw;
+  margin-top: 2vw;
+  margin-left: 16.40625%;
+  margin-right: 16.40625vw;
+  margin-bottom: 2vw;
+}
+
+.img_behavior {
+  width: 20vw;
+}
+
+.accel_margin {
+  margin-left: 16.4%;
+  margin-top: 2vw;
+}
+
+.text_with_img_accel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2% !important;
+  margin-right: 2vw !important;
+  margin-left: 3% !important;
+}
+
+.coevolution_img {
+  margin-left: 16.5vw !important;
+}
+
+#hidden {
+  display: none;
+}
+
+.h2_modele {
+  margin-left: 4%;
+}
+
+.text_modal {
+  margin-bottom: 3rem;
+}
+
+.modele_img {
+  width: 20vw;
+  height: 20vw;
+  margin-top: 2vw;
+  float: left;
+}
+
+.modele_text {
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.lean {
+  width: 5vw !important;
+  margin-left: 0.5vw !important;
+}
+
+.pdca {
+  display: flex;
+}
+
+/*# sourceMappingURL=analyse.css.map */

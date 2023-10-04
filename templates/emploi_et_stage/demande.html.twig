@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %} 
+
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('demandes') }} 
+    {{ encore_entry_link_tags('header') }} 
+    
+{% endblock %}
+
+{% block body %}
+  
+    <div id="demande">
+ 
+{% include "/emploi_et_stage/header.html.twig" %}
+
+<section class="demande-1">
+
+	<div class="img-1">
+    <img class='offre-img' src="{{ asset('Image/emploi_et_stage/icon-demandes.svg')}}"/>
+    </div>
+
+	<div class="p-t">
+		<b>Demandes</b>
+	</div>
+</section>
+
+<p id="parag">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+		            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, 
+		            consectetur adipiscing elit.</p>
+
+
+
+    <div class="form-container">
+        <form action="">
+            <div class="input-container">
+                <input type="text" name="job-title" placeholder="Titre poste">
+                <input type="text" name="activity" placeholder="Domaine d'activité">
+            </div>
+
+            <div class="select-container">
+                <select name="experience" id="experience">
+                    <option value="">Expérience requise</option>
+                    <option value="0-1">0-1</option>
+                    <option value="2-4">2-4</option>
+                    <option value="4-6">4-6</option>
+                    <option value="6+">6+</option>
+                </select>
+                <select name="competences" id="competences">
+                    <option value="">Compétences</option>
+                    <option value="bac">Marketing</option>
+                    <option value="Bac+2">IT</option>
+                    <option value="Bac+3">Web design</option>
+                    <option value="Master">Animation/Animation 3D</option>
+                </select>
+            </div>
+
+
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Description du poste"></textarea>
+
+            <button>Publier</button>
+
+        </form>
+
+
+    </div>
+<img class="img-letter" src="{{ asset('Image/emploi_et_stage/demandes/letter.svg')}}" alt="">
+
+</div>
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+{% endblock %}

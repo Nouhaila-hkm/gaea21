@@ -1,0 +1,44 @@
+<div>
+<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons textColor">menu</i></a>
+<a href="{{ path('home') }}"><img src="{{ asset('Image/gaea21.png') }}" alt="Symfony!"/></a>
+
+<nav>
+  <ul>
+    {% for element in Elements %}
+    <li>
+      <a href="{{ element.pagePath }}">{{ element.navName }}</a>
+    </li>
+    {% endfor %}
+    <li> <a href="{{ path("userShow") }}"> Qui sommes nous ? </a> </li>
+    <li> <a href="{{ path('userShow') }}"> Coaching arrières </a> </li>
+    <li> <a href="{{ path('userShow') }}"> Projets </a> </li>
+    <li> <a href="{{ path('userShow') }}"> Observatoire Gaea21 </a> </li>
+    <li> <a href="{{ path('humansGaea21') }}"> Humans of Gaea21 </a> </li>
+  </ul>
+</nav>
+
+{% if app.user %}
+<a href="{{ path('userShow') }}"><img src="{{ asset('Image/profile.png') }}"/></a>
+{% else %}
+<a href="{{ path('login') }}"><img src="{{ asset('Image/profile.png') }}"/></a>
+{% endif %}
+</div>
+<ul class="sidenav white" id="mobile-demo">
+  <div class="center">
+      <a href="#!" class="brand-logo black-text"><img src="{{ asset('imagesgaea21/logoGaea21.png') }}" alt="Symfony!" width="140px"/></a>
+  </div>
+  <li><a href="sass.html" class="black-text hoverable">QUI SOMMES NOUS?</a></li>
+  <li><a href="{{ path('gaea21') }}" class="black-text hoverable">COACHING CARRIERES</a></li>
+  <li><a href="{{ path('gaea21') }}" class=" black-text hoverable">PROJETS</a></li>
+  <li><a href="{{ path('gaea21') }}" class=" black-text hoverable">OBSERVATOIRE GAEA21</a></li>
+  <li><a href="{{ path('gaea21') }}" class=" black-text hoverable">HUMANS OF GAEA21</a></li>
+  <li>
+    {% if app.user %}
+      <a href="{{ path('userShow') }}" class="btn gaeaColor white-text waves-effect waves-green pulse  hoverable">
+        Bonjour {{ app.user.username }}
+      </a>
+    {% else %}
+      <a href="{{ path('login') }}" class="btn gaeaColor white-text waves-effect waves-green pulse  hoverable">CONNEXION</a>
+    {% endif %}
+  </li>
+</ul>

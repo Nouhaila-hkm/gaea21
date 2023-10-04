@@ -1,0 +1,42 @@
+{% extends 'formulaires/build/base.html.twig' %}
+
+{% block stylesheets %} 
+    {{parent()}}    
+	{{ encore_entry_link_tags('SecondaryNavApp') }}
+    {{ encore_entry_link_tags('FormBuild') }}
+{% endblock %}
+
+{% block title %}gaea21 - {{form_title}}{% endblock %}
+
+{% block header %}
+    <div class="_text-content">
+        <div class="text">
+            <h2 class="text-center">Contactez-nous!</h2>
+        </div>
+        <div class="form-cover-icon mx-auto"> 
+            <img class="img-fluid" src="{{asset('images/formulaires/svg/Contact-Cover-Icon.svg')}}"/> 
+        </div>
+    </div>
+    <div class="_background"></div>
+{% endblock %}
+
+{% block sousMenu %}
+    <div id='secondaryNav' data-filename="dataPourLaSousNav/itemsQuiSommesNous.json"></div>
+{% endblock %}
+
+{% block main %}
+    <div id="showForm" 
+        data-id="{{id}}"  
+        data-name="{{form_name}}"
+        data-title="{{form_title}}"
+        {% if projet is defined %}
+            data-projet="{{projet}}">
+        {% endif %}
+    </div>
+{% endblock %}
+    
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('SecondaryNavApp') }}
+    {{ encore_entry_script_tags('FormBuild') }}
+{% endblock %}

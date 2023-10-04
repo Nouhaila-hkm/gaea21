@@ -1,0 +1,75 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#tertiaryMenu {
+  display: none;
+}
+
+#projects, #vignettes {
+  display: none;
+}
+
+#encartProjet {
+  display: none;
+}
+
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #98984B;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 8.5416666667vw;
+  text-align: center;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 3.9260416667vw;
+  font-size: 3.125vw;
+}
+#header ._text-content .text img {
+  width: 22.609375vw;
+  height: 14.715625vw;
+  margin-bottom: 8.5697916667vw;
+}
+#header ._background {
+  background-image: url("../../../../images/QuiSommesNous/contactezNous/contactezNous.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-top: 1.09375vw;
+}
+#main .text-content {
+  margin: 0 auto;
+  text-align: justify;
+}
+#main .text-content h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.8645833333vw;
+}
+#main .text-content p {
+  text-align: center;
+}
+#main .text-content .description {
+  margin-bottom: 6.25vw;
+}
+
+#organizationDebut, #organizationFin {
+  display: none;
+}
+
+/*# sourceMappingURL=contactezNous.css.map */

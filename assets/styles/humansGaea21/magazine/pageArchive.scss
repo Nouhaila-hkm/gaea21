@@ -1,0 +1,90 @@
+.contenueArchive{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .menuArchive{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+
+        width: 18%;
+        margin-left: pxToPourcent(140px, 1920px);
+    }
+
+    .month, .year{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        p{
+            width: fit-content !important;
+            margin: 0;
+
+            padding: 0%;
+            margin-right: pxToPourcent(10px, 1920px) !important;
+        }
+        
+    }
+
+    #listeMonth, #listeAnnee{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+
+        .valide{
+            color: #98984C;
+        }
+
+        
+    }
+
+    .select{
+
+        width: pxToPourcent(1200px, 1920px);
+        
+       
+        margin-bottom: pxToVw(55px, 1920px);
+        background-color: #F6F6F6;
+        border-radius: pxToVw(20px, 1920px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .selected{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            width: 90% !important;
+            border-bottom: 2px solid #98984C;
+            cursor: default !important;
+
+            .row{
+                height: pxToVw(20px, 1920px);
+                transform: rotate(90deg);
+                margin: 0;
+            }
+            
+        }
+
+        p{
+            
+            margin: 0 !important;
+            height: fit-content !important;
+
+            cursor: pointer;
+        }
+    }
+
+    #magazinebook{
+        width: 100%;
+
+        .book{
+            width: 43%;
+        }
+    }
+}

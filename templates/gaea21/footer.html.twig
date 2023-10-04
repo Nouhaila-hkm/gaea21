@@ -1,0 +1,166 @@
+{% block stylesheets %}
+	<link href="{{ asset('style/footer_component/gaeaFooters.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{# Début footer #}
+<footer
+	id="footer">
+
+	{# Container du footer #}
+	<div class="_container">
+
+		<div
+			class="_display">
+			{# Affichage en display flex du logo, menu et contact #}
+			<div class="_logo">
+				<a href="#" class="home"><img src="{{asset('images/humansGaea21/Logos/logo_gaea21.png')}}" alt="logo gaea21"></a>
+			</div>
+			<div class="_menu">
+
+				<div class="list">
+					<h4>
+						<a href="{{path('app_QuiSommesNous_index')}}">Qui sommes-nous ?</a>
+					</h4>
+					<ul>
+						<li><a class="listLink">Le modèle gaea21</a></li>
+						<li><a class="listLink">L'univers de gaea21</a></li>
+						<li><a class="listLink" href="/QuiSommesNous/Organigramme">Organigramme</a></li>
+						<li><a class="listLink" href="/QuiSommesNous/Historique">Historique</a></li>
+						<li><a class="listLink">Partenaires</a></li>
+						<li><a class="listLink">Impacts</a></li>
+						<li><a class="listLink">Statuts gaea21</a></li>
+						<li><a class="listLink"href="{{path('app_QuiSommesNous_newsletter')}}">Newsletter</a></li>
+						<li><a class="listLink">Identité</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>
+						<a href="{{path('app_coaching')}}">Coaching carrières</a>
+					</h4>
+					<ul>
+						<li><a class="listLink"href="{{path('app_modele_accompagnement')}}">Le modèle d'accom-pagnement de gaea21</a></li>
+						<li><a class="listLink">Gestion de carrières</a></li>
+						<li><a class="listLink"href="{{path('app_emploi_et_stage')}}">Emploi / Stage</a></li>
+						<li><a class="listLink">Partenaire Formation / Emploi</a></li>
+						<li><a class="listLink">Le modèle de formation gaea21</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>
+						<a href="{{path('Index')}}">Projets</a>
+					</h4>
+					<ul>
+						<li><a class="listLink">Projets pilotes</a></li>
+						<li><a class="listLink"href="{{path('Recherches_appliquees')}}">Projets de recherche appliquée</a></li>
+						<li><a class="listLink">Participer à un projet de gagea21</a></li>
+						<li><a class="listLink">Coaching de projets durables</a></li>
+						<li><a class="listLink">Programme expansion / créer un gaea21 local</a></li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>
+						<a class="listLink">Observatoire gaea21</a>
+					</h4>
+					<ul>
+						<li>
+							<p>
+								<a class="listLink">Notre modèle de recherche</a>
+							</p>
+						</li>
+						<li>
+							<a class="listLink">Publications</a>
+						</li>
+						<li>
+							<a class="listLink">Recherche & Développement</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="list">
+					<h4>
+						<a href="humansGaea21">Humans of gaea21</a>
+					</h4>
+					<ul>
+						<li><a class="listLink"href="{{path('humansGaea21Staff')}}">Staff</a></li>
+						<li><a class="listLink"href="{{path('humansGaea21Alumni')}}">Alumni</a></li>
+						<li><a class="listLink"href="{{path('humansGaea21Programme')}}">Programme humans of gaea21</a></li>
+						<li><a class="listLink">Galerie photos</a></li>
+						<li><a class="listLink">Vidéos</a></li>
+					</ul>
+				</div>
+
+				<div class="contact">
+					<h4>
+						<a>Presse</a>
+					</h4>
+					<ul>
+						<li></li>
+					</ul>
+					<h4>
+						<a>Contact</a>
+					</h4>
+					<ul>
+						<li></li>
+					</ul>
+
+
+				</div>
+
+			</div>
+		</div>
+		{# Fin de l'affichage en display flex du logo, menu et contact #}
+
+		{# Section partage #}
+		<section class="_partages">
+			<p class="plan">
+				<a href="#">Plan</a>
+			</p>
+			<p>
+				<div class="reseau">
+					<p class="follow">Suivez-nous aussi sur&nbsp;:
+					</p>
+					{# <img src="{{asset('images/humansGaea21/Logos/shareLink.png')}}" alt="share link"> #}
+					<ul class="links">
+						<li>
+							<a href="https://www.linkedin.com/company/gaea21/" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/in.png')}}"></a>
+						</li>
+						<li>
+							<a href="https://twitter.com/gaea21org?lang=fr" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/twitter.png')}}"></a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/channel/UCT800bAYYvR0unxjEHo2ZQQ/videos?app=desktop&view=0&sort=dd&shelf_id=0" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/youtube.png')}}"></a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/Gaea21/" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/facebook48.png')}}"></a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/gaea21org/?hl=fr" target="_blank"><img class="link" src="{{asset('images/icone_svg_png/instagram.png')}}"></a>
+						</li>
+					</ul>
+				</div>
+			</p>
+		</section>
+
+		<section class="copyright">
+			<p>Copyright &copy; gaea21 2022</p>
+		</section>
+
+		<section class="cgu">
+			<ul class="_items">
+				<li class="item">
+					<a>Politique de confidentialité<a></li>
+						<li class="item">
+							<a>Mentions légales<a></li>
+								<li class="item">
+									<a>Crédits<a></li>
+									</ul>
+								</li>
+							</section>
+						</li>
+					</div>
+					{# Fin du premier container #}
+				</li>
+			</footer>

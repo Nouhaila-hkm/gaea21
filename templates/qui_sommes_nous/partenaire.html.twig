@@ -1,0 +1,102 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/partenaire/partenaire.css')}}">
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/partenaire
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content partenaire">
+		<div class="text">
+			<h2>Partenaires</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundpartenaire"></div>
+
+{% endblock %}
+
+
+{% block main %}
+
+	<div class="title">
+		<h2>Le projet partenariat Global<h2>
+	</div>
+
+			{# Texte d'into #}
+			<article id="intro-organigramme">
+				<p>
+				Le <b>projet partenariat Global</b> a pour objectif de mettre en place des partenariats
+				 avec des universités, des écoles, des entreprises, des Etats, des organisations,
+				  des ONG, des communautés locales et des personnalités publique afin de mettre en
+				   place un <b>travail synergique de concrétisation de projets</b> liés au développement durable,
+				    <b>faire connaître</b> gaea21, <b>développer la recherche</b> en développement durable,
+					 économie circulaire et créer un <b>réseau d’acteurs verts.</b>
+				</p>
+
+			</article>
+
+		{% endblock %}
+
+		
+		{% block partenaire %}
+
+		{% if '/partenaire' in app.request.uri %}
+		<section id='partenaire'>
+			<p>
+			Ce projet permettra de mettre en place des partenariats avec
+			des écoles, universités, instituts… Nous proposons aux écoles de partager nos offres
+			de <b>stage</b> à leurs étudiants (le niveau d’anglais et de français des candidats doit être entre B2 et C2)
+		    et en échange de nous transmettre les candidatures d’étudiants motivés et
+			engagés que nous accueillerons en stage (si entretien concluant), nous pouvons également
+			intervenir pour tous les <b>projets pédagogiques</b> de l’école en termes de développement durable.
+			<br>
+			<br>
+			Les 4 niveaux d’intervention de partenariats académiques Stratégique/ rh sont :
+			</p>
+
+			<p>
+			<span class="number">1.</span> Stage : échange d'annonces (job board…)<br> 
+			<span class="number">2.</span> Niveau pédagogique : aider les étudiants dans leurs thèses, recherches, rapports de stage (rédaction et données)<br> 
+			<span class="number">3.</span> Projets collaboratifs : Études de cas concrets, conférences, workshop<br> 
+			<span class="number">4.</span> Les programmes : green your school..
+			</p>
+
+			<h3 class="sponsor">Nos partenaires académiques / RH :</h3>
+			<div id="Partenaire"><div>
+		</section>	
+
+		{% elseif '/autrepartenaire' in app.request.uri %}	
+
+		<section id='partenaire'>
+
+			<p>
+			L'objectif des partenariats est d'<b>étendre le réseau international de gaea21</b> en matières d'entreprises,
+			 ONG, associations et personnalités publiques en lien avec le développement durable.
+			 Il s’agit également de <b>faire connaître l'association, développer les programmes et projets</b> de gaea21
+			 (SLP, PDI, tourisme durable et répertoire vert) dans le monde.
+			</p>
+
+			<h3 class="sponsor">Nos autres partenaires :</h3>
+			<div id="AutrePartenaire"><div>
+			
+		</section>
+		{% endif %}
+
+		{% endblock %}
+
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

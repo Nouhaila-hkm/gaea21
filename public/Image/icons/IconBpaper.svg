@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="130"
+   height="130"
+   viewBox="0 0 130 130"
+   version="1.1"
+   id="svg70"
+   sodipodi:docname="Icone B paper.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata74">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1360"
+     inkscape:window-height="745"
+     id="namedview72"
+     showgrid="false"
+     units="px"
+     width="130in"
+     inkscape:zoom="1.2470711"
+     inkscape:cx="183"
+     inkscape:cy="71.36722"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Groupe_628" />
+  <defs
+     id="defs24">
+    <filter
+       id="Rectangle_2691"
+       x="0"
+       y="124.486"
+       width="366"
+       height="339"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="9"
+         dy="9"
+         input="SourceAlpha"
+         id="feOffset2" />
+      <feGaussianBlur
+         stdDeviation="4.5"
+         result="blur"
+         id="feGaussianBlur4" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood6" />
+      <feComposite
+         operator="in"
+         in2="blur"
+         id="feComposite8"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite10" />
+    </filter>
+    <filter
+       id="Ellipse_17"
+       x="44.541"
+       y="0"
+       width="269.97299"
+       height="269.97299"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="6"
+         dy="6"
+         input="SourceAlpha"
+         id="feOffset13" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-2"
+         id="feGaussianBlur15" />
+      <feFlood
+         flood-color="#427db3"
+         flood-opacity="0.224"
+         id="feFlood17" />
+      <feComposite
+         operator="in"
+         in2="blur-2"
+         id="feComposite19"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite21" />
+    </filter>
+  </defs>
+  <g
+     id="Groupe_628"
+     data-name="Groupe 628"
+     transform="translate(-986.428,-1278.014)">
+    <text
+       id="Questionnaires_Enquêtes_Sondages"
+       data-name="Questionnaires Enquêtes Sondages"
+       transform="translate(1163.955,1588)"
+       fill="#ffffff"
+       font-size="25px"
+       font-family="HelveticaNeue-Bold, 'Helvetica Neue'"
+       font-weight="700"><tspan
+         x="-90.037003"
+         y="0"
+         id="tspan29">Questionnaires</tspan><tspan
+         x="-119"
+         y="30"
+         id="tspan31">Enquêtes Sondages</tspan></text>
+    <text
+       id="Plus_d_infos"
+       data-name="Plus d'infos"
+       transform="translate(1086.334,1686.75)"
+       fill="#ffffff"
+       font-size="25px"
+       font-family="HelveticaNeue-Medium, 'Helvetica Neue'"
+       font-weight="500"><tspan
+         x="0"
+         y="0"
+         id="tspan34">Plus d'infos</tspan></text>
+    <path
+       id="Tracé_188"
+       data-name="Tracé 188"
+       d="M 1.7,0.8 8.685,7.785 1.7,14.769"
+       transform="translate(1240.961,1671.735)"
+       fill="none"
+       stroke="#ffffff"
+       stroke-miterlimit="10"
+       stroke-width="3" />
+    <g
+       transform="translate(986.43,1278.01)"
+       filter="url(#Ellipse_17)"
+       id="g39" />
+    <g
+       id="Groupe_486"
+       data-name="Groupe 486"
+       transform="translate(991.26152,1288.0614)">
+      <g
+         id="Groupe_480"
+         data-name="Groupe 480">
+        <g
+           id="Groupe_478"
+           data-name="Groupe 478">
+          <g
+             id="Groupe_477"
+             data-name="Groupe 477">
+            <g
+               id="Groupe_476"
+               data-name="Groupe 476">
+              <rect
+                 id="Rectangle_1840"
+                 data-name="Rectangle 1840"
+                 width="85.018997"
+                 height="112.785"
+                 fill="#00a796"
+                 stroke="#ffffff"
+                 stroke-miterlimit="10"
+                 stroke-width="2.753"
+                 x="0"
+                 y="0" />
+            </g>
+            <path
+               id="Tracé_197"
+               data-name="Tracé 197"
+               d="M 651.309,739.1"
+               transform="translate(-615.292,-731.627)"
+               fill="#00a796"
+               stroke="#ffffff"
+               stroke-miterlimit="10"
+               stroke-width="0.661" />
+            <path
+               id="Tracé_198"
+               data-name="Tracé 198"
+               d="M 679.478,815.836"
+               transform="translate(-623.346,-753.568)"
+               fill="#00a796"
+               stroke="#ffffff"
+               stroke-miterlimit="10"
+               stroke-width="0.661" />
+            <path
+               id="Tracé_199"
+               data-name="Tracé 199"
+               d="M 679.25,876.773"
+               transform="translate(-623.281,-770.992)"
+               fill="#00a796"
+               stroke="#ffffff"
+               stroke-miterlimit="10"
+               stroke-width="0.661" />
+            <path
+               id="Tracé_200"
+               data-name="Tracé 200"
+               d="M 666.256,760.355"
+               transform="translate(-619.565,-737.705)"
+               fill="#00a796"
+               stroke="#ffffff"
+               stroke-miterlimit="10"
+               stroke-width="0.661" />
+          </g>
+        </g>
+        <g
+           id="Groupe_479"
+           data-name="Groupe 479"
+           transform="translate(69.192,23.948)">
+          <path
+             id="Tracé_201"
+             data-name="Tracé 201"
+             d="m 757.707,773.58 a 4.112,4.112 0 0 1 1.79,2.939 5.024,5.024 0 0 1 -1.16,3.689 11.431,11.431 0 0 1 -1.746,1.641 c -0.729,0.584 -1.518,1.1 -2.34,1.682 l -5.282,-7.407 c 2.211,-1.677 4.294,-3.53 7.347,-3.091 z"
+             transform="translate(-704.699,-772.967)"
+             fill="#00a796" />
+          <path
+             id="Tracé_202"
+             data-name="Tracé 202"
+             d="m 752.137,788.972 -0.573,-0.8 v 0 c 0.199,0.272 0.386,0.535 0.573,0.8 z"
+             transform="translate(-705.441,-777.313)"
+             fill="#00a796" />
+          <path
+             id="Tracé_203"
+             data-name="Tracé 203"
+             d="m 746.885,781.6 v 0 l -0.264,-0.373 c 0.084,0.125 0.173,0.248 0.264,0.373 z"
+             transform="translate(-704.027,-775.33)"
+             fill="#00a796" />
+          <path
+             id="Tracé_204"
+             data-name="Tracé 204"
+             d="m 700.546,820.68 v 1.759 c -0.008,-0.666 -0.046,-1.216 0,-1.759 z"
+             transform="translate(-690.848,-786.609)"
+             fill="#00a796" />
+          <path
+             id="Tracé_205"
+             data-name="Tracé 205"
+             d="m 736.846,787.2 -1.221,0.872 -1.676,1.2 -0.956,0.68 q -12.067,8.607 -24.132,17.21 c -1.3,0.927 -2.6,1.848 -3.9,2.774 q -1.3,0.93 -2.6,1.868 c -0.6,0.435 -1.206,0.059 -1.832,-0.148 a 1.792,1.792 0 0 1 -0.947,-0.554 2.2,2.2 0 0 1 -0.174,-1.415 1.9,1.9 0 0 0 -0.471,-1.379 0.63,0.63 0 0 0 -0.364,-0.276 l -0.691,-0.255 a 2.334,2.334 0 0 1 -1,-0.571 2.243,2.243 0 0 1 -0.206,-2.047 3.448,3.448 0 0 1 1.355,-1.552 c 11.031,-7.785 22.01,-15.648 33.005,-23.486 0.152,-0.109 0.312,-0.211 0.514,-0.346 l 0.744,1.042 0.263,0.374 0.477,0.665 0.179,0.249 0.172,0.243 0.227,0.317 0.226,0.317 0.115,0.162 0.49,0.684 c 0.3,0.42 0.582,0.82 0.907,1.278 l 0.477,0.668 0.573,0.8 0.189,0.266 z"
+             transform="translate(-689.705,-774.913)"
+             fill="#00a796" />
+          <path
+             id="Tracé_206"
+             data-name="Tracé 206"
+             d="m 747.834,782.935 -0.179,-0.248 v 0 z"
+             transform="translate(-704.323,-775.745)"
+             fill="#00a796" />
+          <path
+             id="Tracé_207"
+             data-name="Tracé 207"
+             d="m 748.9,784.425 v 0 l -0.114,-0.162 c 0.034,0.054 0.07,0.109 0.114,0.162 z"
+             transform="translate(-704.645,-776.197)"
+             fill="#00a796" />
+          <path
+             id="Tracé_208"
+             data-name="Tracé 208"
+             d="m 692.317,824.709 c -0.61,-0.852 -1.205,-1.673 -1.781,-2.506 a 0.458,0.458 0 0 1 -0.043,-0.4 c 1.086,-1.73 2.189,-3.45 3.408,-5.154 0.006,0.493 0.028,0.988 0.011,1.481 a 0.5,0.5 0 0 0 0.409,0.579 c 0.676,0.212 1.335,0.475 2.011,0.69 a 0.466,0.466 0 0 1 0.373,0.536 c -0.016,0.669 0.014,1.34 0,2.009 a 0.585,0.585 0 0 0 0.49,0.7 13.87,13.87 0 0 1 1.435,0.552 z"
+             transform="translate(-687.971,-785.456)"
+             fill="#00a796" />
+          <path
+             id="Tracé_209"
+             data-name="Tracé 209"
+             d="m 752.79,785.621 -0.77,0.516 -5.3,-7.422 0.758,-0.536 c 1.777,2.486 3.528,4.941 5.312,7.442 z"
+             transform="translate(-704.057,-774.457)"
+             fill="#00a796" />
+          <path
+             id="Tracé_210"
+             data-name="Tracé 210"
+             d="m 690.253,827.472 -3.28,0.786 1.809,-2.841 z"
+             transform="translate(-686.973,-787.963)"
+             fill="#00a796" />
+        </g>
+      </g>
+      <g
+         id="Groupe_482"
+         data-name="Groupe 482"
+         transform="translate(13.898,22.958)">
+        <rect
+           id="Rectangle_1841"
+           data-name="Rectangle 1841"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+        <rect
+           id="Rectangle_1842"
+           data-name="Rectangle 1842"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           transform="translate(0,7.923)"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+        <rect
+           id="Rectangle_1843"
+           data-name="Rectangle 1843"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           transform="translate(0,15.846)"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+        <rect
+           id="Rectangle_1844"
+           data-name="Rectangle 1844"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           transform="translate(0,24.085)"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+        <rect
+           id="Rectangle_1845"
+           data-name="Rectangle 1845"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           transform="translate(0,32.008)"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+        <rect
+           id="Rectangle_1846"
+           data-name="Rectangle 1846"
+           width="57.678001"
+           height="3.1689999"
+           rx="1.585"
+           transform="translate(0,39.931)"
+           fill="#ffffff"
+           x="0"
+           y="0" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+{# templates/emails/base.html.twig #}
+{% apply inline_css(source('@mailerStyles/mail.css')) %}
+  <div class="email">
+	
+		<div class="sidebar">
+			<img src="{{ email.image('@mailerImg/BackgroundMail.png') }}" alt="SideBar"> 
+		</div>
+
+		<div class="emailContent"> 
+			<img src="{{ email.image('@mailerImg/gaea21.png') }}" alt="Logo">
+      {% block main %}
+        
+      {% endblock %}
+
+
+			<div class="footer">
+				<div class="footerSocials">
+					<div class="footerSocial">
+						<img src="{{ email.image('@mailerImg/socials/Web.png') }}" alt="Logo">
+						gaea21.org
+					</div>
+					<div class="footerSocial">
+						<a href="https://www.linkedin.com/company/gaea21/" target="_blank"><img src="{{ email.image('@mailerImg/socials/linkedInBlack.png') }}" alt="Logo" class="invert"></a>
+						gaea21
+					</div>
+					<div class="footerSocial">
+						<a href="https://www.facebook.com/Gaea21/" target="_blank"><img src="{{ email.image('@mailerImg/socials/FacebookBlack.png') }}" alt="Logo" class="invert"></a>
+						gaea21
+					</div>
+					<div class="footerSocial">
+						<a href="https://www.instagram.com/gaea21org/?hl=fr" target="_blank"><img src="{{ email.image('@mailerImg/socials/Instagram.png') }}" alt="Logo"></a>
+						gaea21org
+					</div>
+				</div>
+				<p>gaea21 est une association a but non lucratif de droit suisse qui poursuit un but social idéal, à savoir la mise en oeuvre du développement durable et de l'Agenda 21.</p>
+			</div>	
+
+		</div>
+	</div>
+  
+{% endapply %}

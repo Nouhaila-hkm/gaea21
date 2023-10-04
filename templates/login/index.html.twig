@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'identification{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('form') }}
+    {{ encore_entry_link_tags('loginForm') }}
+    {{ encore_entry_link_tags('topBar') }}
+{% endblock %}
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+
+   <div class="img-background">
+
+    <a class="return" href="{{ path('home')}}">
+       <img src="/Image/forgotPassword/return.svg">
+    </a>
+   <img class="welcome" src="/Image/login/bienvenue.png">
+    <div class="formRegistration">
+        <div id="showLogin"></div>
+        <div class="hidden" id="RegisterShow"></div>
+
+        <div id="loginForm" class="hidden" data-success={{ isSuccess }}></div>
+        <a id="forgot" class="returnHomepageLinkLoginPage hidden" href="{{ path('reinitPassword') }}">Mot de passe oublié ?</a>
+    </div>
+   </div>
+
+    {# <form class="userForm">
+        <label for="mailLog" class="formLabel">E-mail</label>
+        <input type="text" id="mailLog" name="_mailLog"/>
+
+        <label for="passwordLog" class="formLabel">Mot de passe</label>
+        <input type="password" id="passwordLog" name="_passwordLog"/>
+
+        <div id="errorLogin"></div>
+        <div>{{ reinitPass }}</div>
+
+        <button id="buttonLog" type="submit" class="formButton">Se connecter</button>
+    </form>
+
+    <a href="{{ path('register') }}">Créer un compte</a>
+    <a href="{{ path('reinitPassword') }}">Mot de passe oublié</a> #}
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('form') }}
+        {{ encore_entry_script_tags('loginForm') }}
+        {{ encore_entry_script_tags('showLogin') }}
+        {{ encore_entry_script_tags('RegisterShow') }}
+        {{ encore_entry_link_tags('showUser') }}
+    {% endblock %}
+{% endblock %}

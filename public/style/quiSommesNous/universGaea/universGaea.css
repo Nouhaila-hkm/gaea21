@@ -1,0 +1,162 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#tertiaryMenu {
+  display: none;
+}
+
+#projects, #vignettes {
+  display: none;
+}
+
+#encartProjet {
+  display: none;
+}
+
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #5681B9;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+  text-align: left;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../../images/QuiSommesNous/universGaea/header_universGaea.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-top: 1.09375vw;
+}
+#main .text-content {
+  margin: 0 auto;
+  text-align: justify;
+}
+#main .text-content h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.8645833333vw;
+}
+#main .text-content p {
+  text-align: center;
+}
+#main .text-content .description {
+  margin-bottom: 6.25vw;
+}
+#main .space {
+  width: 80.9375vw;
+  height: 9.53125vw;
+  background-image: url("../../../../images/QuiSommesNous/universGaea/space.png");
+  margin-left: -7.2916666667vw;
+  margin-top: 3.0729166667vw;
+  border-radius: 14px;
+}
+#main .last-content p {
+  margin-top: 5.7291666667vw;
+  text-align: center;
+}
+#main .last-content .largeBtn {
+  margin-top: 2.03125vw;
+  text-align: center;
+}
+#main .last-content .largeBtn p {
+  margin-top: 0;
+}
+#main .franchise {
+  display: flex;
+  margin-top: 8.2291666667vw;
+  margin-left: -7.2916666667vw;
+  width: 80.9375vw;
+}
+#main .franchise article:first-child {
+  width: 34.2708333333vw;
+  flex-shrink: 0;
+  height: 30.6770833333vw;
+}
+#main .franchise article:first-child .franchise_img {
+  width: 100%;
+}
+#main .franchise article:last-child {
+  margin-left: 4.4270833333vw;
+  padding-right: 9.53125vw;
+  width: 43.2291666667vw;
+}
+#main .franchise article:last-child h2 {
+  text-align: left;
+  margin-bottom: 2.6041666667vw;
+  width: 34.2708333333vw;
+}
+#main .franchise article:last-child .font-style {
+  text-align: left;
+  margin-bottom: 1.71875vw;
+  width: 41.6666666667vw;
+}
+#main .franchise article:last-child .font-weight {
+  font-weight: bold;
+  margin-bottom: 1.0416666667vw;
+  width: 41.6666666667vw;
+  margin-top: 2.5520833333vw;
+}
+#main .franchise article:last-child .links-container {
+  display: flex;
+  justify-content: end;
+}
+#main .franchise article:last-child .links-container .links {
+  width: 51.7635933806%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  margin-bottom: -1rem;
+  margin-right: -8.3333333333vw;
+}
+#main .franchise article:last-child .links-container .link {
+  width: 63.829787234%;
+}
+#main .franchise article:last-child .decouvrir .lien {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+}
+#main .franchise article:last-child .decouvrir .lien:hover {
+  border-bottom: 1px solid #98984B;
+}
+#main .franchise article:last-child .decouvrir .lien p {
+  display: inline-block;
+  padding-right: 4px;
+  color: #98984B !important;
+}
+#main .franchise article:last-child .decouvrir .lien img {
+  position: relative;
+  top: -1px;
+}
+#main #project-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.8125vw;
+}
+
+#organizationDebut, #organizationFin {
+  display: none;
+}
+
+/*# sourceMappingURL=universGaea.css.map */

@@ -1,0 +1,174 @@
+@import '../../function';
+
+
+.topbar {
+    top: 0px;
+    left: 0px;
+    width: pxToPourcent(1920px, 1920px);
+    height: pxToVw(120px, 1920px);
+    font-size: pxToVw(20px, 1920px) !important;
+}
+
+.liTopbar {
+    font-size: pxToVw(20px, 1920px) !important;
+}
+
+.material-icons.black-text.medium {
+    display: block !important;
+
+}
+
+#humansGaea21 {
+
+    @import './gaea21Life';
+    @import './gaea21Video';
+    @import './gaea21Contact';
+    @import './gaea21Footer';
+    @import './gaea21Info';
+    @import './gaea21Menu';
+
+
+
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .sectionHead {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../../images/humansGaea21/Groupedemasques27.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .logoHumans {
+        /* Layout Properties */
+
+        margin-top: pxToPourcent(400px, 7603px);
+        margin-left: pxToPourcent(119px, 1920px);
+        width: pxToPourcent(431px, 1920px);
+        height: auto;
+        background: transparent;
+        opacity: 1;
+
+
+    }
+
+
+    .p1 {
+
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: pxToPourcent(325px, 7603px);
+        left: pxToPourcent(183px, 1920px);
+        width: pxToPourcent(432px, 1920px);
+        height: auto;
+
+
+        font-family: "Helvetica";
+        font-size: pxToVw(25px, 1920px);
+        color: white;
+
+    }
+}
+
+#quiSommeNous {
+    @import './gaea21Life';
+    @import './gaea21Video';
+    @import './gaea21Contact';
+    @import './gaea21Footer';
+    @import './gaea21Info';
+    @import './gaea21Menu';
+    @import './video';
+
+
+
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sectionHead2 {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../../images/humansGaea21/quisomme.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .p2 {
+
+        font-family: "Arial Black";
+        font-size: pxToVw(40px, 1920px);
+        color: Black;
+        font-weight: bold;
+        margin: 25px;
+    }
+
+    .p3 {
+        margin: 25px;
+
+    }
+
+    .p4 {
+        margin-left: pxToPourcent(245px, 2000px);
+        margin-top: 100px;
+
+
+
+    }
+
+    .p5 {
+        margin-left: pxToPourcent(245px, 2000px);
+        margin-top: 55px;
+        color: #808000;
+        font-weight: bold;
+        font-size: pxToVw(50px, 1920px);
+        //font-family: "Helvetica ";
+
+    }
+
+    .p6 {
+        margin-left: pxToPourcent(245px, 2000px);
+        margin-top: 20px;
+    }
+
+
+    .g1 {
+
+        @include border-radius(0.5em);
+
+    }
+
+    .card {
+        width: 25em;
+        margin: 6em;
+        //text-align:center;
+        border: 0px;
+        opacity: 0.60;
+        background: Gainsboro;
+        height: 250px;
+    }
+
+
+}

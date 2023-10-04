@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html id="test" class="{% block cssimport %}{% endblock %}">
+	<head>
+		{% block head %}
+			<meta charset="UTF-8">
+			<link rel="icon" type="image/png" href="{{asset('imagesgaea21/logo_gaea21.png')}}"/>
+			<title>
+				{% block title %}Qui sommes nous ?
+				{% endblock %}
+			</title>
+
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+			{% block stylesheets %}
+				<link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+				<link href="{{ asset('materialize/css/Style.css') }}" rel="stylesheet"/>
+				<link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele_base.css')}}">
+				<link href="{{ asset('style/projet_gaea21/projetgaea21_base.css') }}" rel="stylesheet"/>
+
+
+
+
+
+				{{ encore_entry_link_tags('topBar') }}
+				{{ encore_entry_link_tags('largeCardApp') }}
+				{{ encore_entry_link_tags('bigCarouselMenuApp') }}
+				{{ encore_entry_link_tags('InformationApp') }}
+				{{ encore_entry_link_tags('prevArrowApp') }}
+				{{ encore_entry_link_tags('topArrowApp') }}
+				{{encore_entry_link_tags('SmallBoxApp') }}
+				{{encore_entry_link_tags('SecondaryNavApp') }}
+				{{encore_entry_link_tags('LargeBtnApp') }}
+				{{encore_entry_link_tags('SmallBtnApp') }}
+				{{ encore_entry_link_tags('smallCardApp') }}
+				{{encore_entry_link_tags('AvancerProjetApp') }}
+				{{encore_entry_link_tags('Partenaire') }}
+				{{encore_entry_link_tags('TransCard') }}
+				{{encore_entry_link_tags('WhoCarousel') }}
+				{# {{encore_entry_link_tags('ModalApp') }} #}
+
+				{# CSS de la base #}
+			<link href="{{ asset('style/quiSommesNous/QuiSommesNous_base.css') }}" rel="stylesheet"/>
+	        <link href="{{ asset('style/projet_gaea21/projetgaea21_base.css') }}" rel="stylesheet"/>
+
+			 {% endblock %}
+
+		{% endblock %}
+	</head>
+
+	<body>
+		{% include "/components/_topbar.html.twig" %}
+
+		{# header commun aux pages #}
+		<header id="header">
+			{% block header %}
+				<div class="_text-content">
+					<div class="text">
+						<h2>Projets de recherche appliquée</h2>
+						{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+					</div>
+				</div>
+				<div class="_background"></div>
+			{% endblock %}
+		</header>
+
+
+		{# la barre de navigation secondaire #}
+		{% block sousMenu %}
+			<div id='secondaryNav' data-filename="dataPourLaSousNav/itemsQuiSommesNous.json"></div>
+		{% endblock %}
+
+
+
+		{% block bouttonRetour %}
+			<div id="prevArrow" data-link="/QuiSommesNous"></div>
+		{% endblock %}
+
+
+			 <section id="organizationDebut"> 
+	{% block organization_Debut %}
+				<div class="smallCard" data-title="Comité - Organe décisionnel" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Decisionnel.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeDecisionnel"></div>
+
+				<div class="smallCard" data-title="Bureau exécutif - Organe opérationnel" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Operationnel.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeOperationnel"></div>
+
+				<div class="smallCard" data-title="Conseil des sage - Organe consultatif" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Consultatif.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeConsultatif"></div>
+
+        {% endblock %}
+			</section>
+
+		<main
+			id="main">
+			{# Block principale de la page #}
+			{% block main %}
+			{% endblock %}
+		</main>
+			
+
+		<section id="personnes">
+{% block personnes %}
+	{% endblock %}
+		</section>
+
+
+	{% block carousel %}
+		{% if '/gestionprojet' in app.request.uri %}
+			<div id="WhoCarousel"></div>
+
+		{% elseif '/analyse' in app.request.uri %}
+			<div id="WhoCarousel"></div>
+
+		{% elseif '/lean' in app.request.uri %}
+			<div id="WhoCarousel"></div>
+
+		{% elseif '/coevolution' in app.request.uri %}
+			<div id="WhoCarousel"></div>
+
+		{% elseif '/behavior' in app.request.uri %}
+			<div id="WhoCarousel"></div>
+
+		{% elseif '/multiplicateureco' in app.request.uri %}
+			<div id="WhoCarousel"></div>		
+		{% endif %}
+	{% endblock %}
+
+
+
+		 <section id="organizationFin"> 
+
+	{% block organization_fin %}
+	{% if '/Organigramme' in app.request.uri %}
+
+			<div class="smallCard" data-title="Comité - Organe décisionnel" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Decisionnel.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeDecisionnel"></div>
+
+			<div class="smallCard" data-title="Bureau exécutif - Organe opérationnel" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Operationnel.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeOperationnel"></div>
+
+			<div class="smallCard" data-title="Conseil des sage - Organe consultatif" data-imgsrc="{{ asset('images/QuiSommesNous/organigramme/Consultatif.png') }}" data-activecard="true" data-link="/QuiSommesNous/Organigramme/OrganeConsultatif"></div>
+
+			{% elseif '/partenaire' in app.request.uri %}
+
+			<div class="smallCard" data-title="Comité - Organe décisionnel" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/bientot.png') }}" data-activecard="false" data-link="/QuiSommesNous/Organigramme/OrganeDecisionnel"></div>
+
+			<div class="smallCard" data-title="Partenaires académiques / RH" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/academique.png') }}" data-activecard="true" data-link="/QuiSommesNous/partenaire"></div>
+
+			<div class="smallCard" data-title="Autres partenaires" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/autres.png') }}" data-activecard="true" data-link="/QuiSommesNous/autrepartenaire"></div>
+
+			{% elseif '/autrepartenaire' in app.request.uri %}
+
+			<div class="smallCard" data-title="Comité - Organe décisionnel" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/bientot.png') }}" data-activecard="false" data-link="/QuiSommesNous/Organigramme/OrganeDecisionnel"></div>
+
+			<div class="smallCard" data-title="Partenaires académiques / RH" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/academique.png') }}" data-activecard="true" data-link="/QuiSommesNous/partenaire"></div>
+
+			<div class="smallCard" data-title="Autres partenaires" data-imgsrc="{{ asset('images/QuiSommesNous/partenaire/autres.png') }}" data-activecard="true" data-link="/QuiSommesNous/autrepartenaire"></div>
+
+			{% elseif '/modele' in app.request.uri %}
+
+			<div class="smallCard" data-title="Modèle systémique" data-imgsrc="{{ asset('images/QuiSommesNous/modele/sys.png') }}" data-activecard="true" data-link="/QuiSommesNous/modele"></div>
+
+			<div class="smallCard" data-title="Modèle pluri et transdisciplinaire" data-imgsrc="{{ asset('images/QuiSommesNous/modele/pluri.png') }}" data-activecard="true" data-link="/QuiSommesNous/transdisciplinaire"></div>
+
+			{% elseif '/transdisciplinaire' in app.request.uri %}
+
+			<div class="smallCard" data-title="Modèle systémique" data-imgsrc="{{ asset('images/QuiSommesNous/modele/sys.png') }}" data-activecard="true" data-link="/QuiSommesNous/modele"></div>
+
+			<div class="smallCard" data-title="Modèle pluri et transdisciplinaire" data-imgsrc="{{ asset('images/QuiSommesNous/modele/pluri.png') }}" data-activecard="true" data-link="/QuiSommesNous/transdisciplinaire"></div>
+
+	{% endif %}
+
+    {% endblock %}
+	</section>
+
+			<section id='big-container'>
+			{% block bigContainer %}
+			
+			{% endblock %}
+			</section>
+
+		<main>
+			{# Block principale de la page #}
+			{% block modele %}
+			{% endblock %}
+		</main>
+
+		<main>
+			{# Block principale de la page #}
+			{% block partenaire %}
+			{% endblock %}
+		</main>
+
+
+			{% block BouttonHautDePage %}
+				<div id="topArrow"></div>
+			{% endblock %}
+
+
+			{# Footer #}
+			{% block footer %}
+				{% include "/gaea21/footer.html.twig" %}
+			{% endblock %}
+
+
+			{% block javascripts %}
+				<script src="{{ asset('js/visualComponents.js') }}"></script>
+				<script src="{{ asset('js/desInscription.js') }}"></script>
+				<script src="{{ asset('js/redirect.js') }}"></script>
+				<script src="{{ asset('js/login.js') }}"></script>
+				<script src="{{ asset('js/updateAccount.js') }}"></script>
+				<script src="{{ asset('js/updatePassword.js') }}"></script>
+				<script src="{{ asset('js/reinitPassword.js') }}"></script>
+				<script src="{{ asset('js/reinitPasswordLost.js') }}"></script>
+				{{ encore_entry_script_tags('bigCarouselMenuApp') }}
+				{{ encore_entry_script_tags('largeCardApp') }}
+				{{ encore_entry_script_tags('SmallBoxApp') }}
+
+				{{ encore_entry_script_tags('InformationApp') }}
+				{{ encore_entry_script_tags('prevArrowApp') }}
+				{{ encore_entry_script_tags('topArrowApp') }}
+				{{ encore_entry_script_tags('SecondaryNavApp') }}
+				{{ encore_entry_script_tags('LargeBtnApp') }}
+				{{ encore_entry_script_tags('SmallBtnApp') }}
+				{{ encore_entry_script_tags('smallCardApp') }}
+				{{ encore_entry_script_tags('Partenaire') }}
+				{{ encore_entry_script_tags('AutrePartenaire') }}
+				{{ encore_entry_script_tags('TransCard') }}
+				{{ encore_entry_script_tags('WhoCarousel') }}
+
+
+
+
+				{# {{ encore_entry_script_tags('ModalApp') }} #}
+
+
+			{% endblock %}
+
+		</body>
+	</html>

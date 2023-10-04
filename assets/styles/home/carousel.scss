@@ -1,0 +1,550 @@
+@use "../function";
+
+/* The CSS for the dots. */
+.alice-carousel__dots {
+  left: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: function.pxToVw(830px, 1920px);
+
+  /* Setting the width and height of the dots. */
+  .alice-carousel__dots-item {
+    width: function.pxToVw(20px, 1920px);
+    height: function.pxToVw(20px, 1920px);
+    background-color: transparent;
+    border: 1px solid white;
+  }
+
+  .alice-carousel__dots-item:hover {
+    background-color: #ffffff;
+  }
+
+  .alice-carousel__dots-item:not(.__custom).__active {
+    background-color: #ffffff;
+  }
+}
+
+/* The CSS for the header carousel */
+.item {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .alice-carousel__stage-item {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .item_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    padding-top: 5em;
+    padding-left: 9.5vw;
+    padding-right: 8em;
+    z-index: 1;
+  }
+
+  .item_content._dark {
+    color: #000000;
+  }
+
+  p {
+    font-size: 1.6vw;
+    font-weight: 500;
+    width: function.pxToVw(896px, 1920px);
+  }
+
+  hr {
+    width: 4.7vw;
+    height: 0.2vw;
+    margin-left: 0;
+    background: black;
+    color: black;
+    opacity: 1;
+  }
+
+  h3 {
+    font-size: 4.4vw;
+    font-weight: bold;
+    width: 34.5vw;
+  }
+}
+
+
+/* The CSS for the highlight carousel  */
+
+.section {
+  .alice-carousel > div {
+    text-align: -webkit-right;
+    text-align: -moz-right;
+    margin-right: function.pxToVw(181px, 1920px);
+  }
+
+  .alice-carousel__wrapper {
+    width: function.pxToVw(750px, 1920px);
+  }
+}
+
+.item_diapo {
+  position: relative;
+}
+
+.item_diapo img {
+  width: function.pxToVw(750px, 1920px);
+  height: function.pxToVw(614px, 1920px);
+  border-radius: function.pxToVw(25px, 1920px);
+}
+
+.item_diapo_background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(74, 74, 74, 1) 49%, rgba(255, 255, 255, 0) 82%, rgba(255, 255, 255, 0) 100%);
+  border-radius: function.pxToVw(25px, 1920px);
+  opacity: 0.7;
+}
+
+.item_diapo_content {
+  position: absolute;
+  bottom: function.pxToVw(52px, 1920px);
+  left: function.pxToVw(78px, 1920px);
+  width: function.pxToVw(528px, 1920px);
+  color: #FFFFFF;
+  text-align: left;
+  z-index: 1;
+}
+
+.item_diapo_content h3 {
+  font-size: function.pxToVw(30px, 1920px);
+  font-weight: bold;
+}
+
+.item_diapo_content p {
+  font-size: function.pxToVw(25px, 1920px);
+}
+
+.item_diapo_content a {
+  padding: 0.5vw;
+  font-size: 1.2vw;
+  transition: 0.5s;
+  cursor: pointer;
+  height: function.pxToVw(66px, 1920px);
+  width: function.pxToVw(66px, 1920px);
+  border-radius: 1.7vw;
+  overflow: hidden;
+  color: #FFFFFF !important;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+
+}
+
+.item_diapo_content a:before {
+  content: "❯";
+  padding-left: 0.85vw;
+  padding-right: 0.85vw;
+  font-size: 1.6vw;
+  transition: 0.5s;
+  color: #98984B;
+}
+
+.item_diapo_content a:hover {
+  width: function.pxToVw(240px, 1920px);
+  color: #98984B !important;
+}
+
+/* The CSS for the highlight carousel thumbs  */
+
+.item_diapo_thumbs {
+  position: absolute;
+  margin-left: function.pxToVw(181px, 1920px);
+  height: function.pxToVw(645px, 1920px);
+  width: function.pxToVw(540px, 1920px);
+}
+
+.item_diapo_thumb {
+  width: 100%;
+  padding-bottom: function.pxToVw(31px, 1920px);
+  height: function.pxToVw(215px, 1920px);
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.item_diapo_thumb span img {
+  height: 100%;
+  border-radius: function.pxToVw(25px, 1920px);
+}
+
+.item_diapo_thumb span {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.item_diapo_thumb span:hover {
+  transform: scale(1.03);
+}
+
+.item_diapo_thumb_content {
+  width: function.pxToVw(256px, 1920px);
+  margin: auto 0;
+}
+
+.item_diapo_thumb_content h3 {
+  font-size: function.pxToVw(25px, 1920px);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.item_diapo_thumb_content p {
+  font-size: function.pxToVw(20px, 1920px);
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 1;
+}
+
+/* The CSS for the agenda carousel */
+
+.sectionAgenda .alice-carousel__wrapper {
+  width: function.pxToVw(1620px, 1920px);
+  height: function.pxToVw(422px, 1920px);
+}
+
+.sectionAgenda .alice-carousel > div {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+
+}
+
+.sectionAgenda .alice-carousel__stage-item {
+  width: function.pxToVw(540px, 1920px) !important;
+}
+
+.sectionAgenda .fill_parent_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionAgenda .agenda_item {
+  position: relative;
+  width: function.pxToVw(477px, 1920px);
+  height: function.pxToVw(418px, 1920px);
+}
+
+.agenda_item_top {
+  width: 100%;
+  height: function.pxToVw(321px, 1920px);
+  border-radius: function.pxToVw(10px, 1920px);
+  box-shadow: 0 0 8px 1px #D6D6D6;
+}
+
+.agenda_item_bottom {
+  width: 100%;
+  height: function.pxToVw(66px, 1920px);
+  margin-top: function.pxToVw(34px, 1920px);
+  display: flex;
+  justify-content: center;
+}
+
+.sectionAgenda .agenda_item_date {
+  position: absolute;
+  top: function.pxToVw(25px, 1920px);
+  left: function.pxToVw(25px, 1920px);
+  width: function.pxToVw(116px, 1920px);
+  height: function.pxToVw(116px, 1920px);
+  border-radius: function.pxToVw(10px, 1920px);
+  box-shadow: 0 0 8px 1px #D6D6D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionAgenda .agenda_item_date h2 {
+  font-size: function.pxToVw(40px, 1920px);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.sectionAgenda .agenda_item_date h3 {
+  font-size: function.pxToVw(28px, 1920px);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+
+}
+
+.agenda_item_state {
+  position: absolute;
+  top: function.pxToVw(156px, 1920px);
+  left: function.pxToVw(25px, 1920px);
+  width: function.pxToVw(116px, 1920px);
+  height: function.pxToVw(37px, 1920px);
+  background-color: #C1C192;
+  border-radius: function.pxToVw(10px, 1920px);
+  color: #FFFFFF;
+  font-size: function.pxToVw(24px, 1920px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: function.pxToVw(15px, 1920px);
+  padding-right: function.pxToVw(15px, 1920px);
+  transition: width 0.5s;
+}
+
+.agenda_item_state:hover {
+  width: fit-content;
+  z-index: 1;
+}
+
+
+.agenda_item_state h3 {
+  margin: 0;
+  padding: 0;
+  font-size: function.pxToVw(24px, 1920px);
+  white-space: nowrap;
+}
+
+.agenda_item_content {
+  position: absolute;
+  top: function.pxToVw(45px, 1920px);
+  right: function.pxToVw(25px, 1920px);
+  width: function.pxToVw(286px, 1920px);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.agenda_item_content h3 {
+  font-size: function.pxToVw(28px, 1920px);
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.agenda_item_content span {
+  font-size: function.pxToVw(19px, 1920px);
+  color: #8E8E8E;
+  font-style: italic;
+  margin-top: function.pxToVw(18px, 1920px);
+}
+
+.agenda_item_content p {
+  font-size: function.pxToVw(24px, 1920px);
+  color: #8E8E8E;
+  margin-top: function.pxToVw(43px, 1920px);
+}
+
+.agenda_item_content a {
+  font-size: function.pxToVw(24px, 1920px);
+  color: #98984b !important;
+  margin-top: function.pxToVw(35px, 1920px);
+  cursor: pointer;
+}
+
+.agenda_item_content a:hover {
+  text-decoration: underline !important;
+}
+
+.agenda_item_bottom_button {
+  height: 100%;
+  width: function.pxToVw(323px, 1920px);
+  background-color: #98984B;
+  color: #FFFFFF;
+  border-radius: function.pxToVw(50px, 1920px);
+  border: none;
+  font-size: function.pxToVw(22px, 1920px);
+  transition: all 0.5s ease;
+}
+
+.agenda_item_bottom_button:hover {
+  background-color: #ffffff;
+  color: #98984B;
+}
+
+.sectionAgenda .alice-carousel__prev-btn {
+  position: absolute;
+  top: function.pxToVw(-100px, 1920px);
+  right: function.pxToVw(282px, 1920px);
+  width: function.pxToVw(74px, 1920px);
+  height: function.pxToVw(74px, 1920px);
+  border-radius: function.pxToPourcent(50%, 74px);
+  color: #98984B;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 5px 2px #D6D6D6;
+  font-size: function.pxToVw(30px, 1920px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sectionAgenda .alice-carousel__prev-btn:hover {
+  box-shadow: none;
+}
+
+.sectionAgenda .alice-carousel__next-btn {
+  position: absolute;
+  top: function.pxToVw(-100px, 1920px);
+  right: function.pxToVw(183px, 1920px);
+  width: function.pxToVw(74px, 1920px);
+  height: function.pxToVw(74px, 1920px);
+  border-radius: function.pxToPourcent(50%, 74px);
+  color: #98984B;
+  background-color: #FFFFFF;
+  box-shadow: 0 3px 5px 2px #D6D6D6;
+  font-size: function.pxToVw(30px, 1920px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sectionAgenda .alice-carousel__next-btn:hover {
+  box-shadow: none;
+}
+
+/* The CSS for the partner carousel */
+
+.sectionPartner {
+  position: relative;
+  width: 100%;
+  height: function.pxToVw(847px, 1920px);
+  background: linear-gradient(90deg, #828858 0%, #839791 50%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sectionPartner .partner_title > h4 {
+  color: #FFFFFF;
+  font-size: function.pxToVw(50px, 1920px);
+  font-weight: bolder;
+  margin-top: function.pxToVw(93px, 1920px);
+  text-align: center;
+}
+
+.sectionPartner .alice-carousel__wrapper {
+  width: function.pxToVw(1516px, 1920px);
+  height: function.pxToVw(500px, 1920px);
+}
+
+.sectionPartner .alice-carousel > div {
+  text-align: -webkit-center;
+  text-align: -moz-center;
+}
+
+.sectionPartner .alice-carousel__stage-item {
+  width: function.pxToVw(505.3px, 1920px) !important;
+}
+
+.sectionPartner .partner_item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sectionPartner .alice-carousel__dots {
+  top: initial;
+  margin-bottom:  function.pxToVw(-90px, 1920px);;
+  bottom: 0;
+}
+
+.charter_button {
+  position: absolute;
+  margin-bottom: function.pxToVw(93px, 1920px);
+  bottom: 0;
+  left: function.pxToVw(168px, 1920px);
+  color: #FFFFFF;
+  font-size: function.pxToVw(25px, 1920px);
+  text-decoration: underline;
+}
+
+.partners_button {
+  position: absolute;
+  margin-bottom: function.pxToVw(93px, 1920px);
+  bottom: 0;
+  right: function.pxToVw(168px, 1920px);
+  color: #FFFFFF;
+  font-size: function.pxToVw(25px, 1920px);
+  text-decoration: underline;
+}
+
+.partner_item_founder{
+  width: 100%;
+  height: function.pxToVw(72px, 1920px);
+}
+.partner_item_founder > p{
+  color: #e0ddc9;
+  font-size: function.pxToVw(25px, 1920px);
+  font-weight: bold;
+  margin: 0;
+}
+
+.partner_item_founder .partner_item_founder_subtitle{
+  text-decoration: underline;
+  font-size: function.pxToVw(20px, 1920px);
+}
+
+.partner_item_description {
+    width: 100%;
+    height: function.pxToVw(220px, 1920px);
+}
+
+.partner_item_description > p{
+  margin: auto;
+  width: function.pxToVw(300px, 1920px);
+  height: 100%;
+  color: #FFFFFF;
+  font-size: function.pxToVw(20px, 1920px);
+  font-style: italic;
+  line-height: function.pxToVw(24px, 1920px);;
+}
+
+.partner_item_icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: function.pxToVw(243px, 1920px);
+}
+
+.partner_item_icon_image{
+  width: -webkit-fill-available;
+}
+
+.partner_item_icon_container{
+  margin: 0 function.pxToVw(108.5px, 1920px);
+  width: -webkit-fill-available;
+}

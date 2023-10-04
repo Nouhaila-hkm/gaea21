@@ -1,0 +1,28 @@
+@use "sass:math";
+@import "../../_function";
+
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+    
+    ._backgroundpartenaire {
+        background-image: url("../../../../images/QuiSommesNous/partenaire/backgroundpartenaire.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+        .partenaire {
+            background-color: #BE6650 !important;
+        }
+
+}
+
+#partenaire {
+    width: 67.9vw;
+    margin: 0 auto;
+    display: block;
+}
+
+#partenaire{display: block !important;}

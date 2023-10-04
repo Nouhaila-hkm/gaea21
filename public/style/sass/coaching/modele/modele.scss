@@ -1,0 +1,204 @@
+@use "sass:math";
+@import "../../_function";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    // font-family: Helvetica, sans-serif;
+    // line-height: ;
+}
+
+.headerAccompagnement{
+    display: flex;
+    height: pxToVw(768,1920);
+    color: white;
+}
+
+#header1,#header2{
+    width: 50%;
+}
+
+#header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3D56;
+    
+    article{
+        width: 70%;
+        
+        h1{
+            font-size: pxToVw(50,1920);
+        }
+
+    }
+}
+
+#header2{
+    background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+    background-position: center;
+}
+
+
+
+.listeLiens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: pxToVw(120,1920);
+    border: 1px solid grey;
+    margin-bottom: pxToVw(60,1920);
+    ul{
+        display: flex;
+        gap: pxToVw(115,1920);
+        font-size: pxToVw(25,1920);
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+main{
+    width:pxToPourcent(1554, 1920); 
+    margin: 0 auto;
+
+    #prevArrow{
+        display: block;
+        width: pxToVw(170,1920);
+    }
+}
+
+
+#cycles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 61.5px;
+}
+
+#cycles>div{
+    width: pxToVw(464,1920);
+    height: pxToVw(280,1920);
+    margin: 10px;
+}
+
+#projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/projet.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+}
+
+#humain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+#statistiques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+#sagitil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    h2{
+        font-size: pxToVw(50,1920);
+        margin-top: pxToVw(90,1920);
+        margin-bottom: pxToVw(45,1920);
+    }
+    div{
+        font-size: pxToVw(30,1920);
+        margin-bottom: pxToVw(60,1920);
+    }
+}
+
+#stats {
+    display: flex;
+    width: 100%;
+    margin-bottom: 61px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: pxToVw(287,1920);
+        width: 20%;
+        background-color: rgb(250, 250, 246);
+        h4{
+            color: #98984B;
+            font-size: pxToVw(84, 1920);
+        }
+        p{
+            font-size: pxToVw(30, 1920);
+            font-weight: bold;
+        }
+    }
+}
+
+#localisation {
+    display: flex;
+    justify-content: space-between;
+
+    .planete, .listePays{
+        width: 40%;
+        height: pxToVw(591,1920);
+    }
+    
+    .planete>img{
+        width: 100%;
+    }
+    
+    .listePays{
+        height: pxToVw(591,1920);
+        img{
+            height: pxToVw(399,1920);
+            width: pxToVw(600,1920);
+        }
+        .liste{
+            display: flex;
+            flex-wrap: wrap;
+            
+                .item{
+                    font-size: pxToVw(18,1920);
+                    font-weight: bold;
+                    width: pxToVw(150,1920);
+                    list-style-type: disc;
+                    margin-right: pxToVw(80px,1920);
+                    margin-bottom: pxToVw(18px,1920);
+                    padding-left:pxToVw(30px,1920);
+        
+                    &:nth-child(3n+3){
+                        margin-right: 0px;
+                    }
+                }
+            
+        }
+        
+    }
+
+}
+
+
+

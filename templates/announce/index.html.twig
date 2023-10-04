@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vos annonces{% endblock %}
+
+{% block body %}
+    <a href="{{ path('newAnnounce') }}">Créer une nouvelle annonce</a>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Réference</th>
+                <th>Titre</th>
+                <th>Contributeurs</th>
+                <th>Date de création</th>
+                <th>Dernière modification</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for announce in app.user.announces %}
+                <tr>
+                    <td><a href="{{ path('annunceShow', {id: announce.id}) }}">{{ announce.reference }}</a></td>
+                    <td>{{ announce.title }}</td>
+                    <td>
+                        {% for collaborator in announce.collaborators %}
+                            {% if loop.first == false %}
+                                /
+                            {% endif %}
+                            {{ collaborator.0 }} {{ collaborator.1 }}
+                        {% endfor %}
+                    </td>
+                    <td>{{ announce.createddate|date("d/m/Y H:i:s") }}</td>
+                    <td>{{ announce.updateddate is empty ? "" : announce.updateddate|date("m/d/Y H:i:s") }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

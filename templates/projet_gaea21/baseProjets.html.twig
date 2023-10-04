@@ -1,0 +1,211 @@
+
+    <!DOCTYPE html>
+<html class="{% block cssimport %}{% endblock %}">
+    <head>
+{% block head %}
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="{{asset('imagesgaea21/logo_gaea21.png')}}" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    {% block stylesheets %}
+        {# <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('materialize/css/Style.css') }}" rel="stylesheet"/>  #}
+        {{ encore_entry_link_tags('topBar') }} 
+        {{ encore_entry_link_tags('largeCardApp') }}
+
+        {{ encore_entry_link_tags('bigCarouselMenuApp') }}
+        {{ encore_entry_link_tags('InformationApp') }}
+        {{ encore_entry_link_tags('prevArrowApp') }}
+        {{ encore_entry_link_tags('topArrowApp') }} 
+        {{encore_entry_link_tags('SmallBoxApp') }}
+        {{encore_entry_link_tags('SecondaryNavApp') }}
+        {{encore_entry_link_tags('LargeBtnApp') }}
+        {{encore_entry_link_tags('SmallBtnApp') }}
+        {{encore_entry_link_tags('AvancerProjetApp') }}
+        {{encore_entry_link_tags('ProjetCarousel') }}
+        {# {{encore_entry_link_tags('ModalApp') }} #}
+
+        {# CSS de la base #}
+        <link href="{{ asset('style/projet_gaea21/projetgaea21_base.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('style/quiSommesNous/QuiSommesNous_base.css') }}" rel="stylesheet"/>
+
+    {% endblock %}
+        
+{% endblock %}
+    </head>
+
+<body>
+		{% include "/components/_topbar.html.twig" %}
+
+        {# header commun aux pages #}
+        <header id="header">
+		    {% block header %}
+                <div class="_text-content">
+                    <div class="text">
+                        <h2>Projets de recherche appliquée</h2>
+                        {# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+                    </div>
+                </div>
+                <div class="_background"></div>
+            {% endblock %}
+        </header>
+
+
+
+        {# la barre de navigation secondaire #}
+        {% block sousMenu %}
+            <div id='secondaryNav' data-filename="dataPourLaSousNav/itemsProjets.json"></div>
+		{% endblock %}
+
+        {% block bouttonRetour %}
+            <div id="prevArrow" data-link="/projets"></div>
+		{% endblock %}
+
+        {% block troisiemeSousMenu %}
+            <div id="ProjetCarousel"></div>
+		{% endblock %} 
+
+
+        {% block AvanceProjet %}
+        <div id="encartProjet"></div>
+        {% endblock %}
+
+        <main id="main">
+        {# Block principale de la page #}
+		{% block main %}
+        ICI JE VAIS METTRE LE CONTENU DE LA PAGE (div id="main">)
+        {% endblock %}
+        </main>
+
+        {% block participer %}
+        {% endblock %}
+
+
+
+        
+        <section id="projects">
+        {% block project %}
+		{% endblock %}
+        </section>
+        
+        <div id="vignettes"> 
+            {# Icone de redirection vers les pages web etc... #}
+            {% block vignettes %}
+                    
+            <div class="more-links"
+            data-title="Site internet"
+            data-link="https://www.google.fr" 
+            data-iconsvg={{asset('images/icone_svg_png/website.svg') }}
+            data-disabled="true">
+            </div>
+            <div class="more-links"
+            data-title="Brochure"
+            data-link="#"
+            data-iconsvg={{asset('images/icone_svg_png/brochure.svg') }}
+            data-disabled="true">
+            </div>
+            <div class="more-links"
+            data-title="Poster"
+            data-link="#"
+            data-iconsvg={{asset('images/icone_svg_png/poster.svg') }}
+            data-disabled="true">
+            </div> 
+
+            
+            {% endblock %}
+        </div> 
+
+        {% block BouttonHautDePage %}
+            <div id="topArrow"></div>
+		{% endblock %}
+
+         
+        <section id="forms">
+            {# Acces aux formulaire (à créeér#}
+            {% block formulaires %}
+                <h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+                <div class="formulaires">
+                    <div class="more-links"
+                        data-title="Partenariat"
+                        data-link="
+                            {{ path("form_build_projet", { 
+                                'formInfo': 'Partenariat', 
+                                'projet' : 'gaea21' 
+                            })}}" 
+                        data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+                        data-disabled="false"
+                        data-description="Devenez partenaire du projet.">
+                    </div> 
+                    <div class="more-links"
+                    data-title="Soutenir"
+                    data-link="#"
+                    data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+                    data-disabled="true"
+                    data-description="Soutenez le projet.">
+                    </div>
+                    <div class="more-links"
+                    data-title="Participer"
+                    data-link="#"
+                    data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+                    data-disabled="true"
+                    data-description="Rejoignez l'équipe du projet.">
+                    </div>
+
+                </div>
+
+                <p class='ou'>ou</p>
+
+                <div 
+                    class="largeBtn" 
+                    data-txt="Nous contacter" 
+                    data-link="
+                            {{ path("form_build_projet", { 
+                                'formInfo': 'Contact', 
+                                'projet' : 'gaea21'  
+                            })}}" >
+                </div>
+                {# <div class="smallBtn" data-txt="button"></div> #}     
+		    {% endblock %}        
+        </section>
+
+        
+
+        {# Footer #}
+        {% block footer %}
+			{% include "/gaea21/footer.html.twig" %}
+		{% endblock %}
+	
+
+        
+
+    {% block javascripts %}
+         <script src="{{ asset('js/visualComponents.js') }}"></script>
+         <script src="{{ asset('js/desInscription.js') }}"></script>
+         <script src="{{ asset('js/redirect.js') }}"></script>
+         <script src="{{ asset('js/login.js') }}"></script>
+         <script src="{{ asset('js/updateAccount.js') }}"></script>
+         <script src="{{ asset('js/updatePassword.js') }}"></script>
+         <script src="{{ asset('js/reinitPassword.js') }}"></script>
+         <script src="{{ asset('js/reinitPasswordLost.js') }}"></script>
+         {{ encore_entry_script_tags('bigCarouselMenuApp') }} 
+          {{ encore_entry_script_tags('largeCardApp') }}
+        {{ encore_entry_script_tags('SmallBoxApp') }}
+
+        {{ encore_entry_script_tags('InformationApp') }}
+        {{ encore_entry_script_tags('prevArrowApp') }}
+        {{ encore_entry_script_tags('topArrowApp') }}
+        {{ encore_entry_script_tags('SecondaryNavApp') }}
+        {{ encore_entry_script_tags('LargeBtnApp') }}
+        {{ encore_entry_script_tags('SmallBtnApp') }}
+        {{ encore_entry_script_tags('AvancerProjetApp') }}
+        {{ encore_entry_script_tags('ProjetCarousel') }}
+        
+        {# {{ encore_entry_script_tags('ModalApp') }} #}
+         
+         
+	{% endblock %}
+
+</body>

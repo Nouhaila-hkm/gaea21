@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   {# {% include "/main/topbar.html.twig" %}   #}
+<br>
+<br>
+  <div class="row">
+  <div class="container">
+    <div class="card-panel col l8 m8 s12 transparent">
+    <br>
+    <span class="card-title">AJOUTER UNE LANGUE</span>
+     {{ form_start(formLangue) }}
+      <div class="row">
+        <div class="input-field">
+          <i class="material-icons textColor prefix">
+           list
+          </i>
+           {{ form_widget(formLangue.name) }}
+        </div>
+        <div class="input-field">
+          <i class="material-icons textColor prefix">
+           person
+          </i>
+           {{ form_widget(formLangue.Abreviation) }}
+        </div>
+        <div class="input-field">
+          <i class="material-icons textColor prefix">
+           person
+          </i>
+           {{ form_widget(formLangue.Icons) }}
+        </div>
+      </div>
+      <div>
+         <button type="reset" class="btn red waves-effect waves-light" style="border-radius:100px; margin-top:10%;">
+          <i class="material-icons">cancel</i>
+          Annuler
+         </button>
+         <button type="submit" class="btn gaeaColor" style="border-radius:100px; margin-top:10%;">
+           <i class="material-icons">done</i>
+          Valider
+         </button>
+      </div>
+     {{ form_end(formLangue) }}
+    </div>
+    </div>
+</div>
+{% endblock %}

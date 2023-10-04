@@ -1,0 +1,150 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    // gap: pxToVw(5px, 1920);
+    margin-bottom: pxToVw(51px, 1920);
+
+    h2 {
+      position: relative;
+      top: pxToVw(29px, 1920);
+      margin-left: pxToVw(18, 1920);
+    }
+
+    .logo {
+      width: pxToVw(89px, 1920);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .intro-ges {
+
+    .partie1 {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: pxToVw(80, 1290);
+
+      // margin-bottom: pxToVw(86px, 1290);
+      .text {
+        width: pxToPourcent(947, 1290);
+
+        p:first-of-type {
+          margin-bottom: pxToVw(50, 1920);
+        }
+      }
+
+      .img-calendrier {
+        width: pxToPourcent(250, 1290);
+
+        img {
+          width: 100%;
+          position: relative;
+          top: pxToVw(44px, 1920);
+        }
+      }
+    }
+
+    .partie2 {
+      display: flex;
+      flex-direction: row;
+      gap: pxToVw(21, 1290);
+
+      margin-top: pxToVw(90, 1920);
+
+      // margin-bottom: pxToVw(86px, 1290);
+      .text {
+        width: pxToPourcent(1014, 1290);
+
+
+      }
+
+    }
+
+    .img-activites {
+      width: pxToPourcent(254, 1290);
+
+      img {
+        position: relative;
+        bottom: pxToVw(5px, 1920);
+        width: 100%;
+      }
+    }
+  }
+
+  .impacts {
+    margin-top: pxToVw(73, 1290);
+
+    .intro-impact {
+      margin-bottom: pxToVw(36, 1920);
+    }
+
+    .listDesImpacts {
+      margin-bottom: pxToVw(60, 1920);
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: pxToVw(20px, 1290);
+        margin-bottom: pxToVw(22, 1920);
+
+        .description {
+          width: pxToVw(1175, 1290);
+        }
+
+        .img-impact {
+          width: pxToPourcent(93, 1290);
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+
+
+    }
+
+    p:last-of-type {
+      margin-bottom: pxToVw(17, 1920);
+    }
+
+    .asso {
+      margin-top: pxToVw(60, 1920) 0 pxToVw(17, 1920);
+
+      .participants {
+        display: flex;
+        gap: pxToVw(12px, 1290);
+
+        div {
+          width: pxToPourcent(39, 1290);
+          // background: red;
+
+          img{
+            width:100%;
+          }
+        }
+
+        p {
+          width: pxToPourcent(1234, 1290);
+        }
+      }
+    }
+  }
+
+  .phraseDeFin {
+    margin-top: pxToVw(60, 1920);
+
+    p:first-of-type {
+      margin-bottom: pxToVw(50, 1920);
+    }
+  }
+}

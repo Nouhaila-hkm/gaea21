@@ -1,0 +1,14 @@
+{% extends 'gaea21/article/base.html.twig' %}
+
+{% block articleSection %}
+<!-- Article List Section : Liste des articles -->
+<div class="section -articlelist">
+	{% for article in articles %}
+	{{ include('gaea21/article/article.html.twig') }}
+	{% endfor %}
+</div>
+{% endblock %}
+{% block javascripts %}
+<script src="{{ asset('js/keepScroll.js')}}"></script>
+{{ parent() }}
+{% endblock %}

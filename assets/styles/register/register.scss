@@ -1,0 +1,84 @@
+@import '../function';
+
+.avatar-register {
+    width: pxToVw(350px, 1920px);
+    height: pxToVw(350px, 1920px);
+    position: absolute;
+    left: pxToVw(780px, 1920px);
+    top: pxToVw(600px, 1920px)
+}
+
+
+#register {
+    margin-bottom: 15%;
+}
+
+span:hover {
+    background-color: white;
+    border-radius: 0;
+    padding: 0;
+    display: inline;
+}
+
+.register-info {
+    font-size: pxToVw(35px, 1920px);
+    margin-bottom: 3%;
+}
+
+.perso {
+    font-size: pxToVw(25px, 1920px);
+}
+
+.family {
+    margin-left: pxToVw(485px, 1920px);
+}
+
+.easy-edit-wrapper, .labelForm {
+    display: none !important;
+}
+
+.info-required {
+    font-size: pxToVw(18px, 1920px);
+    margin-left: pxToVw(400px, 1920px);
+}
+
+
+.register-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%
+}
+
+.register, .connect {
+    width: 15%;
+}
+
+#register-connect {
+    width: 100%;
+    margin-left: 85vw;
+    margin-top: 3%
+}
+
+#haveacount {
+    font-size: pxToVw(18px, 1920px);
+    margin-top: 1%;
+}
+
+.returnregister {
+    position: absolute;
+    left: pxToVw(183px, 1920px);
+    top: pxToVw(230px, 1920px);
+}
+
+#mdp {
+    margin-top: 4% !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .register-button {
+        margin-top: 28%;
+    }
+}

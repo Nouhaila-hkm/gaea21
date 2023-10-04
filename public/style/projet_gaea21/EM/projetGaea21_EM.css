@@ -1,0 +1,115 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3541666667vw;
+  margin-bottom: 1.3541666667vw;
+}
+#main .project-title .logo {
+  width: 8.3776041667vw;
+}
+#main .project-title img {
+  width: 100%;
+}
+#main .intro-ecominds .cercle {
+  width: 55.3488372093%;
+  margin: 0 auto;
+  margin-top: 1.875vw;
+  margin-bottom: 2.6041666667vw;
+}
+#main .intro-ecominds .cercle img {
+  width: 100%;
+}
+#main .intro-ecominds p:nth-of-type(2) {
+  margin-bottom: 2.6041666667vw;
+}
+#main .intro-ecominds p:nth-of-type(4) {
+  margin-top: 3.6458333333vw;
+}
+#main .intro-ecominds p:nth-of-type(4) {
+  margin-bottom: 2.6041666667vw;
+}
+#main .intro-ecominds p:nth-of-type(5) {
+  margin-bottom: 2.6041666667vw;
+}
+#main .intro-ecominds .avantages-ecominds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.2015503876vw;
+  margin-top: 1.9791666667vw;
+}
+#main .intro-ecominds .avantages-ecominds .tarifs {
+  width: 23.2558139535%;
+  height: 13.5416666667vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#main .intro-ecominds .avantages-ecominds .tarifs .euro {
+  width: 57.6666666667%;
+  margin: 0 auto;
+}
+#main .intro-ecominds .avantages-ecominds .tarifs .euro img {
+  width: 100%;
+}
+#main .intro-ecominds .avantages-ecominds .tarifs p {
+  text-align: center;
+  padding: 0 0.5208333333vw;
+}
+#main .intro-ecominds .avantages-ecominds .package {
+  width: 23.2558139535%;
+  height: 13.5416666667vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.2916666667vw;
+}
+#main .intro-ecominds .avantages-ecominds .package .paquet {
+  width: 63%;
+  margin: 0 auto;
+  position: relative;
+  top: 1.8229166667vw;
+  left: 0;
+}
+#main .intro-ecominds .avantages-ecominds .package .paquet img {
+  width: 100%;
+}
+#main .intro-ecominds .avantages-ecominds .package p {
+  text-align: center;
+}
+#main .intro-ecominds .avantages-ecominds .contrat {
+  width: 23.2558139535%;
+  height: 13.5416666667vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5729166667vw;
+}
+#main .intro-ecominds .avantages-ecominds .contrat .contract {
+  width: 51.3333333333%;
+  margin: 0 auto;
+}
+#main .intro-ecominds .avantages-ecominds .contrat .contract img {
+  width: 93%;
+}
+#main .intro-ecominds .avantages-ecominds .contrat p {
+  text-align: center;
+}
+#main .intro-ecominds .dimensions {
+  width: 84.3410852713%;
+  margin: 2.6041666667vw auto 3.3854166667vw;
+}
+#main .intro-ecominds .dimensions img {
+  width: 100%;
+}
+#main .intro-ecominds .smallBox_popup_em {
+  margin-top: 3.125vw;
+  margin-bottom: 3.125vw;
+}
+
+/*# sourceMappingURL=projetGaea21_EM.css.map */

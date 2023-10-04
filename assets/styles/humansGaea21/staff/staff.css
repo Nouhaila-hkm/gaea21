@@ -1,0 +1,370 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#staff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#staff .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+#staff .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#staff .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#staff .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+
+#staff .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+
+#staff .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+
+#staff .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#staff .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  cursor: pointer;
+}
+
+#staff .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#staff .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #98984C;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 1.3020833333%;
+  margin-left: 1.3020833333%;
+}
+
+#staff #menuTemoignages {
+  width: 100%;
+  height: 2.6041666667vw;
+  margin-bottom: 3.6458333333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#staff .listBtnMenu {
+  width: 38.3854166667%;
+  height: 2.2395833333vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#staff .btnMenu {
+  height: 100%;
+  width: auto;
+  padding-left: 1.3020833333%;
+  padding-right: 1.3020833333%;
+  font-size: 1.3020833333vw;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+}
+
+#staff .btnMenu.clicked,
+#staff .btnMenu:hover {
+  background-color: #98984C;
+  color: white;
+}
+
+#staff #navBar {
+  width: 28.6458333333%;
+  margin: 0 0 0 0;
+  margin-left: 7.2916666667%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#staff #navBarDep,
+#staff #NavBarPro {
+  height: 23.4375vw;
+  background-color: lightgray;
+  margin: 0 0 0 0;
+  margin-bottom: 2.2916666667vw;
+  padding-top: 0.5208333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.0416666667vw;
+  background-color: #F5F5F5;
+  border-radius: 1.3020833333vw;
+}
+
+#staff #navBarDep h1,
+#staff #NavBarPro h1 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 0 0 0;
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  border-bottom: solid 2px #989655;
+}
+
+#staff #navBarDep ul,
+#staff #NavBarPro ul {
+  width: 100%;
+}
+
+#staff #navBarDep li,
+#staff #NavBarPro li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5.2083333333%;
+}
+
+#staff #navBarDep .scrollCercle,
+#staff #NavBarPro .scrollCercle {
+  margin-right: 2.6041666667%;
+  width: 4.6875%;
+  height: 0.9895833333vw;
+  border: 0.15625vw solid #989655;
+  border-radius: 50% 50% 50% 50%;
+  background-color: white;
+}
+
+#staff #navBarDep .scrollCercle.selected,
+#staff #NavBarPro .scrollCercle.selected {
+  background-color: #989655;
+}
+
+#staff #NavBarPro {
+  height: 15vw;
+  padding-left: 5.2083333333%;
+  padding-right: 5.2083333333%;
+}
+
+#staff #NavBarPro .rechercheDiv {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.3020833333vw;
+  padding-right: 3.125%;
+  padding-left: 3.125%;
+  padding-top: 0.2604166667vw;
+  border-radius: 1vw;
+  background-color: white;
+}
+
+#staff #NavBarPro .rechercheDiv img {
+  width: 15.625%;
+  height: pxToVm(200px, 1920px);
+  border-radius: 50%;
+  background: transparent;
+  background-color: white;
+}
+
+#staff #NavBarPro .rechercheDiv input {
+  border: 0 !important;
+}
+
+#staff footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#staff .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+
+#staff .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+
+#staff .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+
+#staff .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+#staff html,
+#staff body {
+  height: 100%;
+  width: 100%;
+}
+
+#staff .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#staff .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+
+#staff .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+
+#staff #headerStaff {
+  width: 100%;
+  padding-top: 2.8645833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#staff #headerStaff .back {
+  position: relative;
+  top: -9.375vw;
+  left: -46.875%;
+  width: 0.9375%;
+}
+
+#staff .titreTemoignage {
+  margin-top: 0;
+  margin-bottom: 1.6666666667vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #98984C;
+}
+
+#staff .titreParagraphe {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  margin-bottom: 2.4479166667vw;
+}
+
+#staff #contenue {
+  width: 100%;
+  margin-top: 5.8854166667vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+}
+
+/*# sourceMappingURL=staff.css.map */

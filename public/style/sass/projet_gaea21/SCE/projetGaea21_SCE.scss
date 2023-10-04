@@ -1,0 +1,231 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+    text-align: center;
+    margin-bottom: pxToVw(51px, 1920);
+  }
+
+  .intro-sce {
+
+    .partie1 {
+      p:first-of-type {
+        margin-bottom: pxToVw(45px, 1920);
+      }
+
+      p:last-of-type {
+        margin-bottom: pxToVw(68px, 1920);
+      }
+    }
+
+    .partie2 {
+      display: flex;
+
+      margin-bottom: pxToVw(68, 1920);
+      gap: pxToVw(91, 1290);
+
+      .img-city {
+        width: pxToPourcent(185, 1290);
+
+        img {
+          width: 100%;
+          position: relative;
+          top: 1px;
+        }
+      }
+
+      p {
+        width: pxToPourcent(1014, 1290);
+      }
+    }
+
+    .partie3 {
+      p:first-of-type {
+        margin-bottom: pxToVw(28, 1920);
+      }
+    }
+
+    #categories {
+      // positionnement dans la div
+      display: flex;
+      gap: pxToVw(50px, 1290);
+      margin-top: pxToVw(90px, 1920);
+
+      .categorie1 {
+        // 1er bloc
+        width: pxToPourcent(620, 1290);
+        height: pxToVw(412px, 1920);
+
+        border-radius: 13px;
+        margin-bottom: pxToVw(121, 1920);
+        background: #F6F6F6;
+
+        transition: background-color .3s;
+
+        .text {
+          display: flex;
+          margin-bottom: pxToVw(30, 1920);
+          font-size: pxToVw(25, 1920);
+          line-height: pxToVw(36, 1920);
+
+          p {
+            width: pxToPourcent(506, 620);
+            margin-right: pxToVw(26, 1920);
+          }
+
+          .fleche-svg {
+            width: pxToPourcent(39, 620);
+            display: inline-block;
+            margin-right: pxToVw(10, 620);
+            margin-left: pxToVw(10, 620);
+
+            svg {
+              width: 100%;
+            }
+          }
+        }
+
+        .developper {
+          display: none;
+        }
+      }
+
+      .categorie2 {
+        width: pxToPourcent(620, 1290);
+        height: pxToVw(412px, 1920);
+        border-radius: 13px;
+        margin-bottom: pxToVw(121, 1920);
+        background: #F6F6F6;
+        transition: background-color .3s;
+
+        .text {
+          display: flex;
+          margin-bottom: pxToVw(30, 1920);
+          font-size: pxToVw(25, 1920);
+          line-height: pxToVw(36, 1920);
+
+
+
+          p {
+            width: pxToPourcent(506, 620);
+            margin-right: pxToVw(26, 1920);
+          }
+
+          .fleche-svg {
+            width: pxToPourcent(39, 620);
+            display: inline-block;
+            margin-right: pxToVw(10, 620);
+            margin-left: pxToVw(10, 620);
+
+            svg {
+              width: 100%;
+            }
+          }
+        }
+
+        .text-adevelopper {
+          display: none;
+          margin-bottom: pxToVw(30, 1920);
+          font-size: pxToVw(25, 1920);
+          line-height: pxToVw(36, 1920);
+
+          p {
+            width: pxToPourcent(506, 620);
+            margin-right: pxToVw(26, 1920);
+          }
+
+          .fleche-svg {
+            width: pxToPourcent(39, 620);
+            display: inline-block;
+            margin-right: pxToVw(10, 620);
+            margin-left: pxToVw(10, 620);
+
+            svg {
+              width: 100%;
+            }
+          }
+        }
+
+        .suite {
+          display: none;
+        }
+      }
+
+      .categorie1,
+      .categorie2 {
+
+        .first,
+        .second {
+          font-size: pxToVw(30, 1920);
+          line-height: pxToVw(37, 1920);
+          color: #98984C;
+          text-align: center;
+          margin: pxToVw(26, 1920) pxToVw(89, 1920);
+
+          transition: all .3s;
+        }
+
+        .btn-plus {
+          display: inline-block;
+
+          padding: 0 pxToVw(13px, 1920);
+          border-radius: 50px;
+          position: relative;
+          bottom: pxToVw(20px, 1920);
+          left: pxToVw(281, 1920);
+          border: 1px solid black;
+          cursor:pointer;
+        }
+
+        .btn-moins {
+          display: none;
+
+          padding: 0 pxToVw(16px, 1920);
+          border-radius: 50px;
+          position: relative;
+          bottom: pxToVw(20px, 1920);
+          left: pxToVw(281, 1920);
+          border: 1px solid black;
+          cursor:pointer;
+
+        }
+
+        &:hover {
+          background-color: #98984C;
+        }
+
+        &:hover .first,
+        &:hover .second,
+        &:hover .fleche-svg svg path,
+        &:hover .fleche-svg .fleche-svg {
+          color: white;
+          fill: white;
+          stroke: white;
+        }
+      }
+    }
+  }
+
+  .partie3 {
+
+    .article {
+      display: flex;
+      gap: pxToVw(20, 1290);
+
+      p {
+        width: pxToVw(1021, 1290);
+      }
+
+      .img-map {
+        width: pxToPourcent(226, 1290px);
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

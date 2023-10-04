@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="120"
+   height="120"
+   viewBox="0 0 120 120"
+   version="1.1"
+   id="svg172"
+   sodipodi:docname="Icone B person.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata176">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1360"
+     inkscape:window-height="745"
+     id="namedview174"
+     showgrid="false"
+     inkscape:zoom="1.2470711"
+     inkscape:cx="183"
+     inkscape:cy="103.44238"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Groupe_631" />
+  <defs
+     id="defs151">
+    <filter
+       id="Rectangle_2689"
+       x="0"
+       y="124.486"
+       width="366"
+       height="339"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="9"
+         dy="9"
+         input="SourceAlpha"
+         id="feOffset118" />
+      <feGaussianBlur
+         stdDeviation="4.5"
+         result="blur"
+         id="feGaussianBlur120" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood122" />
+      <feComposite
+         operator="in"
+         in2="blur"
+         id="feComposite124"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite126" />
+    </filter>
+    <filter
+       id="Ellipse_19"
+       x="45.014"
+       y="0"
+       width="269.97299"
+       height="269.97299"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="6"
+         dy="6"
+         input="SourceAlpha"
+         id="feOffset129" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-2"
+         id="feGaussianBlur131" />
+      <feFlood
+         flood-color="#427db3"
+         flood-opacity="0.224"
+         id="feFlood133" />
+      <feComposite
+         operator="in"
+         in2="blur-2"
+         id="feComposite135"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite137" />
+    </filter>
+    <filter
+       id="Union_1"
+       x="124.689"
+       y="66.253998"
+       width="112.416"
+       height="112.416"
+       filterUnits="userSpaceOnUse">
+      <feOffset
+         dx="3"
+         dy="6"
+         input="SourceAlpha"
+         id="feOffset140" />
+      <feGaussianBlur
+         stdDeviation="3"
+         result="blur-3"
+         id="feGaussianBlur142" />
+      <feFlood
+         flood-opacity="0.161"
+         id="feFlood144" />
+      <feComposite
+         operator="in"
+         in2="blur-3"
+         id="feComposite146"
+         result="result1" />
+      <feComposite
+         in="SourceGraphic"
+         in2="result1"
+         id="feComposite148" />
+    </filter>
+  </defs>
+  <g
+     id="Groupe_631"
+     data-name="Groupe 631"
+     transform="translate(-178.5,-1278.014)">
+    <g
+       transform="translate(178.5,1278.01)"
+       filter="url(#Rectangle_2689)"
+       id="g154" />
+    <text
+       id="Le_login_universel_de_gaea21"
+       data-name="Le login universel de gaea21"
+       transform="translate(251.154,1571.375)"
+       fill="#ffffff"
+       font-size="25px"
+       font-family="HelveticaNeue-Bold, 'Helvetica Neue'"
+       font-weight="700"><tspan
+         x="0.97100002"
+         y="24"
+         id="tspan156">Le login universel</tspan><tspan
+         x="43.995998"
+         y="54"
+         id="tspan158">de gaea21</tspan></text>
+    <text
+       id="Plus_d_infos"
+       data-name="Plus d'infos"
+       transform="translate(277.498,1686.75)"
+       fill="#ffffff"
+       font-size="25px"
+       font-family="HelveticaNeue-Medium, 'Helvetica Neue'"
+       font-weight="500"><tspan
+         x="0"
+         y="0"
+         id="tspan161">Plus d'infos</tspan></text>
+    <path
+       id="Tracé_188"
+       data-name="Tracé 188"
+       d="M 1.7,0.8 8.685,7.785 1.7,14.769"
+       transform="translate(424.053,1671.735)"
+       fill="none"
+       stroke="#ffffff"
+       stroke-miterlimit="10"
+       stroke-width="3" />
+    <g
+       transform="translate(178.5,1278.01)"
+       filter="url(#Ellipse_19)"
+       id="g166" />
+    <g
+       transform="translate(56.61441,1215.4634)"
+       filter="url(#Union_1)"
+       id="g169">
+      <path
+         id="Union_1-2"
+         data-name="Union 1"
+         d="m 0,94.416 v -11.8 C 0,69.63 21.243,59.009 47.208,59.009 c 25.965,0 47.208,10.621 47.208,23.606 v 11.8 z M 23.6,23.607 a 23.6,23.6 0 1 1 23.607,23.6 23.606,23.606 0 0 1 -23.607,-23.6 z"
+         transform="translate(130.69,69.25)"
+         fill="#98984c" />
+    </g>
+  </g>
+</svg>

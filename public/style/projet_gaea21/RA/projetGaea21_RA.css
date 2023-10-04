@@ -1,0 +1,39 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#tertiaryMenu {
+  display: none;
+}
+
+#projects, #vignettes {
+  display: none;
+}
+
+#encartProjet {
+  display: none;
+}
+
+#main {
+  margin-top: 1.09375vw;
+}
+#main .text-content {
+  margin: 0 auto;
+  text-align: justify;
+}
+#main .text-content h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.8645833333vw;
+}
+#main .text-content .description {
+  margin-bottom: 6.25vw;
+}
+#main #project-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.8125vw;
+}
+
+/*# sourceMappingURL=projetGaea21_RA.css.map */

@@ -1,0 +1,146 @@
+/* MOVING */
+/* Carrousel ( moving -rotating -largecarrousel )
+  @extend Section(section)
+  @accept (br, p, h3)
+*/
+.moving.-rotating.-largecarrousel {
+  position: relative;
+  padding: 0;
+}
+
+.moving.-rotating.-largecarrousel > * {
+  transition: 1s;
+  opacity: 0;
+  height: 100%;
+}
+
+.moving.-rotating.-largecarrousel > *:nth-child(1) {
+  position: absolute;
+  top: 0;
+  right: 100%;
+}
+
+.moving.-rotating.-largecarrousel > *:nth-child(2) {
+  position: relative;
+  top: 0;
+  right: 0%;
+  opacity: 1;
+}
+
+.moving.-rotating.-largecarrousel > *:nth-child(3) {
+  position: absolute;
+  top: 0;
+  right: -100%;
+}
+
+/* */
+/* Carrousel ( moving -rotating -lateralcarrousel )
+  @extend Section(section)
+  @accept (br, p, h3)
+*/
+.moving.-rotating.-lateralcarrousel {
+  position: relative;
+  padding: 0;
+}
+
+.moving.-rotating.-lateralcarrousel > * {
+  position: absolute;
+  transition: 1s;
+  height: 100%;
+  width: 25%;
+}
+
+.moving.-rotating.-lateralcarrousel > *:nth-child(1) {
+  position: relative;
+  top: 0;
+  left: -45%;
+}
+
+.moving.-rotating.-lateralcarrousel > *:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+}
+
+.moving.-rotating.-lateralcarrousel > *:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 37.5%;
+}
+
+.moving.-rotating.-lateralcarrousel > *:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 62.5%;
+}
+
+.moving.-rotating.-lateralcarrousel > *:nth-child(5) {
+  position: absolute;
+  top: 0;
+  left: 120%;
+}
+
+/* */
+/* Small Diaporama ( moving -rotating -smalldiaporama )
+  Un cadre de diaporama.
+  @extend Section(section)
+  @accept (br, p, h3)
+*/
+.moving.-rotating.-smalldiaporama {
+  position: relative;
+}
+
+.moving.-rotating.-smalldiaporama > *:not(:nth-child(1)) {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  animation-direction: reverse;
+  display: none;
+}
+
+.moving.-rotating.-smalldiaporama > *:nth-child(1) {
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+}
+
+.moving.-rotating.-smalldiaporama > * {
+  z-index: 100;
+  -webkit-animation-name: moving-rotation-smalldiaporama-animation;
+          animation-name: moving-rotation-smalldiaporama-animation;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+@-webkit-keyframes moving-rotation-smalldiaporama-animation {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: inherit;
+    opacity: 0;
+  }
+  to {
+    display: inherit;
+    opacity: 1;
+  }
+}
+
+@keyframes moving-rotation-smalldiaporama-animation {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: inherit;
+    opacity: 0;
+  }
+  to {
+    display: inherit;
+    opacity: 1;
+  }
+}
+/* */
+/* *//*# sourceMappingURL=gaeaMoving.css.map */

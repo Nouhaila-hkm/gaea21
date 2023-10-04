@@ -1,0 +1,127 @@
+.gaeaContact{
+    padding-top: pxToVw(115px, 1920px);
+
+    background-color: white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleGaeaContacte{
+
+    margin-top: 0;
+    margin-bottom: pxToVw(93px, 1920px);
+
+    font-family: "Helvetica";
+    font-size: pxToVw(50px, 1920px);
+    font-weight: bold;
+
+    border-bottom: solid 4px #989655;
+}
+
+.formContact{
+    width: pxToPourcent(1088px, 1920px);
+
+    padding-top: pxToVw(72px, 1920px);
+    background-color: #F8F8F8;
+
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formChamps{
+
+    display: flex;
+    flex-direction: row;
+
+    margin-left: pxToPourcent(48px, 1920px);
+    margin-bottom: pxToVw(47px, 1920px);
+    padding-right: pxToPourcent(406px, 1920px);
+
+}
+
+.fromLabel, .messageLabel{
+    height: pxToVw(36px, 1920px);
+
+    margin-right: 13px;
+
+    display: inline-block;
+
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: pxToVw(30px, 1920px);
+    color: black;
+}
+
+.champsCont{   
+    height: pxToVw(42px, 1920px) !important;
+    width: auto !important;
+   
+    border-radius: 10px !important;
+    background-color: white !important;
+
+    border: 0px !important;
+    flex: 1 0 auto !important;
+}
+
+.champsMessage{
+    display: flex;
+    flex-direction: column;
+}
+
+.messageLabel{
+    margin-left: pxToPourcent(48px, 1920px);
+    margin-bottom: pxToVw(21px, 1920px);
+}
+
+.contMessage{
+    margin-left: pxToPourcent(48px, 1920px) !important;
+    margin-right: pxToPourcent(48px, 1920px) !important;
+    margin-bottom: pxToVw(70px, 1920px) !important;
+    
+    width: auto !important;
+    height: pxToVw(365px, 1920px);
+
+    border: 0;
+    border-radius: 15px;
+
+    background-color: white;
+}
+
+.send{
+    padding-left: pxToPourcent(30px, 1920px);
+    padding-right: pxToPourcent(30px, 1920px);
+    
+    margin-bottom: pxToVw(55px, 1920px);
+
+    height: pxToVw(36px, 1920px);
+    width: auto;
+    
+    border: 0;
+    border-radius: pxToVw(20px, 1920px);
+    box-shadow: 0px 3px 6px #00000080;
+
+    background-color: #F8F8F8;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.send:hover{
+    background-color: #98984C;
+    color: white;
+}
+
+.butText{
+    font-family: "Helvetica";
+    font-size: pxToVw(30px, 1920px);
+    font-weight: bold;
+
+    margin-left: pxToPourcent(27px, 1920px);
+    margin-right: pxToPourcent(27px, 1920px);
+    margin-top: 0px;
+    margin-top: pxToVm(2px, 1920px);
+    margin-bottom: pxToVw(2px, 1920px);
+}

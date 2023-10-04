@@ -1,0 +1,19 @@
+body {
+  margin: 3rem;
+}
+
+.titleAnnouncePdf {
+  color: #969749 !important;
+}
+
+.titleAnnouncePdf, .titleSectionPdf {
+  text-align: center !important;
+}
+
+.refAnnouncePdf, .titleSectionPdf {
+  text-align: justify;
+}
+
+.refAnnouncePdf {
+  margin: 3rem 0 3rem;
+}/*# sourceMappingURL=announcePdf.css.map */

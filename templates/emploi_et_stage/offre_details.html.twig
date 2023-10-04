@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %} 
+
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('offres') }} 
+    {{ encore_entry_link_tags('header') }}
+    {{ encore_entry_link_tags('offres-details') }}
+    
+    
+{% endblock %}
+
+{% block body %}
+  
+    <div id="offre">
+ 
+{% include "/emploi_et_stage/header.html.twig" %}
+
+ <section class="offre-1">
+
+            <div class="img-1">
+                <img class='offre-img' src="{{ asset('Image/emploi_et_stage/icon-loupe.svg')}}"/>
+            </div>
+
+            <div class="p-t"><b>Offres gaea21</b></div>
+
+        </section>
+       
+
+       <div class="return-link">
+       <a href="{{ path('app_offre') }}"> <img src="{{ asset('Image/emploi_et_stage/offres/arrow-left.svg')}}" alt=""> Retour aux résultats de recherche</a> 
+       </div>
+
+       <div id="offres-details"></div>
+
+
+        {# <div class="tasks">
+        <img src="" alt="">
+        <p>Description des tâches à faire</p>
+        <i class="fa-solid fa-chevron-down"></i>
+        
+        
+        </div> #}
+       
+       </div>
+
+
+   
+
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+    {{encore_entry_script_tags('offres-details')}}
+{% endblock %}

@@ -1,0 +1,157 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    <link href="{{ asset('style/coaching/humain_av_pt_ap/humain_av_pt_ap.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+    <a id="prevArrow" data-link="/coaching/humain"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section class="projet" id="humainAvant">
+        
+            <h2>Le Cycle de vie du gaeien / humain <span>avant</span> !</h2>
+            <div><p class="projetDesc">L’avant représente le moment où le futur collaborateur postule pour un stage, un projet de transition professionnelle et/ou mission bénévole.</p></div>
+
+            <div class="stepsContainer">
+                
+                <div class="progressContainer">
+                
+                    <div class="progression" id="progression"></div>
+
+                    <div class="circle active"><p class="avant">Candidature / Pré profil</p></div>
+
+                    {# <div class="circle"><p>Test</p></div> #}
+
+
+                </div>
+
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+            </div>
+                    
+    </section>
+
+</main>
+
+<div id="carrousel">
+
+    <button id="g" disabled><a>&#8249;</a></button>
+
+    <div id="container">
+
+        <div class="slide">
+
+            <div class="slideContainer">
+
+                <div class="slideImg"><img class="avant1"src="{{ asset('images/coaching/projet/pre_profil.svg') }}"></div>
+                <div class="slideContent">
+
+                    <h3>Candidature</h3>
+                    <p>Le processus d'engagement démarre avec la <b>réception de sa candidature.</b> Le processus d’accompagnement est déclenché par l’envoi d'un <b>questionnaire de pré-entretien</b> qui nous permet d'établir un <b>pré profil.</b> Ce questionnaire est accompagné par un test informatique et un test pratique de bureautique afin d'évaluer la capacité du candidat à évoluer dans un environnement en télétravail..</p>
+
+                </div>
+
+            </div>
+
+            <div class="slideContainer">
+
+                <div class="slideImg"><img class="avant2"src="{{ asset('images/coaching/humain/pre_profil1.png') }}"></div>
+                <div class="slideContent">
+
+                    <h3>Pré profil</h3>
+                    <p>Le processus d'engagement démarre avec la <b>réception de sa candidature.</b> Le processus d’accompagnement est déclenché par l’envoi d'un <b>questionnaire de pré-entretien</b> qui nous permet d'établir un <b>pré profil.</b> Ce questionnaire est accompagné par un test informatique et un test pratique de bureautique afin d'évaluer la capacité du candidat à évoluer dans un environnement en télétravail..</p>
+
+                </div>
+
+            </div>
+
+            <div class="slideContainer">
+
+                <div class="slideImg"><img class="avant3"src="{{ asset('images/coaching/humain/pre_profil2.png') }}"></div>
+
+                <div class="slideImg"><img class="avant4"src="{{ asset('images/coaching/humain/pre_profil3.png') }}"></div>
+
+                <div class="slideImg"><img class="avant5"src="{{ asset('images/coaching/humain/pre_profil4.png') }}"></div>
+                
+            </div>
+
+            <div class="slideContainer">
+
+                <div class="slideImg"><img class="avant6"src="{{ asset('images/coaching/humain/pre_profil5.png') }}"></div>
+                <div class="slideContent">
+
+                    <p>Il s'accompagne d'une section <b>Ikigai</b> afin d'aider le candidat à se positionner sur une échelle de valeurs intégrant les dimensions vocation, passion, talents, revenu, valeurs sociétales et valeurs individuelles. Il est complété par une étude rapide demandée au candidat afin d'établir à quels types de débouchés ou d'emplois son diplôme lui donne accès. Les résultats obtenus établissent son <b>pré-profil gaea21,</b> c'est-à-dire son profil personnalité, son profil compétences et son profil par rapport à son métier. C'est sur cette base qu'un entretien lui est alors proposé.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <button id="d"><a id="lien_suivant">&#8250;</a></button>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('carrouselCoachingAvant') }}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+{% endblock %}

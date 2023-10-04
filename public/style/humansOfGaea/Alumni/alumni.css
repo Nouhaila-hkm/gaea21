@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+/* HEADER */
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #49A496;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../../images/humansOfGaea/Alumni/header-Alumni.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+/* Sous-Menu*/
+#secondaryNav .navigation-item {
+  padding-right: 8.3333333333vw;
+}
+
+/* Main */
+#main {
+  margin-top: 1.09375vw;
+  /* Global */
+  /* Texte d'intro */
+  /* Première option */
+  /* Séparateur */
+  /* Deuxième option */
+  /* Accès programmes Alumni */
+}
+#main .first-menu .first-menu_item {
+  list-style-type: disc !important;
+  margin-left: 3.125vw;
+}
+#main .second-menu .second-menu_item {
+  list-style-type: none !important;
+  margin-left: 2.34375vw;
+}
+#main .third-menu .third-menu_item {
+  list-style-type: none !important;
+  margin-left: 3.4895833333vw;
+}
+#main .fourth-menu .fourth-menu_item {
+  list-style-type: none !important;
+  margin-left: 5.2083333333vw;
+}
+#main .section-start {
+  display: block !important;
+  margin-bottom: 3.125vw;
+}
+#main .section-start .container-fleche_grise {
+  display: inline-block;
+  width: 2.0930232558%;
+  position: relative;
+  left: -6.3541666667vw;
+}
+#main .section-start .container-fleche_grise .fleche_grise {
+  width: 100%;
+}
+#main .section-start span {
+  position: relative;
+  left: -2.8125vw;
+  font-weight: bold;
+}
+#main .project-title {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main #autres {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4.5833333333vw;
+  margin-bottom: 6.7708333333vw;
+}
+#main #autres .smallCard {
+  width: 24.1666666667vw;
+}
+#main #autres ._small-card ._overlay ._card-header h2 {
+  font-size: 1.5625vw !important;
+  line-height: 1.875vw !important;
+}
+#main #presentation_alumni {
+  margin-bottom: 5.2083333333vw;
+}
+#main #presentation_alumni p:nth-of-type(2) {
+  margin: 1.5625vw 0;
+}
+#main #alumni_simple #package_simple .package_simple_infos {
+  display: flex;
+}
+#main #alumni_simple #package_simple .package_simple_infos .text-container {
+  width: 66.6666666667%;
+}
+#main #alumni_simple #package_simple .img-container {
+  width: 38.992248062%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 1.5625vw;
+}
+#main #alumni_simple #package_simple .img-container .img-cafe {
+  width: 75.944333996%;
+  position: relative;
+  top: -1.9270833333vw;
+}
+#main #alumni_simple #package_simple .img-container .img-cafe img {
+  width: 100%;
+}
+#main #alumni_simple #package_simple .img-container .img-profile {
+  width: 69.7813121272%;
+  position: relative;
+  top: 0vw;
+}
+#main #alumni_simple #package_simple .img-container .img-profile img {
+  width: 100%;
+}
+#main .separator {
+  width: 100%;
+  height: 0.1041666667vw;
+  background: grey;
+}
+#main #alumni_cotisation .section-start {
+  margin-top: 3.6458333333vw;
+}
+#main #alumni_cotisation #package_cotisation .text-container .first-flex {
+  display: flex;
+}
+#main #alumni_cotisation #package_cotisation .text-container .first-flex > div {
+  width: 69.7674418605%;
+}
+#main #alumni_cotisation #package_cotisation .text-container .first-flex .first-img {
+  width: 30.4174950298%;
+  position: relative;
+  top: -1.8229166667vw;
+}
+#main #alumni_cotisation #package_cotisation .text-container .first-flex .first-img img {
+  width: 100%;
+  position: absolute;
+  top: -3.2291666667vw;
+}
+#main #alumni_cotisation #package_cotisation .text-container .second-flex {
+  display: flex;
+}
+#main #alumni_cotisation #package_cotisation .text-container .second-flex .shooting {
+  width: 54.4731610338%;
+  position: relative;
+  top: 1.0416666667vw;
+}
+#main #alumni_cotisation #package_cotisation .text-container .second-flex .shooting img {
+  width: 100%;
+}
+#main #alumni_cotisation #package_cotisation .text-container .third-flex {
+  display: flex;
+}
+#main #alumni_cotisation #package_cotisation .text-container .third-flex .hierachie {
+  width: 43.4791252485%;
+  position: relative;
+  top: 0.5208333333vw;
+}
+#main #alumni_cotisation #package_cotisation .text-container .third-flex .hierachie img {
+  width: 100%;
+}
+#main #acces_programmes {
+  margin-top: 5.5729166667vw;
+}
+#main #acces_programmes .programmes {
+  margin-top: 4.84375vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.125vw;
+}
+#main .largeBtn {
+  text-align: center;
+  margin-top: 4.53125vw;
+  margin-bottom: 3.6458333333vw;
+}
+
+/*# sourceMappingURL=alumni.css.map */

@@ -1,0 +1,594 @@
+@import '../../function';
+
+
+
+#profils {
+  
+
+
+
+    .competence-1 {
+        display: flex;
+    }
+
+    .img-1 {
+        margin-left:pxToVw(183px, 1920px);
+        margin-top:pxToVw(80px, 1920px);
+        width: pxToVw(113px, 1920px);
+        height: pxToVw(112px, 1920px);
+        background-color :#98984B;
+        border-radius: pxToVw(10px, 1920px);
+
+    }
+
+    .p-t {
+        margin-top : pxToVw(100px, 1920px);
+        margin-left : pxToVw(50px, 1920px);
+        margin-bottom : pxToVw(100px, 1920px);
+        font-size: pxToVw(50px, 1920px);
+
+    }
+
+    .comp-img {
+        margin-left : pxToVw(25px, 1920px);
+        margin-top : pxToVw(15px, 1920px);
+        width: pxToVw(63px, 1920px);
+        height: pxToVw(81px, 1920px);
+        
+    }
+
+    .links {
+        display: flex;
+    
+        margin-left: pxToVw(183px, 1920px);
+        margin-right: pxToVw(183px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+        margin-bottom: pxToVw(76px, 1920px);
+         
+        .left {
+            display: flex;
+                // &::after {
+                //     display: flex;
+                //     content: "";
+                //     border-bottom: pxToVw(2px, 1920px) solid #343434;
+                //     width: pxToVw(530px, 1920px);
+                //     margin-top: pxToPourcent(100px, 1920px);
+                //     margin-bottom: pxToPourcent(100px, 1920px);
+                // }
+                    .selectedTab {
+                        border: none;
+                    }
+                .tabgaea21, .tabReseau {
+                    margin-right: pxToVw(40px, 1920px);
+                    font-weight: bold;
+                    color: rgba($color: #000000, $alpha: 0.45);
+                    font-size: pxToVw(30px, 1920px);
+                    cursor: pointer;
+                    border: none;
+                    
+                    &:hover {
+                        color: #98984B;
+                         &::after {
+                                display: flex;
+                                content: "";
+                                border-bottom: pxToVw(4px, 1920px) solid #98984B;
+                                width: pxToVw(100px, 1920px);
+                                margin-top: pxToPourcent(100px, 1920px);
+                                margin-bottom: pxToPourcent(100px, 1920px);
+                            }
+                        
+                    }
+
+                   
+                }
+                .tabReseau {
+                    &:hover {
+                        color:#49A496;
+                        &::after {
+                            border-bottom: pxToVw(4px, 1920px) solid #49A496;
+                        }
+                    }
+                }
+        
+        
+            }
+       
+        .right{
+            margin-left: pxToVw(500px, 1920px);
+          
+            
+            a{
+                color: #98984B;
+
+            }
+        
+        }
+    }
+
+    .inputs {
+        display: flex;
+        flex-flow: row wrap;
+        margin-right: pxToVw(140px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+    
+    }
+
+    input {
+        border: none;
+        border-radius: pxToVw(24px, 1920px);
+        width: pxToVw(378px, 1920px);
+        height: pxToVw(88px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        margin-right: pxToVw(14px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+
+        &::placeholder {
+            font-size: pxToVw(30px, 1920px);
+            padding-left: pxToVw(20px, 1920px);
+            color: rgba($color: #000000, $alpha: 0.45);
+        }
+    }
+
+    .search-button {
+        background-color: #98984B;
+        border-radius: pxToVw(24px, 1920px);
+        border: none;
+        width: pxToVw(311px, 1920px);
+        height: pxToVw(88px, 1920px);
+        color: white;
+        font-size: pxToVw(30px, 1920px);
+        vertical-align: middle;
+        text-align: center;
+        cursor: pointer;
+        margin-top: pxToVw(37px, 1920px);
+        margin-bottom: pxToVw(37px, 1920px);
+       // margin-left: pxToVw(48px, 1920px); with alert button
+        margin-left: pxToVw(1420px, 1920px);
+        img {
+            width: pxToVw(44px, 1920px);
+        }
+
+
+      
+    }
+
+    .freelance {
+        background-color: #49A496;
+    }
+
+    .alert-button {
+        box-shadow: 0px 3px 6px #00000029;
+        border: none;
+        background-color: white;
+        font-size: pxToVw(30px, 1920px);
+        color:#000000;
+        width: pxToVw(482px, 1920px);
+        border-radius: pxToVw(24px, 1920px);
+        height: pxToVw(88px, 1920px);
+        margin-left: pxToVw(896px, 1920px);
+        font-weight: 700;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        margin-top: pxToVw(37px, 1920px);
+        margin-bottom: pxToVw(37px, 1920px);
+
+        img {
+            margin-right: pxToVw(20px, 1920px);
+        }
+
+    } 
+
+    select {
+        display: flex;
+        border: none;
+        border-radius: pxToVw(24px, 1920px);
+        width: pxToVw(378px, 1920px);
+        height: pxToVw(88px, 1920px);
+        box-shadow: 0px 3px 6px #00000029;
+        margin-right: pxToVw(14px, 1920px);
+        font-size: pxToVw(30px, 1920px);
+        color: rgba($color: #000000, $alpha: 0.45);
+        padding-left: pxToVw(20px, 1920px);
+        background-color: none;
+        outline: none;
+
+    }
+
+    .filter {
+        margin-left: pxToVw(1360px, 1920px);
+        
+    }
+
+
+
+    .profils-container {
+       
+     
+        margin-right: pxToVw(183px, 1920px);
+        margin-left:pxToVw(183px, 1920px);
+
+        .cards {
+            display: flex;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+
+
+            .card {
+             
+                height: pxToVw(448px, 1920px);
+                width: pxToVw(335px, 1920px);
+                box-shadow: 0px 3px 6px #00000029;
+                border-radius: pxToVw(24px, 1920px);
+                 
+                .top {
+                    height: pxToVw(249px, 1920px);
+                    width: pxToVw(335px, 1920px);
+                    position: relative;
+                    color: white;
+                    .image {
+                        height: pxToVw(249px, 1920px);
+                        width: pxToVw(335px, 1920px);
+                    }
+                    .name {
+                        position:absolute;
+                        bottom: 25px;
+                        left: pxToVw(22px, 1920px);
+                        font-size: pxToVw(30px, 1920px);
+                        font-weight: bold;
+                        
+                    }
+                    .localisation {
+                        position:absolute;
+                        bottom: 10px;
+                        left: pxToVw(22px, 1920px);
+                        font-size: pxToVw(20px, 1920px);
+                        font-weight:100;
+                    }
+
+                    
+                }
+
+                .middle {
+                    margin-left: pxToVw(30px, 1920px);
+                        
+                    .title {
+                        font-size: pxToVw(25px, 1920px);
+                        font-weight: bold;
+                        margin-top: pxToVw(21px, 1920px);
+                    }
+                }
+
+                .skills {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: pxToVw(20px, 1920px);
+                    margin-top: pxToVw(40px, 1920px);
+                    margin-left: pxToVw(30px, 1920px);
+                    font-size: pxToVw(15px, 1920px);
+                    p{
+                        background-color: rgba($color: #000000, $alpha: 0.1);
+                        
+                    }
+                    
+                }
+                }
+
+                
+
+                
+            }
+        }
+    }
+
+
+
+    //profil-details styling
+
+    .return-link {
+        font-size: pxToVw(30px, 1920px);
+        margin-left: pxToVw(183px, 1920px);
+      
+    }
+
+    .profil {
+        margin-left: pxToVw(183px, 1920px);
+        margin-top: pxToVw(96px, 1920px);
+        display: flex;
+        .pic-container {
+            height: pxToVw(307px, 1920px);
+            width: pxToVw(307px, 1920px);
+            img {
+                height: 100%;
+            width:100%;
+            border-radius: 50%;
+            }
+        }
+
+        .info {
+            margin-left: pxToVw(140px, 1920px);
+            .name {
+                font-size: pxToVw(50px, 1920px);
+                font-weight: bold;
+            }
+            .title {
+                font-size: pxToVw(30px, 1920px);
+            }
+
+            .localisation {
+                font-size: pxToVw(25px, 1920px);
+            }
+
+            .contact-info {
+                display: flex;
+                margin-top: pxToVw(37px, 1920px);
+
+            }
+            .btn-contact-info {
+                background-color: #98984B;
+                border-radius: pxToVw(24px, 1920px);
+                border: none;
+                width: pxToVw(348px, 1920px);
+                height: pxToVw(88px, 1920px);
+                color: white;
+                font-size: pxToVw(30px, 1920px);
+                cursor: pointer;
+            
+                font-weight: bold;
+              
+               
+
+            }
+
+            .contact {
+                
+                margin-left: pxToVw(91px, 1920px);
+                font-size:  pxToVw(30px, 1920px);
+            }
+
+          
+
+        }
+
+        
+    }
+
+        .sections-container {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: pxToVw(77px, 1920px);
+           
+            margin-left: pxToVw(183px, 1920px);
+            margin-right: pxToVw(183px, 1920px);
+            margin-top: pxToVw(101px, 1920px);
+            margin-bottom: pxToVw(101px, 1920px);
+        }
+
+        
+
+
+            .left {
+                .sections {
+                    height: pxToVw(563px, 1920px);
+                    width: pxToVw(663px, 1920px);
+
+                }
+
+                .city-mobility {
+
+                     .city, .mobility {
+                    margin-left: pxToVw(45px, 1920px);
+                     }  
+
+                     .city {
+                        margin-bottom: pxToVw(33px, 1920px);
+
+                        p{
+                            margin-left: pxToVw(40px, 1920px);
+                            color: rgba($color: #000000, $alpha: 0.75);
+                        }
+                     }
+                     .mobility {
+                        margin-bottom: pxToVw(48px, 1920px) ;
+                     }
+            }
+                    .preferences {
+                        height: pxToVw(680px, 1920px);
+
+                        .contract, .activity, .enterprise {
+                            margin-left: pxToVw(45px, 1920px);
+                            margin-bottom: pxToVw(48px, 1920px);
+                      
+
+                            p {
+                                margin-left: pxToVw(58px, 1920px);
+                                color: rgba($color: #000000, $alpha: 0.75);
+                            }
+                            img {
+                                padding-right: pxToVw(13px, 1920px);
+                            }
+                        }
+
+                        
+                    }  
+
+                    .similar-profiles {
+                        height: pxToVw(673px, 1920px);
+                        h3 {
+                            width: pxToVw(570px, 1920px);
+                        }
+
+                     
+                        .profile-1 {
+                            display: flex;
+                            margin-left:  pxToVw(45px, 1920px);
+                            margin-bottom:  pxToVw(48px, 1920px);
+                            
+
+
+                            img {
+                            border-radius: 50%;
+                            width: pxToVw(107px, 1920px);
+                            height: pxToVw(107px, 1920px);
+                        } 
+
+                        .profile-info {
+                            margin-left: pxToVw(45px, 1920px);
+                            .name {
+                                font-size: pxToVw(30px, 1920px);
+                                font-weight: bold;
+                            }
+                            .activity {
+                                font-size: pxToVw(25px, 1920px);
+                                font-weight: bold;
+                            }
+                            img {
+                                border-radius: 0%;
+                                width: pxToVw(167px, 1920px);
+                                height: pxToVw(27px, 1920px);
+                            }
+                        }
+                        }
+
+                       
+                    }
+
+            }
+
+            .right {
+                .sections {
+                    height: pxToVw(563px, 1920px);
+                    width: pxToVw(814px, 1920px);
+                }
+
+                .skills {
+                    
+
+                    p{
+                        margin-left: pxToVw(53px, 1920px);
+                        padding-bottom: pxToVw(11px, 1920px);
+                        color: rgba($color: #000000, $alpha: 0.75);
+                    }
+                    a {
+                        margin-left: pxToVw(189px, 1920px);
+                        margin-right: pxToVw(180px, 1920px);
+                        font-size: pxToVw(30px, 1920px);
+                        color: #98984B;
+                    }
+                }
+                .about {
+                    height: pxToVw(406px, 1920px);
+
+                    p{
+                        margin-left: pxToVw(53px, 1920px);
+                        margin-right: pxToVw(30px, 1920px);
+                        padding-bottom: pxToVw(11px, 1920px);
+                        color: rgba($color: #000000, $alpha: 0.75);
+                        font-size: pxToVw(20px, 1920px);
+                        width: pxToVw(755px, 1920px);
+                        height: pxToVw(154px, 1920px);
+                    }
+
+                    a {
+                        margin-left: pxToVw(114px, 1920px);
+                        margin-right: pxToVw(115px, 1920px);
+                        font-size: pxToVw(30px, 1920px);
+                        color: #98984B;
+                        padding-bottom: 48px;
+                    }
+
+
+                }
+                .portfolio {
+                    height: pxToVw(406px, 1920px);
+
+
+                }
+                .experience {
+                    height: pxToVw(471px, 1920px);
+
+                    .sub-title {
+                        margin-left: pxToVw(42px, 1920px);
+                        margin-bottom: pxToVw(12px, 1920px);
+                    }
+
+                 
+
+                    .task {
+                        font-size: pxToVw(30px, 1920px);
+                        color: rgba($color: #000000, $alpha: 0.75);
+                        margin-left: pxToVw(87px, 1920px);
+                    }
+
+                    .bottom{
+                       
+                        display: flex;
+                        margin-left: pxToVw(80px, 1920px);
+                        margin-top: pxToVw(53px, 1920px);
+                        margin-bottom: pxToVw(47px, 1920px);
+                        
+                        p {
+                            font-size: pxToVw(25px, 1920px);
+                        }
+
+
+                        img {
+                            height: 25px;
+                            width: 33px;
+                        }
+                        
+                        .dates {
+                            margin-left: pxToVw(40px, 1920px);
+                        }
+                    }
+
+                        a {
+                            margin-left: pxToVw(114px, 1920px);
+                            margin-right: pxToVw(115px, 1920px);
+                            font-size: pxToVw(30px, 1920px);
+                            color: #98984B;
+                           
+                         
+                        }
+             
+            }
+          
+        }
+
+            //general profil-details styling
+            
+            .sections {
+                border: 1px solid #C8C8C8;
+                border-radius: pxToVw(24px, 1920px);
+                margin-bottom: pxToVw(70px, 1920px);
+                box-shadow: 0px 3px 6px #00000029;
+
+                p {
+                    font-size: pxToVw(30px, 1920px);
+                    
+                }
+                        }
+
+            .sub-title {
+                font-size: pxToVw(30px, 1920px);
+                font-weight: bold;
+            }
+
+          
+
+            h3 {
+                font-size: pxToVw(40px, 1920px);
+                font-weight: bold;
+                margin-left: pxToVw(45px, 1920px);
+                margin-top: pxToVw(48px, 1920px);
+                margin-bottom: pxToVw(48px, 1920px);
+            }
+            
+            
+
+       
+
+    
+
+
+

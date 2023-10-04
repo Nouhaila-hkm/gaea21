@@ -1,0 +1,46 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	{# <link rel="stylesheet" href="{{asset('style/quiSommesNous/historique/historique.css')}}"> #}
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/contactezNous/contactezNous.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/UniversGaea
+{% endblock %}
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Contactez-nous!</h2>
+			<img class="" src="{{asset('images/QuiSommesNous/contactezNous/contactezNousImg.png')}}">
+		</div>
+	</div>
+	<div class="_background"></div>
+
+{% endblock %}
+
+
+{% block main %}
+
+	<section class="text-content">
+		<h2>Je voudrais créer une franchise gaea21</h2>
+		
+        <p class="description">Vous voulez créer une franchise dans votre pays ou votre ville ? <br>Contactez nous via ce formulaire pour nous faire part de votre projet.</p>
+		
+	</section>
+
+	
+   
+    
+
+		{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			<script src="{{ asset('js/pagesHistorique/story.js') }}" ></script>
+		{% endblock %}
+

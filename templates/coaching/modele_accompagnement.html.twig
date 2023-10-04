@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching
+{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('topBar') }}
+	{{ encore_entry_link_tags('smallCardApp') }}
+	{{ encore_entry_link_tags('prevArrowApp') }}
+	{{ encore_entry_link_tags('SmallBtnApp') }}
+	<link href="{{ asset('style/coaching/test_card/smallCard.css') }}" rel="stylesheet"/>
+
+	<link href="{{ asset('style/coaching/modeleAccompagnement/modeleAccompagnement.css') }}" rel="stylesheet"/>
+
+{% endblock %}
+
+{% block body %}
+	{% include "/components/_topbar.html.twig" %}
+
+	{# HEADER #}
+
+	<section class="headerAccompagnement">
+		<div id="header1">
+			<article>
+				<h1>Le modèle d'accompagnement de gaea21</h1>
+				<p></p>
+			</article>
+		</div>
+
+		<div id="header2"></div>
+	</section>
+
+	{# LISTE AVEC DES LIENS #}
+	<div class="listeLiens">
+		<ul>
+			<li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+			<li><a href="#">Gestion de carrières</a></li>
+			<li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+			<li><a href="#">Partenaires Formation / Emploi</a></li>
+		</ul>
+	</div>
+
+	{# MAIN #}
+	<main>
+
+		<a id="prevArrow" data-link="/coaching"></a>
+
+		{# CYCLES #}
+		<section id="cycles">
+
+			<div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+			<div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+			<div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+
+		</section>
+
+		{# DE QUOI S'AGIT-IL #}
+		<section id="sagitil">
+
+			<h2>
+				<b>Remettre l’humain au centre de l’équation</b>
+			</h2>
+
+			<div>
+				<p>Le modèle de gaea21 intègre deux dimensions complémentaires:<br>
+					1: Développement de compétences métiers et facilitation de l’accès au marché du travail (cycle de vie humain)<br>
+					2: Conception, développement et réalisation de projets (cycle de vie projet)</p>
+			</div>
+
+		</section>
+
+		<div class="vide"></div>
+
+		{# CYCLES 2 #}
+		<section id="cycles2">
+
+			<article>
+				<div>
+					<h2>
+						<b>Cycle de vie du gaeien / humain</b>
+					</h2>
+					<br>
+					<p>
+						<b>Objectif: Développer les compétences métiers, personnelles et durabilité.</b>
+						Retrouvez les étapes de notre modèle d’accompagnement interne personnalisé et à destination de tous nos collaborateurs.</p>
+					<br>
+					<div class="smallBtn" data-txt="Découvrir" data-link="/coaching/humain"></div>
+				</div>
+				<div id="cycle_humain"><img src="{{ asset('images/coaching/accompagnement/humain.png') }}"></div>
+			</article>
+
+			<article>
+				<div id="cycle_projet"><img src="{{ asset('images/coaching/accompagnement/projet.png') }}"></div>
+				<div>
+					<h2>
+						<b>Cycle de vie du gaeien / projet</b>
+					</h2>
+					<br>
+					<p>
+						<b>Objectif: Développer la structuration, l’organisation, la gestion de projet et le management durable.</b>
+						Retrouvez les étapes de notre modèle d’accompagnement interne personnalisé et à destination de tous nos collaborateurs.</p>
+					<br>
+					<div class="smallBtn" data-txt="Découvrir" data-link="/coaching/projet"></div>
+				</div>
+			</article>
+
+			<article></article>
+
+		</section>
+
+		<section id="statsContainer">
+			<h2>Statistiques</h2>
+
+			<article id="stats">
+
+				<div>
+					<h4>190</h4>
+					<p>Membres</p>
+				</div>
+
+				<div>
+					<h4>9</h4>
+					<p>Nationalités</p>
+				</div>
+
+				<div>
+					<h4>38</h4>
+					<p>Age</p>
+				</div>
+
+				<div>
+					<h4>58%</h4>
+					<p>Femmes gaeiennes</p>
+				</div>
+
+				<div>
+					<h4>40%</h4>
+					<p>Hommes gaeiens</p>
+				</div>
+
+			</article>
+
+			<div class="smallBtn" id="centrer" data-txt="Découvrir" data-link="/coaching/modele_accompagnement2"></div>
+
+
+		</section>
+
+
+	</main>
+
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ encore_entry_script_tags('smallCardApp') }}
+	{{ encore_entry_script_tags('prevArrowApp') }}
+	{{ encore_entry_script_tags('SmallBtnApp') }}
+
+{% endblock %}

@@ -1,0 +1,67 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header ._backgroundmodele {
+  background-image: url("../../../../images/QuiSommesNous/modele/modele.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .modele {
+  background-color: #3F3D56 !important;
+}
+
+#partenaire {
+  width: 67.9vw;
+  margin: 0 auto;
+  display: block !important;
+}
+
+.title_modele {
+  text-align: center;
+  font-size: 2.6041666667vw;
+  font-weight: 600;
+}
+
+.left_modele {
+  text-align: left;
+}
+
+.no_marge {
+  margin: 0 !important;
+}
+
+.text_form {
+  margin-left: 16.40625vw;
+  margin-top: 3%;
+}
+
+.text_size {
+  width: 71vw;
+}
+
+.img_with_text {
+  width: 34.4270833333vw;
+  margin-left: 9.53125vw;
+  margin-right: 6.0416666667vw;
+  height: 30vw;
+}
+
+.img_text_article {
+  margin-top: 5%;
+  display: flex;
+}
+
+.text_with_img {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3%;
+}
+
+.dimension_card, .img_projet, .img_list_title, .tools, .know_tools {
+  margin-top: 3%;
+}
+
+/*# sourceMappingURL=modele_base.css.map */

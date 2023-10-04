@@ -1,0 +1,51 @@
+@use "sass:math";
+@import "../../_function";
+
+#tertiaryMenu {
+  display: none;
+}
+
+#projects,#vignettes{
+  display: none;
+}
+
+#encartProjet{
+  display: none;
+}
+
+
+#main {
+  margin-top: pxToVw(21, 1920);
+  // border: 1px solid black;
+
+  .text-content {
+    // border: 1px solid black;
+    margin: 0 auto;
+    text-align: justify;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+
+      margin-bottom: pxToVw(55, 1920);
+    }
+
+    .description {
+      margin-bottom: pxToVw(120, 1920);
+    }
+  }
+
+  #project-box {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: pxToVw(54px,1920);
+
+    .smallBox {
+
+    }
+  }
+
+
+}

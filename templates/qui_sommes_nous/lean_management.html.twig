@@ -1,0 +1,117 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/analyse.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/gestion_projet.css')}}">
+
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<h2 class="title_modele lean_title">Lean management</h2>
+
+
+
+		<article class="text_size text_form">
+			<p>
+			<b>	Le Lean Management va donc s'attaquer à 7 formes de gaspillage : </b>
+			</p>
+
+            <ul>
+                <li class="lean_chevrons"> > la surproduction </li>
+                <li class="lean_chevrons"> > les attentes </li>
+                <li class="lean_chevrons"> > les rebuts-retouches </li>
+                <li class="lean_chevrons"> > les corrections  </li>
+                <li class="lean_chevrons"> > les gammes et processus opératoires mal adaptés </li>
+                <li class="lean_chevrons"> > les transports / ruptures de flux </li>
+               <li  class="lean_chevrons"> > les mouvements inutiles et les stocks (productifs ou administratifs). 
+            </ul>
+
+		</article>
+
+       <article class="text_size text_form">
+
+        <p> 
+            Pour obtenir des résultats pérennes, le <b>Lean Management</b> s’appuie sur 
+            <br> 
+            <b>l’amélioration continue</b> avec une forte implication de tout le personnel dans 
+            <br>
+            les processus à optimiser. Le moteur de l’amélioration continue, et donc du 
+            <br>
+            <div class="pdca">
+            Lean Management, est le
+            <div id="ModalModele10"></div>
+            </div>
+        </p>
+
+
+       </article>
+
+        <img class="img_lineaire" src="{{ asset('images/QuiSommesNous/modele/lineaire.png') }}"/>
+        
+
+    
+        <article class="text_size text_form">
+
+
+
+            <p>
+                Le Lean Management est fondé sur la stratégie des petits pas, aussi appelée «KAIZEN». La
+                résolution des problèmes se passe sur le terrain avec les acteurs et est bien souvent formalisée sur un 
+                rapport au format A3. Devenir une organisation apprenante fait partie des principes fondamentaux du 
+                Lean Management. 
+            </p>
+            
+            <br>
+
+            <p>
+                <b>Le Lean Management</b> concerne tous les domaines <br>
+                de l’entreprise (productifs et non productifs). <br>
+                À ce titre, il se décline en:
+            </p>
+        </article>
+
+        <img class="img_valeur" src="{{ asset('images/QuiSommesNous/modele/valeur_lean.png') }}"/>
+        <img class="img_lean_branch" src="{{ asset('images/QuiSommesNous/modele/lean_branch.png') }}"/>
+
+
+<div class="hidden">
+	<div id="ModalModele1"></div>
+	<div id="ModalModele2"></div>
+	<div id="ModalModele3"></div>
+	<div id="ModalModele4"></div>
+	<div id="ModalModele5"></div>
+	<div id="ModalModele6"></div>
+	<div id="ModalModele7"></div>
+	<div id="ModalModele8"></div>
+	<div id="ModalModele9"></div>
+</div>
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+        {{ encore_entry_script_tags('ModalModele') }}
+		{% endblock %}
+

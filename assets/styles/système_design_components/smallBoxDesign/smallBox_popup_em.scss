@@ -1,0 +1,167 @@
+@use "sass:math";
+@import "../../_function";
+
+
+
+.separation {
+    margin: pxToVw(106, 1920) 0 pxToVw(50, 1920) !important;
+}
+
+.container-prestation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: pxToVw(56px, 1920);
+
+    .separation {
+        margin: pxToVw(106, 1920) 0 pxToVw(50, 1920);
+    }
+
+    .box {
+        width: pxToPourcent(280, 1290px);
+        height: pxToVw(280, 1920);
+        border-radius: 23px;
+        position: relative;
+        overflow: hidden;
+
+        box-shadow: 0px 3px 6px #00000040;
+        border: 1px solid #98984b;
+
+        .box-text-content {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 pxToVw(2px, 1920);
+            background: rgba(0, 0, 0, 0.25);
+
+            transition: background-color 0.3s;
+
+            p {
+                font-size: pxToVw(28px, 1920) !important;
+                line-height: pxToVw(36px, 1920) !important;
+                font-weight: 600;
+                color: white;
+                text-align: center;
+                margin-top: pxToVw(101, 1920);
+                transition: margin-top 0.3s;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                top: pxToVw(158px, 1920);
+                left: pxToVw(40px, 1920);
+                opacity: 0;
+                background: white;
+                border-radius: 40px;
+                border: none;
+                font-size: pxToVw(21px, 1920);
+                line-height: pxToVw(36, 1920);
+                padding: pxToVw(21, 1920) pxToVw(42, 1920);
+                color: black;
+                text-decoration: none;
+                z-index: 10;
+                cursor: pointer;
+
+                transition: opacity 0.3s;
+
+                .btn-text {
+                    display: inline-block;
+                }
+
+                .chevron {
+                    display: inline-block;
+                    margin-right: 3px;
+                }
+
+                .chevron-btn {
+                    height: pxToVw(27, 1920);
+                    z-index: 5;
+                }
+            }
+
+            &:hover {
+                background-color: rgba(152, 152, 75, 0.85);
+
+                p {
+                    margin-top: pxToVw(45, 1920);
+                }
+
+                button {
+                    opacity: 1;
+                }
+            }
+        }
+
+        ._img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.ReactModalPortal {
+
+    .ReactModal__Overlay {
+        // agit sur overlay
+        width: pxTouPourcent(1920, 1920);
+        background: rgba(0, 0, 0, .75) !important;
+        z-index: 50000 !important;
+
+        &--after-open {
+
+            .ReactModal__Content {
+                &--after-open {
+                    // agit sur le contenu de la fenêtre
+                    position: relative !important;
+                    width: pxToPourcent(973, 1920) !important;
+                
+
+                    background: rgba(255, 255, 255) !important;
+                    border-radius: 13px !important;
+                    border: 1px solid #98984b !important;
+
+                    overflow: visible !important;
+                    padding: pxToVw(30px, 1920) pxToVw(70px, 1920) !important;
+
+                    .modal--header {
+                        font-size: pxToVw(28, 1920) !important;
+                        line-height: pxToVw(42, 1920) !important;
+                        font-weight: 600 !important;
+                        margin-bottom: pxToVw(23px, 1920) !important;
+                    }
+
+                    .modal--content {
+                        font-size: pxToVw(28, 1920) !important;
+                        line-height: pxToVw(42, 1920) !important;
+                        font-weight: 400;
+                    }
+
+                    .cross-container {
+                        width: pxToPourcent(72, 973);
+                        height: pxToVw(72, 973);
+                        position: absolute;
+                        top: negativePxToPourcent(100,973) !important;
+                        right: negativePxToPourcent(36,973) !important;
+                        
+
+                        border: none !important;
+                        background: transparent !important;
+                        display: inline-block;
+
+                        .close {
+                            cursor: pointer !important;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

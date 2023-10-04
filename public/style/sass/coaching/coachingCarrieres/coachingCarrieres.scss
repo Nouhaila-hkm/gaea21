@@ -1,0 +1,201 @@
+@use "sass:math";
+@import "../../_function";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+
+}
+
+body{
+    width: pxToPourcent(1920, 1920);
+}
+
+.headerCarriere {
+    width: 100%;
+    height: pxToVw(768,1920);
+    display: flex;
+    align-items: center;
+    background-image: url("../../../images/coaching/header.png");
+    background-position: center;
+    background-size: cover;
+
+
+
+    div{
+        margin-left: pxToVw(183,1920);
+        width: pxToVw(1020,1920);
+        h1{
+          font-size: pxToVw(60,1920);
+          font-family: Helvetica, sans-serif;
+        }
+        p{
+          font-size: pxToVw(30,1920);
+        }
+    }
+}
+
+.listeLiens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: pxToVw(120,1920);
+    border: 1px solid grey;
+    margin-bottom: pxToVw(60,1920);
+    ul{
+        display: flex;
+        gap: pxToVw(115,1920);
+        font-size: pxToVw(25,1920);
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+main {
+  margin: 0 auto;
+  width:pxToPourcent(1554, 1920); 
+  a{
+    font-size: pxToVw(30,1920);
+  }
+
+  #prevArrow{
+    display: block;
+    width: pxToVw(170,1920);
+  }
+}
+
+#sagitil{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2{
+    font-size: pxToVw(50,1920);
+    margin-bottom: pxToVw(45,1920);
+  }
+  
+  div{
+    margin-bottom: pxToVw(116,1920);
+  }
+
+  div p{
+    text-align: left;
+    font-size: pxToVw(30, 1920);
+  }
+}
+
+
+#cards{
+    margin-top: pxToVw(161,1920);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card_milieu{
+      margin: 0 64px;
+      margin-bottom: 81px;
+    }
+    
+    .card_bas{
+      margin: 0 64px;
+    }
+
+    ._large-card ._card-content ._container-img {
+      bottom: -7px;
+    }
+    
+    .largeCard{
+      width: pxToPourcent(464,1554);
+      height: pxToVw(596, 1920);
+    }
+
+    h3{
+      font-size: pxToVw(30,1920);
+    }
+
+}
+
+
+
+// .projets_gaea21 {
+    
+  
+//       ._large-card {
+//         width: pxToVw(464,1920);
+//         height: pxToVw(596,1920);
+//         box-shadow: 1px 1px 10px rgba(0,0,0,.2);
+//         border-radius: 20px;
+//         overflow: hidden;
+//         position: relative;
+  
+       
+  
+//         // margin-right: 1px;
+  
+  
+//         ._card-content{
+//           width: 100%;
+  
+//           ._card-header,
+//           ._card-description{
+//             margin:pxToVw(50px,1920) pxToVw(38px,1920) 0 pxToVw(38px,1920);
+//           }
+  
+//           ._card-description{
+//             font-size: pxToVw(20,1920);
+//             line-height: pxToVw(30,1920);
+//           }
+  
+  
+  
+//           ._container-img {
+//             // width: pxToVw(464px,1920);
+//             width: 100%;
+//             height: pxToVw(275px,1920);
+//             position: relative;
+//             // top: pxToVw(60px,1920);
+//             // top:pxToVw(91,1920);
+//             top:pxToVw(10px, 1920px);
+//             overflow: hidden;
+//             // border-bottom-left-radius: 20px;
+//             // border-bottom-right-radius: 20px;
+  
+//             ._img-projet{
+//               width: 100%;
+//               // height: 298px;
+//               // object-fit: fill;
+//             }
+//           }
+//         }
+//       }
+  
+//       ._large-btn{
+//         background-color: white;
+//         font-size: 1.09375vw;
+//         z-index: 1;
+//         padding: 1.09375vw 2.1875vw;
+//         border-radius: 50px;
+//         border: none;
+//         position: absolute;
+//         top: 75%;
+//         left: 50%;
+//         transform: translate(-50%, -75%);
+//         opacity: 0;
+//         background-color: white;
+  
+  
+//         transition: all .3s ease;
+//     }
+  
+//     ._large-card:hover{
+//       background-color: rgba(0,0,0,.2);
+//       ._large-btn{
+//         opacity: 1;
+//       }
+//     }
+//   }

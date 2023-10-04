@@ -1,0 +1,148 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Developpement durable{% endblock %}
+
+{% block stylesheets %}
+     <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+  {{ encore_entry_link_tags('communautes') }}
+    {{ parent() }}
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<script src="https://kit.fontawesome.com/8bff0007f7.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+ {% include "/components/_topbar.html.twig" %}
+
+ <section id="communautes">
+
+ {% include "/communautes/header.html.twig" %}
+ {% include "/communautes/sous_menu.html.twig" %}
+
+
+ <h2 class="title">Développement Durable</h2>
+
+<div class="icons-container">
+  
+		<ul class="control" id="custom-control">
+			<li class="prev">
+				<img src="{{asset("images/communautes/arrow-left.svg")}}" alt="">
+			</li>
+			<li class="next">
+				<img src="{{asset("images/communautes/arrow-right.svg")}}" alt="">
+			</li>
+		</ul>
+
+		<div class="my-slider">
+
+       
+
+       
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/Eco-mobilite.svg")}}" alt="eco-mobilité">
+					<button>Mobilité</button>
+				</div>
+			</div>
+           
+       
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/emploi.svg")}}" alt="emploi">
+					<button>Emploi</button>
+				</div>
+            </div>
+		
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/partager.svg")}}" alt="partager/echanger">
+					<button>Partager/Echanger</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/RepertoireVert.png")}}" alt="Repertoire Vert">
+					<button>Répertoire Vert</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/Humansofgaea.png")}}" alt="Humans of gaea21">
+					<button>Humans of gaea21</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/ges.svg")}}" alt="ges">
+					<button>GES</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/tourisme_durable.png")}}" alt="tourisme durable">
+					<button>Tourisme Durable</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/consom_action.png")}}" alt="consom_action">
+					<button>Consom'action</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/green_coaching.png")}}" alt="green coaching">
+					<button>Ateliers Eco</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/sante.png")}}" alt="santé/bien-être">
+					<button>Santé - bien-être</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/alimentation.png")}}" alt="alimentation">
+					<button>Alimentation</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/grow-your-own.png")}}" alt="Grow your own">
+					<button>Grow Your Own</button>
+				</div>
+
+			</div>
+			
+
+			</div>
+         
+		</div>
+
+</div>
+
+
+ {% include "/communautes/activites.html.twig" %}
+
+
+
+
+</section>
+
+{% endblock %}
+{% block javascripts %}
+    {{encore_entry_script_tags('communautes')}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+	<script type="text/javascript" src="{{ asset('js/communautes/carousel.js') }}"></script> 
+{% endblock %}
+

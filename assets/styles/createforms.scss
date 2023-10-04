@@ -1,0 +1,333 @@
+@import '_function';
+
+.componentForms{
+    font-family: Helvetica;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    ul{
+        width: pxToPourcent(944px, 1920px);
+        height: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: pxToPourcent(80px, 1920px);
+        grid-row-gap: pxToPourcent(80px, 1920px);
+        li{
+            display: block;
+            height: pxToPourcent(97px, 1920px)!important;
+            div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+.twoSize {
+    grid-column: 1 / span 2;
+}
+
+.componentFormDiv{
+    margin: pxToPourcent(8px, 1920px);
+}
+
+.labelForm{
+    font-size: pxToVw(24px, 1920px)!important;
+    padding-bottom: pxToPourcent(8px, 1920px)!important;
+    color: black;
+    height: auto!important;
+}
+
+.inputForm{
+    margin-bottom: 0!important;
+    font-size: pxToVw(20px, 1920px)!important;
+    color: #495057;
+    background-color: #fff!important;
+    background-clip: padding-box;
+    border: pxToVw(1.5px, 1920px) solid #ced4da!important;
+    border-radius: .10rem!important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out!important;
+    text-indent: pxToVw(10px, 1920px);
+}
+.loginput {
+    font-size: pxToVw(32px, 1920px) !important;
+}
+
+
+.inputForm:focus{
+    color: #495057!important;
+    background-color: #fff!important;
+    border-color: #969749!important;
+    box-shadow: 0 0 0 .1rem rgba(150,151,73,255)!important;
+}
+
+#createforms {
+    background-color: #fff!important;
+    height: 150vh!important;
+    margin-top: -1.5rem;
+}
+
+
+.radioForm {
+    margin-top: 10px!important;
+    vertical-align: baseline!important;
+    display: flex;
+    flex-direction: row!important;
+    align-items: center!important;
+    justify-content: space-around;
+    div {
+        display: flex!important;
+        flex-direction: row!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+}
+
+.inputRadio {
+        position: initial!important;
+        opacity: initial!important;
+        pointer-events: auto!important;
+        margin-left: pxToPourcent(10px, 1920px)!important;
+        width: 30px!important;
+    }
+
+.labelRadio {
+    color: #495057!important;
+    margin-left: pxToPourcent(5px, 1920px)!important;
+    font-size: pxToVw(15px, 1920px)!important;
+    font-size: 14px!important;
+    color: black;
+    font-weight: 400;
+    height: auto!important;
+}
+
+select {
+    display: inherit!important;
+}
+
+select.selectForm, input.inputForm {
+    padding: 0 0 0 0!important;
+    outline : 0px!important;
+}
+
+input[type=phone].inputForm:focus {
+    box-shadow: 0 0 0 .1rem rgba(150,151,73,255)!important;
+}
+
+.selectForm{
+    display: flex!important;
+    flex-direction: row!important;
+    height: 3rem;
+    padding-left: 1rem!important;
+    font-size: 15px!important;
+    font-style: italic !important;
+    color: #495057;
+    background-color: #fff!important;
+    background-clip: padding-box;
+    border: 1.5px solid #ced4da!important;
+    border-radius: .10rem!important;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out!important;
+}
+
+.selectForm:focus{
+    color: #495057!important;
+    background-color: #fff!important;
+    border: pxToVw(1.5px, 1920px) solid #ced4da!important;
+    box-shadow: 0 0 0 .15rem rgba(150,151,73,255)!important;
+    padding: 0 0 0 0!important;
+}
+
+.passwordForm {
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between;
+    div {
+        width: 48%;
+    }
+}
+
+.componentForms {
+    input[type=phone] {
+    height: 3.2rem!important;
+    input[type=phone]:checked {
+        box-shadow: 0 0 0 .1rem rgba(150,151,73,255)!important;
+        }
+    }
+    .sectionformbutton {
+        margin-top: pxToPourcent(32px, 700px) !important;
+        display: flex;
+        justify-content: center;
+        button {
+            margin-top: 7em!important;
+            border-color: initial;
+            background-color: #969749 !important;
+            color: white;
+            padding: .8rem 3.5rem;
+            font-size: pxToVw(24px, 1920px)!important;
+        }
+    }
+    .sectionformbutton2 {
+        margin-top: pxToPourcent(32px, 700px) !important;
+        display: flex;
+        justify-content: center;
+        button {
+            margin-top: 8em!important;
+            border-color: initial;
+            background-color: #969749 !important;
+            color: white;
+            padding: .8rem 3.5rem;
+            font-size: pxToVw(24px, 1920px)!important;
+        }
+    }
+
+    .pass-wrapper {
+        position: relative;
+        display: flex;
+    }
+
+    i {
+        position: absolute;
+        bottom: 10%;
+        display: inline-block;
+        font-size: pxToVw(25px, 1920px);
+        right: 3%;
+    }
+      i:hover {
+        color: #969749;
+        cursor: pointer;
+    }
+ }
+
+.containerFlashMessage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flashMessage {
+    width: 31em;
+    text-align: center !important;
+    margin-top: 1.5em !important;
+    color: #969749 !important;
+    font-weight: bold !important;
+}
+
+.errorMessageContainer {
+    width: 50%;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.successMessageContainer {
+    width: 50%;
+    height: 30px;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.Message {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 1.2em !important;
+}
+
+.grey.lighten-2 {
+    background-color: white !important;
+}
+
+.formRegistration {
+    position: relative;
+}
+
+.returnHomepageLink {
+    position: absolute !important;
+    color: black !important;
+    text-decoration: none !important;
+    font-size: 1.25vw !important;
+    bottom: 0 !important;
+    cursor: pointer !important;
+    padding-left: 10px;
+    padding-bottom: 6px;
+}
+
+.returnHomepageLink:hover {
+    color: #969749 !important;
+    text-decoration: underline !important;
+    }
+
+.returnHomepageLinkLoginPageWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+// .registartionInputs {
+//     font-size: 15px !important;
+// }
+
+.returnHomepageLinkLoginPage {
+    border-color: red !important;
+    font-size: 1.25vw !important;
+    color: black !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+.returnHomepageLinkLoginPage:hover {
+    color: #969749 !important;
+    text-decoration: underline !important;
+}
+
+.componentForms .loginsectionformbutton button {
+    margin-top: .2rem !important;
+}
+
+.componentForms .forgotpasswordsectionformbutton button {
+    margin-top: 3rem !important;
+}
+
+.componentForms .updateaccountsectionformbutton button {
+    margin-top: 5rem !important;
+}
+
+.componentForms .updatepasswordsectionformbutton button {
+    margin-top: 1rem !important;
+}
+
+ @media screen and (max-width: 1000px){
+
+    .passwordForm {
+        flex-direction: column!important;
+        div {
+            width: 100%;
+        }
+        div:first-of-type {
+            margin-bottom: pxToPourcent(45px, 1920px)!important;
+        }
+    }
+
+    .componentForms{
+        ul {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .sectionformbutton {
+            margin-top: pxToPourcent(200px, 1920px)!important;
+        }
+        .sectionformbutton2 {
+            margin-top: pxToPourcent(200px, 300px)!important;
+        }
+    }
+
+    .twoSize {
+        grid-column: 1;
+    }
+    .labelForm{
+        font-size: pxToVw(40px, 1920px)!important;
+    }
+}

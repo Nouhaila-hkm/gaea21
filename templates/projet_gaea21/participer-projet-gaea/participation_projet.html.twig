@@ -1,0 +1,45 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+      <link rel="stylesheet" href="{{asset('style/projet_gaea21/participation_projet/participation_base.css')}}">
+      {{ encore_entry_link_tags('CardsProjet') }}
+{% endblock %}
+
+{% block title %}gaea21/Participez à un projet
+{% endblock %}
+
+{% block header %}
+	<div class="_text-content participation">
+		<div class="text">
+			<h2>Participer à un projet de gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundparticipation"></div>
+
+{% endblock %}
+
+{% block participer %}
+  <h1 class="title_participation">Titre ?</h1>
+  <p class="text_participation">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    dolore magna aliqua.
+  </p>
+  <p class="text_participation">
+    <b>Consultez la liste de nos projets ou contactez-nous directement :</b>
+  </p>
+
+  <div id="CardsProjet"></div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+	{{parent()}}
+	{{ encore_entry_script_tags('CardsProjet') }}
+{% endblock %}
+
+

@@ -1,0 +1,39 @@
+.temDetail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: pxToPourcent(145px, 1920px);
+}
+.temDetail .imgTemEcrit {
+  width: pxToPourcent(385px, 1920px) !important;
+}
+.temDetail .imgTemEcrit img {
+  height: pxToVw(300px, 1920px) !important;
+}
+
+.Ligne {
+  display: flex;
+  flex-direction: column;
+  width: pxToPourcent(880px, 1920px);
+  margin-bottom: pxToVw(15px, 1920px);
+}
+.Ligne h1 {
+  margin: 0 0 0 0;
+  margin-bottom: pxToVw(20px, 1920px);
+  font-family: "Helvetica";
+  font-size: pxToVw(30px, 1920px);
+  font-weight: bold;
+  border-bottom: solid 3px #0E7263;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Ligne p {
+  margin: 0 0 0 0;
+  font-size: pxToVw(24px, 1920px);
+}
+
+.paragTem {
+  width: pxToPourcent(1330px, 1920px);
+  font-size: pxToVw(24px, 1920px);
+}/*# sourceMappingURL=temEcritsDetail.css.map */

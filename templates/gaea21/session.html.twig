@@ -1,0 +1,22 @@
+{% include "base.html.twig" %}
+
+{{ encore_entry_link_tags('app') }}
+
+{{ encore_entry_script_tags('app') }}
+
+
+
+{% block body %}
+
+{{app.session.get('formulaire').formName}}
+
+{{app.session.get('section').field.type.typeName}}
+
+{{app.session.get('section').field.type.chosenField}}
+
+
+<div id="section" data-section="{{app.session.section}}"></div>
+
+
+
+{% endblock %}

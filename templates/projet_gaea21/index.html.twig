@@ -1,0 +1,83 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/projetGaea21.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projets
+{% endblock %}
+
+
+
+		    {% block header %}
+          <div class="header-background">
+            <div class="header-content">
+              <h1 class="header-title">Programmes</h1>
+              {# <p class="header-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus, accusamus, hic sit et officia. Voluptate, eaque. Neque, exercitationem.</p> #}
+            </div>
+          </div>
+        {% endblock %}
+
+        {% block main %}
+          <section class="text-content">
+            <h2>De quoi s'agit-il ?</h2>
+            <p>L’activité gaea21 s’établit à travers tout un panel de projets et de programmes ancrée dans notre modèle de lutte contre le changement climatique.</p>
+          </div>
+        {% endblock %}
+
+        {% block project %}
+          <section class="projects">
+
+            <div class="largeCard" 
+              data-title="Participer à un programme de gaea21" 
+              data-description="Si les valeurs de gaea21 vous correspondent, plusieurs manières de rejoindre notre réseau sont envisageables, en fonction de vos objectifs." 
+              data-imgSrc={{asset('images/PagesProjets/page_main/page_participer.png')}}
+              data-disabled="true"
+              data-link="/projets/participer">
+            </div>
+
+            <div class="largeCard" 
+              data-title="Programmes de recherche appliquée" 
+              data-description="gaea21 ne fait pas de la recherche fondamentale. Notre programme de recherche appliquée s’établit à partir des publications existantes et d’une cellule de veille technologique et thématique…" 
+              data-imgSrc={{asset('images/PagesProjets/page_main/RA_access.png')}}
+              data-disabled="false"
+              data-link="/projets/RA">
+            </div>
+
+            <div class="largeCard" 
+              data-title="Projets pilotes" 
+              data-description="gaea21 s’engage pour promouvoir le développement durable et intègre dans ses actions les 17 objectifs de l’agenda 2030. Ainsi, elle s’investit dans plusieurs projets pilotes en Suisse, mais également dans des pays en voie de développement." 
+              data-imgSrc={{asset('images/PagesProjets/page_main/page_pilote.png')}}
+              data-disabled="true"
+              data-link='/projets/projet_pilotes'>
+            </div>
+
+            <div class="largeCard" 
+              data-title="Programme expansion/créer un gaea21 local" 
+              data-description="Vous souhaitez participer à un/des projets de gaea21? Nous avons besoin de vos compétences et de votre motivation !" 
+              data-imgSrc={{asset('images/PagesProjets/page_main/page_expansion.png')}}
+              data-disabled="true"
+              data-link="/projets/expansion">
+            </div>
+
+            <div class="largeCard" 
+              data-title="Coaching de projets durables" 
+              data-description="" 
+              data-imgSrc={{asset('images/PagesProjets/page_main/page_coaching-durable.png')}}
+              data-disabled="true"
+              data-link="/projets/coaching">
+            </div>
+          
+          </section>
+        {% endblock %}
+
+
+
+  {% block javascripts %}
+    {{ parent() }} 
+	{% endblock %}

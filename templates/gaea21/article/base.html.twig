@@ -1,0 +1,85 @@
+{% extends 'gaea21/gaeaBase.html.twig' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	<link href="{{ asset('style/articles.css') }}" rel="stylesheet"/>
+	<link rel="stylesheet" href="{{ asset('build/topBar.css') }}">
+{% endblock %}
+
+{% block main %}
+	<!-- Image Text Section : Theme header -->
+	<div class="section -imagetext backImageGreenhand">
+		<h2>Themes</h2>
+    <p>
+      Le développement durable se décline en une multitude de
+      sous-catégories. Chacune d’entre elles mérite une
+      attention particulière. Nous avons choisi de les regrouper
+      au sein de quatre grands ensembles :
+		</p>
+		<p>
+      l’ensemble «macro» qui comprend le développement
+      durable à l’échelle des régions et des pays
+      l’ensemble «humain» qui touche le développement durable
+      dans sa relation à l’homme
+      l’ensemble «technique» qui comprend les différents outils
+      de mise en oeuvre du développement durable
+      et enfin, l’ensemble « général» qui regroupe divers thèmes
+      du développement durable.
+  	</p>
+  </div>
+
+	<!-- Button List Section : Humain, Techniquek and Général button list -->
+	<div class="section -buttonlist" id="tagCategory">
+		{% for category in categories %}
+			<a
+				class="{{ category.id == selectedCategory ? "_selected" : "" }}"
+				href="/{{ langue  }}/article?category={{ category.id }}#tagCategory"
+			>{{category.name}}</a>
+		{% endfor %}
+	</div>
+
+	<!-- Button Stack Section : catégories d'article -->
+	<div class="section -buttonstack" id="filters">
+		{% for tag in tags %}
+			<a
+				href="{{ createGET(["category","search"],{"tag": tag.normalized}) }}#filters"
+				class="{{ tag.normalized in selectedTags ? "_selected" : "" }}"
+				>{{tag.rawText}}</a>
+		{% endfor %}
+	</div>
+
+	<!-- Search Bar Section : barre de recherche d'article -->
+	<div class="section -searchbar" id="search">
+		<form action="#search">
+			<img src="{{ asset("Image/smallicons/search.svg") }}" alt=".."/>
+			<label>
+				<input name="search" type="search" value="{{ search }}"/>
+			</label>
+			{% for filter in filters %}
+				<a class="tag" href="{{ removeGET(filter.removed) }}#search">{{ filter.text }}</a>
+			{% endfor %}
+			<a class="button"><img src="{{ asset("Image/smallicons/settings.svg") }}"/></a>
+			{{ createGETFormHidden(["category","tag"],{})|raw }}
+		</form>
+	</div>
+
+	{% block articleSection %}
+	{% endblock %}
+
+	<!-- Page Num : Numéros de page -->
+	<div class="section -pagenumber">
+		{% if page > 0 %}
+			<a href="{{ createGET(true,{"page":page-1}) }}">❮</a>
+		{% endif %}
+		<span>{{page+1}}</span>
+		{% if page < maxpage-1 %}
+			<a href="{{ createGET(true,{"page":page+1}) }}">❯</a>
+		{% endif %}
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+<script async="" defer=""="" src="{{ asset('build/app.js')}}"></script>
+<script async="" defer="" src="{{ asset('build/runtime.js')}}"></script>
+{% endblock %}

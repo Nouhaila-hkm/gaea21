@@ -1,0 +1,8 @@
+[
+    {"item0": "<div class='navigation-item_container'><div class='navigation-item'><p data-id='projets_pilotes'><a>Le modèle d'accompagnement</a></p></div></div>"},
+    {"item1": "<div class='navigation-item_container'><div class='navigation-item'><p data-id='RA'><a href='/projets/RA'>Gestion de carrières</a></p></div></div>"},
+    {"item2": "<div class='navigation-item_container'><div class='navigation-item'><p data-id='participer'><a>Emploi / Stage</a></p></div></div>"},
+    {"item3": "<div class='navigation-item_container'><div class='navigation-item'><p data-id='coaching'><a>Partenaires Formation / Emploi</a></p></div></div>"},
+    {"item4": "<div class='navigation-item_container'><div class='navigation-item'><p data-id='expansion'><a>Le modèle de formation de gaea21</a></p></div></div>"}
+  ]
+  

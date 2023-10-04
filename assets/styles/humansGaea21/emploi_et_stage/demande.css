@@ -1,0 +1,109 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#demande html,
+#demande body {
+  height: 100%;
+  width: 100%;
+}
+
+#demande .sectionHead-demande {
+  display: flex;
+}
+
+#demande .header1,
+#demande .header2 {
+  display: flex;
+  vertical-align: top;
+}
+
+#demande .header1 {
+  margin-left: 0%;
+  width: 50.2083333333%;
+  height: 40vw;
+  background: #49A496;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#demande .header2 {
+  margin-left: 0px;
+  width: 49.7916666667%;
+  height: 40vw;
+  background: transparent url("../../..//images/Groupe de masques 389.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#demande .p-title {
+  margin-left: 9.53125%;
+  margin-top: 26.0416666667%;
+  color: #FFFFFF;
+  font-size: 2.6041666667vw;
+  font-family: "Helvetica Neue", medium;
+}
+
+#demande .p-texte {
+  margin-left: 9.53125%;
+  margin-top: 2.0833333333%;
+  width: 41.6666666667%;
+  height: 58.3333333333%;
+  color: white;
+  font-size: 1.5625vw !important;
+  font-family: "Helvetica Neue", Regular;
+}
+
+#demande .demande-1 {
+  display: flex;
+}
+
+#demande .img-1 {
+  margin-left: 9.53125vw;
+  margin-top: 4.1666666667vw;
+  width: 5.8854166667vw;
+  height: 5.8333333333vw;
+  background-color: #7B5D99;
+  border-radius: 0.5208333333vw;
+}
+
+#demande .p-t {
+  margin-top: 5.2083333333vw;
+  margin-left: 2.6041666667vw;
+  margin-bottom: 5.2083333333vw;
+  font-size: 2.6041666667vw;
+  font-family: "Helvetica Neue", bold;
+}
+
+#demande #parag {
+  margin-left: 17.96875vw;
+  margin-bottom: 10.4166666667vw;
+  width: 64.0625vw;
+  height: 7.7083333333vw;
+  font-size: 1.5625vw;
+  font-family: "Helvetica Neue", regular;
+}
+
+/*# sourceMappingURL=demande.css.map */

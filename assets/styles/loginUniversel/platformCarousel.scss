@@ -1,0 +1,79 @@
+@use "sass:math";
+@import "../_function";
+
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.thumbs-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.platform-item{
+    width: pxToVw(288px, 1920px);
+    //height: pxToVw(288px, 1920px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: pxToVw(43px, 1920px);
+    text-align: center;
+    
+}
+
+.alice-carousel{
+    width: 58% !important;
+    margin: 0 !important;
+    padding:0 !important;
+}
+
+// .alice-carousel__stage-item{
+//     //width: pxToVw(288px, 1920px) !important;
+    
+//     //margin-left: 5rem;
+
+//     // & .__active{
+//     //     width: pxToVw(184px, 1920px) !important;
+//     // }
+// }
+
+
+.btn_prev{
+    width: pxToVw(86px, 1920px);
+    cursor: pointer;
+    margin-right: 3rem;
+}
+
+.btn_next{
+    width: pxToVw(86px, 1920px);
+    transform: rotate(180deg);
+    
+    cursor: pointer;
+}
+
+.add_style{
+    // animation-name: leaves;
+    // animation-duration: 3s;
+    border: 3px solid #707070;
+    
+    
+}
+   
+
+.img-platform-carousel{
+    width: 100%;
+}
+
+
+// @keyframes leaves {
+//     0% {
+//         transform: scale(1.0);
+//     }
+//     100% {
+//         transform: scale(1.1);
+//     }
+// }

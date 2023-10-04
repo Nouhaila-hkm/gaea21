@@ -1,0 +1,262 @@
+{% extends 'gaea21/humansGaea21/humansOfGaea_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/humansOfGaea/Alumni/alumni.css')}}">
+
+{% endblock %}
+
+{% block title %}gaea21/Projet/RA
+{% endblock %}
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Alumni</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+{% endblock %}
+
+
+{% block main %}
+
+	<div class="project-title">
+		<h2>Alumni<h2></div>
+
+			{# Cards #}
+			<div id="autres">
+				<div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/humansOfGaea/Alumni/statistique.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+				<div class="smallCard" data-title="Le profil de compétences post gaea21" data-imgsrc="{{ asset('images/humansOfGaea/Alumni/emploiStage.png') }}" data-activecard="false" data-link="/coaching/humain"></div>
+			</div>
+			{# Texte d'into #}
+			<article id="presentation_alumni">
+				<p>Alumni est un projet au sein du département Marketing de gaea21 créé pour garantir
+					<b>une continuité de l’association.</b><br>
+					Un passage au sein de gaea21 est marqué par une date de début mais aussi de fin, cependant gaea21 souhaite que cette dernière ne soit pas une séparation définitive de l’association.<br>
+					Les alumnis gaea21 sont les anciens membres passés au travers de l'association et ce projet a pour but
+					<b>de maintenir les liens de camaraderie</b>
+					et
+					<b>les valeurs</b> tissés au sein de gaea21.
+				</p>
+				<p>Avec ce projet alumni, gaea21 met à disposition de tous ses alumnis
+					<b>un site</b>
+					qui leur est entièrement dédié: toute personne ayant travaillée pour gaea21, quel que soit leur temps de travail, formation ou langue. gaea21 offre
+					<b>un réseau</b>
+					aux anciens membres, ainsi qu’un
+					<b>accompagnement sur mesure</b>
+					et un
+					<b>suivi dans la gestion de carrière.</b>
+					Cet accompagnement efficace concerne la recherche d’emploi, la préparation aux entretiens et un soutien pour mener à bien son processus de recrutement.</p>
+				<p>L’après gaea21 et notre programme alumni se distinguent par
+					<b>2 types</b>
+					de participation, simple ou avec cotisation.</p>
+			</article>
+
+			{# 1er Option #}
+			<section id="alumni_simple">
+
+				<p class="section-start">
+					<span class="container-fleche_grise">
+						<svg class="fleche_grise" xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+							<g id="Groupe_2248" data-name="Groupe 2248" transform="translate(-208.5 -2751.546)">
+								<path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#707070" stroke-width="4"/>
+								<line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#707070" stroke-width="4"/>
+							</g>
+						</svg>
+					</span>
+					<span class="alumni_simple">Alumni simple (inscription gratuite)</span>
+				</p>
+
+				<article id="package_simple">
+					<div class="package_simple_infos">
+						<div class="text-container">
+							<p>Ce package comprend :</p>
+
+							<ul class="first-menu">
+								<li class="first-menu_item">la réception de nos dernières actualités via la
+									<b>newsletter de gaea21</b>
+								</li>
+								<li class="first-menu_item">l'intégration au
+									<b>réseau alumni</b>
+									gaea21 et l'inscription sur le
+									<b>site alumni</b>
+									(mise en ligne prévue en 2023)</li>
+								<li class="first-menu_item">l'invitation aux
+									<b>événements alumni</b>
+								</li>
+								<li class="first-menu_item">2h d'<b>accompagnement</b>
+									pour :
+									<ul class="second-menu">
+										<li class="second-menu_item">- Analyse CV</li>
+										<li class="second-menu_item">- Analyse de la lettre de motivation</li>
+										<li class="second-menu_item">- Mise en place d'une méthodologie de recherche d'emplois et conseils</li>
+									</ul>
+								</li>
+								<li class="first-menu_item">Mise en place du
+									<b>profil de demandeur d'emploi</b>
+									(section "<b>les profils de gaea21</b>" sur le site de gaea21)</li>
+							</ul>
+						</div>
+						<div class="img-container">
+							<div class="img-cafe">
+								<img src="{{asset('images/humansOfGaea/Alumni/cafe.svg')}}" alt="">
+							</div>
+							<div class="img-profile">
+								<img src="{{asset('images/humansOfGaea/Alumni/profil.svg')}}" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="largeBtn" data-txt="S'inscrire"></div>
+				</article>
+
+			</section>
+
+			{# Séparateur #}
+			<hr class="separator">
+
+			{# 2eme Option #}
+			<section id="alumni_cotisation">
+
+				<p class="section-start">
+					<span class="container-fleche_grise">
+						<svg class="fleche_grise" xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+							<g id="Groupe_2248" data-name="Groupe 2248" transform="translate(-208.5 -2751.546)">
+								<path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#707070" stroke-width="4"/>
+								<line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#707070" stroke-width="4"/>
+							</g>
+						</svg>
+					</span>
+					<span class="alumni_simple">Alumni avec cotisation</span>
+				</p>
+
+				<article id="package_cotisation">
+					<div class="text-container">
+
+						<div class="first-flex">
+							<div>
+								<p>La cotisation est d'un montant de
+									<b>XX CHF</b>
+									par an, et vous permet de bénéficier des prestations suivantes :</p>
+								<ul class="first-menu">
+									<li class="first-menu_item">Accès sans réserve aux prestation gratuites Alumni</li>
+								</ul>
+							</div>
+							<div class="first-img">
+								<img src="{{asset('images/humansOfGaea/Alumni/chill.svg')}}" alt="">
+							</div>
+						</div>
+
+						<ul class="first-menu">
+							<li class="first-menu_item">
+								<b>Coaching personnalisé :</b>
+								<ul class="second-menu">
+									<li class="second-menu_item">- accompagnement pour redaction, structuration et adaptation
+										<b>CV</b>
+										à chaque cible</li>
+									<li class="second-menu_item">- accompagnement pour rédaction, structuration et adaptation de le
+										<b>lettre de motivation</b>
+										à chaque cible</li>
+									<li class="second-menu_item">- accompagnement pour recherche d'emploi :
+										<ul class="third-menu">
+											<li class="third-menu_item">- méthodologie</li>
+											<li class="third-menu_item">- préparation entretiens (mis en situation, simulation entretiens (jeux de role) et accompagnement entretiens) :
+												<div class="second-flex">
+
+													<ul class="fourth-menu">
+														<li class="fourth-menu_item">- contenu (compétence/questions)</li>
+														<li class="fourth-menu_item">- tenu / look</li>
+														<li class="fourth-menu_item">- communication / attitude / communication non-verbale / timidité / anxiété</li>
+														<li class="fourth-menu_item">- suivi / debrief post entretiens</li>
+														<li class="fourth-menu_item">
+															<b>- cv vidéo</b>
+															(accompagnement à la réalisation et à l'utilisation)</li>
+														<li class="fourth-menu_item">- accompagnement de
+															<b>carrière</b>
+														</li>
+													</ul>
+
+													<div class="shooting">
+														<img src="{{asset('images/humansOfGaea/Alumni/shooting.svg')}}" alt="">
+													</div>
+
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="first-menu_item">Maintien
+								<b>adresse gaea21.org</b>
+								:
+								<ul class="second-menu">
+									<li class="second-menu_item">- dans le cadre de
+										<b>mini-contrats</b>
+										afin de continuer à travailler sur un ou plusieurs projets de recherche à pourcentage réduit dans une optique de participation à une publication</li>
+									<li class="second-menu_item">- accès sécurisé aux
+										<b>bases de données de recherche</b>
+										et au
+										<b>wiki gaea21</b>
+									</li>
+								</ul>
+							</li>
+
+							<div class="third-flex">
+
+								<li class="first-menu_item">
+									<b>Mandats.</b>
+									Les alumnis
+									<b>peuvent être sollicités</b>
+									en fonction de leurs disponibilités et de leur profil compétences selon les modalités suivantes :
+									<ul class="second-menu">
+										<li class="second-menu_item">- utilisation du
+											<b>profil compétences métiers final</b>
+											de gaea21 (intégration dans la base de données)</li>
+										<li class="second-menu_item">- mise en place dans l'agenda Alumni</li>
+										<li class="second-menu_item">- possibilité d'activation pour mandats gaea21 externes</li>
+										<li class="second-menu_item">- possibilité d'activation pour mandat de 1/3</li>
+									</ul>
+								</li>
+								<div class="hierachie">
+									<img src="{{asset('images/humansOfGaea/Alumni/hierarchie.svg')}}" alt=""/>
+								</div>
+
+							</ul>
+						</div>
+						<div class="largeBtn" data-txt="S'inscrire"></div>
+					</article>
+				</section>
+
+				{# Séparateur #}
+				<hr class="separator">
+
+				{# Accès programmes Alumni #}
+				<section id="acces_programmes">
+					<article>
+						<p>Pour poursuivre sa sensibilisation au développement durable, gaea21 donne aussi l’opportunité à ses membres alumnis d’accéder aux programmes :
+							<b>Sustainable Living Programme</b>,
+							<b>Green coaching</b>,
+							<b>consom’action</b>,
+							<b>Grown your own</b>,
+							<b>Economie collaborative</b>,
+							<b>Green events series</b>
+							mais également l’accès au programme
+							<b>Répertoire vert</b>
+							qui permet de retrouver les entreprises vertes autour de chez vous.
+						</p>
+
+						<div class="programmes">
+							<div class="smallBox" data-title="Répertoire Vert" data-link="/projets/RA/RV" data-image="{{asset('images/humansOfGaea/Alumni/RepVert.png')}}"></div>
+							<div class="smallBox" data-title="Take Acction" data-link="{{ path('Take_Action') }}" data-image="{{asset('images/PagesProjets/page_ra/image_ta.png')}}"></div>
+							<div class="smallBox" data-title="SLP" data-link="{{ path('Sustainable_Living_Program') }}" data-image="{{asset('images/PagesProjets/page_ra/image_slp.png')}}"></div>
+							<div class="smallBox" data-title="GREEN COACHING" data-link="/projets/RA/GCC" data-image="{{asset('images/humansOfGaea/Alumni/greenCoa.png')}}"></div>
+							<div class="smallBox" data-title="GES" data-link="/projets/RA/GES" data-image="{{asset('images/humansOfGaea/Alumni/GES.png')}}"></div>
+							<div class="smallBox" data-title="Economie collaborative" data-link="#" data-image="{{asset('images/humansOfGaea/Alumni/collabo.png')}}"></div>
+						</div>
+					</article>
+				</section>
+
+
+			{% endblock %}

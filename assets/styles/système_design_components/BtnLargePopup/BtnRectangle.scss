@@ -1,0 +1,99 @@
+@use "sass:math";
+@import "../../_function";
+
+
+
+
+
+.container-slp{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: pxToVw(36,1920);
+
+
+.btn-slp-programs {
+
+    width: pxToPourcent(248,1100);
+    height: pxToVw(80,1920);
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .6);
+    text-align: center;
+    padding: pxToVw(24, 1920) pxToVw(20, 1920);
+    border: none;
+    text-decoration: none !important;
+    color: black;
+
+
+    transition: all .3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #989751;
+        color: white;
+    }
+}
+}
+
+.ReactModalPortal {
+
+    .ReactModal__Overlay {
+        // agit sur overlay
+        width: pxTouPourcent(1920, 1920);
+        background: rgba(0, 0, 0, .75) !important;
+        z-index: 50000 !important;
+
+        &--after-open {
+
+            .ReactModal__Content {
+                &--after-open {
+                    // agit sur le contenu de la fenêtre
+                    position: relative !important;
+                    width: pxToPourcent(973, 1920) !important;
+                    // height: pxToVw(330, 1920) !important;
+
+                    background: rgba(255, 255, 255) !important;
+                    border-radius: 13px !important;
+                    border: 1px solid #98984b !important;
+
+                    overflow: visible !important;
+                    padding: pxToVw(30px, 1920) pxToVw(70px, 1920) !important;
+
+                    .modal--header {
+                        font-size: pxToVw(28, 1920) !important;
+                        line-height: pxToVw(42, 1920) !important;
+                        font-weight: 600 !important;
+                        margin-bottom: pxToVw(23px, 1920) !important;
+                    }
+
+                    .modal--content {
+                        font-size: pxToVw(28, 1920) !important;
+                        line-height: pxToVw(42, 1920) !important;
+                        font-weight: 400;
+                    }
+
+                    .cross-container {
+                        width: pxToPourcent(72, 973);
+                        height: pxToVw(72, 973);
+                        position: absolute;
+                        top: negativePxToPourcent(100,973) !important;
+                        right: negativePxToPourcent(36,973) !important;
+                        
+
+                        border: none !important;
+                        background: transparent !important;
+                        display: inline-block;
+
+                        .close {
+                            cursor: pointer !important;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{% extends 'gaea21/article/base.html.twig' %}
+
+{% block head %}
+	{{ parent() }}
+	<meta property="og:url" content="{{ app.request.uri }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{ article.content.title }}" />
+	<meta property="article:published_time" content="{{ article.content.dateCreation|date("c") }}" />
+	<meta property="og:description" content="{{ article.content.formatedText|truncatehtml(40,true)|raw }}" />
+	<meta property="og:image" content="{{ app.request.getSchemeAndHttpHost()~assetOr("Image/article/"~article.id~".png","Image/imageGaea21.jpg") }}" />
+{% endblock %}
+
+{% block articleSection %}
+<!-- Big Article List Section : Liste des articles -->
+<div class="section -articlelist" id="mainarticle">
+	{{ include('gaea21/article/article.html.twig') }}
+</div>
+
+<!-- Small Article List Section : Liste des articles -->
+<div class="section -articlelist _small">
+	{% for article in articles %}
+		{{ include('gaea21/article/article.html.twig') }}
+	{% endfor %}
+</div>
+{% endblock %}

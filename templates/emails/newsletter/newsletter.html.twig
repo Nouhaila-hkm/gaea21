@@ -1,0 +1,17 @@
+{# templates/emails/form/response.html.twig #}
+{% extends 'emails/base.html.twig' %}
+
+{% block main %}
+	
+	<p>Nous aimerions vérifier que votre inscription à la Newsletter gaea21 est sur le point d'être créée avec succès. </p>
+
+	<p>Pour confirmer votre adresse e-mail, cliquez sur le lien ci-dessous:</p>
+	
+	<a href={{ confirmationUrl }}>Lien de confirmation</a>
+
+	<p>Si vous rencontrez des difficultés pour vous vous inscrire à la Newsletter de gaea21, contactez-nous à l'adresse info@gaea21.org</p>
+
+	<p>Bonne lecture! <br/>
+	L'équipe de gaea21.</p>
+		
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organeConsultatif.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Organigramme
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Organigramme</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+{% endblock %}
+
+{% block main %}
+
+	<div class="title">
+		<h2>De quoi s'agit-il ?<h2></div>
+
+
+
+			{# Texte d'into #}
+			<article id="intro-organeDecisionnel">
+				<p>Le «Sustainability Council» (ou conseil des sages) est constitué de membres choisis par le comité de gaea21. Il a une mission de représentation dans la société civile. Son rôle consiste aussi à veiller à ce que l’action de gaea21 ne s’éloigne pas de ses buts et de sa vocation.<br>
+                <b>C’est l’organe consultatif de l’association.</b></p>
+				
+
+			</article>
+
+		{% endblock %}
+
+        {% block bigContainer %}
+			<div class="schema-organeDecisionnel">
+					<img src="{{ asset('images/QuiSommesNous/organigramme/conseil.png') }}">
+                    <p>Les membres sont activés individuellement pour des questions spécifiques relatives à leur domaine d’activité. Ils peuvent également être sollicités afin de participer à des débats, forums ou séminaires et sur la base de thèmes précis. Ils ont une fonction de valorisation et de promotion pour gaea21.</p>
+				</div>
+			{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+		{% endblock %}

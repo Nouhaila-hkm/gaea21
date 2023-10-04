@@ -1,0 +1,377 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#emploi html, #emploi body {
+  height: 100%;
+  width: 100%;
+}
+#emploi .sectionHead4 {
+  display: flex;
+}
+#emploi .header1, #emploi .header2 {
+  display: flex;
+  vertical-align: top;
+}
+#emploi .header1 {
+  margin-left: 0%;
+  width: 50.2083333333%;
+  height: 40vw;
+  background: #49A496;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+#emploi .header2 {
+  margin-left: 0px;
+  width: 49.7916666667%;
+  height: 40vw;
+  background: transparent url("../../..//images/Groupe de masques 389.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#emploi .p-title {
+  margin-left: 9.53125%;
+  margin-top: 26.0416666667%;
+  color: #FFFFFF;
+  font-size: 2.6041666667vw;
+
+}
+#emploi .p-texte {
+  margin-left: 9.53125%;
+  margin-top: 2.0833333333%;
+  width: 41.6666666667%;
+  height: 58.3333333333%;
+  color: white;
+  font-size: 1.5625vw !important;
+}
+#emploi .p-cont-1 {
+  margin-left: 41.875%;
+  margin-top: 5.2083333333%;
+  font-size: 2.6041666667vw;
+}
+#emploi .p-cont-2 {
+  margin-left: 29.3229166667%;
+  margin-top: 2.03125%;
+  font-size: 1.5625vw;
+}
+#emploi .container-1 {
+  display: flex;
+}
+#emploi .row-1, #emploi .row-2, #emploi .row-3, #emploi .row-4 {
+  display: flex;
+  vertical-align: top;
+}
+#emploi .row-1 {
+  margin-left: 14.4270833333vw;
+  margin-top: 10.4166666667vw;
+  width: 5.8333333333vw;
+  height: 5.8333333333vw;
+  background-color: #98984B;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#emploi .row-2 {
+  margin-left: 14.9479166667vw;
+  margin-top: 10.4166666667vw;
+  width: 5.8333333333vw;
+  height: 5.8333333333vw;
+  background-color: #49A496;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#emploi .row-3 {
+  margin-left: 14.9479166667vw;
+  margin-top: 10.4166666667vw;
+  width: 5.8333333333vw;
+  height: 5.8333333333vw;
+  background-color: #7B5D99;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#emploi .row-4 {
+  margin-left: 14.9479166667vw;
+  margin-top: 10.4166666667vw;
+  width: 5.8333333333vw;
+  height: 5.8333333333vw;
+  background-color: #989756;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#emploi .row-2-img {
+  margin-left: 1.3020833333vw;
+  margin-top: 0.78125vw;
+  width: 3.28125vw;
+  height: 3.28125vw;
+}
+#emploi .row-3-img {
+  margin-left: 1.3020833333vw;
+  margin-top: 0.78125vw;
+  width: 3.28125vw;
+  height: 3.28125vw;
+}
+#emploi .row-4-img {
+  margin-left: 1.3020833333vw;
+  margin-top: 0.78125vw;
+  width: 3.28125vw;
+  height: 4.21875vw;
+}
+#emploi #p-img {
+  margin-left: 0.625vw;
+  color: white;
+  font-size: 1.3020833333vw;
+}
+#emploi #offre {
+  margin-left: 10.9375vw;
+  margin-top: 1.8229166667vw;
+  font-size: 1.5625vw;
+}
+#emploi #reseau {
+  margin-left: 8.3333333333vw;
+  margin-top: 1.8229166667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#emploi #demande {
+  margin-left: 14.0625vw;
+  margin-top: 1.8229166667vw;
+  height: 3.8541666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#emploi #profil {
+  margin-left: 10.4166666667vw;
+  margin-top: 1.8229166667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#emploi #profil-1 {
+  margin-left: 10.4166666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#emploi #p-profil {
+  margin-left: 9.53125vw;
+  width: 15.5729166667vw;
+  height: 7.5vw;
+  margin-bottom: 2.6041666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#emploi .container-2 {
+  display: flex;
+}
+#emploi .tx-1, #emploi .tx-2, #emploi .tx-3, #emploi .tx-4 {
+  display: flex;
+  vertical-align: top;
+}
+#emploi #p-offre {
+  margin-left: 9.53125vw;
+  margin-top: 1.5625vw;
+  width: 15.5729166667vw;
+  height: 7.5vw;
+  margin-bottom: 2.6041666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+  display: flex;
+}
+#emploi #p-reseau {
+  margin-left: 7.2916666667vw;
+  margin-top: 1.5625vw;
+  width: 15.5729166667vw;
+  height: 7.5vw;
+  margin-bottom: 2.6041666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+  display: flex;
+}
+#emploi #p-demande {
+  margin-left: 10.4166666667vw;
+  margin-top: 1.5625vw;
+  width: 15.5729166667vw;
+  height: 7.5vw;
+  margin-bottom: 2.6041666667vw;
+  text-align: center;
+  font-size: 1.5625vw;
+  display: flex;
+}
+#emploi #p-profil {
+  margin-left: 8.3333333333vw;
+  margin-top: 1.5625vw;
+  width: 15.5729166667vw;
+  height: 7.5vw;
+  margin-bottom: 2.6041666667vw;
+  text-align: center;
+  -webkit-text-decoration: Helvetica;
+          text-decoration: Helvetica;
+  font-size: 1.5625vw;
+  display: flex;
+}
+#emploi .offre-1 {
+  width: 43.2291666667vw;
+  height: 44.84375vw;
+}
+#emploi .offre-2 {
+  width: 29.8958333333vw;
+}
+#emploi .container-offre {
+  display: flex;
+}
+#emploi .offre-img {
+  margin-left: 14.0625vw;
+  width: 29.8958333333vw;
+  height: 44.84375vw;
+}
+#emploi .offre-1 {
+  margin-left: 7.8645833333vw;
+  width: 36.4583333333vw;
+}
+#emploi #p-offre-1 {
+  margin-top: 10.4166666667vw;
+  color: #989756;
+  font-size: 2.6041666667vw;
+}
+#emploi #p-offre-2 {
+  margin-top: 1.5625vw;
+  font-size: 1.5625vw;
+}
+#emploi #p-offre-3 {
+  margin-top: 12.5vw;
+  width: 15.625vw;
+  height: 4.1145833333vw;
+  padding-top: 1.0416666667vw;
+  background-color: #989756;
+  border-radius: 2.0833333333vw;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3020833333vw;
+}
+#emploi .container-reseau {
+  display: flex;
+}
+#emploi .reseau-1 {
+  margin-left: 9.53125vw;
+  width: 40.625vw;
+}
+#emploi .reseau-img {
+  margin-left: 5.2083333333vw;
+  width: 32.5520833333vw;
+}
+#emploi #p-reseau-1 {
+  margin-top: 10.4166666667vw;
+  color: #49A496;
+  font-size: 2.6041666667vw;
+}
+#emploi #p-reseau-2 {
+  margin-top: 5.2083333333vw;
+  width: 38.0208333333vw;
+  font-size: 1.5625vw;
+}
+#emploi #p-reseau-3 {
+  margin-top: 14.84375vw;
+  width: 15.625vw;
+  height: 4.1145833333vw;
+  padding-top: 1.0416666667vw;
+  background-color: #49A496;
+  border-radius: 2.0833333333vw;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3020833333vw;
+}
+#emploi .container-demande {
+  margin-top: 2.6041666667vw;
+  display: flex;
+}
+#emploi .demande-img {
+  width: 49.4791666667vw;
+  height: 40.1041666667vw;
+}
+#emploi .demande-1 {
+  width: 40.3645833333vw;
+  height: 40.1041666667vw;
+}
+#emploi #p-demande-1 {
+  margin-top: 7.2916666667vw;
+  color: #7B5D99;
+  font-size: 2.6041666667vw;
+}
+#emploi #p-demande-2 {
+  margin-top: 5.2083333333vw;
+  width: 38.0208333333vw;
+  font-size: 1.5625vw;
+}
+#emploi #p-demande-3 {
+  margin-top: 7.4479166667vw;
+  width: 20.8333333333vw;
+  height: 4.1145833333vw;
+  padding-top: 1.0416666667vw;
+  background-color: #7B5D99;
+  border-radius: 2.0833333333vw;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3020833333vw;
+}
+#emploi .container-off {
+  margin-bottom: 20.8333333333vw;
+  display: flex;
+}
+#emploi .off-1 {
+  margin-left: 9.53125vw;
+  height: 42.5vw;
+  width: 40.5208333333vw;
+}
+#emploi .off-img {
+  margin-left: 7.8125vw;
+  width: 32.5520833333vw;
+  height: 42.5vw;
+}
+#emploi #p-off-1 {
+  margin-top: 10.4166666667vw;
+  color: #989756;
+  font-size: 2.6041666667vw;
+}
+#emploi #p-off-2 {
+  margin-top: 2.6041666667vw;
+  width: 38.0208333333vw;
+  font-size: 1.5625vw;
+}
+#emploi #p-off-3 {
+  margin-top: 4.9479166667vw;
+  width: 15.625vw;
+  height: 4.1145833333vw;
+  padding-top: 1.0416666667vw;
+  background-color: #989756;
+  border-radius: 2.0833333333vw;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3020833333vw;
+}/*# sourceMappingURL=emploi.css.map */

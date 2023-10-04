@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    <link href="{{ asset('style/coaching/av_pt_ap/av_pt_ap.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+    <a id="prevArrow" data-link="/coaching/projet"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section class="projet" id="projetApres">
+        
+            <h2>Le cycle de vie du gaeien / projet <span>après</span> !</h2>
+            <div><p class="projetDesc">Validation des livrables et des compétences métiers acquises. Etablissement d’une carte compétence individuelle.</p></div>
+
+            <div class="stepsContainer">
+
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                
+                <div class="progressContainer">
+                
+                    <div class="progression" id="progression"></div>
+
+                    <div class="circle active"><p class="apres">Validation plan de formation</p></div>
+
+                    <div class="circle"><p class="apres">Suivi plan de carrière / profil de carrière individuel</p></div>
+
+
+                    {# <div class="circle"><p>Test</p></div> #}
+
+
+                </div>
+
+            </div>
+                    
+    </section>
+
+</main>
+
+<div id="carrousel">
+
+    <button id="g"><a id="lien_avant">&#8249;</a></button>
+
+    <div id="container">
+        <div class="slide">
+            <div class="slideImg center"><img class="apres1" src="{{ asset('images/coaching/projet/validation_plan_formation.svg') }}"></div>
+            <div class="slideContent">
+
+                <h3>Validation plan de formation</h3>
+                <p>A la fin du stage, il y a la validation du plan de formation :</p>
+
+                <ul>
+                    <li><p>Validation objectifs de formation (coach projet)</p></li>
+                    <li><p>Validation compétences et évaluation niveau d'acquisition et établissement compétences acquises - certificats de compétences acquises (coordinateurs, coach projet, départements référents, département formation)</p></li>
+                    <li><p>Validation formations acquises (département formation)</p></li>
+                    <li><p>Suivi académique (mémoire, soutenance rapport de stage à rendre). Le stagiaire va être accompagné pour la structuration, conseils et validation contenu. Ce travail se fait à 3, en collaboration avec le prof de l’université.</p></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slideImg"><img class="apres2" src="{{ asset('images/coaching/projet/suivi_plan_carriere.svg') }}"></div>
+            <div class="slideContent">
+
+                <h3>Suivi plan de carrière / profil de carrière individuel</h3>
+                <p>Ensuite, il y a le suivi plan de carrière :</p>
+
+                <ul>
+                    <li><p>Établissement d'une carte de compétences et d'un profil de carrière individuel, dans lequel on va faire figurer les compétences acquises chez gaea21, les compétences métier validées, et les compétences métier développées.</p></li>
+                    <li><p>Identification des domaines d'activité et des profils d'entreprises + profils de poste correspondants.</p></li>
+                    <li><p>Intégration au programme alumni de gaea21 (en option), qui va l’aider à mettre en place son projet de carrière, l'accompagner et faciliter sa recherche d'emploi (pôle coaching RH) ou sa création d'entreprise et mettre en place un suivi après emploi.</p></li>
+                </ul>
+
+            </div>
+        </div>
+        
+    </div>
+    
+    
+    <button id="d"><a id="lien_suivant">&#8250;</a></button>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('carrouselCoachingApres') }}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+{% endblock %}

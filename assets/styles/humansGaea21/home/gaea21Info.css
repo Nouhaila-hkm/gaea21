@@ -1,0 +1,89 @@
+.section2, .info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.elemInfo {
+  width: pxToPourcent(759px, 1920px);
+  height: pxToVw(900px, 1920px);
+  margin-top: pxToVw(104px, 1920px);
+  margin-left: pxToPourcent(67px, 1920px);
+  margin-right: pxToPourcent(67px, 1920px);
+  padding-right: pxToPourcent(149px, 1920px);
+  padding-left: pxToPourcent(64px, 1920px);
+  padding-top: pxToVw(34px, 1920px);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  border-radius: 13px;
+  opacity: 1;
+  background-color: #F5F5F5;
+}
+
+.elemInfo:hover {
+  background-color: #98984C;
+}
+.elemInfo:hover .lastMot.lastLigne, .elemInfo:hover .infoTitre.lastLigne {
+  border-bottom: solid white 4px;
+}
+.elemInfo:hover .infoTitre, .elemInfo:hover .lastMot {
+  color: white;
+}
+
+.infoTitre, .lastMot {
+  left: pxToPourcent(201px, 1920px);
+  margin: 0 0 0 0;
+  padding-right: 10px;
+  font-family: "Helvetica";
+  font-size: pxToVw(50px, 1920px);
+  font-weight: bold;
+}
+
+.lastMot {
+  padding: 0 0 0 0;
+}
+
+.divTitre {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.lastMot.lastLigne, .infoTitre.lastLigne {
+  border-bottom: solid #989655 4px;
+  margin-bottom: pxToVw(40px, 1920px);
+}
+
+.infoContenue {
+  /* Layout Properties */
+  left: pxToPourcent(202px, 1920px);
+  height: pxToVw(290px, 1920px);
+  overflow: hidden;
+  margin-bottom: pxToVw(11px, 1920px);
+  font-family: "Helvetica";
+  font-size: pxToVw(24px, 1920px);
+  /* UI Properties */
+  opacity: 1;
+}
+
+.infoImage {
+  margin-bottom: pxToVw(42px, 1920px);
+  height: pxToVw(392px, 1920px);
+}
+
+.temoignage {
+  width: pxToPourcent(353px, 1920px);
+  height: 100% !important;
+  padding-top: pxToVw(110px, 1920px);
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.divTemoignage {
+  background-color: white;
+}/*# sourceMappingURL=gaea21Info.css.map */

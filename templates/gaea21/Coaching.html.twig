@@ -1,0 +1,86 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+   {% include "/gaea21/topbar.html.twig" %}
+    <section class="sectionZero white">
+      <h5 class="center ">Gestion des articles</h5>
+       <div class="container">
+       <a data-target="modalCat" class="btn gaeaColor  modal-trigger"><i class="material-icons white-text">add</i></a>
+		<table class="responsive-table striped">
+		<thead>
+		<th>ID</th>
+		<th>TEXT1</th>
+		<th>TEXT2</th>
+		<th>ARTICLE</th>
+		<th>LANGUE</th>
+		<th>ACTIONS</th>
+		</thead>
+		<tbody>
+		{% for Con in Contents %}
+			<tr>
+			<td>{{Con.id}}</td>
+			<td>{{Con.rawText}}</td>
+			<td>{{Con.formatedText}}</td>
+			<td>{{Con.articleRelated.id}}</td>
+			<td>{{Con.langueContent.name}}</td>
+			<td>
+				<a href="{{path('modif',{id:Con.id})}}" class="btn btn-floating transparent"><i class="material-icons green-text">edit</i></a>
+				<a href="{{path('del',{id:Con.id})}}" class="btn btn-floating transparent"><i class="material-icons red-text">delete</i></a>
+			</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+    </table>
+ </div>
+    </section>
+
+
+	<div id="modalCat" class="modal grey lighten-2">
+  <div class="modal-content">
+    <div>
+      <h6 class="right grey-text text-darken-4 modal-close"><i class="material-icons">close</i></h6>
+      <h5 class="grey-text text-darken-4">CREER UNE FACTURE</h5>
+  </div>
+    {{ form_start(formContent) }}
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons textColor prefix">
+           list
+          </i>
+           {{ form_widget(formContent.rawText) }}
+        </div>
+        <div class="input-field col s12">
+        <i class="material-icons textColor prefix">
+           list
+          </i>
+            {{ form_widget(formContent.formatedText) }}
+        </div>
+        <div class="input-field col s6">
+         <i class="material-icons textColor prefix">
+           person
+          </i>
+            {{ form_widget(formContent.langueContent) }}
+        </div>
+         <div class="input-field col s6">
+          <i class="material-icons textColor prefix">
+           assignment
+          </i>
+            {{ form_widget(formContent.articleRelated) }}
+        </div>
+        <div class="col s6">
+         <button type="reset" class="btn red waves-effect waves-light" style="border-radius:100px; margin-top:10%;">
+          <i class="material-icons">cancel</i>
+          Annuler
+         </button>
+         <button type="submit" class="btn gaeaColor" style="border-radius:100px; margin-top:10%;">
+           <i class="material-icons">done</i>
+          Valider
+         </button>
+        </div>
+      </div>
+     {{ form_end(formContent) }}
+  </div>
+</div>
+   {% include "/gaea21/footer.html.twig" %}
+{% endblock %}

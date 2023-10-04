@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('programmeHumansGaea21') }}
+    {{ parent() }}
+    
+{% endblock %}
+
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+    
+    <div id="programme">
+    
+        <section class="sectionHead">
+            <img class="logoHumans" src="{{ asset('images/humansGaea21/logoHumans.png') }}"/>
+            <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <div class="menu">
+            <ul class="liste">
+                <li class="elemMenu">Le modèle d'accompagnement</li>
+                <li class="elemMenu">Le profil de compétences post gaea21</li>
+                <li class="elemMenu">Emploi/stages</li>
+                <li class="elemMenu">Témoignages</li>
+            
+            </ul>
+            <img class='elemSuiv' src="{{ asset('images/humansGaea21/nextElem.png') }}"/>
+
+        </div>
+
+        <section id="contenu"></section>
+        <section id="contact"></section>
+
+        <footer id="humansFooter" class="titleGaeaFooter">
+
+        </footer>
+
+    </div>
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    {{encore_entry_script_tags('programmeHumansGaea21')}}
+{% endblock %}

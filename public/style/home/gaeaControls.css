@@ -1,0 +1,56 @@
+/* CONTROLLERS */
+/* Radio Block ( controls -radio -verticalblock )
+  Une zone de selection de blocs.
+  @extend Section(section)
+  @accept (h4),(h5),(a)
+*/
+.controls.-radio.-verticalblock > * {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.controls.-radio.-verticalblock > *:not(._selected) {
+  opacity: 0.5;
+}
+
+.controls.-radio.-verticalblock > *:hover {
+  transform: scale(1.02, 1.02);
+}
+
+/* */
+/* Radio Block ( controls -radio -horizontaldot )
+  Une zone de selection de blocs.
+  @extend Section(section)
+  @accept (button)
+*/
+.controls.-radio.-horizontaldot {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.5vw;
+  padding-bottom: 3vw;
+  margin: 0;
+  justify-content: center;
+}
+
+.controls.-radio.-horizontaldot > * {
+  border: none;
+  outline: none;
+  background: none;
+  background-color: rgb(180, 180, 180);
+  margin: 0.35vw;
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.controls.-radio.-horizontaldot > *:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.controls.-radio.-horizontaldot > *._selected {
+  background-color: white;
+}
+
+/* */
+/* *//*# sourceMappingURL=gaeaControls.css.map */

@@ -1,0 +1,48 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+
+    // display: flex;
+    // align-items: center;
+    text-align: center;
+    margin-bottom: pxToVw(51px,1920);
+
+    h2{
+      line-height: pxToVw(50,1920);
+      display: inline-block;
+      position: relative;
+      top: pxToVw(29px,1920);
+    }
+
+    img{
+      width: pxToPourcent(133.75,1290);
+      // height: pxToVw(66,1290);
+    }
+  }
+
+  .partie1{
+    margin-bottom:pxToVw(50px,1290);
+    width: pxToPourcent(1290,1290);
+  }
+
+  .partie2{
+    display: flex;
+
+    .partie2_text{
+      width: pxToPourcent(1028,1290);
+    }
+
+    .img-highfive{
+      margin-right: pxToVw(52px,1290);
+      width: pxToVw(209.7,1290);
+
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

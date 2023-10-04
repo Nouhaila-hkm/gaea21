@@ -1,0 +1,247 @@
+@use "sass:math";
+@import "../../sass/function";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: pxToPourcent(1920, 1920);
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(42, 1920);
+}
+
+h1 {
+  font-size: pxToVw(60, 1920);
+  line-height: pxToVw(90, 1920);
+  margin: 0;
+}
+
+h2 {
+  font-size: pxToVw(50, 1920);
+  line-height: pxToVw(75, 1920);
+  margin: 0;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+h3,
+h4 {
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(34, 1920);
+  margin: 0;
+}
+
+#header p {
+  font-size: pxToVw(30, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+// HEADER
+
+#header {
+  width: 100%;
+  height: pxToVw(768, 1920);
+  display: flex;
+
+  ._text-content {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: block;
+    background-color: #98984b;
+    color: white;
+    .text {
+      margin-top: pxToVw(164.54, 1960);
+      h2 {
+        font-size: 3.75rem;
+        margin-bottom: pxToVw(36px, 1920);
+      }
+    }
+    .form-cover-icon {
+      margin-top: pxToVw(75.38px, 1960);
+      width: pxToVw(434px, 1960);
+    }
+  }
+
+  ._background {
+    background-image: url("../../../images/formulaires/png/Contact-Cover-Image.png");
+    width: 100%;
+    height: pxToVw(768, 1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+#topArrow {
+  display: inline-block;
+  margin-left: pxToVw(183, 1920);
+  // background-color: coral;
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+#tertiaryMenu {
+  // width: pxToPourcent(1920,1920);
+  margin-top: pxToVw(35px, 1920);
+  margin-bottom: pxToVw(120, 1920);
+  position: relative;
+}
+
+#main {
+  width: pxToVw(1290, 1920);
+  margin: 0 auto;
+  // // height: pxToVw(700px,1920); // provisoire
+  // background: lightblue; // provisoire
+  // margin-bottom: pxToVw(83px, 1920);
+
+  h2 {
+    font-size: pxToVw(50px, 1920);
+    line-height: pxToVw(36px, 1920);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: pxToVw(28, 1920);
+    line-height: pxToVw(42, 1920);
+    margin-bottom: 0;
+  }
+}
+
+#projects {
+  width: pxToVw(1554px, 1920);
+  margin: 0 auto;
+}
+
+#vignettes {
+  width: pxToVw(1554px, 1920);
+  margin: 0 auto;
+  height: pxToVw(300px, 1920); // provisoire
+  // background:coral; // provisoire
+
+  display: flex;
+  justify-content: center;
+  margin-top: pxToVw(140px, 1920);
+
+  .jeNeSaisPas:nth-child(even) {
+    margin: 0 pxToVw(107px, 1920);
+  }
+}
+#prevArrow {
+  font-size: 1.4583333333vw;
+  line-height: 1.875vw;
+  display: inline-block;
+  margin-top: 5.2083333333vw;
+  margin-left: 9.53125vw;
+}
+
+#topArrow {
+  margin-bottom: pxToVw(40, 1920);
+}
+
+#forms {
+  width: 100%;
+  // height: pxToVw(673px, 1920); // provisoire
+  background: #f6f6f6;
+
+  .joinUs {
+    text-align: center;
+    font-size: pxToVw(50, 1920);
+    line-height: pxToVw(36, 1920);
+    font-weight: 600;
+    padding-top: pxToVw(48, 1920);
+    padding-bottom: pxToVw(65, 1920);
+  }
+
+  .formulaires {
+    display: flex;
+    justify-content: center;
+    gap: pxToVw(50px, 1920);
+
+    .jeNeSaisPas {
+      .vignette {
+        .link {
+          .overlay {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            z-index: 200;
+            border-radius: 13px;
+
+            .description {
+              display: none;
+              transition: all 0.4s;
+            }
+
+            .img {
+              transition: all 0.3s;
+              position: relative;
+
+              // transform: scale(.6);
+              // position:absolute;
+              // top: 0;
+              // left: 0;
+
+              object {
+                width: pxToPourcent(109.646, 220);
+                transform: translateX(50%);
+                z-index: 20;
+                cursor: pointer;
+                // background-color: #E0E0E0;
+              }
+            }
+
+            &:hover {
+              background-color: #989751;
+
+              .img {
+                transform: translateY(-33%) scale(0.6);
+                // position:absolute;
+                // top: pxToVw(70,1920);
+                // left:pxToVw(45,1920);
+              }
+
+              .description {
+                display: block;
+                font-size: pxToVw(20, 1920);
+                line-height: pxToVw(24, 1920);
+                padding: 0 pxToVw(25, 1920);
+                text-align: center;
+
+                position: relative;
+                top: -26%;
+              }
+
+              .card-header {
+                color: white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ou {
+    font-size: pxToVw(30, 1920);
+    line-height: pxToVw(36, 1920);
+
+    margin: pxToVw(50, 1920) pxToVw(937, 1920);
+  }
+
+  .largeBtn {
+    display: inline-block;
+    // margin: 0 auto;
+    // background: red;
+    position: relative;
+    left: pxToVw(822, 1920);
+    margin-bottom: pxToVw(77, 1920);
+  }
+}

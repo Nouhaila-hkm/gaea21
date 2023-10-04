@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page de validation{% endblock %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('topBar') }}
+	{{ encore_entry_link_tags('loginForm') }}
+	{{ encore_entry_link_tags('showUser') }}
+	{{ encore_entry_link_tags('Validation') }}
+	{{ encore_entry_link_tags('forgotpasswordform') }}
+{% endblock %}
+
+{% block body %}
+	{% include "/components/_topbar.html.twig" %}
+
+	<div class="img-background">
+	<img class="welcome" src="/Image/forgotPassword/logo gaea21.png">
+
+	<div id="Validation"></div>
+
+	</div>
+
+	{% block javascripts %}
+		{{ parent() }}
+		{{ encore_entry_script_tags('Validation') }}
+	{% endblock %}
+{% endblock %}
+

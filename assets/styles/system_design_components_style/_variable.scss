@@ -1,0 +1,97 @@
+// PRIMARY COLORS
+$primary-color--gaea-green : #98984B;
+$primary-color--rifle-green : #484738;
+$primary-color--persian-green : #00A796;
+$primary-color--tropical-rain-forest : #007263;
+
+// SECONDARY COLORS
+$secondary-color--bone : #E1DDC7;
+$secondary-color--brow-yellow : #C8A460;
+$secondary-color--electric-brown : #BE6650;
+$secondary-color--french-lilac : #7B5D99;
+$secondary-color--golden-brown : #225BA4;
+$secondary-color--pale-cerulean : #A0B8DC;
+
+
+// TEXT COLORS
+$text-color--jet: #343434;
+$text-color--ebony: #464362;
+$text-color--ash-gray: #ACA9BB;
+$text-color--white : #FFFFFF;
+
+// CLASS OPACITY
+.opacity-100{
+    opacity:1;
+}
+
+.opacity-90{
+    opacity:.9;
+}
+
+.opacity-80{
+    opacity:.8;
+}
+
+.opacity-70{
+    opacity:.7;
+}
+
+.opacity-60{
+    opacity:.6;
+}
+
+.opacity-50{
+    opacity:.5;
+}
+
+.opacity-40{
+    opacity:.4;
+}
+
+.opacity-30{
+    opacity:.3;
+}
+
+.opacity-20{
+    opacity:.2;
+}
+
+.opacity-10{
+    opacity:.1;
+}
+
+// TEXT FORMAT
+.heading-1{ //for Title
+    font-size: pxToVw(60,1920);
+    line-height:pxToVw(90,1920);
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.heading-2{
+    font-size: pxToVw(50,1920);
+    line-height:pxToVw(75,1920);
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.heading-3,.heading-4{
+    font-size: pxToVw(28,1920);
+    line-height:pxToVw(34,1920);
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.text-header{
+    font-size: pxToVw(30,1920);
+    line-height:pxToVw(36,1920);
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.text{
+    font-size: pxToVw(28,1920);
+    line-height:pxToVw(42,1920);
+    margin:0 !important;
+    padding:0 !important;
+}

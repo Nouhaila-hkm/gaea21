@@ -1,0 +1,80 @@
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/RA/projetGaea21_RA.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/RA
+{% endblock %}
+
+{% block main %}
+    <section class="text-content">
+		<h2>De quoi s'agit-il ?</h2>
+		<p class="description">gaea21 ne fait pas de la recherche fondamentale. 
+		Notre programme de recherche appliquée s’établit à partir des publications existantes et d’une cellule de veille technologique et thématique, 
+		à partir de laquelle sont déterminés des besoins de niche. 
+		Pour chaque besoin identifié, un projet est créé.</p>
+		<h2>Découvrez les projets</h2>
+	</section>
+
+	<section id="project-box">
+		<div class="smallBox" data-title="Répertoire Vert" data-link="/projets/RA/RV" data-image="{{asset('images/PagesProjets/page_ra/image_rv.png')}}"></div>
+		<div class="smallBox" data-title="Sustainability in a Box" data-link="/projets/RA/SIB" data-image="{{asset('images/PagesProjets/page_ra/image_sib.png')}}"></div>
+		<div class="smallBox" data-title="Pré-analyse" data-link="/projets/RA/PA" data-image="{{asset('images/PagesProjets/page_ra/image_pa.png')}}"></div>
+		<div class="smallBox" data-title="Green Coaching Communes" data-link="/projets/RA/GCC" data-image="{{asset('images/PagesProjets/page_ra/image_gcc.png')}}"></div>
+		<div class="smallBox" data-title="eco&#8209;minds" data-link="/projets/RA/Eco-minds" data-image="{{asset('images/PagesProjets/page_ra/image_em.png')}}"></div>
+		<div class="smallBox" data-title="Take action program" data-link="/projets/RA/TA" data-image="{{asset('images/PagesProjets/page_ra/image_ta.png')}}"></div>
+		<div class="smallBox" data-title="Green Event Series" data-link="/projets/RA/GES" data-image="{{asset('images/PagesProjets/page_ra/image_ges.png')}}"></div>
+		<div class="smallBox" data-title="Plateforme des initiatives" data-link="/projets/RA/PDI" data-image="{{asset('images/PagesProjets/page_ra/image_pdi.png')}}"></div>
+		<div class="smallBox" data-title="Coaching Télétravail" data-link="/projets/RA/Coaching-teletravail" data-image="{{asset('images/PagesProjets/page_ra/image_ct.png')}}"></div>
+		<div class="smallBox" data-title="Sustainable Living Program" data-link="/projets/RA/SLP" data-image="{{asset('images/PagesProjets/page_ra/image_slp.png')}}"></div>
+		<div class="smallBox" data-title="Sustainable City Event" data-link="/projets/RA/SCE" data-image="{{asset('images/PagesProjets/page_ra/image_sce.png')}}"></div>
+	</section>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Recherche Appliquée' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Recherche Appliquée'  
+				})}}" >
+	</div>
+{% endblock %}
+
+

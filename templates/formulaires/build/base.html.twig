@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/png" href="{{asset('imagesgaea21/logo_gaea21.png')}}" />
+            <title>{% block title %}gaea21{% endblock %}</title>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+            {% block stylesheets %}
+                {{ encore_entry_link_tags('topBar') }} 
+                <link href="{{ asset('style/formulaire/css/baseForm.css') }}" rel="stylesheet"/>
+            {% endblock %}
+        
+        {% endblock %}
+    </head>
+
+    <body>
+		{% include "/components/_topbar.html.twig" %}
+        {# header commun aux pages #}
+        <header id="header">
+		    {% block header %}
+                <div class="_text-content">
+                    <div class="text"></div>
+                </div>
+                <div class="_background"></div>
+            {% endblock %}
+        </header>
+
+        {% block sousMenu %}
+			<div id='secondaryNav' data-filename="dataPourLaSousNav/itemsQuiSommesNous.json"></div>
+		{% endblock %}
+
+        {# Block principale de la page #}
+        <main id="main">
+          {% block main %}{% endblock %}
+        </main>
+
+        {% block BouttonHautDePage %}
+          <div id="topArrow"></div>
+		{% endblock %}                 
+
+        {# Footer #}
+        {% block footer %}
+			{% include "/gaea21/footer.html.twig" %}
+		{% endblock %}        
+
+        {% block javascripts %}
+            <script src="{{ asset('js/visualComponents.js') }}"></script>
+            <script src="{{ asset('js/desInscription.js') }}"></script>
+            <script src="{{ asset('js/redirect.js') }}"></script>
+            <script src="{{ asset('js/login.js') }}"></script>
+            <script src="{{ asset('js/updateAccount.js') }}"></script>
+            <script src="{{ asset('js/updatePassword.js') }}"></script>
+            <script src="{{ asset('js/reinitPassword.js') }}"></script>
+            <script src="{{ asset('js/reinitPasswordLost.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,317 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organeOperationnel.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Organigramme
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Organigramme</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+{% endblock %}
+
+{% block main %}
+
+	<div class="title">
+		<h2>De quoi s'agit-il ?<h2></div>
+
+			{# Texte d'into #}
+			<article id="intro-organeDecisionnel">
+				<p>Le comité est composé de 3 membres. C’est l’organe décisionnel de l’association. Il définit le programme d’actions, attribue les tâches et coache les membres du bureau de gaea21 dans la réalisation de ses tâches. Enfin, il donne les orientations générales de la politique de l’association.</p>
+				<div class="schema-organeDecisionnel">
+					<img src="{{ asset('images/QuiSommesNous/organigramme/executif.png') }}">
+				</div>
+
+			</article>
+
+		{% endblock %}
+
+
+		{% block personnes %}
+			<div class="membres">
+				<div class="presentationInitial">
+					<div class="photo">
+						<img src="{{ asset('images/QuiSommesNous/organigramme/recherche.png') }}">
+					</div>
+					<section class="presentation-membres">
+						<div>
+							<h3 class="name">L'Observatoire</h3>
+						</div>
+						<p class='departement'>L’Observatoire est le cœur de gaea21. Il a pour vocation d’être un centre scientifique consultatif de référence dans le domaine du développement durable. Son activité est établie sur la base de sept domaines-piliers :
+						</p>
+                        <div class="domaines">
+                            <ul>
+                                <li>Economie et modélisation</li>
+                                <li>Etudes d'impacts</li>
+                                <li>Ingénierie technique</li>
+                                <li>Architecture verte et eco-design</li>
+                            </ul>
+                            <ul>
+                                <li>Biologie et santé</li>
+                                <li>Ethnologie et anthropologie</li>
+                                <li>Informatique et technologie</li>
+                            </ul>
+                        </div>
+
+						<div class="plus">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+									<g id="Groupe_1055" data-name="Groupe 1055" transform="translate(-208.5 -2751.546)">
+										<path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#5681B9" stroke-width="4"/>
+										<line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#5681B9" stroke-width="4"/>
+									</g>
+								</svg>
+							</div>
+							<p>En découvrir plus</p>
+						</div>
+					</section>
+				</div>
+				{# Contenue a afficher ou a masqué #}
+				<section class='hiddenContent hidde'>
+                    <p>L'Observatoire gaea21 du développement durable s'adresse à l'état, aux entreprises et au public en proposant les service suivants&nbsp;:</p>
+                    <div class="organes">
+                        <div class="support">
+                            <img src="{{asset('images/QuiSommesNous/organigramme/support.svg')}}" alt="">
+                        </div>
+                        <div class="liste">
+                            <ul>
+                                <li>Organe scientifique consultatif (recherche, études et analyses, publications scientifiques)</li>
+                                <li>Organe de mesure et d'évaluation (étude d'impact)</li>
+                                <li>Organe de coaching et d'accompagnement (audit environnemental, mandats de recherche et développement, solutions sur mesure pour entreprise)</li>
+                                <li>Coaching et mise en oeuvre de projets (audit, analyse, évaluation, accompagnement)</li>
+                                <li>Centre de recherche dans le domaine du Développement Durable (création et ...)</li>
+                            </ul>
+                        </div>
+                        <div class="recherche">
+                            <img src="{{asset('images/QuiSommesNous/organigramme/recherche.svg')}}" alt="">
+                        </div>
+                    </div>
+
+                    <div class="informations">
+                        <div class="vide"></div>
+                        <ul class="liste">
+                            <li>Un espace public qui met à disposition du public et des autres acteurs du développement durable les renseignements suivants&nbsp;:<br>
+                            - Une information scientifique claire<br>
+                            - Le résultat de ses recherches, de ses études, de ses rapports et analyses</li>
+                        </ul>
+                        <div class="chill">
+                            <img src="{{asset('images/QuiSommesNous/organigramme/chill.svg')}}" alt="">
+                        </div>
+                    </div>
+
+                    <div class="possibilites">
+                        <div class="interactivite"> <img src="{{asset('images/QuiSommesNous/organigramme/interactivite.svg')}}" alt=""></div>
+                        <ul class="liste">
+                            <li>Un espace interactif ou le public a la possibilité de&nbsp;:
+                            - S'exprimer à travers des boites à idée / boites à Bonne Pratique<br>
+                            - Participer à des sondages et des recherches<br>
+                            - Trouver des réponses et poser des questions dans le cadres d'un forum<br>
+                            - Réagir à des sujets/thèmes d'actualité liée au développement durable par le biais d''un blog</li>
+                        </ul>
+                    </div>
+				</section>
+			</div>
+{# *********************************************************************************************************************** #}
+			<div class="membres">
+				<div class="presentationInitial">
+					<div class="photo">
+						<img src="{{ asset('images/QuiSommesNous/organigramme/juriste.png') }}">
+					</div>
+					<section class="presentation-membres">
+						<div>
+							<h3 class="name">Le département administration est juridique</h3>
+						</div>
+						<p class='departement'>L'administration regroupe les sous-départements suivant&nbsp;:</p>
+                        <ul class="liste">
+                            <li>Economie et modèlisation</li>
+                            <li>Etudes d'impacts</li>
+                            <li>Ingiénerie et technique</li>
+                            <li>Architecture verte et eco-design</li>
+                        </ul>
+					</section>
+                </div>
+            </div>
+{# *********************************************************************************************************************** #}
+
+			<div class="membres">
+				<div class="presentationInitial">
+					<div class="photo">
+						<img src="{{ asset('images/QuiSommesNous/organigramme/culture.png') }}">
+					</div>
+					<section class="presentation-membres">
+						<div>
+							<h3 class="name">Le département culture</h3>
+						</div>
+						<p class='departement'>Le département culture a pour but de faire passer les messages du développement durable de manière agréable, sans culpabiliser les gens. Un exemple de projet entrepris dans ce cadre là est celui de l’organisation de camps de vacances sur le thème du développement durable, destinés aux enfants.
+						</p>
+					</section>
+                </div>
+            </div>
+{# *********************************************************************************************************************** #}
+            <div class="membres">
+                <div class="presentationInitial">
+                    <div class="photo">
+                        <img src="{{ asset('images/QuiSommesNous/organigramme/formation.png') }}">
+                    </div>
+                    <section class="presentation-membres">
+                        <div>
+                            <h3 class="name">Le département formation</h3>
+                        </div>
+                        <p class='departement'>Les formations sont destinées aux membres du bureau de gaea21, les membres de l’association et le public.<br> Il existe ainsi&nbsp;:
+                        </p>
+                        <ul class="liste">
+                            <li>Economie et modèlisation</li>
+                            <li>Etudes d'impacts</li>
+                        </ul>
+
+                        <div class="plus">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+                                    <g id="Groupe_1055" data-name="Groupe 1055" transform="translate(-208.5 -2751.546)">
+                                        <path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#5681B9" stroke-width="4"/>
+                                        <line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#5681B9" stroke-width="4"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>En découvrir plus</p>
+                        </div>
+                    </section>
+
+
+                </div>
+                {# Contenue a afficher ou a masqué #}
+                <section class='hiddenContent hidde'>
+                    <h4 class="formation">Formations internes</h4>
+                    <div class="formation-interne">
+                        <p>Le dispositif de formation interne pour les membres du bureau (staff) et de l'association (membre ayant payé une cotisation pour une année) consiste en des cours ayant lieu à intervalles réguliers plusieur fois par année ainsi qu'en de la formation continue sur le projet.</p>
+                        <div class="study"> <img src="{{asset('images/QuiSommesNous/organigramme/study.svg')}}" alt=""></div>
+                    </div>
+                    <p>Nous souhaitons donner à tous les membres du réseau gaea21 la possibilité d’acquérir une culture commune en matière de développement durable et les aider à devenir de véritables vecteurs de changement capables d’agir sur leur environnement en faveur d’un monde plus juste et plus solidaire.</p>
+
+                    <div class="listes">
+                        <ul class="liste">
+                            <li>Le Développement Durable</li>
+                            <li>Formation appliquée en gestion de projet</li>
+                            <li>La gestion des tâches, des priorités, du temps</li>
+                        </ul>
+                        <ul class="liste">
+                            <li>L'Agenda 21, un outil au service du développement durable</li>
+                            <li>Le management</li>
+                            <li>Le travail en equipe pluridsciplinaires</li>
+                        </ul>
+                        <ul class="liste">
+                            <li>L'analyse systémique</li>
+                        </ul>
+                    </div>
+
+                     <h4 class="formation">Formations externes</h4>
+                    <div class="formation-externe">
+                        <p>Le dispositif de formation externe pour le grand public, les entreprises et l’état vise à développer un ensemble de compétences spécifiques en développement durable dans un objectif d’amélioration des connaissances, de qualification professionnelle ou d’obtention de diplôme.</p>
+                        <div class="working"> <img src="{{asset('images/QuiSommesNous/organigramme/working.svg')}}" alt=""></div>
+                    </div>
+                    <p>Gaea21 offre la possibilité de se former sur les aspects suivants :</p>
+
+                    <div class="listes">
+                        <ul class="liste">
+                            <li>Introduction au développement durable</li>
+                            <li>Consom'action et green economy</li>
+                        </ul>
+                        <ul class="liste">
+                            <li>Acquisition des éco-gestes et updates sur les dernières innovations</li>
+                            <li>Gestion de projets</li>
+                        </ul>
+                        <ul class="liste">
+                            <li>Eco-citoyenneté et RSE (Responsabilité sociale des entreprises)</li>
+                            <li>Communication : techniques de base avec le support d'ateliers théâtre</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+		</div>
+        {# *********************************************************************************************************************** #}
+            <div class="membres">
+                <div class="presentationInitial">
+                    <div class="photo">
+                        <img src="{{ asset('images/QuiSommesNous/organigramme/marketing.png') }}">
+                    </div>
+                    <section class="presentation-membres">
+                        <div>
+                            <h3 class="name">Le département marketing</h3>
+                        </div>
+                        <p class='departement'>Le departement marketing est divisé en 6 sous-départements&nbsp;:
+                        </p>
+                        <div class="listes">
+                            <ul class="liste">
+                                <li>Fundrasing</li>
+                                <li>Partenariats</li>
+                                <li>Services-membres</li>
+                                <li>Recherche marketing</li>
+                            </ul>
+                            <ul class="liste">
+                                <li>Events</li>
+                                <li>RP / Média</li>
+                                <li>Community Management</li>
+                            </ul>
+                        </div>
+
+                        <div class="plus">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+                                    <g id="Groupe_1055" data-name="Groupe 1055" transform="translate(-208.5 -2751.546)">
+                                        <path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#5681B9" stroke-width="4"/>
+                                        <line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#5681B9" stroke-width="4"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <p>En découvrir plus</p>
+                        </div>
+                    </section>
+                </div>
+                {# Contenue a afficher ou a masqué #}
+                <section class='hiddenContent hidde'>
+
+                    <div class="listes">
+                        <ul class="liste">
+                            <li>Fundrasing: recherche de fonds pour financer les projets développés par gaea21, permettre l'organisation d'évènements et le bon fonctionnement de la vie associatiove</li>
+                    <div class="liste-flex">
+                        <div>
+                            <li>Partenariats: recherche, établissement et consolidation de partenariats</li>
+                            <li>Service-membres : communication et services aux membres</li>
+                            <li>Recherche marketing : recherche en RSE, green marketing</li>
+                            <li>Events : organisation d'évènements</li>
+                        </div>
+                        <div class='images'>
+                            <div class="reseaux">
+                                <img src="{{ asset('images/QuiSommesNous/organigramme/reseaux.svg') }}">
+                            </div>
+                            <div class="parc">
+                                <img src="{{ asset('images/QuiSommesNous/organigramme/parcDattraction.svg') }}">
+                            </div>
+                        </div>
+                    </div>
+                            <li>Community Management : présence sur internet et les réseaux sociaux, réalisation d'interviews</li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+
+		</div>
+			{% endblock %}
+
+
+			{% block javascripts %}
+				{{parent()}}
+				<script src="{{ asset('js/pagesOrganigrammes/displayContent.js') }}"></script>
+			{% endblock %}

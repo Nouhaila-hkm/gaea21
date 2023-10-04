@@ -1,0 +1,117 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/analyse.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<h2 class="title_modele lean_title">Behaviorism</h2>
+
+
+        
+
+
+       <article class="img_text_article no_marge">
+
+
+        <img class="behavior_margineuh" src="{{ asset('images/QuiSommesNous/modele/behavior_img.png') }}"/>
+        
+        
+        <div class="behavior_texteuh">
+        <p> 
+            Le béhaviorisme ou comportementalisme est une </br>
+            approche psychologique qui consiste à </br>
+            se concentrer sur le comportement </br>
+            observable déterminé par l’environnement et </br>
+            l’histoire des interactions de l’individu avec </br>
+            son milieu.
+            
+        </p>
+
+        <p>
+            Par exemple, l’apprentissage y est décrit </br>
+            comme une modification du comportement </br>
+            observable, due à la modification de la force </br>
+            avec laquelle une réponse est associée à des </br>
+            stimuli extérieurs (environnement externe) ou </br> 
+            à des stimuli intérieurs (environnement </br>
+            interne) sur l’organisme.
+        </p>
+        
+       </article>
+
+       <article class="text_size behavior_margin">
+
+        <p>La théorie behavioriste fait du comportement observable l’objet même de la psychologie. 
+            L’environnement y est l’élément clé de la détermination et de l’explication des conduites humaines. 
+        </p>
+        <p>    
+            La plupart des théories de l’apprentissage reconnaissent trois grandes variables dans le processus :</br>
+             > l’environnement qui stimule, </br>
+             > l’organisme qui est stimulé et </br>
+             > le comportement ou la réponse de l’organisme par suite de la stimulation.
+        </p>
+        <p><b>Le schéma classique est donc : </b></p>
+       </article>
+
+       <img class="img_behavior_sir" src="{{ asset('images/QuiSommesNous/modele/behavior_sir.png') }}"/>
+        
+        <article class="text_size behavior_margin">
+            <p>
+                Sans nier la réalité de l’individu (I) et de son fonctionnement interne, les behavioristes classiques ne 
+                s’en occupent pas directement. En effet, leur objectif est de spécifier les conditions et les processus 
+                par lesquels l’environnement (S) contrôle le comportement (R), sans faire référence à des variables 
+                internes considérées comme non observables et hypothétiques.
+            </p>
+            
+            <br>
+
+            <p>
+                Cependant, un des courants de la théorie comportementaliste part du postulat qu’un comportement 
+                est fonction de ses conséquences et accepte l’idée que des variables internes à l’individu puissent 
+                intervenir dans l’analyse du comportement, afin de développer les notions de renforcement, de 
+                façonnement et d’apprentissage programmé (on pense notamment aux expériences de Skinner sur 
+                les animaux ). 
+
+            </p>
+
+            <p>
+                Exemple de renforcement positif : Stimulus « Le rat est dans la cage » => Réponse (comportement) «
+                Le rat appuie sur le levier » => Renforcement positif « Il obtient de la nourriture » (= ajout) =>
+                Augmentation de la probabilité d’apparition du comportement.
+            </p>
+            <br>
+        </article>
+
+
+
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

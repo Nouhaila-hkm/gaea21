@@ -1,0 +1,204 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 1.4583333333vw;
+  line-height: 2.1875vw;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.125vw;
+  line-height: 4.6875vw;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.6041666667vw;
+  line-height: 3.90625vw;
+  margin: 0;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+h3,
+h4 {
+  font-size: 1.4583333333vw;
+  line-height: 1.7708333333vw;
+  margin: 0;
+}
+
+#header p {
+  font-size: 1.5625vw;
+  line-height: 1.875vw;
+}
+
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #464362;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../images/PagesProjets/headerDesPagesProjets.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#prevArrow {
+  font-size: 1.4583333333vw;
+  line-height: 1.875vw;
+  display: inline-block;
+  margin-top: 5.2083333333vw;
+  margin-left: 9.53125vw;
+}
+
+#topArrow {
+  display: inline-block;
+  margin-left: 9.53125vw;
+  font-size: 1.4583333333vw;
+  line-height: 1.875vw;
+}
+
+#tertiaryMenu {
+  margin-top: 1.8229166667vw;
+  margin-bottom: 6.25vw;
+  position: relative;
+}
+
+#main {
+  width: 67.1875vw;
+  margin: 0 auto;
+  margin-bottom: 4.3229166667vw;
+}
+#main h2 {
+  font-size: 2.6041666667vw;
+  line-height: 1.875vw;
+  font-weight: 600;
+}
+#main p {
+  font-size: 1.4583333333vw;
+  line-height: 2.1875vw;
+  margin-bottom: 0;
+}
+
+#projects {
+  width: 80.9375vw;
+  margin: 0 auto;
+}
+
+#vignettes {
+  width: 80.9375vw;
+  margin: 0 auto;
+  height: 15.625vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7.2916666667vw;
+}
+#vignettes .more-links:nth-child(even) {
+  margin: 0 5.5729166667vw;
+}
+
+#topArrow {
+  margin-bottom: 2.0833333333vw;
+}
+
+#forms {
+  width: 100%;
+  background: #f6f6f6;
+}
+#forms .joinUs {
+  text-align: center;
+  font-size: 2.6041666667vw;
+  line-height: 1.875vw;
+  font-weight: 600;
+  padding-top: 2.5vw;
+  padding-bottom: 3.3854166667vw;
+}
+#forms .formulaires {
+  display: flex;
+  justify-content: center;
+  gap: 2.6041666667vw;
+}
+#forms .formulaires .more-links .vignette .link .overlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 200;
+  border-radius: 13px;
+}
+#forms .formulaires .more-links .vignette .link .overlay .description {
+  display: none;
+  transition: all 0.4s;
+}
+#forms .formulaires .more-links .vignette .link .overlay .img {
+  transition: all 0.3s;
+  position: relative;
+}
+#forms .formulaires .more-links .vignette .link .overlay .img object {
+  width: 49.8390909091%;
+  transform: translateX(50%);
+  z-index: 20;
+  cursor: pointer;
+}
+#forms .formulaires .more-links .vignette .link .overlay:hover {
+  background-color: #989751;
+}
+#forms .formulaires .more-links .vignette .link .overlay:hover .img {
+  transform: translateY(-33%) scale(0.6);
+}
+#forms .formulaires .more-links .vignette .link .overlay:hover .description {
+  display: block;
+  font-size: 1.0416666667vw;
+  line-height: 1.25vw;
+  padding: 0 1.3020833333vw;
+  text-align: center;
+  position: relative;
+  top: -26%;
+}
+#forms .formulaires .more-links .vignette .link .overlay:hover .card-header {
+  color: white;
+}
+#forms .ou {
+  font-size: 1.5625vw;
+  line-height: 1.875vw;
+  margin: 2.6041666667vw 48.8020833333vw;
+}
+#forms .largeBtn {
+  display: inline-block;
+  position: relative;
+  left: 42.8125vw;
+  margin-bottom: 4.0104166667vw;
+}
+
+/*# sourceMappingURL=projetgaea21_base.css.map */

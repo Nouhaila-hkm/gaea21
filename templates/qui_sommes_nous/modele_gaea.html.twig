@@ -1,0 +1,123 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<section id='modele'>
+			<h2 class="title_modele">Approche systémique</h2>
+
+		<article class="img_text_article">
+			
+			<img class="img_with_text resize" src="{{ asset('images/QuiSommesNous/modele/kid.png') }}"/>
+
+			<div class="text_with_img text_size">
+				<p>
+				L’approche systémique consiste à envisager les faits de manière globale (dans un système)
+				et non individuelle.
+				</p>
+
+				<p>Elle se base sur :</p>
+				<ul class="modele_list">
+					<li class="modele_list">L'inclusion des effets induit<img onclick="scrollToElement()" class="modele_more" src="{{ asset('images/QuiSommesNous/modele/knowmore.png') }}"/></li>
+					<li class="modele_list">La mesure des impacts<img onclick="scrollToSecondElement()" class="modele_more second" src="{{ asset('images/QuiSommesNous/modele/knowmore.png') }}"/></li>
+				</ul>
+			</div>	
+		</article>
+
+		<div class="top_inclusion text_size">
+			<h2 id="section_inclusion" class="title_modele left_modele">L’inclusion des effets induits</h2>
+			<p>
+			Prenons un exemple, lançons une pierre sur une étendue d’eau plate et calme.
+			Que pouvons-nous observer? Des rides à la surface de l’eau à proximité immédiate du point d’impact
+			de la pierre
+			</p>
+		</div>
+
+		<article class="inclusion_article">
+			<img class="inclusion_img" src="{{ asset('images/QuiSommesNous/modele/inclusion.png') }}"/>
+
+			<div class="inclusion_text text_size">
+				<p>
+					<b>> c’est l’impact 1, le plus visible.</b> Celui auquel
+					nous avons tendance à nous arrêter. Une observation plus attentive nous permet de remarquer
+					que les rides s’arrêtent en apparence mais en réalité réapparaissent en plus petites
+					et en plus espacées beaucoup plus loin sur la surface de l’eau.
+				</p>
+
+				<p>
+					<b>> c’est l’impact 2, encore visible mais nécessitant d’aller au-delà des évidences.</b>
+					Ce qui est invisible, c’est le trajet de la pierre sous la surface de l’eau et ses conséquences.
+					Le fait qu’au cours de son voyage aquatique, elle va perturber l’écosystème
+					de l’étendue d’eau de manière significative.
+				</p>
+
+				<p>
+					<b>> c’est l’impact 3, il est invisible</b> mais ses effets sont à la fois plus dévastateurs
+					et plus intenses C’est l’impact que nous choisissons souvent d’ignorer.
+				</p>
+			</div>
+		</article>
+
+		<div class="text_form text_size">
+			<h2 id="section_impact" class="title_modele left_modele impact">La mesure des impacts</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+				ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+				duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+			</p>
+
+			<p>	
+				dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+				eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				At vero eos et accusa. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+			</p>
+
+			<p class="end_text">	
+				nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+				At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+				no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+				consetetur sadipscing elitr, sed diam
+			</p>
+		</div>
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		<script type="text/javascript">
+			function scrollToElement() {
+				let inclusion = document.getElementById("section_inclusion");
+				inclusion.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+			}
+
+			function scrollToSecondElement() {
+				let impact = document.getElementById("section_impact");
+				impact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+			}
+		</script>
+		{% endblock %}
+

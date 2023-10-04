@@ -1,0 +1,744 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#temoignage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#temoignage .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+#temoignage .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#temoignage .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#temoignage .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+
+#temoignage .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+
+#temoignage .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+
+#temoignage #menuTemoignages {
+  width: 100%;
+  height: 2.6041666667vw;
+  margin-bottom: 3.6458333333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#temoignage .listBtnMenu {
+  width: 38.3854166667%;
+  height: 2.2395833333vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+#temoignage .btnMenu {
+  height: 100%;
+  width: auto;
+  padding-left: 1.3020833333%;
+  padding-right: 1.3020833333%;
+  font-size: 1.3020833333vw;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+}
+
+#temoignage .btnMenu.clicked,
+#temoignage .btnMenu:hover {
+  background-color: #98984C;
+  color: white;
+}
+
+#temoignage #navBar {
+  width: 28.6458333333%;
+  margin: 0 0 0 0;
+  margin-left: 7.2916666667%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#temoignage #navBarDep,
+#temoignage #NavBarPro {
+  height: 23.4375vw;
+  background-color: lightgray;
+  margin: 0 0 0 0;
+  margin-bottom: 2.2916666667vw;
+  padding-top: 0.5208333333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.0416666667vw;
+  background-color: #F5F5F5;
+  border-radius: 1.3020833333vw;
+}
+
+#temoignage #navBarDep h1,
+#temoignage #NavBarPro h1 {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  margin: 0 0 0 0;
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  border-bottom: solid 2px #989655;
+}
+
+#temoignage #navBarDep ul,
+#temoignage #NavBarPro ul {
+  width: 100%;
+}
+
+#temoignage #navBarDep li,
+#temoignage #NavBarPro li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 5.2083333333%;
+}
+
+#temoignage #navBarDep .scrollCercle,
+#temoignage #NavBarPro .scrollCercle {
+  margin-right: 2.6041666667%;
+  width: 4.6875%;
+  height: 0.9895833333vw;
+  border: 0.15625vw solid #989655;
+  border-radius: 50% 50% 50% 50%;
+  background-color: white;
+}
+
+#temoignage #navBarDep .scrollCercle.selected,
+#temoignage #NavBarPro .scrollCercle.selected {
+  background-color: #989655;
+}
+
+#temoignage #NavBarPro {
+  height: 15vw;
+  padding-left: 5.2083333333%;
+  padding-right: 5.2083333333%;
+}
+
+#temoignage #NavBarPro .rechercheDiv {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.3020833333vw;
+  padding-right: 3.125%;
+  padding-left: 3.125%;
+  padding-top: 0.2604166667vw;
+  border-radius: 1.5625vw;
+  background-color: white;
+}
+
+#temoignage #NavBarPro .rechercheDiv img {
+  width: 15.625%;
+  height: pxToVm(200px, 1920px);
+  border-radius: 50%;
+  background: transparent;
+  background-color: white;
+}
+
+#temoignage #NavBarPro .rechercheDiv input {
+  border: 0 !important;
+}
+
+#temoignage #videoTem {
+  width: 90%;
+  background-color: white;
+  margin-right: 7.2916666667%;
+  margin-left: 0.78125%;
+  display: flex;
+  flex-direction: column;
+}
+
+#temoignage #carouselGaeaVideo {
+  height: 78.125vw !important;
+}
+
+#temoignage .carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+
+#temoignage .itemVideo {
+  width: 80% !important;
+  background-color: white !important;
+}
+
+#temoignage .videosGaea {
+  width: 100% !important;
+  background-color: white !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-start !important;
+}
+
+#temoignage .video {
+  background-color: lightgray;
+  border-radius: 10px;
+  height: 16.6145833333vw;
+  width: 44.2708333333% !important;
+  margin-left: 2.2395833333%;
+  margin-right: 2.2395833333%;
+  margin-bottom: 2.9166666667vw;
+  padding-top: 10.4166666667vw;
+  padding-left: 1.6145833333%;
+}
+
+#temoignage .videoTitle,
+#temoignage .videoSubTitle {
+  background-color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 0.9375vw;
+  margin: 0;
+  padding: 7px;
+  padding-right: 0.78125%;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#temoignage .videoTitle {
+  border-radius: 10px 10px 0 0;
+}
+
+#temoignage .videoSubTitle {
+  border-radius: 0 10px 10px 10px;
+}
+
+#temoignage .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#temoignage .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+}
+
+#temoignage .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#temoignage .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #0E7263;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 1.3020833333%;
+  margin-left: 1.3020833333%;
+}
+
+#temoignage .videoLancer {
+  background-color: lightgrey;
+  height: 48%;
+  width: 94%;
+  margin-left: 1.8229166667%;
+  margin-right: 1.5625%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+}
+
+#temoignage footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#temoignage .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+
+#temoignage .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+
+#temoignage .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+
+#temoignage .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+#temoignage .listTemoignage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 18.1770833333vw;
+  margin-left: 0.5208333333%;
+  margin-bottom: 5.7291666667vw;
+}
+
+#temoignage .listTemoignage h1 {
+  margin: 0 0 0 0;
+  margin-bottom: 1.0416666667vw;
+  font-family: "Helvetica";
+  font-size: 1.875vw;
+  font-weight: bold;
+  border-bottom: solid 3px #0E7263;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#temoignage .listTemoignage p {
+  margin: 0 0 0 0;
+  font-size: 1.25vw;
+}
+
+#temoignage .listTemoignage .divButton {
+  margin-top: 0.78125vw;
+  height: 2.34375vw;
+  margin-bottom: 0;
+}
+
+#temoignage .listTemoignage button {
+  width: 62.5%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.5625vw;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+}
+
+#temoignage .listTemoignage button img {
+  height: 1.3020833333vw;
+  margin-left: 1.3020833333%;
+  margin-right: 2.6041666667%;
+}
+
+#temoignage .listTemoignage button:hover {
+  background-color: #98984C;
+  color: white;
+}
+
+#temoignage .imgTemEcrit {
+  width: 161.4583333333% !important;
+  height: 100% !important;
+  margin-right: 3.125%;
+  border-radius: 0.78125vw;
+  background-color: #F5F5F5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#temoignage .imgTemEcrit img {
+  height: 90%;
+  margin-left: 0.5208333333% !important;
+}
+
+#temoignage .temDetail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 7.5520833333%;
+}
+
+#temoignage .temDetail .imgTemEcrit {
+  width: 20.0520833333% !important;
+}
+
+#temoignage .temDetail .imgTemEcrit img {
+  height: 15.625vw !important;
+}
+
+#temoignage .Ligne {
+  display: flex;
+  flex-direction: column;
+  width: 45.8333333333%;
+  margin-bottom: 0.78125vw;
+}
+
+#temoignage .Ligne h1 {
+  margin: 0 0 0 0;
+  margin-bottom: 1.0416666667vw;
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  border-bottom: solid 3px #0E7263;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#temoignage .Ligne p {
+  margin: 0 0 0 0;
+  font-size: 1.25vw;
+}
+
+#temoignage .paragTem {
+  width: 69.2708333333%;
+  font-size: 1.25vw;
+}
+
+#temoignage #videoTem {
+  width: 90%;
+  background-color: white;
+  margin-right: 7.2916666667%;
+  margin-left: 0.78125%;
+  display: flex;
+  flex-direction: column;
+}
+
+#temoignage #carouselGaeaPodcast {
+  height: 62.5vw !important;
+}
+
+#temoignage .carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+
+#temoignage .itemPodcast {
+  width: 80% !important;
+  background-color: white !important;
+}
+
+#temoignage .podcastGaea {
+  width: 100% !important;
+  background-color: white !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+#temoignage .podcast {
+  display: flex;
+  flex-direction: column;
+  height: 17.7083333333vw;
+  width: 26.5625% !important;
+  margin-left: 3.3854166667%;
+  margin-right: 3.3854166667%;
+  margin-bottom: 3.6458333333vw;
+}
+
+#temoignage .podcastAudio {
+  background-color: #F6F6F6;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+#temoignage .podcastAudio img {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+#temoignage .podcastAudio .etatPodcast {
+  position: relative;
+  opacity: 0;
+  top: -11.4583333333vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5.2083333333vw;
+  z-index: 2;
+}
+
+#temoignage .podcastAudio:hover {
+  background-color: #98984C;
+  opacity: 49%;
+}
+
+#temoignage .podcastAudio:hover .etatPodcast {
+  opacity: 1;
+}
+
+#temoignage .podcastAudio.clicked {
+  background-color: #98984C;
+  opacity: 49%;
+}
+
+#temoignage .podcastAudio.clicked .etatPodcast {
+  opacity: 1;
+}
+
+#temoignage .podcastName {
+  background-color: white;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 0.9375vw;
+  margin: 0;
+  padding: 7px;
+  padding-right: 0.78125%;
+  padding-top: 0.5208333333vw;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#temoignage .scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1.3020833333vw;
+}
+
+#temoignage .scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+}
+
+#temoignage .indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: 2.8125%;
+  margin-right: 2.8125%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#temoignage .scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #0E7263;
+  border-radius: 50% 50% 50% 50%;
+  margin-right: 1.3020833333%;
+  margin-left: 1.3020833333%;
+}
+
+#temoignage #lecturePodcast {
+  width: 100%;
+  background-color: #F6F6F6;
+  margin-bottom: 4.1666666667vw;
+}
+
+#temoignage .podcastPersonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#temoignage .podcastPersonne .audioPodcast {
+  width: 58.3333333333%;
+  height: 10.6770833333vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#temoignage .podcastPersonne p {
+  margin-top: 1.0416666667vw;
+  margin-bottom: 1.0416666667vw;
+}
+
+#temoignage html,
+#temoignage body {
+  height: 100%;
+  width: 100%;
+}
+
+#temoignage .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#temoignage .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+
+#temoignage .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+
+#temoignage #hearderTemoignage {
+  width: 100%;
+  padding-top: 2.8645833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#temoignage #hearderTemoignage .back {
+  position: relative;
+  top: -9.375vw;
+  left: -46.875%;
+  width: 0.9375%;
+}
+
+#temoignage .titreTemoignage {
+  margin-top: 0;
+  margin-bottom: 1.6666666667vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #0E7263;
+}
+
+#temoignage .titreParagraphe {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  margin-bottom: 2.4479166667vw;
+}
+
+#temoignage #somLettre {
+  width: 74.1666666667%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#temoignage #somLettre p {
+  height: 1.875vw;
+  font-size: 1.5625vw;
+  margin: 0 0 0 0;
+}
+
+#temoignage #contenue {
+  width: 100%;
+  margin-top: 5.8854166667vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: white;
+}
+
+#temoignage #somLettre p {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=temoignages.css.map */

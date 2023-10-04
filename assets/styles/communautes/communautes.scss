@@ -1,0 +1,284 @@
+@import '/assets/styles/function';
+
+#communautes {
+
+    @import '/assets/styles/humansGaea21/home/gaea21Menu.scss';
+
+    .sectionHeadCommunautes {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+        background: transparent url('/assets/images/communautes/header.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            background: transparent;
+            display: block;
+            
+
+            h1 {
+              
+                font-weight: bold;
+                font-size: pxToVw(70px, 1920px);
+                color: #404040;
+                float: right;
+                margin-right: pxToVw(84px, 1920px);
+                margin-top: pxToVw(58px, 1920px);
+               
+
+            }
+        }
+        
+    }
+
+.member {
+
+    .row {
+        margin-top: pxToPourcent(128px, 1920px);
+        margin-bottom: pxToPourcent(128px, 1920px);
+        margin-left: pxToPourcent(180px, 1920px);
+        margin-right: pxToPourcent(167px, 1920px);
+
+        .img {
+            width: pxToVw(671px, 1920px);
+            height: pxToVw(391px, 1920px);
+
+            img {
+                width: 100%;
+                height: 100%;
+              
+            }
+        }
+
+        .text {
+            margin-left: pxToVw(73px, 1920px);
+            justify-content: center;
+        
+           
+            p {
+                margin-bottom: pxToVw(20px, 1920px);
+                font-size: pxToVw(26px, 1920px);
+                line-height: pxToVw(25px, 1920px);
+            }
+        }
+    }
+}
+
+.communities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: pxToPourcent(178px,1920px);
+    justify-content: center;
+    
+   
+    .links {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #494736;
+        height: pxToVw(300px, 1920px);
+        width: pxToVw(400px, 1920px);
+        border-radius: pxToVw(15px, 1920px);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        font-size: pxToVw(40px, 1920px);
+        
+        &:hover {
+            background-color: #B5B27D;
+        }
+    }
+
+}
+
+.buts {
+    display: flex;
+    flex-direction: column;
+    margin-right: pxToVw(100px, 1920px) ;
+    
+    h3 {
+        font-weight: bold;
+        font-size: pxToVw(45px, 1920px);
+        text-align: center;
+        margin-top: pxToVw(129px, 1920px);
+        margin-bottom: pxToVw(109px, 1920px);
+
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content:flex-start;
+        flex-direction: row;
+        text-align:left;
+        height: pxToVw(325px, 1920px);;
+        width: pxToVw(735px, 1920px);
+        background-color: #E2DDC4;
+        border-radius: pxToVw(20px, 1920px);
+        margin-bottom: pxToVw(109px, 1920px);
+        margin-left: pxToVw(83px, 1920px);
+        font-size: pxToVw(24px, 1920px);
+        line-height: pxToVw(29px, 1920px);
+        img {
+            width: 50%;
+            height: 50%;
+            margin: pxToVw(19px, 1920px);
+        }
+    }
+
+}
+
+.activities-container {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+  
+    .activity {
+       
+        height: pxToVw(334px, 1920px);
+        width: pxToVw(502px, 1920px);
+        color: #FFFFFF;
+   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        font-size: pxToVw(56px, 1920px);
+        box-shadow: inset 0 0 0 1000px rgba(#6E6E6E, 0.55);
+        margin: pxToVw(20px, 1920px);
+
+    }
+
+    .image-1 {
+        background: transparent url('/assets/images/communautes/concerts.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+        .image-2 {
+        background: transparent url('/assets/images/communautes/garden_parties.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+        .image-3 {
+        background: transparent url('/assets/images/communautes/jeux.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+  
+   
+
+}
+
+//carrousel styling
+
+.icons-container {
+    height: pxToPourcent(400px, 1920px);
+    position: relative;
+
+    margin-bottom: pxToVw(500px, 1920px);
+    width: pxToVw(1520px, 1920px);
+    margin-left: pxToVw(220px, 1920px);
+    margin-top: pxToVw(50px, 1920px);
+
+
+    .control {
+        list-style: none;
+        height: inherit;
+      }
+      .control li {
+        position: absolute;
+        z-index: 99;
+        top: 40%;
+        color: #B5B27D;
+        padding: 12px;
+        cursor: pointer;
+       
+        
+      }
+    
+      .control li.prev {
+        left: pxToPourcent(-150px, 1920px);
+      }
+      .control li.next {
+        right: pxToPourcent(-160px, 1920px);
+      }
+
+      
+      
+}
+
+ 
+
+//end of carrousel styling
+
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: 2px solid #CACB9D;
+        height: pxToVw(421px, 1920px);
+        width: pxToVw(350px, 1920px);
+        border-radius: pxToVw(35px, 1920px);
+        box-shadow: 3px 3px 6px #00000029;
+        
+        img {
+                    
+            height: pxToVw(180px, 1920px);
+            width: pxToVw(300px, 1920px);
+            object-fit: scale-down;
+            margin-left: pxToVw(15px, 1920px);     
+            } 
+    
+
+        button {
+            background-color: #CACB9D;
+            border: none;
+            border-radius: pxToVw(20px, 1920px);
+            font-size: pxToVw(25px, 1920px);
+            width: pxToVw(300px, 1920px);
+            height: pxToVw(105px, 1920px);
+            margin-left: pxToVw(22px, 1920px);
+            margin-top: pxToVw(40px, 1920px);
+            cursor: pointer;
+            font-size: pxToVw(25px, 1920px);
+           
+        }
+    }
+
+
+
+
+    .valeurs-icons-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: pxToVw(18px, 1920px);
+        justify-content: center;
+        align-items: center;
+        margin-top: pxToVw(110px, 1920px);
+        margin-bottom: pxToVw(140px, 1920px);
+     
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: pxToVw(40px, 1920px);
+        margin-left: pxToPourcent(220px, 1920px);
+    }
+
+
+
+    .activity-title {
+        font-weight: bold;
+        font-size: pxToVw(45px, 1920px);
+        text-align: center;
+    }
+}

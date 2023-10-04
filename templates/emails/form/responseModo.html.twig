@@ -1,0 +1,26 @@
+{# templates/emails/form/responseModo.html.twig #}
+{% extends 'emails/base.html.twig' %}
+
+{% block main %}
+	<p>Cher(e) Modérateur ,</p>
+	<p>{{(name) ? name : "L'utilisateur"}} a renseigné le formulaire "{{formName}}". </p>
+
+	<p>Cet e-mail confirme les informations renseignées dans celui-ci</p>
+
+	<table class="formData">
+		{% for data in datas %}
+			<tr>
+				<th>
+					{{ data.field.label }}
+				</th>
+
+				<td>
+					{{ data.answer }}
+				</td>
+			</tr>
+		{% endfor %}
+	</table>
+
+	<p>Bonne journée</p>
+		
+{% endblock %}

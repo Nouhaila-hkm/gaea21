@@ -1,0 +1,82 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: 100%;
+  font-size: 1.4583333333vw;
+  line-height: 2.1875vw;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.125vw;
+  line-height: 4.6875vw;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.6041666667vw;
+  line-height: 3.90625vw;
+  margin: 0;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+h3,
+h4 {
+  font-size: 1.4583333333vw;
+  line-height: 1.7708333333vw;
+  margin: 0;
+}
+
+#header p {
+  font-size: 1.5625vw;
+  line-height: 1.875vw;
+}
+
+#prevArrow {
+  font-size: 1.4583333333vw;
+  line-height: 1.875vw;
+  display: inline-block;
+  margin-top: 5.2083333333vw;
+  margin-left: 9.53125vw;
+}
+
+#topArrow {
+  display: inline-block;
+  margin-left: 9.53125vw;
+  font-size: 1.4583333333vw;
+  line-height: 1.875vw;
+}
+
+#main {
+  width: 67.1875vw;
+  margin: 0 auto;
+  margin-bottom: 4.3229166667vw;
+}
+#main h2 {
+  font-size: 2.6041666667vw;
+  line-height: 1.875vw;
+  font-weight: 600;
+}
+#main p {
+  font-size: 1.4583333333vw;
+  line-height: 2.1875vw;
+  margin-bottom: 0;
+}
+
+#topArrow {
+  margin-bottom: 2.0833333333vw;
+}
+
+/*# sourceMappingURL=humanOfGaea_base.css.map */

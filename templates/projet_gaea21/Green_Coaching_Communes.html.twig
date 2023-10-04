@@ -1,0 +1,82 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/GCC/projetGaea21_GCC.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/GCC
+{% endblock %}
+
+{% block main %}
+
+	<div class="project-title">
+		<img src="{{asset('images/icone_svg_png/GCC-logo.png')}}" alt="logo Green Coaching Communes">
+		<h2>Green Coaching<br> Communes<h2>
+	</div>
+
+	<section class="intro-GCC">
+		<article class="partie1">
+			<p><b>Green Coaching Communes</b> (GCC) est le premier programme entièrement consacré à la transition écologique des communes. Le projet Green Coaching</b> pour les communes a pour but d'accompagner celles-ci vers une transition écologique sur mesure et adaptée a leurs ressources ainsi qu'à leurs besoins.</p>
+		</article>
+		<article class="partie2">
+			<div class="img-highfive">
+				<img src="{{asset('images/PagesProjets/page_gcc/highfive.png')}}" alt="deux personnes qui se félicite">
+			</div>
+			<article class="partie2_text">
+				<p><b>Green Coaching</b> offres aux communes de moins de 30'000 habitants une <b>méthodologie</b> et un <b>enssemble de programmes</b> 
+				promouvant des choix de consommation et de production plus responsable et durables et une réduction de leur empreinte carbone pour 
+				l'enssemble de la commune. Ce coaching représente un audit et un suivi coaché de plusieurs mois 
+				afin d'accompagner la commune et ses citoyens dans leur changement de comportement.</p>
+			</article>
+		</article>
+	</section>
+
+
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Green Coaching Communes' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Green Coaching Communes'  
+				})}}" >
+	</div>
+{% endblock %}

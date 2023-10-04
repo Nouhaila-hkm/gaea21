@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'one form show' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('ShowOneForm') }}
+{% endblock %}
+
+{% block body %}
+
+	<div id="ShowOneForm" data-id="{{id}}" data-session="{{form_session}}"></div>
+    
+	{% block javascripts %}
+		{{ parent() }}
+		{{ encore_entry_script_tags('ShowOneForm') }}
+	{% endblock %}
+
+{% endblock %}

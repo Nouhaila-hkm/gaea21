@@ -1,0 +1,75 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/SIB/projetGaea21_SIB.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/SIB
+{% endblock %}
+
+{% block main %}
+
+	<div class="project-title">
+		<h2>Sustainability in a Box<h2>
+	</div>
+
+	<section class="intro-SIB">
+		<p class="partie1"><b>Sustainability in a Box</b> (SIB) appartient au programme Green Coaching for Business & Organisation (GCBO) 
+		qui permet aux entreprises et organisations de réduire l'impact de leur activités tout en augmentant l'efficacité 
+		de leurs processus interne. Ainsi, SIB vient en aide aux entreprises et organisations désireuse de s'inscrire dans 
+		une activité durable éco-responsable.</p>
+		<p class="partie2"><b>Sustainability in a Box</b> est un kit de démarrage, d'audit de la durabilité des entreprise ou
+		des organisations ; un outil introductif à l'éco-responsabilité pour les entreprises ou organisations désirant 
+		devenir plus vertes et résilientes.</p>
+		<p class="partie3">Il se base sur <b>dix dimensions&nbsp;:</b></p>
+ <img class="img-dimension" src="{{asset('images/PagesProjets/page_sib/10dimensions.png')}}" alt="images des dimensions de gaea">
+
+	</section>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Sustainability in a Box' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Sustainability in a Box'  
+				})}}" >
+	</div>
+{% endblock %}

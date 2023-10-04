@@ -1,0 +1,65 @@
+@import '../function';
+
+.group_partenaire {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+}
+
+.group_text {
+    width: pxToVw(464px, 1920px);
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    margin-top: 10%;
+}
+
+.know {
+    text-decoration: underline;
+    margin-left: 57vw;
+    /*margin-top: 5vw;*/
+    margin-top: 0.8vw;
+    margin-right: 8px;
+}
+
+.know:hover {
+    cursor: pointer;
+}
+
+.logo {
+    width: 14vw;
+    height: 6vw;
+    margin-bottom: 10%;
+}
+
+.logo_link {
+    text-decoration: underline !important;
+    color: blue !important;
+}
+
+#paire {
+    width: 9vw;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.know_box {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.partenairearrow {
+    height: 1vw;
+    transform: rotate(270deg);
+}
+
+.partenairerotate {
+    transform: rotate(450deg);
+}

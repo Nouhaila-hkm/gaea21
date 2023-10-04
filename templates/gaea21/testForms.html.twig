@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'testForms' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('createforms') }}
+{% endblock %}
+
+{% block body %}
+<img src="{{ asset('build/images/green.png')}}" style="width: 100%">
+<div id="createforms"></div>
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('createforms') }}
+{% endblock %}
+
+{% endblock %}

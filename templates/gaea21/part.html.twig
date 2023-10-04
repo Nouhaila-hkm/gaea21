@@ -1,0 +1,326 @@
+{% extends 'base.html.twig' %}
+{% block title %}Partenaire formation
+{% endblock %}
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('part') }}
+{% endblock %}
+
+{% block body %}
+
+	<div class="white">
+		<div class="row">
+			<div class="imgHeader">
+
+				<h2 class="textHeader">Partenaires Formation /<br>Emploi</h2>
+				<br>
+				<p class="textCorp">Lorem ipsum dolor sit amet,
+					<br>
+					consectetur adipiscing elit, sed do
+					<br>
+					eiusmod tempor.</p>
+				<div class="btn-inscrire">
+					
+					<a href="" class="btn white  waves-effect bouton" style="text-transform: lowercase !important; padding: 2%;"> 
+						<b>S'inscrire</b>
+						<i class="material-icons right">chevron_right</i>
+					</a>
+				</div>
+			</div>
+			<div class="imgHeader2">
+				<img src="{{ asset('imagesgaea21/gaea21Partenaire.png') }}" alt="Feuilles vertes" class="imgH2" width="100%" height="480"/>
+
+			</div>
+
+		</div>
+
+		<div class="center proj">
+			<h1 style="">
+				<b>À la recherche d'un projet ?</b>
+			</h1>
+			<p class="line">Qui que vous soyez, trouvez le vôtre !</p>
+		</div>
+
+		<div class="center l">
+			<div class="row">
+				<div class="place1" onclick="scroll1()">
+
+					<div class="hat">
+						<img src="{{ asset('imagesgaea21/hat.png') }}" alt="hat" class="hatImage"/>
+						<br><br>
+
+
+					</div>
+					
+					<h6 class="titre-column1">
+						<b>Université / Ecole</b>
+					</h6>
+
+					
+
+
+					<p class="descri-column1">Vos étudiants doivent réaliser un projet dans le cadre de leur formation ?</p>
+				</div>
+				<script>
+					function scroll1() {
+						var win = document.querySelector("#here1")
+						win.scrollIntoView();
+					}
+				</script>
+
+
+				<div class="place1" onclick="scroll2()">
+					<div class="computer">
+						<img src="{{ asset('imagesgaea21/computer.png') }}" alt="computer" class="computerImage"/>
+						<br>
+
+
+					</div>
+					
+					<h6 class="titre-column2">
+						<b>Administrations / Agence emploi ORP / Mesure pour emploi</b>
+					</h6>
+					
+
+					<p class="descri-column">Lorem ipsum dolor sit amet consectetur, adipisicing elit, sed do eiusmod tempor.</p>
+				</div>
+				<script>
+					function scroll2() {
+						var win = document.querySelector("#here2")
+						win.scrollIntoView();
+					}
+				</script>
+				<div class="place1" onclick="scroll3()">
+
+					<div class="groupe">
+						<img src="{{ asset('imagesgaea21/groupe.png') }}" alt="groupe" class="groupeImage"/>
+						<br><br>
+
+
+					</div>
+					
+					<h6 class="titre-column3">
+						<b>UN bodies : UNITAR BIT</b>
+					</h6>
+					
+					<p class="descri-column2">Lorem ipsum dolor sit amet consectetur, adipisicing elit, sed do eiusmod tempor.</p>
+
+
+				</div>
+				<script>
+					function scroll3() {
+						var win = document.querySelector("#here3")
+						win.scrollIntoView();
+					}
+				</script>
+
+
+			</div>
+
+
+		</div>
+
+		
+		<div class="imgUE">
+
+			<div class="imgUP" id="here1">
+				<img src="{{ asset('imagesgaea21/univ_ecoleGaea21.png') }}" alt="Feuilles vertes" width="100%"/>
+			</div>
+
+		</div>
+		<div class="descri">
+			<div class="divtitle">
+				<h3 class="title">Université / Ecole</h3>
+			</div>
+			
+			<div class="divdescri">
+				<div class="container">
+					<p>En devenant partenaire académique de gaea21, l’association s’engage à garantir une
+						<b>formation</b>
+						et
+						<b>application des compétences techniques</b>
+						à ses stagiaires et étudiants. Pour se faire, gaea21 propose divers projets à vocation professionnalisante aux universités et écoles partenaires.</p>
+						<img src="{{ asset('imagesgaea21/undraw_happy_announcement_re_tsm0.png') }}" alt="undraw" class="undraw1"/>
+					
+
+
+				</div>
+			</div>
+
+		</div>
+		<br>
+
+
+		<div class="acc">
+			<div class="linable" style="padding-left: 9%">
+
+				<a class="accordion one" style="vertical-align: middle;">
+					<i class="material-icons ic" id="icon">arrow_forward</i>
+					<b>Projets tutorés</b>
+				</a>
+
+				<div class="panel">
+					<p>Les
+						<b>projets tutorés</b>
+						sont un travail réalisé par un ou plusieurs étudiants dans le cadre d’une formation à l’université
+																																																																																																																ou en haute école. L’objectif est de travailler sur un projet et de mettre en pratique des connaissances et savoirs
+																																																																																																																acquis pendant les cours à partir d’une problématique technique concrète proposée par un commanditaire
+																																																																																																																(entreprise, chambre consulaire, collectivité, administration). Les étudiants travaillent individuellement ou par petits
+																																																																																																																groupes et ont pour mission de fournir une solution adaptée aux besoins du commanditaire en respectant les
+																																																																																																																contraintes de temps et de moyens données.
+						<br><br>
+						Pour le commanditaire, ce projet correspond à un besoin, dans un domaine en lien avec son domaine et la
+																																																																																																																commanditaire suit les avancées du projet de façon régulière et participe à l’évaluation finale.
+						<br><br>
+						Le projet est supervisé et appuyé par un tuteur pédagogique, ainsi que par le professionnel chargé du projet pour le
+																																																																																																																commanditaire. Le tuteur pédagogique encadre les étudiants. Il les conseille sur les aspects techniques du projet et
+																																																																																																																supervise l’organisation du travail. Il participe à l’évaluation terminale avec le professionnel chargé du projet.
+						<br><br>
+						Les projets tutorés font une partie intégrante de l’expérience technique d’un étudiant et servent de plus-value lors
+																																																																																																																de la recherche d’emploi. Les projets tutorés permettent à l’employeur de cibler les compétences techniques
+																																																																																																																récemment mise en œuvre par le candidat, et pas simplement apprises en cours magistral.</p>
+
+				</div>
+
+			</div>
+
+
+			<a id="btn1" href="" class="btn btnaccordion  waves-effect ">
+				<b>Formulaire</b>
+				<i class="material-icons right">chevron_right</i>
+
+			</a>
+			<hr>
+
+			<br>
+			<div class="linable" style="padding-left: 9%; align-items: center;justify-content: center;">
+				<a class="accordion two">
+					<i id="ic2" class="material-icons">arrow_forward</i>
+					<b>Challenges 48h</b>
+				</a>
+
+				<div class="panel ic2">
+					<p>Le
+						<b>challenge 48h</b>, comme son nom l’indique, est un défi de deux jours durant lequel des étudiants réalisent par
+																																																																																																																							groupe un projet sur un sujet imposé. L’objectif est de travailler sur un projet et de mettre en pratique des
+																																																																																																																							connaissances et savoirs acquis pendant les cours à partir d’une problématique technique concrète proposée par
+																																																																																																																							un commanditaire (entreprise, chambre consulaire, collectivité, administration).
+						<br><br>
+						Ce défi permet aux étudiants de se retrouver dans une situation semblable à ce qu’on peut retrouver dans le monde
+																																																																																														professionnel. Travailler sur un temps court et faire face à une date-butoir permettent aux étudiants de stimuler leur
+																																																																																														productivité, leur organisation, ainsi que leur ingéniosité. Durant le challenge 48H, les étudiants peuvent se
+																																																																																														découvrir dans un contexte alternatif à celui des cours. Ces deux jours intenses sont un réel apprentissage du
+																																																																																														travail de groupe et de l’esprit d’équipe.
+						<br><br>
+						De ce fait, l’organisation est la clé de la réussite de ce défi, les étudiants doivent en 48 heures être capable de
+																																																																																														s’approprier la demande qui pourrait être celle d’un client, comprendre ses enjeux, se répartir le travail, produire et
+																																																																																														présenter le résultat final sous forme de livrable.</p>
+
+				</div>
+
+			</div>
+			<a id="btn2" href="" class="btn btnaccordion  waves-effect ">
+				<b>Formulaire</b>
+				<i class="material-icons right">chevron_right</i>
+
+			</a>
+
+
+			<hr>
+
+			<br>
+			<div class="linable" style="padding-left: 9%">
+				<a class="accordion three">
+					<i id="ic3" class="material-icons" id="icon3">arrow_forward</i>
+					<b>10 days challenge</b>
+				</a>
+
+				<div class="panel">
+					<p>Le
+						<b>10 days challenge</b>
+						est un défi de dix jours durant lequel des étudiants réalisent par groupe un projet ou une
+																																																																																														étude sur un sujet imposé par gaea21. L’objectif est de travailler sur un projet et de mettre en pratique des
+																																																																																														connaissances et savoirs acquis pendant les cours à partir d’une problématique technique concrète proposée par
+																																																																																														gaea21 et sélectionnée par l’université-partenaire.
+						<br><br>
+						Trois équipes d’étudiants travaillent sur le même projet gaea21 sélectionné par l’université pour une durée de 10
+																																																																																														jours avec pour but la sélection du meilleur des trois projets à la fin du temps imparti.
+						<br><br>
+						Ce défi permet aux étudiants de se retrouver dans une situation semblable à ce qu’on peut retrouver dans le monde
+																																																																																														professionnel. Travailler sur un laps de temps court et faire face à une date-butoir permettent aux étudiants de
+																																																																																														stimuler leur productivité, leur organisation, ainsi que leur ingéniosité. De ce fait, l’organisation est la clé de la
+																																																																																														réussite de ce défi, les étudiants doivent en une dizaine de jours être capable de s’approprier la demande de
+																																																																																														gaea21, comprendre ses enjeux, se répartir le travail, produire et présenter le résultat final sous forme de livrable à
+																																																																																														l’association.
+						<br><br>
+						Au bout de dix jours, le livrable soumis est présenté à un jury gaea21 composé de divers membres de l’association
+																																																																																														qui sélectionnent par la suite le projet préféré entre les trois projets. gaea21 offre un certificat de compétences
+																																																																																														professionnelles aux vainqueurs du défi.
+					</p>
+
+				</div>
+			</div>
+
+			<a id="btn3" href="" class="btn btnaccordion  waves-effect ">
+				<b>Formulaire</b>
+				<i class="material-icons right">chevron_right</i>
+
+			</a>
+
+			<hr>
+		</div>
+
+		<br><br><br>
+		<div class="afterAccordion">
+			
+			<div class="allIndiv" id="here2">
+				<div class="titleAd">
+					<h4 class="adfont">
+						<b>Administrations / Agence emploi / ORP / Mesure pour emploi</b>
+					</h4>
+				</div>
+				<img src="{{ asset('imagesgaea21/administrationagence.png') }}" alt="Feuilles vertes" width="20%" class="adminImage"/>
+				<div class="textCorpAd">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+				</div>
+
+
+				<br><br><br>
+			</div>
+
+		</div>
+
+		<div class="imgUE2" id="here3">
+
+			<div class="imgUP2">
+				<img src="{{ asset('imagesgaea21/UNbodies.png') }}" alt="Feuilles vertes" width="100%" style="opacity: 100%;"/>
+			</div>
+
+		</div>
+		<div class="descri2">
+			<div class="divtitle2">
+				<h3 class="title">UN bodies : UNITAR / BIT</h3>
+			</div>
+			
+			<div class="divdescri2">
+				<div class="container">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p><img src="{{ asset('imagesgaea21/UNbodies2.png') }}" alt="undraw2" class="undraw2"/>
+					<br>
+
+
+				</div>
+			</div>
+
+		</div>
+		<br><br>
+	</div>
+
+
+{% endblock %}
+{% block javascripts %}
+	
+	{{ encore_entry_script_tags('accordion') }}
+	{{ encore_entry_script_tags('partenaireFooter') }}
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %} 
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('reseau') }} 
+    {{ encore_entry_link_tags('header') }} 
+    {{ encore_entry_link_tags('contenu-reseau') }} 
+    
+{% endblock %}
+
+
+{% block body %}
+   
+    <div id="reseau">
+
+       {% include "/emploi_et_stage/header.html.twig" %}
+
+  
+        <div id="contenu-reseau"></div>
+    </div>
+
+    
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+     {{encore_entry_script_tags('contenu-reseau')}}
+{% endblock %}

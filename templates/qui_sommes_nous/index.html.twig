@@ -1,0 +1,31 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+<link rel="stylesheet" href="{{asset('style/quiSommesNous/quiSommesNousIndex.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projets
+{% endblock %}
+
+		    		    {% block header %}
+                <div class="_text-content">
+                    <h2 class='header-title'>Qui sommes-nous ?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p>
+                </div>
+            {% endblock %}
+
+        {% block main %}
+
+        {% endblock %}
+
+        {% block project %}
+          
+        {% endblock %}
+
+
+
+  {% block javascripts %}
+    {{ parent() }} 
+	{% endblock %}

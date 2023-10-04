@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html class="{% block cssimport %}{% endblock %}">
+    <head>
+        {% block head %}
+            <meta charset="UTF-8">
+            <link rel="icon" type="image/png" href="{{asset('imagesgaea21/logo_gaea21.png')}}" />
+            <title>{% block title %}gaea21{% endblock %}</title>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            {% block stylesheets %}
+            {% endblock %}            
+        {% endblock %}
+    </head>
+
+    {% block navbar %}
+    {% endblock %}
+
+
+    <body class="white">
+        {% block body %}          
+        {% endblock %}
+        {# Variables d'environnement pour les URL (API gaeaUser et local) #}
+        <input type="hidden" id="urlEnv" data-urlapi="{{ URL_API }}" data-urlsite="{{ URL_SITE }}">
+        {% block footer %}
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="{{ asset('materialize/js/jquery-3.2.1.min.js') }}"></script>
+            <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
+            <script src="{{ asset('materialize/js/script.js') }}"></script>
+            <script src="{{ asset('js/inscription.js') }}"></script>
+            <script src="{{ asset('js/visualComponents.js') }}"></script>
+            <script src="{{ asset('js/desInscription.js') }}"></script>
+            <script src="{{ asset('js/redirect.js') }}"></script>
+            <script src="{{ asset('js/login.js') }}"></script>
+            <script src="{{ asset('js/updateAccount.js') }}"></script>
+            <script src="{{ asset('js/updatePassword.js') }}"></script>
+            <script src="{{ asset('js/reinitPassword.js') }}"></script>
+            <script src="{{ asset('js/reinitPasswordLost.js') }}"></script>        
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,135 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#projet .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+#projet .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#projet .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#projet .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#projet .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+#projet .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+#projet html, #projet body {
+  height: 100%;
+  width: 100%;
+}
+#projet .sectionHead3 {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/Groupe de masques 31.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+#projet .p1 {
+  width: 12.4479166667%;
+  font-family: "Arial Black";
+  color: black;
+  font-weight: bold;
+  font-size: 3.0208333333vw;
+}
+#projet .p2 {
+  left: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: black;
+}
+#projet .p-2 {
+  margin-left: 9.53125%;
+  margin-top: 1.0416666667%;
+  margin-bottom: 4.2746284361%;
+  width: 22.5%;
+  height: 6.3541666667%;
+}
+#projet .p3 {
+  margin-top: 10.4166666667%;
+  margin-bottom: 0.5208333333%;
+  height: auto;
+  font-size: 2.34375vw;
+  color: black;
+}
+#projet .p4 {
+  margin-left: 5.2083333333%;
+  width: 93.75%;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#projet .card2 {
+  margin-left: 52.0833333333%;
+  width: 62.5%;
+  padding-top: 2.6041666667vw;
+  padding-bottom: 10.4166666667vw;
+  opacity: 1;
+  margin: 0 auto;
+}
+#projet .card3 {
+  margin-top: 31.25%;
+  margin-left: 31.71875%;
+  width: 36.6145833333%;
+  height: 3.125%;
+  margin: 0 auto;
+  opacity: 1;
+  border-bottom: 4px solid #989751;
+}
+#projet .p-1 {
+  margin-left: 9.53125%;
+  margin-top: 9.8958333333%;
+  width: 12.4479166667%;
+  border-bottom: 4px solid black;
+  opacity: 1;
+}/*# sourceMappingURL=projet.css.map */

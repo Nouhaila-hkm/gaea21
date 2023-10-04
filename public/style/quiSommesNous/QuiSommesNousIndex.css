@@ -1,0 +1,37 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header {
+  display: block;
+  width: 100%;
+  height: 40vw;
+  background: linear-gradient(0deg, #020024 0%, rgba(0, 0, 0, 0.3) 0%), url("../../../images/QuiSommesNous//header_quiSommesNous.png");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 36%;
+}
+#header ._text-content {
+  width: 38.8%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-left: 9.53125vw;
+  position: relative;
+  top: 25.2%;
+}
+#header ._text-content .header-title {
+  margin-bottom: 2.6041666667vw;
+}
+
+#organizationDebut {
+  display: none;
+}
+
+#organizationFin {
+  display: none;
+}
+
+/*# sourceMappingURL=QuiSommesNousIndex.css.map */

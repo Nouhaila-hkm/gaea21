@@ -1,0 +1,141 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/RV/projetGaea21_RV.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/RV
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+	<div class="logo">
+		<img src="{{asset('images/icone_svg_png/logoRV2.png')}}" alt="logo Répertoire Vert">
+	</div>	
+		<h2>Répertoire Vert<h2>
+	</div>
+
+	<section class="intro">
+		<article class="intro_text">
+			<p class="partie1"><b>Le Répertoire Vert</b> est une plateforme qui permet de répertorier et évaluer les entreprises, ainsi que l’ensemble des services verts situés dans un <b>rayon de 130 km autour de Genève.</b></p>
+			<p class="partie2">Ce projet a été initié en 2009, et lancé en 2022 afin de faciliter la recherche de produits et de services écologiques aux consommateurs, en donnant plus de visibilité aux petites entreprises. Sur la base de critères de durabilité, 
+			le <b>Répertoire Vert</b> évalue les produits et services par un système de notation, pour permettre aux consomm’acteurs de choisir les biens et les services les plus écologiques. 
+			Ceux-ci sont répertoriés dans <b>27 catégories</b> diverses: santé, art, administration, ou encore green tech. </p>
+		</article>
+		<div class="article_img">
+			<img class="intro_img" src="{{asset('images/PagesProjets/page_rv/rv_effect.png')}}" alt="image indiquant le rayon d'action de RV">
+		</div>
+	</section>
+
+	<section class="outils-rv">
+		<p><b>Le Répertoire Vert</b> offre les services suivant&nbsp;:</p>
+	{# 1er service #}
+		<div class="liste_des_services">
+			<p class="services"><span class="disc"></span>Un outil de référencement</p>
+			<p class="service"><b>> pour les clients&nbsp;:</b> il facilite la localisation d'un produit ou d'un service vert adéquat.</p>
+			<p class="service"><b>> pour les entreprises&nbsp;:</b> il permet de gagner en visibilité et rend leur offre identifiable.</p>
+		</div>
+	{# 2eme service #}
+		<div class="liste_des_services">
+			<p class="services"><span class="disc"></span>Un outil d'évaluation</p>
+			<p class="service"><b>> pour les clients&nbsp;:</b> il permet de savoir si un produit est réellement vert.</p>
+			<p class="service"><b>> pour les entreprises&nbsp;:</b> il permet d'obtenir un label gaea21 qui atteste du respect des critères environnementaux stricts.  Les entreprises qui le detiennent peuvent ainsi se défaire de la concurrence de celles pratiquant le greenwashing.</p>
+		</div>
+	{# 3eme service #}
+		<div class="liste_des_services">
+			<p class="services"><span class="disc"></span>Le service conseil vert</p>
+			<p class="service"><b>> pour les clients&nbsp;:</b> il offre des conseils en éco-gestes adaptés au rythme de vie de la personne.</p>
+			<p class="service"><b>> pour les entreprises&nbsp;:</b> offre des conseils visant à rendre les entreprises plus durables.</p>
+		</div>
+	{# 4eme service #}
+		<div class="liste_des_services">
+			<p class="services"><span class="disc"></span>Un forum</p>
+			<p class="service"><b>> pour les clients&nbsp;:</b> il permet de donner son avis librement sur les produits et services testés, mais également d'échanger des astuces et des conseils.</p>
+		</div>
+	</section>
+
+	<section class="appli_mobile">
+		<div class='img-appli'>
+			<img src="{{asset('images/PagesProjets/page_rv/appli_mobile.png')}}" alt="image d'une main qui tiens un téléphone">
+		</div>
+		<div class="intro-appli-mobile">
+			L’application <b>Répertoire Vert</b> permet de trouver des produits et des services selon <b>27 catégories,</b> 
+			et de les rechercher en fonction du prix que vous souhaitez payer. Elle permet également de déterminer 
+			votre profil consommateur, de connaître le bilan CO2 correspondant aux transports que vous utilisez,
+			d'échanger librement sur la plateforme collaborative avec les autres utilisateurs à propos de la qualité
+ices testés, ainsi qu			des produits et serve de connaître la composition des produits grâce à un QR code.
+		</div>
+	</section>
+{% endblock %}
+
+
+            {# Icone de redirection vers les pages web etc... #}
+            {% block vignettes %}
+                    
+            <div class="more-links"
+            data-title="Site internet"
+            data-link="https://www.repertoirevert.org" 
+            data-iconsvg={{asset('images/icone_svg_png/website.svg') }}
+            data-disabled="false">
+            </div>
+            {# <div class="more-links"
+            data-title="Brochure"
+            data-link="#"
+            data-iconsvg={{asset('images/icone_svg_png/brochure.svg') }}
+            data-disabled="true">
+            </div>
+            <div class="more-links"
+            data-title="Poster"
+            data-link="#"
+            data-iconsvg={{asset('images/icone_svg_png/poster.svg') }}
+            data-disabled="true">
+            </div>  #}
+
+            
+            {% endblock %}
+						
+        {% block formulaires %}
+						<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+						<div class="formulaires">			
+							<div class="more-links"
+								data-title="Partenariat"
+								data-link="
+									{{ path("form_build_projet", { 
+										'formInfo': 'Partenariat', 
+										'projet' : 'Répertoire Vert' 
+									})}}" 
+								data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+								data-disabled="false"
+								data-description="Devenez partenaire du projet.">
+							</div>
+							<div class="more-links"
+								data-title="Soutenir"
+								data-link="#"
+								data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+								data-disabled="true"
+								data-description="Soutenez le projet.">
+							</div>
+							<div class="more-links"
+								data-title="Participer"
+								data-link="#"
+								data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+								data-disabled="true"
+								data-description="Rejoignez l'équipe du projet.">
+							</div>					
+						</div>
+						<p class='ou'>ou</p>
+						<div 
+							class="largeBtn" 
+							data-txt="Nous contacter" 
+							data-link="
+									{{ path("form_build_projet", { 
+										'formInfo': 'Contact', 
+										'projet' : 'Répertoire Vert'  
+									})}}" >
+						</div>
+				{% endblock %}

@@ -1,0 +1,85 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/PA/projetGaea21_PA.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/PA
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<h2>Pré-analyse<h2>
+	</div>
+	<section class="intro-pa">
+		<article class="partie1">
+			<div class="img-tirelire">
+				<img class="img-cochon" src="{{asset('images/PagesProjets/page_pa/tirelire.png')}}" alt='tirelire cochon'>
+			</div>
+			<div class="text1">
+				<p><b>50%</b> des petites et moyennes entreprises (PME) romandes ne survivent pas les cinq premieres années et ceci est dû à 
+				des dysfonctionnements internes dits coûts cachés. Ces derniers affectent négativement le budget, l'efficacité 
+				d'une entreprise ou d'une organisation, sa capacité à satisfaire les mandats, et donc, sa compétitivité et sa réputation. 
+				Malheureusement, <b>ces coûts peuvents être difficiles à voir.</b></p>
+			</div> 
+		</article>
+		<article class="partie2">
+			<div class="text2">
+				<p><b>Pré-analyse</b> est un programme d'audit financier et organisationnel et outil d'aide destiné aux entreprises et organisations. 
+				Il vous permet d'<b>identifier les coûts cachés</b>, d'y apporter des <b>des solutions efficaces et rentables</b> tout en <b>améliorant 
+				les conditions de travail des employés</b> et <b>la réputation de l'entreprise.</b><br>
+				Il fait une analyse complète et transversale d'une structure, identifie la source de ces coûts cachés et lui propose des solutions concrètes d'amélioration.</p>
+			</div>
+			<div class="img-loupe">
+				<img class="img-recherche" src="{{asset('images/PagesProjets/page_pa/loupe.png')}}" alt='loupe'>
+			</div>
+		</article>
+	</section>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Pré Analyse' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Pré Analyse'  
+				})}}" >
+	</div>
+{% endblock %}

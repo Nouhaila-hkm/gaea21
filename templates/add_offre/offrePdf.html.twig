@@ -1,0 +1,23 @@
+{% extends 'add_offre/addOffreBase.html.twig' %} 
+ {% block title %}Modifier Offre d'Emploi{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('pdfOffre') }} 
+{% endblock %}
+
+
+
+
+{% block body %}
+
+    
+
+    <div id="pdf_offre"></div>  
+
+    {% block javascript %}
+    {{ encore_entry_script_tags('pdfOffre') }} 
+{% endblock %}
+
+
+{% endblock %}

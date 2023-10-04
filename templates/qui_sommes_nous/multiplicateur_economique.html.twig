@@ -1,0 +1,83 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/analyse.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<h2 class="title_modele lean_title">Coévolution</h2>
+
+       <article class="img_text_article">
+
+
+        <img class="accel_margin" src="{{ asset('images/QuiSommesNous/modele/multiplicateur_economique.png') }}"/>
+        
+        
+        <div class="text_with_img_accel no_marge valor_size">
+        <p> 
+            <b>Le multiplicateur keynésien</b> ou<br> 
+            <b>multiplicateur d’investissement</b> est une <br>
+            <b>théorie de Kahn</b> reprise par John Maynard <br>
+            Keynes selon laquelle <b>l’investissement <br>
+            public</b> a un effet démultiplié sur <b>l’activité <br>
+            économique et sur l’emploi</b>.
+        </p>
+
+        <p>
+            Plus précisément, les keynésiens définissent <br>
+            le multiplicateur comme <b>le rapport entre une <br>
+            variation des dépenses publiques et la <br>
+            variation consécutive du revenu global.</b>
+        </p>
+
+       </article>
+
+       <article class="text_size behavior_margin">
+
+        <p>    
+            En d’autres termes, un accroissement de l’investissement provoquera des ondes successives <br>
+            de revenus et de dépenses. En conséquence, une augmentation de l’investissement entraînera une<br>
+            variation amplifiée du revenu national. La théorie du multiplicateur établit qu’un investissement<br> 
+            additionnel produit un effet démultiplié sur le niveau de la production et de l’emploi.
+        </p>
+        <br>
+        <p>Principe de l’accélérateur économique:</p>
+        <p>
+            Par définition on considèrera qu’il s’agit d’une relation entre la variation de la demande d’un bien et les <br>
+            capacités de production satisfaisant cette demande. L’accélération provient du fait qu’une <br>
+            augmentation des capacités de production (l’offre) a pour conséquence d’entrainer une variation plus <br>
+            élevée de la consommation (demande).
+        </p>
+        <br>
+        <br>
+    </article>
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

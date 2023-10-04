@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+._small-card {
+  width: 24.1666666667vw;
+  height: 14.5833333333vw;
+  border-radius: 23px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  z-index: 12000;
+  /********************* OVERLAY DE LA CARD *********************/
+  /********************* HEADER DE LA CARD + POSITIONNEMENT *********************/
+  /********************* BOUTTON LARGE + POSITIONNEMENT *********************/
+}
+._small-card ._overlay {
+  width: 100%;
+  height: 72.5%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: height 0.3s;
+}
+._small-card ._overlay .active-arrow {
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+  position: absolute;
+  top: 5.3125vw;
+  left: 11.0416666667vw;
+  z-index: 10000;
+  filter: invert(1);
+  display: none;
+}
+._small-card ._card-header {
+  color: white;
+  text-align: center;
+  padding-top: 2.1354166667vw;
+}
+._small-card ._card-header h2 {
+  font-size: 1.4583333333vw;
+  margin: 0;
+}
+._small-card ._large-btn-small-card {
+  background-color: white;
+  font-size: 1.09375vw;
+  padding: 1.09375vw 2.1875vw;
+  z-index: 1;
+  color: black !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: 7.0833333333vw;
+  left: 6.1776061776vw;
+  opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+._small-card ._large-btn-small-card .chevron-btn {
+  height: 1.40625vw;
+}
+._small-card:hover ._large-btn-small-card {
+  opacity: 1;
+}
+._small-card ._img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+._disabled-small-card {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1) !important;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+._disabled-small-card::before {
+  content: "Bientôt disponible";
+  position: absolute;
+  top: 5.5729166667vw;
+  left: 6.2682291667vw;
+  padding: 1.0677083333vw 1.3880208333vw;
+  background: white;
+  font-size: 1.09375vw;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.active-card {
+  transition: none !important;
+}
+.active-card:hover {
+  height: 72.5% !important;
+}
+
+/*# sourceMappingURL=smallCard.css.map */

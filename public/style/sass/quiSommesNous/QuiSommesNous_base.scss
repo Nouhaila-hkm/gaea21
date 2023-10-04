@@ -1,0 +1,149 @@
+@use "sass:math";
+@import "../_function";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: pxToPourcent(1920, 1920);
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(42, 1920);
+  position: relative;
+  //overflow-x: hidden;
+}
+
+h1 {
+  font-size: pxToVw(60, 1920);
+  line-height: pxToVw(90, 1920);
+  margin: 0;
+}
+
+h2 {
+  font-size: pxToVw(50, 1920);
+  line-height: pxToVw(75, 1920);
+  margin: 0;
+}
+
+.sponsor {
+  margin-top: 10%;
+  margin-left: -10%;
+  font-weight: bold;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+h3,
+h4 {
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(34, 1920);
+  margin: 0;
+}
+
+#header p {
+  font-size: pxToVw(30, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+
+#prevArrow {
+  // background-color: coral;
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(36, 1920);
+  display: inline-block;
+  margin-top: pxToVw(100, 1920);
+  margin-left: pxToVw(183, 1920);
+}
+
+#organizationDebut {
+  width: pxToVw(1554, 1920);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: pxToVw(61.5px, 1920);
+  margin-bottom: pxToVw(61.5px, 1920);
+
+
+  ._small-card ._overlay ._card-header {
+    padding: pxToVw(41px, 1920) pxToVw(80px, 1920) 0 pxToVw(80px, 1920);
+
+    h2 {
+      font-size: pxToVw(30px, 1920) !important;
+      line-height: pxToVw(36px, 1920) !important;
+    }
+  }
+}
+
+#big-container {
+  width: pxToVw(1554, 1920);
+  margin: 0 auto;
+}
+
+#organizationFin {
+  width: pxToVw(1554, 1920);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: pxToVw(61.5px, 1920);
+  margin-bottom: pxToVw(61.5px, 1920);
+
+
+  ._small-card ._overlay ._card-header {
+    padding: pxToVw(41px, 1920) pxToVw(80px, 1920) 0 pxToVw(80px, 1920);
+
+    h2 {
+      font-size: pxToVw(30px, 1920) !important;
+      line-height: pxToVw(36px, 1920) !important;
+    }
+  }
+}
+
+#topArrow {
+  display: inline-block;
+  margin-left: pxToVw(183, 1920);
+  // background-color: coral;
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+
+#main {
+  width: pxToVw(1290, 1920);
+  margin: 0 auto;
+  // // height: pxToVw(700px,1920); // provisoire
+  // background: lightblue; // provisoire
+  margin-bottom: pxToVw(83px, 1920);
+  margin-top: 5vw;
+
+  h2 {
+    font-size: pxToVw(50px, 1920);
+    line-height: pxToVw(36px, 1920);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: pxToVw(28, 1920);
+    line-height: pxToVw(42, 1920);
+    margin-bottom: 0;
+  }
+}
+
+#projects {
+  width: pxToVw(1554px, 1920);
+  margin: 0 auto;
+}
+
+
+#topArrow {
+  margin-bottom: pxToVw(40, 1920);
+}
+
+.number {
+  color: #98984B;
+  font-weight: bold;
+}

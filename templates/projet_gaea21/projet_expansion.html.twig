@@ -1,0 +1,56 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+		{{parent()}}
+		<link rel="stylesheet" href="{{asset('style/projet_gaea21/projet_expansion/projet_expansion.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projets/Expansion
+{% endblock %}
+
+
+
+		    {% block header %}
+                <div class="_text-content">
+                    <div class="text">
+                        <h2>Programme expansion/ créer un gaea21 local</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p>
+                    </div>
+                </div>
+                <div class="_background"></div>
+        {% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<h2>De quoi s'agit-il ?<h2>
+	</div>
+
+  <section class="intro-expansion">
+    <article class="partie1">  
+      <div class="img-hearth" alt="image de la terre">
+        {# <img src="{{asset('images/PagesProjet/page_expansion/earth.png')}}" alt="image de la terre"> #}
+      </div>
+      <article class="text">
+        <p>Il est désormais évident que notre planète est confrontée aux graves conséquences du réchauffement climatique. 
+        Pour éviter que celles-ci ne deviennent irréversibles, il est primordial d'agir à grande échelle en accord avec <b>les 17 Objectifs de Développement Durable</b> (ODD) 
+        définis par les Nations Unies. Néanmoins, la plupart des initiatives de changement échouent par manque de collaboration entre les principaux acteurs.</p>
+      </article>
+    </article>
+
+    <article class="partie2">
+      <p>Pour cette raison, il est essentiel que <b>les acteurs du développement durable</b> (administrations, associations, entreprises, etc.) collaborent, 
+      se rencontrent et créent des synergies afin que leurs initiatives deviennent réellement efficaces. 
+      En apportant des <b>solutions concrètes</b>, chaque individu pourra produire un impact 
+      positif sur la société et sur son environnement.</p>
+  </section>
+	
+	<section class="container formulaireExpansion"> 
+			<h2> Proposer votre candidature ! </h2>
+			<p>Vous voulez créer une <b>franchise</b> dans votre <b>pays ou votre ville</b> ?<br/>
+			Contactez nous via ce <b>formulaire</b> pour nous faire part de votre <b>projet</b>.</p>
+	</section>
+{% endblock %}

@@ -1,0 +1,15 @@
+@use "sass:math";
+@import "../../_function";
+
+.disciplines {
+    margin-left: pxToVw(524, 1920);
+    margin-top: 3%;
+    width: 50vw;
+}
+
+.dimension_card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3%;
+}

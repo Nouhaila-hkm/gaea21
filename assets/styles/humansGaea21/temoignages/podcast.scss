@@ -1,0 +1,198 @@
+#videoTem{
+
+    width: 90%;
+    background-color: white;
+
+    margin-right: pxToPourcent(140px, 1920px);
+    margin-left: pxToPourcent(15px, 1920px);
+    display: flex;  
+    flex-direction: column;
+
+}
+
+#carouselGaeaPodcast{
+    height: pxToVw(1200px, 1920px) !important;
+    
+}
+
+.carousel{
+    height: 100% !important;
+    background-color: white !important;
+}
+
+.itemPodcast{
+    width: 80% !important;
+    background-color: white !important ;
+}
+
+.podcastGaea{    
+    width:100% !important;
+    background-color: white !important ;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.podcast{
+    display: flex;
+    flex-direction: column;
+
+    height: pxToVw(340px, 1920px);
+    width: pxToPourcent(510px, 1920px) !important;
+
+    margin-left: pxToPourcent(65px, 1920px);
+    margin-right: pxToPourcent(65px,1920px);
+    margin-bottom: pxToVw(70px, 1920px);
+}
+
+.podcastAudio{
+    background-color : #F6F6F6;
+
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+
+    z-index: 3;
+
+    //padding-top: pxToVw(200px, 1920px);
+    //padding-left: pxToPourcent(31px, 1920px);
+
+
+    img{
+        height:100%;
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        z-index: 2;
+    }
+
+    .etatPodcast{
+        position: relative;
+        opacity: 0;
+        top: pxToVw(-220px, 1920px);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: pxToVw(100px, 1920px);
+
+        z-index: 2;
+    }
+}
+
+.podcastAudio:hover{
+    background-color: #98984C;
+    opacity: 49% ;
+
+    .etatPodcast{
+        opacity: 1;
+    }   
+}
+
+.podcastAudio.clicked{
+    background-color: #98984C;
+    opacity: 49% ;
+
+    .etatPodcast{
+        opacity: 1;
+    }   
+}
+
+.podcastName{
+    background-color: white;
+
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: pxToVw(18px, 1920px);
+
+    margin:0;
+    padding:7px;
+    padding-right: pxToPourcent(15px, 1920px);
+    padding-top: pxToVw(10px, 1920px);
+    padding-bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+
+
+
+
+.scrollImage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: pxToVw(25px, 1920px);
+}
+
+.scrollRow{
+    height: 29px;
+    width: 71px;
+    width: 14px;
+
+    //margin-top: 43px;
+    //margin-top: 5px;
+}
+
+.indicator{
+   
+    height: 16px;
+    width: 71px;
+    
+    
+    margin-left: pxToPourcent(54px, 1920px);
+    margin-right: pxToPourcent(54px, 1920px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.scrollCercle{
+    width: 21px;
+    height: 21px;
+    border: 2px solid #0E7263;
+    border-radius: 50% 50% 50% 50%;
+    margin-right: pxToPourcent(25px, 1920px);
+    margin-left: pxToPourcent(25px, 1920px);
+}
+
+
+#lecturePodcast{
+    width: 100%;
+
+    background-color: #F6F6F6;
+
+    margin-bottom: pxToVw(80px, 1920px);
+}
+
+.podcastPersonne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .audioPodcast{
+        width: pxToPourcent(1120px, 1920px);
+        height: pxToVw(205px, 1920px);
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p{
+        margin-top: pxToVw(20px, 1920px);
+        margin-bottom: pxToVw(20px, 1920px);
+    }
+}
+

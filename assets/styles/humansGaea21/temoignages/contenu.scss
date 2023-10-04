@@ -1,0 +1,131 @@
+#videoTem{
+
+    width: 90%;
+    background-color: white;
+
+    margin-right: pxToPourcent(140px, 1920px);
+    margin-left: pxToPourcent(15px, 1920px);
+    display: flex;  
+    flex-direction: column;
+
+}
+
+#carouselGaeaVideo{
+    height: pxToVw(1500px, 1920px) !important;
+    
+}
+
+.carousel{
+    height: 100% !important;
+    background-color: white !important;
+}
+
+.itemVideo{
+    width: 80% !important;
+    background-color: white !important ;
+}
+
+.videosGaea{    
+    width:100% !important;
+    background-color: white !important ;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+}
+
+.video{
+    background-color : lightgray;
+
+    border-radius: 10px;
+    height: pxToVw(319px, 1920px);
+    width: pxToPourcent(850px, 1920px) !important;
+
+    margin-left: pxToPourcent(43px, 1920px);
+    margin-right: pxToPourcent(43px,1920px);
+    margin-bottom: pxToVw(56px, 1920px);
+
+    padding-top: pxToVw(200px, 1920px);
+    padding-left: pxToPourcent(31px, 1920px);
+}
+
+.videoTitle, .videoSubTitle {
+    background-color: white;
+
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: pxToVw(18px, 1920px);
+
+    margin:0;
+    padding:7px;
+    padding-right: pxToPourcent(15px, 1920px);
+    padding-top: pxToVw(10px, 1920px);
+    padding-bottom: 0;
+
+    width: fit-content;
+}
+
+.videoTitle{
+    border-radius: 10px 10px 0 0;
+}
+
+.videoSubTitle {
+    border-radius: 0 10px 10px 10px;
+}
+
+.scrollImage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.scrollRow{
+    height: 29px;
+    width: 71px;
+    width: 14px;
+
+    //margin-top: 43px;
+    //margin-top: 5px;
+}
+
+.indicator{
+   
+    height: 16px;
+    width: 71px;
+    
+    
+    margin-left: pxToPourcent(54px, 1920px);
+    margin-right: pxToPourcent(54px, 1920px);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.scrollCercle{
+    width: 21px;
+    height: 21px;
+    border: 2px solid #0E7263;
+    border-radius: 50% 50% 50% 50%;
+    margin-right: pxToPourcent(25px, 1920px);
+    margin-left: pxToPourcent(25px, 1920px);
+}
+
+.videoLancer{
+    background-color: lightgrey;
+    height: 48%;
+    width: 94%;
+
+    margin-left: pxToPourcent(35px, 1920px);
+    margin-right: pxToPourcent(30px,1920px);
+
+    border-radius: 10px;
+
+    position:  relative;
+
+    z-index: 2;
+    opacity: 1;
+}

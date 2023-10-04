@@ -1,0 +1,169 @@
+@import 'common/gaeaHeader';
+@import 'common/gaeaMaterial';
+
+/* Global Style */
+  *{
+    margin:0;
+    padding: 0;
+  }
+  html{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  body{
+    width: 100vw;
+    font-family: Helvetica;
+    // font-family: Helvetica, sans-serif;
+    li {
+      list-style-type: none;
+    }
+  }
+  /* You can add global styles to this file, and also import other style files */
+  * {
+    border-radius: 1px rgb(41, 46, 46);
+    font-size: 1em;
+  }
+  a{
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+/* */
+
+/* Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(118, 126, 4) white;
+  }
+
+  /*  scrollbar  pour les autres navigateurs */
+  *::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  *::-webkit-scrollbar-track {
+    background: rgb(35, 38, 41);
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(111, 148, 10);
+    border-radius: 20px;
+    border: 1px solid rgb(36, 39, 39);
+  }
+/* */
+
+#section1 {
+  height: 64vw;
+}
+#section2{
+}
+#section3{
+}
+#section4{
+}
+
+#deco1 {
+  height: 16.5vw;
+  transform: translate(4vw,0);
+}
+#deco2{
+}
+#deco3{
+}
+#deco4{
+}
+
+#section4 .statisticBackground{
+  color: white !important;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 0%), url('../images/homepage/trends-statistique.png');
+  background-size: cover;
+  background-position: center;
+
+  &:hover{
+  // color: white !important;
+    background: linear-gradient(0deg, rgb(0, 102, 153,1) 0%, rgb(0, 102, 153,.45) 0%),url('../images/homepage/trends-statistique.png');
+    background-size: cover;
+    background-position: center;
+  }
+}
+#section4 .politicBackground{
+  color: white !important;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 0%),url('../images/homepage/trends-politique.png');
+  background-size: cover;
+  background-position: center;
+
+  &:hover{
+  // color: white !important;
+  background: linear-gradient(0deg, rgb(0, 102, 153,1) 0%, rgb(0, 102, 153,.45) 0%), url('../images/homepage/trends-politique.png');
+  background-size: cover;
+    background-position: center;
+    
+  }
+}
+#section4 .actionProgramBackground{
+  color: white !important;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 0%), url('../images/homepage/trends-action-program.png');
+  background-size: cover;
+  background-position: center;
+
+  &:hover{
+  // color: white !important;
+  background:linear-gradient(0deg, rgb(0, 102, 153,1) 0%, rgb(0, 102, 153,.45) 0%), url('../images/homepage/trends-action-program.png');
+  background-size: cover;
+  background-position: center;
+  }
+}
+
+/*.section {
+  background-image: url('../../imagesgaea21/EARTH3.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}*/
+.sectionFirst {
+  background-image: url('../../imagesgaea21/field-176602_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.sectionCinque {
+  background-image: url('../../imagesgaea21/EARTH3.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+.sectionSix {
+  background-image: url('../../imagesgaea21/EARTH2.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.sectionHuit {
+  background-image: url('../../imagesgaea21/environmental.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.section-theme
+{
+  background-image: url('../../Image/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+i.material-icons{
+  height: 3.5vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+i>svg{
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 100%;
+}
+
+
+

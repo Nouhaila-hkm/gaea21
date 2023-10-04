@@ -1,0 +1,19 @@
+{% extends 'formulaires/base.html.twig' %}
+
+{% block title %}
+	gaea21 - Formulaire : {{form_name}}
+{% endblock %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('FormEdit') }}
+{% endblock %}
+
+{% block body %}
+
+	<div id="Form" data-id="{{id}}"></div>
+    
+	{% block javascripts %}
+		{{ encore_entry_script_tags('FormEdit') }}
+	{% endblock %}
+
+{% endblock %}

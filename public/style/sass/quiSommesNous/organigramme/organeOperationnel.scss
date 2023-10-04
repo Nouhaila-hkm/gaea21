@@ -1,0 +1,570 @@
+@use 'sass:math';
+@import '../../_function';
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+        background-color: #49a496;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(215, 1920);
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(36px, 1920);
+            }
+        }
+    }
+
+    ._background {
+        background-image: url('../../../../images/QuiSommesNous/header_organigramme.png');
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#main {
+    margin-bottom: 0;
+
+    .title {
+        h2 {
+            text-align: center;
+            margin-bottom: pxToVw(51px, 1920);
+        }
+    }
+
+    #intro-organeDecisionnel {
+        .schema-organeDecisionnel {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#personnes {
+    width: pxToPourcent(1920, 1920);
+
+    .membres {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: pxToVw(112, 1920) pxToVw(183, 1920);
+
+        &:last-of-type {
+            margin-bottom: pxToVw(100px, 1920);
+        }
+
+        &:nth-of-type(even) {
+            background-color: #FBFBF7;
+
+            & .presentationInitial {
+                flex-direction: row-reverse;
+
+                & .presentation-membres {
+                    margin-right: pxToVw(112, 1920);
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .plus{cursor: pointer;
+        display: inline-flex;
+    width: pxToPourcent(415,1554);}
+
+        .presentationInitial {
+            display: flex;
+
+            .name,
+            .fonction,
+            h4 {
+                color: #5681B9;
+            }
+
+            .photo {
+                width: pxToPourcent(510, 1920);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .presentation-membres {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: pxToPourcent(1044, 1554);
+
+
+                margin-left: pxToVw(112, 1920);
+
+                .name {
+                    font-size: pxToVw(40px, 1920);
+                    line-height: pxToVw(34px, 1920);
+                    font-weight: 600;
+                }
+
+
+                .departement {
+                    margin: pxToVw(26px, 1920) 0;
+                    height: pxToVw(130px, 1920);
+                }
+
+                .domaines {
+                    display: flex;
+                    gap: pxToVw(53px, 1920);
+                    margin-left: pxToVw(31px, 1920);
+                    margin-bottom: pxToVw(30px, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+
+                .plus {
+                    // display: flex;
+                    align-items: center;
+                    gap: pxToVw(30, 1920);
+                    position: relative;
+                    bottom: pxToVw(15px, 1920);
+
+                    &>div {
+                        width: pxToVw(24, 1920);
+
+                        svg {
+                            width: 100%;
+                            fill: #5681B9;
+                            stroke: #5681B9;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    svg.rotate {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: pxToPourcent(777, 1044);
+                    height: pxToVw(4px, 1920);
+                    background-color: #5681B9;
+                }
+            }
+        }
+
+        .hiddenContent {
+            margin-top: pxToVw(75, 1920);
+
+            p {
+                margin-bottom: pxToVw(48px, 1920);
+            }
+
+            // Pour le premier hiddenContent
+            .organes {
+                display: flex;
+
+                .support,
+                .recherche {
+                    width: pxToPourcent(150, 1554);
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .support {
+                    top: 54px;
+                    left: 0;
+                }
+
+                .recherche {
+                    top: 135px;
+                    right: 41px;
+                }
+
+                .liste {
+                    width: pxToPourcent(1133, 1554);
+                    margin-left: pxToVw(35px, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+                        width: 100%;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+            }
+
+            /////////////////////////////////////
+            .informations {
+                display: flex;
+                margin-top: pxToVw(49, 1920);
+
+                .vide {
+                    width: pxToPourcent(184px, 1554);
+                }
+
+                .liste {
+                    width: pxToPourcent(1133, 1554);
+
+                    li {
+                        list-style-type: disc !important;
+                        width: 100%;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+
+                .chill {
+                    width: pxToPourcent(150, 1554);
+                    position: relative;
+                    top: pxToVw(102, 1920);
+                    right: pxToVw(137, 1920);
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            /////////////////////////////////////
+            .possibilites {
+                display: flex;
+                margin-top: pxToVw(49, 1920);
+
+                .liste {
+                    width: pxToPourcent(1133, 1554);
+                    margin-left: pxToVw(35px, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+                        width: 100%;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+
+                .interactivite {
+                    width: pxToPourcent(150, 1554);
+                    position: relative;
+                    top: pxToVw(102, 1920);
+                    left: 0;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.hidde {
+                display: none;
+            }
+        }
+
+        // Deuxieme Bloc Juriste
+
+    }
+
+    .membres:nth-child(2) {
+        .presentationInitial {
+            .presentation-membres {
+                &::after {
+                    display: none;
+                }
+
+                .departement {
+                    height: unset;
+                }
+
+                .liste {
+                    margin-left: pxToVw(31px, 1920);
+                    margin-bottom: pxToVw(30px, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+            }
+        }
+    }
+        // Deuxieme Bloc Culture
+
+    .membres:nth-child(3) {
+        .presentationInitial {
+            .presentation-membres {
+                &::after {
+                    display: none;
+                }
+
+                .departement {
+                    height: unset;
+                }
+            }
+        }
+    }
+        // Deuxieme Bloc Formation
+
+    .membres:nth-child(4) {
+        .presentationInitial {
+            .presentation-membres {
+                .liste {
+
+                    margin-left: pxToVw(31px, 1920);
+                    margin-bottom: pxToVw(30px, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+
+                .plus {
+                    // display: flex;
+                    align-items: center;
+                    gap: pxToVw(30, 1920);
+                    position: relative;
+                    top: pxToVw(15px, 1920);
+
+                    &>div {
+                        width: pxToVw(24, 1920);
+
+                        svg {
+                            width: 100%;
+                            fill: #5681B9;
+                            stroke: #5681B9;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    svg.rotate {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        .hiddenContent {
+
+            h4 {
+                color: #5681B9;
+                margin-bottom: pxToVw(68, 1920);
+                font-size: pxToVw(34, 1920);
+                line-height: pxToVw(34, 1920);
+                font-weight: 600;
+            }
+
+            .formation-interne {
+                display: flex;
+
+                p {
+                    width: pxToPourcent(1202, 1554);
+                }
+
+                .study {
+                    width: pxToPourcent(150, 1554);
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .listes {
+                width: pxToPourcent(1554, 1554);
+                display: flex;
+                margin-bottom: pxToVw(40, 1920);
+
+                .liste {
+                    width: pxToPourcent(600, 1554);
+                    margin-left: pxToVw(35, 1920);
+
+                    li {
+                        list-style-type: disc !important;
+                        margin-bottom: pxToVw(20, 1920);
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+                }
+            }
+
+            .formation-externe {
+                display: flex;
+
+                p {
+                    width: pxToVw(1100, 1554);
+                }
+
+                .working {
+                    width: pxToPourcent(150, 1554);
+                    position: relative;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+        // Deuxieme Bloc Marketing
+
+    .membres:nth-child(5) {
+        .presentationInitial {
+            .presentation-membres {
+                .departement {
+                    height: unset;
+                }
+
+                .listes {
+                    display: flex;
+                    gap: pxToVw(203px, 1920);
+
+                    .liste {
+
+                        margin-left: pxToVw(31px, 1920);
+                        margin-bottom: pxToVw(30px, 1920);
+
+                        li {
+                            list-style-type: disc !important;
+
+                            &::marker {
+                                color: #5681B9;
+                                font-size: pxToVw(30px, 1920);
+                            }
+                        }
+                    }
+                }
+
+                .plus {
+                    // display: flex;
+                    align-items: center;
+                    gap: pxToVw(30, 1920);
+                    position: relative;
+                    top: pxToVw(15px, 1920);
+
+                    &>div {
+                        width: pxToVw(24, 1920);
+
+                        svg {
+                            width: 100%;
+                            fill: #5681B9;
+                            stroke: #5681B9;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    svg.rotate {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+        }
+
+        .hiddenContent {
+
+            .listes {
+                width: pxToPourcent(1554, 1554);
+                display: flex;
+                margin-bottom: pxToVw(40, 1920);
+
+                .liste {
+                    // width: pxToPourcent(997, 1554);
+                    margin-left: pxToVw(35, 1920);
+
+
+                    li {
+                        list-style-type: disc !important;
+                        margin-bottom: pxToVw(20, 1920);
+
+                        &::marker {
+                            color: #5681B9;
+                            font-size: pxToVw(30px, 1920);
+                        }
+                    }
+
+                    .liste-flex {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .images {
+                            display: flex;
+                            align-items: center;
+
+                            gap: pxToVw(69px, 1920);
+
+                            .reseaux {
+                                width: PxToPourcent(170, 1554);
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+
+                            .parc {
+                                width: PxToPourcent(314, 1554);
+
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#organizationFin {
+    display: none;
+}

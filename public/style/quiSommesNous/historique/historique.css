@@ -1,0 +1,167 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #707070;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../../images/QuiSommesNous/historique/header-historique.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main .title h2 {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main #intro-historique {
+  margin-bottom: 4.6875vw;
+}
+#main #intro-historique li {
+  margin-left: 1.1627906977vw;
+}
+#main #historique .text-align {
+  text-align: center;
+}
+#main #historique .phases {
+  display: flex;
+  justify-content: space-between;
+}
+#main #historique .phases .boite {
+  width: 18.992248062%;
+  height: 9.9479166667vw;
+  border: 1px solid black;
+  border-radius: 1.1979166667vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#main #historique .phases .boite .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25vw;
+  line-height: 1.0416666667vw !important;
+  padding-top: 0.5208333333vw;
+}
+#main #historique .phases .boite .content .title {
+  font-weight: bold;
+}
+#main #historique .phases .boite .content .plus {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  font-size: 1.3020833333vw;
+  line-height: 1.5625vw;
+  padding: 0 0.4166666667vw;
+  position: absolute;
+  bottom: 0.5208333333vw;
+  cursor: pointer;
+}
+#main #historique .phases .boite .phase-suivante {
+  width: 0.625vw;
+  display: inline-block;
+  position: absolute;
+  top: 3.5416666667vw;
+  right: -0.78125vw;
+}
+#main #historique .phases .boite .phase-suivante img {
+  width: 100%;
+}
+#main #historique .phase-content .hidden-content {
+  width: 38.992248062%;
+  border: 1px solid black;
+  border-radius: 1.1979166667vw;
+  position: relative;
+  margin-top: 1.0416666667vw;
+  display: none;
+  padding: 1.3020833333vw 1.0416666667vw 0 1.5625vw;
+  font-size: 1.3541666667vw;
+  line-height: 1.875vw !important;
+}
+#main #historique .phase-content .hidden-content .moins {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translateX(-85%);
+  position: relative;
+  top: 0vw;
+  left: 50%;
+  cursor: pointer;
+  line-height: 1.0416666667vw;
+  padding: 0 0.4166666667vw;
+  padding-bottom: 0.3125vw;
+  margin-bottom: 0.625vw;
+}
+#main #historique .phase-content .hidden-content.display {
+  display: block;
+}
+
+.left-264 {
+  position: relative;
+  left: 13.75vw;
+}
+
+.left-521 {
+  position: relative;
+  left: 27.1354166667vw;
+}
+
+.left-787 {
+  position: relative;
+  left: 40.9895833333vw;
+}
+
+.p1 {
+  background-color: #D4E6DC;
+}
+
+.p2 {
+  background-color: #E6E6D4;
+}
+
+.p3 {
+  background-color: #FFFFE0;
+}
+
+.p4 {
+  background-color: #FFF2E0;
+}
+
+.p5 {
+  background-color: #FFD0C6;
+}
+
+#organizationDebut {
+  display: none !important;
+}
+
+#organizationFin {
+  display: none !important;
+}
+
+#partenaire {
+  display: none !important;
+}
+
+/*# sourceMappingURL=historique.css.map */

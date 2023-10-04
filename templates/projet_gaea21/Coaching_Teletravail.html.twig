@@ -1,0 +1,81 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/CoachingTeletravail/projetGaea21_Coaching_Teletravail.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/CT
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<h2>Coaching télétravail<h2>
+	</div>
+
+	<section class="intro-ct">
+		<article class='partie1'>
+			<div class='img-maison'>
+				<img src="{{asset('images/PagesProjets/page_ct/img-maison.png')}}" alt='une maison avec un bonhomme sur un ordinateur'>
+			</div>
+			<div class="text">
+				<p class="text1">gaea21 propose un projet visant à accompagner les salariés et les organisations au travers d'un <b>programme de prévention</b> pour le éveloppement de leurs <b>potentiels,</b> de leur <b>savoir faire,</b> et de leur <b>résilience</b> face à la <b>problématique du télétravail.</b></p>
+				<p class="text2">Avec les avancées technologiques, le télétravail apparaît desormais comme une <b>nouvelle forme de travail conventionnel.</b> Les entreprise ayant mis en place un tel mode de travail observent des résultats variés mais conservent tout de même leur productivité.</p>
+			</div>
+		</article>
+		<article class="partie2">
+			<div class='img-main'>
+				<img src="{{asset('images/PagesProjets/page_ct/img-main.png')}}" alt='une maison avec un bonhomme sur un ordinateur'>
+			</div>
+			<div class="text">
+				<p class="text1">Cependant, les salariés ont besoin d'<b>accompagnement spécifique</b> afin de conserver une vie personnelle lorsqe le travail s'effectue à domicile afin d'aider à la preservation du bien-être des salariés et la productivité des entreprises.</p>
+				<p class="text2">Le projet coaching télétravail fais partie des projets internes de formation de gaea21. Il a pour but de mettre en place une <b>démarche d'accompagnement pour le bien-être des salariés travaillant hors de l'organisation</b> (domicile et autres) et le <b>maintien de la productivité</b> optimal des entreprises.</p>
+			</div>
+		</article>
+	</section>
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Coaching télétravail' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Coaching Télétravail'  
+				})}}" >
+	</div>
+{% endblock %}

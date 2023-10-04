@@ -1,0 +1,131 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    {{ encore_entry_link_tags('SmallBtnApp') }}
+    <link href="{{ asset('style/coaching/humain_av_pt_ap/humain_av_pt_ap.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+    <a id="prevArrow" data-link="/coaching/humain"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section class="projet" id="humainApres">
+        
+            <h2>Le cycle de vie du gaeien / humain <span>après</span> !</h2>
+            <div><p class="projetDesc">Tout membre du staff de gaea21 se voit proposer, à la fin de sa collaboration, la possibilité d’intégrer le programme alumni de notre organisation. L’après gaea21 et notre programme Alumni se distinguent par 2 types de participation, simple ou avec cotisation.</p></div>
+
+            <div class="stepsContainer">
+
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                
+                <div class="progressContainer">
+                
+                    <div class="progression" id="progression"></div>
+
+                    <div class="circle active"><p class="apres">Alumni</p></div>
+
+                </div>
+
+            </div>
+                    
+    </section>
+
+</main>
+
+<div id="carrousel">
+
+    <button id="g"><a id="lien_avant">&#8249;</a></button>
+
+    <div id="container">
+
+        <div class="slide">
+
+            <div class="slideContainer center">
+                
+
+                    <h3>Alumni</h3>
+
+                    <p>Découvrez notre programme alumni :</p>
+
+            </div>
+
+            <div class="slideContainer">
+
+                <div class="slideImg"><img class="apres1" src="{{ asset('images/coaching/humain/apres1.png') }}"></div>
+
+                <div class="smallBtn" data-txt="Découvrir" data-link="#"></div>
+
+                <div class="slideImg"><img class="apres2" src="{{ asset('images/coaching/humain/apres2.png') }}"></div>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    
+    <button id="d" disabled><a id="lien_suivant">&#8250;</a></button>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('carrouselCoachingApres') }}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+    {{ encore_entry_script_tags('SmallBtnApp') }}
+{% endblock %}

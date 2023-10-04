@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block title 'Formulaire dynamique' %}
+     {% block javascripts %}
+ 
+        {% endblock %}
+ {% block body %}
+
+ <form action="{{ path('formulaire') }}" method="post" id="formulaire" >
+
+<div class="row">
+   <div class="col s4">
+      <input type="submit" name="ajouter" value="Ajouter Section" class="btn btn-primary w-50">
+   </div>
+
+   <div class="col s4">
+      <input type="submit" name="modifier" value="Modifier Section" class="btn btn-primary w-50">
+   </div>
+   
+   <div class="col s4">
+      <input type="submit" name="valider" value="valider Section" class="btn btn-primary w-50">
+   </div>
+</div>
+
+</form>
+
+{% endblock %}

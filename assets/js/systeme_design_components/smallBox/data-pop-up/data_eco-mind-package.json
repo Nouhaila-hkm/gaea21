@@ -1,0 +1,79 @@
+[{
+        "id": 0,
+        "title": "Contrat d'accompagnement association",
+        "text": "Secrétariat et administration + ressources humaines + comptabilité.",
+        "image": "/images/PagesProjets/page_em/package-small-box/contrat-acc-asso.png"
+    },
+    {
+        "id": 1,
+        "title": "Contrat d'accompagnement start-up",
+        "text": "Secrétariat et administration + ressources humaines + comptabilité + services juridiques.",
+        "image": "/images/PagesProjets/page_em/package-small-box/contrat-acc-start-up.png"
+    },
+    {
+        "id": 2,
+        "title": "Contrat d'accompagnement entreprise",
+        "text": "Site + dépliant + cartes de visite.",
+        "image": "/images/PagesProjets/page_em/package-small-box/contrat-acc-entreprisse.png"
+    },
+    {
+        "id": 3,
+        "title": "Package communication light",
+        "text": "Logo + site + page Facebook + dépliant + cartes de visite + stratégie / plan marketing (8h).",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-comm-light.png"
+    },
+    {
+        "id": 4,
+        "title": "Package communication plus",
+        "text": "Secrétariat et administration + ressources humaines + comptabilité.",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-comm-plus.png"
+    },
+    {
+        "id": 5,
+        "title": "Package administratif light",
+        "text": "Secrétariat et administration + ressources humaines + comptabilité.",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-admin-light.png"
+    },
+    {
+        "id": 6,
+        "title": "Package administratif plus",
+        "text": "Logo + site CMS + page linkedin, twitter + brochure + papeterie + stratégie / plan mkt. (20h).",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-admin-plus.png"
+    },
+    {
+        "id": 7,
+        "title": "Package lancement (association)",
+        "text": "Devis",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-lancement(asso).png"
+    },
+    {
+        "id": 8,
+        "title": "Package stabilité (association)",
+        "text": "Logo + site + page Facebook + dépliant + cartes de visite + stratégie / plan marketing (10h)..",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-stabilite(asso).png"
+    },
+    {
+        "id": 9,
+        "title": "Package maturité (association)",
+        "text": "Logo + site CMS + page linkedin, twitter + brochure + papeterie + stratégie / plan mkt. (20h).",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-maturité(asso).png"
+    },
+    {
+        "id": 10,
+        "title": "Package lancement (start-up)",
+        "text": "Devis",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-lancement(start-up).png"
+    },
+    {
+        "id": 11,
+        "title": "Package stabilité (start-up)",
+        "text": "Logo + site + page Facebook + dépliant + cartes de visite + stratégie / plan marketing (10h)..",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-stabilité(start-up).png"
+    },
+    {
+        "id": 12,
+        "title": "Package maturité (start-up)",
+        "text": "Logo + site CMS + page linkedin, twitter + brochure + papeterie + stratégie / plan mkt. (20h).",
+        "image": "/images/PagesProjets/page_em/package-small-box/package-maturité(start-up).png"
+    }
+]

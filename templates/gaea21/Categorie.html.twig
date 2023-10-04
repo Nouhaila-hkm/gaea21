@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+   {# {% include "/main/topbar.html.twig" %}   #}
+<br>
+<br>
+  <div class="row">
+  <div class="container">
+    <div class="card-panel col l8 m8 s12 transparent">
+    <br>
+    <span class="card-title">AJOUTER CATHEGORIE</span>
+     {{ form_start(formCategorie) }}
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons textColor prefix">
+           list
+          </i>
+           {{ form_widget(formCategorie.name) }}
+        </div>
+        <div class="col s6">
+         <button type="reset" class="btn red waves-effect waves-light" style="border-radius:100px; margin-top:10%;">
+          <i class="material-icons">cancel</i>
+          Annuler
+         </button>
+         <button type="submit" class="btn gaeaColor" style="border-radius:100px; margin-top:10%;">
+           <i class="material-icons">done</i>
+          Valider
+         </button>
+        </div>
+      </div>
+     {{ form_end(formCategorie) }}
+    </div>
+    </div>
+</div>
+{% endblock %}

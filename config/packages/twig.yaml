@@ -1,0 +1,16 @@
+twig:
+  default_path: "%kernel.project_dir%/templates"
+  # config/packages/twig.yaml
+  form_themes: ["bootstrap_5_layout.html.twig"]
+  globals:
+    URL_API: "%env(URL_API)%"
+    URL_SITE: "%env(URL_SITE)%"
+  paths:
+    "public/build": builds
+    "%kernel.project_dir%/public/Image": mailerImg
+    "%kernel.project_dir%/public/style/mailer": mailerStyles
+    # config/packages/twig.yaml
+
+when@test:
+  twig:
+    strict_variables: true

@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Vos annonces{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('editAnnounce') }}
+{% endblock %}
+
+{% block body %}
+    <a href="{{ path('listAnnounce') }}">Liste de vos annonces</a>
+
+    <h3>{{ announce.title }}</h3>
+
+    {% if announce.collaborators is not empty %}
+        <label for="collaboratorsMenu" class="collaboratorsMenu">
+            <h5>Collaborateurs</h5>
+        </label>
+        <input type="checkbox" id="collaboratorsMenu" role="button">
+        <ul class="collaboratorSubMenu">
+            {% for collaborator in announce.collaborators %}
+                <li>{{ collaborator[0] }}  {{ collaborator[1] }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Aucun collaborateur.
+    {% endif %}
+    <ul>
+        {% if announce.announceSections is not empty %}
+            {% for section in announce.announceSections %}
+                <li>
+                    
+                    <label for="sectionMenu{{ loop.index }}" class="sectionMenu">
+                        <h5>Section n°{{ loop.index }}</h5>
+                    </label>
+                    <input type="checkbox" id="sectionMenu{{ loop.index }}" role="button">
+                    <ul class="sectionSubMenu">
+                        <li>
+                            {% if section.title is defined %}
+                                <b>{{ section.title }}</b>
+                            {% endif %}
+                        </li>
+                        <li class="liSubMenu">
+                            {% if section.content is defined %}
+                                {{ section.content|raw }}
+                            {% endif %}
+                        </li>
+                    </ul>
+                </li>
+            {% endfor %}
+        {% else %}
+            Aucune section.
+        {% endif %}
+    </ul>
+
+    <a href="{{ path('editAnnounce', {id: announce.id}) }}">Editer</a>
+    <a href="{{ path('pdfGenerator', {id: announce.id}) }}">Exporter</a>
+    <a href="{{ path('deleteAnnonce', {id: announce.id}) }}" onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet article ?')">Supprimer</a>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('editAnnounce') }}
+    {% endblock %}
+
+{% endblock %}

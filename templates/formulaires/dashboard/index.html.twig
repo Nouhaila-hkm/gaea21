@@ -1,0 +1,16 @@
+{% extends 'formulaires/base.html.twig' %}
+
+{% block title 'Forms' %}
+
+{% block stylesheets %}
+	{{ encore_entry_link_tags('FormList') }}
+{% endblock %}
+
+{% block body %}
+
+	<div id="Forms"></div>
+	{% block javascripts %}
+		{{ encore_entry_script_tags('FormList') }}
+	{% endblock %}
+
+{% endblock %}

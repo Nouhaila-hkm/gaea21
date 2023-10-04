@@ -1,0 +1,98 @@
+@import "formStyles.scss";
+
+#main {
+  margin-top: 4rem;
+  .previousButton {
+    border: none;
+    background: transparent;
+    &:hover {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}
+#mainForm {
+  input,
+  textarea,
+  select {
+    font-size: 1.3rem;
+    border-radius: 0.35rem;
+  }
+  .error {
+    input,
+    textarea,
+    select {
+      border: 1px solid #ff6633;
+      background-color: #ff66330d;
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      box-shadow: 0 0 0 0.1rem #ff663340;
+    }
+  }
+  .form-field-error {
+    font-size: 1rem;
+    color: #ff6633;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
+.formulaireExpansion {
+  h2 {
+    display: inline-block;
+    padding-bottom: 0.43rem;
+    border-bottom: 0.2rem solid $primary-green;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  p {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.1rem $main-color-shadow;
+  border-color: $primary-green;
+}
+
+.sectionHeader {
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+.formulaireHeader {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.formulaireDescription {
+  font-size: 1.75rem;
+}
+
+.positiveForm {
+  .form-control.label {
+    font-size: 1.35rem;
+  }
+  .form-control.answer {
+    border: 1px solid #98984b;
+    background-color: #ffffff;
+    font-size: 1.35rem;
+  }
+  .form-control.answer:hover,
+  .form-control.answer:hover,
+  .form-control.answer:hover {
+    box-shadow: 0 0 0 0.1rem #98984b40;
+  }
+}

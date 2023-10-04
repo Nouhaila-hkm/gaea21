@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formations Internes
+{% endblock %}
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('topBar') }}
+	{{ encore_entry_link_tags('FormationsCertifiantes') }}
+
+	<link href="{{ asset('style/coaching/coachingCarrieres/coachingCarrieres.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block body %}
+	{% include "/components/_topbar.html.twig" %}
+
+
+	<div id="main"></div>
+
+	{% block javascripts %}
+		{{ parent() }}
+		{{ encore_entry_script_tags('FormationInterne',)}}
+
+	{% endblock %}
+
+{% endblock %}

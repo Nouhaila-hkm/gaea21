@@ -1,0 +1,24 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+
+{% block stylesheets %} 
+{{parent()}}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/projetGaea21.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projets pilotes
+{% endblock %}
+
+
+
+		    {% block header %}
+          <div class="header-background">
+            <div class="header-content">
+              <h1 class="header-title">Projets</h1>
+              <p class="header-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus, accusamus, hic sit et officia. Voluptate, eaque. Neque, exercitationem.</p>
+            </div>
+          </div>
+        {% endblock %}

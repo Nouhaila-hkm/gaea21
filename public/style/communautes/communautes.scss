@@ -1,0 +1,266 @@
+@import '/assets/styles/function';
+
+#communautes {
+
+    @import '/assets/styles/humansGaea21/home/gaea21Menu.scss';
+
+    .sectionHeadCommunautes {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+        background: transparent url('/assets/images/communautes/header.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            background: transparent;
+            display: block;
+            
+
+            h1 {
+              
+                font-weight: bold;
+                font-size: pxToVw(70px, 1920px);
+                color: #343434;
+                float: right;
+                margin-right: pxToPourcent(74px, 1920px);
+               
+
+            }
+        }
+        
+    }
+
+.member {
+
+    .row {
+        margin: pxToPourcent(130px, 1920px);
+
+        .img {
+            width: 600px;
+
+            img {
+                width: 100%;
+                margin-right: 10px;
+            }
+        }
+
+        .text {
+            margin-left: 20px;
+            justify-content: center;
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.communities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: pxToPourcent(170px,1920px);
+    justify-content: center;
+    
+   
+    .links {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #494736;
+        height: pxToVw(300px, 1920px);
+        width: pxToVw(400px, 1920px);
+        border-radius: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        
+        &:hover {
+            background-color: #B5B27D;
+        }
+    }
+
+}
+
+.buts {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+    h3 {
+        font-weight: bold;
+        font-size: 32px;
+        text-align: center;
+        margin-top: 120px;
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content:flex-start;
+        flex-direction: row;
+        text-align:left;
+        height: 200px;
+        width: 500px;
+        background-color: #E2DDC4;
+        border-radius: 15px;
+        margin: 50px;
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    }
+
+}
+
+.activities-container {
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   
+  
+    .activity {
+       
+        height: 200px;
+        width: 300px;
+        color: white;
+   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+        opacity: 0.9;
+        margin: 20px;
+
+    }
+
+    .image-1 {
+        background: transparent url('/assets/images/communautes/concerts.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+        .image-2 {
+        background: transparent url('/assets/images/communautes/garden_parties.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+        .image-3 {
+        background: transparent url('/assets/images/communautes/jeux.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        }
+  
+   
+
+}
+
+//carrousel styling
+
+.icons-container {
+    height: pxToPourcent(400px, 1920px);
+    position: relative;
+
+    margin-bottom: 200px;
+    width: 1080px;
+    margin-left: 150px;
+    margin-top: 50px;
+
+
+    .control {
+        list-style: none;
+        height: inherit;
+      }
+      .control li {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        color: #B5B27D;
+        padding: 12px 20px;
+        cursor: pointer;
+         i {
+            font-size: pxToVw(32px, 1920px);
+         }
+        
+      }
+    
+      .control li.prev {
+        left: pxToPourcent(-70px, 1920px);
+      }
+      .control li.next {
+        right: pxToPourcent(-120px, 1920px);
+      }
+
+      
+      
+}
+
+ 
+
+//end of carrousel styling
+
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid #B5B27D;
+        height: 300px;
+        width: 250px;
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+        }
+        .voisin {
+            width: 60%;
+        }
+
+        button {
+            background-color: #B5B27D;
+            border: none;
+            border-radius: 5px;
+            font-size: 10px;
+            width: 220px;
+            height: 50px;
+            margin-left: 15px;
+            margin-top: 15px;
+            cursor: pointer;
+           
+        }
+    }
+
+
+
+
+    .valeurs-icons-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 200px;
+     
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: pxToPourcent(130px, 1920px);
+    }
+
+
+
+    .activity-title {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+    }
+}

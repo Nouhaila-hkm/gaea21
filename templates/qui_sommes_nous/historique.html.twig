@@ -1,0 +1,178 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/historique/historique.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Hisorique
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Historique</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+
+{% endblock %}
+
+
+{% block main %}
+
+	<div class="title">
+		<h2>Qu'est-ce que gaea21 ?<h2></div>
+
+			{# Texte d'into #}
+			<article id="intro-historique">
+				<p>Plus de 200 personnes ont participé à l'aventure gaea21 et apporté leur contribution depuis décembre 2005.</p>
+				<ul>
+					<li>> 5 départements, un comité pluridisciplinaire de 7 membres et un conseil des sages.</li>
+					<li>>
+						<b>Une approche méthodologique</b> alliant analyse systémique, travail en équipe pluridisciplinaire et gestion de projets.</li>
+					<li>> La création de plus de 30 emplois directs et indirects depuis 2005.</li>
+					<li>> La création de plus de 10 outils pour le développement durable (notamment des bracelets éco-conscience, outils de gestion de compétences, programmes de développement durable et outils coûts-bénéfices pour entreprises, etc...).</li>
+					<li>> 97 à 99% des personnes à la recherche d'un emploi en ont trouvé un à la suite de leur passage chez gaea21.</li>
+					<li>> 8 entreprise coaché depuis 2005.</li>
+				</ul>
+			</article>
+
+			<div id="historique">
+				<div class="phases">
+
+					<div class="boite p1" >
+						<div class="content">
+							<p>Phase 1</p>
+							<p class="title text-align">Etude</p>
+							<p class="plus" data-id="1">+</p>
+						</div>
+						<div class="phase-suivante">
+							<img src="{{asset('images/quiSommesNous/historique/next.png')}}" alt="">
+						</div>
+					</div>
+
+
+					<div class="boite p2" >
+						<div class="content">
+							<p>Phase 2 + 3</p>
+							<p class="title text-align">Mise en place</p>
+							<p class="plus" data-id="2">+</p>
+						</div>
+						<div class="phase-suivante">
+							<img src="{{asset('images/quiSommesNous/historique/next.png')}}" alt="">
+						</div>
+					</div>
+
+					<div class="boite p3" >
+						<div class="content">
+							<p>Phase 4</p>
+							<p class="title text-align">Test et consolidation</p>
+							<p class="plus" data-id="3">+</p>
+						</div>
+						<div class="phase-suivante">
+							<img src="{{asset('images/quiSommesNous/historique/next.png')}}" alt="">
+						</div>
+					</div>
+
+					<div class="boite p4" >
+						<div class="content">
+							<p>Phase 5</p>
+							<p class="title text-align">Décollage</p>
+							<p class="plus" data-id="4">+</p>
+						</div>
+						<div class="phase-suivante">
+							<img src="{{asset('images/quiSommesNous/historique/next.png')}}" alt="">
+						</div>
+					</div>
+
+					<div class="boite p5" >
+						<div class="content">
+							<p>Phase 6</p>
+							<p class="title text-align">Réalisation et notoriété</p>
+							<p class="plus" data-id="5">+</p>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="phase-content">
+
+					<div class="hidden-content" data-id="1">
+						<p>- Analyse du marché du developpement durable</p>
+						<p>- Création du business et du modèle scientifique de gaea21</p>
+						<p class="moins">-</p>
+					</div>
+
+					<div class="hidden-content left-264 " data-id="2">
+						<p><b>Projet&nbsp;:</b>
+							<ul>
+								<li>- Premiers projets</li>
+								<li>- Création des outils de gestion gaea21</li>
+							</ul>
+						</p>
+						<p><b>Events&nbsp;:</b>
+							<ul>
+								<li>- 1ere garden-party</li>
+								<li>- Concert caritatif</li>
+								<li>- Camps de vacances DD</li>
+								<li>- Journée campagne ouverte</li>
+							</ul></p>
+						<p class="moins">-</p>
+					</div>
+
+					<div class="hidden-content left-521" data-id="3">
+						<p><b>Projet&nbsp;:</b>
+							<ul>
+								<li>- Implémentation outils de gestion gaea21</li>
+								<li>- Mandats test par cible (état, entreprise, ONG) répertoire</li>
+								<li>- Lancement du projet Répertoire (phase d'étude)</li>
+							</ul>
+						</p>
+						<p><b>Events&nbsp;:</b>
+							<ul>
+								<li>- Cafés DD1</li>
+								<li>- Afterworks (Green drinks)</li>
+							</ul></p>
+						<p class="moins">-</p>
+					</div>
+
+					<div class="hidden-content left-787" data-id="4">
+						<p><b>Projet&nbsp;:</b>
+							<ul>
+								<li>- Etude du marché et des acteurs du DD</li>
+								<li>- Projet Répertoire Vert phase 2 (phase réalisation) + lancement Répertoire niveau 0</li>
+								<li>- Etats généraux du DD</li>
+								<li>- Création du mouvement + association GRD2020</li>
+								<li>- Lancement spin-off eco-minds</li>
+							</ul>
+						</p>
+						<p class="moins">-</p>
+					</div>
+
+					<div class="hidden-content left-787" data-id="5">
+							<ul>
+								<li>- Répertoire Vert</li>
+								<li>- Centre de gestion de carrière</li>
+								<li>- gaea21 days</li>
+							</ul>
+						</p>
+						<p class="moins">-</p>
+					</div>
+
+				</div>
+			</div>
+
+
+		{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			<script src="{{ asset('js/pagesHistorique/story.js') }}" ></script>
+		{% endblock %}
+

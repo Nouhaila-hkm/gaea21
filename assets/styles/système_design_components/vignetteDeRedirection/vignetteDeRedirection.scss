@@ -1,0 +1,154 @@
+@use "sass:math";
+@import "../../_function";
+
+
+// Dans le cas de la vignette active
+
+.vignette {
+    height: pxToVw(220px, 1920);
+    width: pxToVw(220px, 1920);
+    border-radius: 13px;
+
+    box-shadow: 0px 3px 6px #343434;
+    position: relative;
+    overflow: hidden;
+
+    .link {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+        text-decoration: none;
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            background-color: transparent;
+            z-index: 200;
+            border-radius: 13px;
+
+            .description{
+                display: none;
+                transition: all .3s;
+                color: white;
+                text-decoration: none;
+            }
+
+            object {
+                width: pxToPourcent(109.646, 220);
+                transform: translateX(50%);
+                z-index: 20;
+                cursor: pointer;
+
+            }
+
+            &:hover {
+                background-color: #989751;
+
+                .card-header {
+                    color: white;
+                }
+            }
+        }
+
+
+    }
+
+    .card-header {
+        font-size: pxToVw(24, 1920);
+        line-height: pxToVw(29, 1920);
+        text-align: center;
+        padding-top: pxToVw(30, 1920);
+        margin-bottom: pxToVw(23px, 1920);
+        color: #989751;
+    }
+
+
+
+    // .svg {
+    //     // display: block;
+    //     // width: 100%; 
+    // }
+
+    // &:hover {
+    //     background-color: #989751;
+
+    //     .card-header {
+    //         color: white;
+    //     }
+    // }
+
+}
+
+
+// Dans le cas de la vignette disabled
+
+.disabled_vignette {
+    height: pxToVw(220px, 1920);
+    width: pxToVw(220px, 1920);
+    border-radius: 13px;
+    box-shadow: 0px 3px 6px #343434;
+    position: relative;
+    background: #E0E0E0;
+    opacity: .5;
+
+    .img {
+        width: 40%;
+        display: inline-block;
+        transform: translateX(75%);
+    }
+
+
+    &:hover {
+        opacity: 1;
+    }
+
+    .card-header {
+        font-size: pxToVw(24, 1920);
+        line-height: pxToVw(29, 1920);
+        text-align: center;
+        padding-top: pxToVw(30, 1920);
+        margin-bottom: pxToVw(23px, 1920);
+    }
+
+    .svg {
+        display: block;
+        width: 100%;
+    }
+
+
+
+    .disabled {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        overflow: hidden;
+        border-radius: 13px;
+
+        .msg {
+            font-size: pxToVw(24px, 1920);
+            margin: 0 pxToVw(38px, 1920);
+            text-align: center;
+            opacity: 0;
+        }
+    }
+
+    &:hover .disabled {
+        background: #E0E0E0;
+    }
+
+    &:hover .disabled .msg {
+        opacity: 1;
+    }
+
+}

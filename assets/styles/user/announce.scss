@@ -1,0 +1,35 @@
+/* Announce show */
+
+.collaboratorSubMenu, .sectionSubMenu{
+    display: none;
+}
+
+input[id=collaboratorsMenu]:checked ~ .collaboratorSubMenu{
+    display: block;
+}
+
+input[type=checkbox]:checked ~ .sectionSubMenu{
+    display: block;
+}
+
+#submitAnnounceMessage{
+    font-size: 2rem;
+    text-align: center !important;
+    color: #969749 !important;
+    font-weight: bold !important;
+}
+
+.contentSectionView ul > li, .liSubMenu ul li{
+    list-style-type: initial !important;
+}
+
+.liSubMenu ol{
+    padding-left: 0 !important;
+}
+
+.sectionSubMenu, .collaboratorSubMenu{
+    margin-left: 2rem !important;
+}
+
+
+

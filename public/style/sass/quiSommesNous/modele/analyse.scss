@@ -1,0 +1,198 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+    display: none;
+}
+
+#organizationFin {
+    display: none;
+}
+
+
+.img_toto{
+    width: 50vw;
+    margin-top: 3%;
+    margin-left: pxToVw(417, 1920);
+    margin-right: pxToVw(452, 1920);
+}
+
+.img_titre_analyse{
+    width: 50vw;
+    margin-top: 5%;
+    margin-left: pxToVw(400, 1920);
+    margin-right: pxToVw(410, 1920);
+}
+
+.img_cycle_vie{
+    width: 50vw;
+    margin-top: 3%;
+    margin-left: pxToVw(483.5, 1920);
+    margin-right: pxToVw(538.5, 1920);
+}
+
+
+.puces{
+    list-style-type: disc !important;
+    margin-left: pxToVw(170, 1920);
+    margin-right: pxToVw(315, 1920);
+}
+
+// ---------------------------------------------
+
+.img_lineaire{
+    width: 13vw;
+    margin-top: -15vw;
+    margin-bottom: 2vw;
+    margin-left: pxToVw(1500, 1920);
+    margin-right: pxToVw(300, 1920);
+}
+
+
+.img_valeur{
+    width: 35vw;
+    margin-top: 2vw;
+    margin-left: pxToVw(360, 1920);
+    margin-right: pxToVw(900, 1920);
+    margin-bottom: 15vw;
+
+}
+
+.img_lean_branch{
+
+    width: 25vw;
+    margin-top: -55vw;
+    margin-left: pxToVw(1100, 1920);
+    margin-right: pxToVw(240, 1920);
+
+}
+
+
+.img_sir{
+    width: 35vw;
+    margin-top: 2vw;
+    margin-left: pxToVw(315,1920);
+    margin-right: pxToVw(315,1920);
+    margin-bottom: 2vw;
+}
+
+
+.lean_title{
+    margin-bottom: 3vw !important   ;
+}
+
+
+
+.lean_chevrons{
+
+    margin-left: pxToVw(170, 1920);
+    margin-right: pxToVw(315, 1920);
+}
+
+
+
+
+// ---------------------------------------------------------------------------------
+
+
+.img_behavior_sir{
+    width: pxToVw(1290, 1920);
+    margin-top: 2vw;
+    margin-left: pxToPourcent(315, 1920);
+    margin-right: pxToVw(315, 1920);
+    margin-bottom: 2vw;
+}
+
+.img_behavior{
+    width: 20vw;
+}
+
+.behavior_margin{
+    margin-left: pxToPourcent(315,1920);
+    margin-right: pxToPourcent(315,1920);
+    margin-top: 2vw;
+}
+
+.behavior_margineuh{
+    width: pxToVw(661, 1920);
+    margin-left: pxToVw(315, 1920);
+    margin-right: pxToVw(116, 1920);
+    height: 30vw;
+}
+
+.margin_behavior{
+
+    margin-right: pxToPourcent(200,1920) !important;
+}
+
+//--------------------------------------------------------------------
+
+
+.img_behavior_sir {
+    width: pxToVw(1290, 1920);
+    margin-top: 2vw;
+    margin-left: pxToPourcent(315, 1920);
+    margin-right: pxToVw(315, 1920);
+    margin-bottom: 2vw;
+}
+
+.img_behavior {
+    width: 20vw;
+}
+
+.accel_margin {
+    margin-left: 16.40%;
+    margin-top: 2vw;
+}
+
+.text_with_img_accel {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2% !important;
+    margin-right: 2vw !important;
+    margin-left: 3% !important;
+}
+
+//------------------------------------
+
+.coevolution_img {
+    margin-left: 16.5vw !important;
+}
+
+#hidden {
+    display: none;
+}
+
+.h2_modele {
+    margin-left: 4%;
+}
+
+.text_modal {
+    margin-bottom: 3rem;
+}
+
+.modele_img {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 2vw;
+    float: left;
+}
+
+.modele_text {
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.hidden {
+    display: none;
+}
+
+.lean {
+    width: 5vw !important;
+    margin-left: 0.5vw !important;
+}
+
+.pdca {
+    display: flex;
+}

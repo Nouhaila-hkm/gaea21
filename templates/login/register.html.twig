@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'inscription{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('form') }}
+    {{ encore_entry_link_tags('registrationForm') }}
+{% endblock %}
+
+
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+
+    <img class="header" id="register" src="/Image/inscription-individu/gaea-inscription.png">
+    <img class="avatar-register" src="/Image/user-profil/pexels-pixabay-354951.png">
+
+    <a class="returnregister" href="{{ path('login')}}">
+       <img src="/Image/forgotPassword/return.svg">
+    </a>
+
+    <div class="family">
+        <p class="register-info">Formulaire d’inscription Individu/ Famille</p>
+        <p class="perso">Mes informations personnelles<span class="info-required">*informations obligatoires</span></p>
+    </div>
+
+    <div class="formRegistration">
+    <div id="registrationForm"></div>
+    </div>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('form') }}
+        {{ encore_entry_script_tags('registrationForm') }}
+    {% endblock %}
+{% endblock %}

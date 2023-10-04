@@ -1,0 +1,50 @@
+{% apply inline_css(source('@builds/editAnnounce.css')) %}
+    <html>
+        <head>
+            <meta charset="UTF-8">
+{#             <style>
+                @page {
+                    margin: 100px 25px;
+                }
+
+                header {
+                    position: fixed;
+                    top: -60px;
+                    height: 50px;
+                    color: white;
+                    text-align: center;
+                    line-height: 35px;
+                }
+
+                footer {
+                    position: fixed;
+                    bottom: -60px;
+                    height: 50px;
+                    background-color: #752727;
+                    color: white;
+                    text-align: center;
+                    line-height: 35px;
+                }
+            </style>
+        </head> #}
+
+        <body>
+            {# <header><img src="public/imagesgaea21/logoGaea21.png' }}" alt="logo Gaea21" /></header>
+            <footer>footer</footer> #}
+            <div class="mainPdf">
+                <p class="refAnnouncePdf">Référence: {{ announce.reference }}</p>
+
+                <h2 class="titleAnnouncePdf">{{ announce.title }}</h2>
+
+                {% for section in announce.announceSections %}
+                    {% if section.title is defined %}
+                        <h4 class="titleSectionPdf">{{section.title}}</h4>
+                    {% endif %}
+                    {% if section.content is defined %}
+                        <p class="contentSectionPdf">{{section.content|raw}}</p>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </body>
+    </html>
+{% endapply %}

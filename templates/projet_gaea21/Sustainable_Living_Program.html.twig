@@ -1,0 +1,124 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+{{encore_entry_link_tags('rectBtnApp') }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/SLP/projetGaea21_slp.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/SLP
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<div class="logo">
+			<img class="project-logo" src="{{asset('images/PagesProjets/page_slp/logoSLP.png')}}" alt='logo SLP'>
+		</div>
+		<h2>Sustainable Living<br> Program<h2>
+	</div>
+
+	<section class="intro-slp">
+		<article class="partie-1">
+			<p class="text">Il nous reste de moins en moins de temps pour agir avant que les consequence du changement 
+			climatique ne deviennent irréversibles. Selon les scientifiques, nous avons moin de sept 
+			ans pour le faire. Pourtant, il ne faudrait que 3,5% de la population agisse pour provoquer 
+			un changement de comportement.</p>
+			<div class="img-horloge">
+				<img src="{{asset('images/PagesProjets/page_slp/horloge.png')}}" alt='Horloge qui indique le temps qui passe'>
+			</div>
+		</article>
+
+		<article class="partie-2">
+			<p class="text">Le projet <b>Sustainable Living Program</b> (SLP) a pour but de stimuler et accompagner le changement de comportement des individus et des familles. De par différent outils et programmes, son but principal est de les <b>soutenir</b> dans l'amélioration de leurs habitudes et de les <b>orientr</b> vers des choix de consommation à la fois <b>éco-responsable.</b></p>
+			<div class="img-comm">
+				<img src="{{asset('images/PagesProjets/page_slp/comm.png')}}" alt='Horloge qui indique le temps qui passe'>
+			</div>
+		</article>
+
+		<article class="partie-3">
+			<p>Ainsi, le projet <b>SLP</b> participe à diminuer l'empreinte écologique globale des individus et facilite le passage à l'économie de transition et du partage.</p>
+			<p>Le processus de changement proposé par <b>SLP</b> se base sur un modèle en <b>deux étapes.</b> Ce modèle s'articule prmièrement autour de la <b>détermination des profils</b> psycho-socio-économiques des individus, établis sur-mesure en fonction de facteurs comme les <b>habitudes comportementales,</b> l'<b>âge,</b> le <b>sexe</b> et la <b>situation professionnelle.</b></p>
+		</article>
+	</section>
+
+	<section id="processus">
+		<p>Puis, ces profils doivent etre completes par <b>8 processus</b> (activité récurrentes du quotidien des individus)&nbsp;:</p>
+		<ul class="list-processus">
+			<li class='processus'><span class='numero'>1</span>&nbsp;Se déplacer</li>
+			<li class='processus'><span class='numero'>2</span>&nbsp;Se divertir</li>
+			<li class='processus'><span class='numero'>3</span>&nbsp;S'occuper</li>
+			<li class='processus'><span class='numero'>4</span>&nbsp;Prendre soin de soi</li>
+			<li class='processus'><span class='numero'>5</span>&nbsp;Communiquer</li>
+			<li class='processus'><span class='numero'>6</span>&nbsp;Habiter</li>
+			<li class='processus'><span class='numero'>7</span>&nbsp;S'habiller</li>
+			<li class='processus'><span class='numero'>8</span>&nbsp;Manger</li>
+		</ul>
+		<p>Chaque profil interagit différement avec ces processus.</p>
+	</section>
+
+	<section id="sous-programmes">
+		<p>Ce modèle en deux étapes permet d'<b>établir un profil complet</b> aux individus ou familles afin de proposer des solutions concrètes et personnalisées, lui permettant de changer d'habitude de manière spécifique et durable par rapport à chaque dimension de son quotidien.</p>
+		<p>Le programme <b>SLP</b> est complété par plusieurs <b>sous-programme et projets spécifiques,</b><br> visant à accompagner et stimuler le changement de comportement&nbsp;:</p>
+	
+		<section class="sous-programmes">
+			<div id="btn-popup"></div>
+		</section>
+
+		<p>Grâce au <b>dashboard universel, </b>l’outil personnalisable accompagne l'expérience des individus sur la plateforme <b>SLP</b>. 
+		L’utilisateur pourra accéder facilement à tous les sous-programmes et fonctionnalités de la plateforme selon ses intérêts.</p>
+	
+	</section>
+
+	
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Sustainable Living Program' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Sustainable Living Program'  
+				})}}" >
+	</div>
+{% endblock %}
+
+{% block javascripts %}
+{{ parent() }}
+{{ encore_entry_script_tags('rectBtnApp') }}
+{% endblock %}

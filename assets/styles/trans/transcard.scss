@@ -1,0 +1,75 @@
+@import '../function';
+
+.card_flex {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.trans_card {
+    height: 13vw;
+    width: 13vw;
+}
+
+
+.bottom_card {
+    margin-bottom: 3%;
+}
+
+.top_card, .bottom_card {
+    margin-top: 3%;
+}
+
+.title_card {
+    font-weight: bold;
+}
+
+.text_card, .title_card {
+    font-size: 0.7vw;
+}
+
+.text_card {
+    line-height: 1.5;
+}
+
+.article_trans {
+    margin-bottom: 5%;
+}
+
+/*CSS pour le hover des images*/
+
+.overlay-image {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-image img {
+    vertical-align: middle;
+}
+
+.overlay-image .hover-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+
+    background-color: #98984B;
+    color: white;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.7vw;
+}
+
+.overlay-image:hover .hover-image {
+    opacity: 1;
+    cursor: pointer;
+}

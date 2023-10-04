@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+{{type}} 
+{{typeName}}
+{{label.placeholder}}
+session est {{ app.session.get('formulaire').html }}
+<label>{{label.class}}</label>
+
+<{{type}} placeholder={{label.placeholder}} />
+
+{% if (typeName == "radio") or (typeName == "chekbox") %}
+  
+{% for option in options %}
+  <p>
+    <input type={{typeName}} name="b" id="b">
+    <span for="b">{{ (option.label) }}</span>
+  </p>  
+{% endfor %}
+{% endif %}
+
+{#{type={{typeName}}}#}
+
+
+
+ <a href="/showType/edit/{{ label.id }}">Modifier</a>
+
+<a href="/sauvegarde"/>Sauvegarder</a>
+
+{% endblock %}
+
+
+

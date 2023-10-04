@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %} 
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('offres') }} 
+    {{ encore_entry_link_tags('reseau') }} 
+    {{ encore_entry_link_tags('header') }} 
+    {{encore_entry_link_tags('contenu-offre')}}
+    
+{% endblock %}
+
+
+{% block body %}
+
+
+
+    <div id="offre">
+
+    {% include "/emploi_et_stage/header.html.twig" %}
+
+            <div class="return-link">
+       <a href="{{ path('app_emploi_et_stage') }}"> <img src="{{ asset('Image/emploi_et_stage/offres/arrow-left.svg')}}" alt="">Retour</a> 
+       </div>
+
+        <div id="contenu-offre"></div>
+
+        
+
+
+    </div>
+
+
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+    {{encore_entry_script_tags('contenu-offre')}}
+{% endblock %}

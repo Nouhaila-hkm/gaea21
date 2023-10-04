@@ -1,0 +1,138 @@
+{% extends 'base.html.twig' %} 
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('emplois') }} 
+    {{ encore_entry_link_tags('header') }} 
+     {{ encore_entry_link_tags('SmallBtnApp') }}
+    
+{% endblock %}
+
+
+{% block body %}
+
+    <div id="emploi">
+    {% include "/emploi_et_stage/header.html.twig" %}
+
+     
+
+        <div class="cont">
+            <p class="p-cont-1"><b>Toutes nos offres</b></p>
+            <p class="p-cont-2">Quoi que vous cherchiez, nous sommes là pour vous aider !</p>
+        </div>
+
+        <section class="icons-container">
+            <div class="c-1">
+              <a href="#offre"><div class="icon-button color-1">
+                <img class='icon' src="{{ asset('Image/emploi_et_stage/icon-loupe.svg') }}"/>
+                <p class='p-img'>Gaea21</p>
+               </div>
+               </a> 
+               
+                <p class="title"><b>Offres gaea21</b></p>
+
+                <p class="text">Rejoignez-nous ! Découvrez toutes nos offres.</p>
+                
+            </div>
+            <div class="c-1">
+               <a href="#offres-reseau"><div class="icon-button color-2">
+                <img class='icon' src="{{ asset('Image/emploi_et_stage/icon-loupe.svg') }}"/>
+                <p class='p-img'>Réseau</p>
+               </div>
+               </a>
+               
+                <p class="title"><b>Offres réseau gaea21</b></p>
+
+                <p class="text">Retrouvez toutes les offres du réseau gaea21 et de nos partenaires.</p> 
+                
+            </div>
+            
+            <div class="c-1">
+               <a href="#demandes"><div class="icon-button color-3">
+                <img class='icon' src="{{ asset('Image/emploi_et_stage/icon-demandes.svg') }}"/>
+               </div>
+               </a>
+                <p class="title"><b>Demandes</b></p>
+
+                <p class="text">Vous ne trouvez pas ce que vous cherchez ? On a forcément des offres qui vous correspondent. N’hésitez pas à nous contacter.</p> 
+                
+            </div>
+
+            <div class="c-1">
+               <a href="#profils"><div class="icon-button color-1">
+                <img class='icon' src="{{ asset('Image/emploi_et_stage/icon-competences.svg') }}"/>
+               </div>
+               </a>
+                <p class="title"><b>Profil de compétences post gaea21</b></p>
+
+                <p class="text text-profil">Découvrez tous les types de profils et catalogues de compétences issus de gaea21.</p> 
+                
+            </div>
+
+         
+        </section>
+
+     
+
+        <section class="container-offre" id="offre">
+                <img class='offre-img' src="{{ asset('Image/emploi_et_stage/img-offres.png') }}"/>
+                
+                <div class="offre-1">
+                    <p id="p-offre-1"><b>Offres gaea21</b></p>
+                    <p id="p-offre-2">Rejoignez-nous et prenez part à nos projets innovants et durables aux côtés d'équipes pluridisciplinaires.</p>
+                   <div class="smallBtn p-offre-3" id="centrer"data-txt="Voir les offres" data-link="{{ path('app_offre') }}"></div>
+                    
+                </div>    
+  
+        </section>
+        <section class="container-reseau" id="offres-reseau">
+                
+                <div class="reseau-1">
+                    <p id="p-reseau-1"><b>Offres réseau gaea21</b></p>
+                    <p id="p-reseau-2">Retrouvez les offres de notre réseau : Répertoire Vert, Plateforme des Initiatives, Osez l'entrepreneuriat et les offres de nos partenaires.</p>
+                    <div class="smallBtn p-reseau-3" id="centrer" data-txt="Voir les offres" data-link="{{ path('app_reseau') }}"></div>
+                </div>    
+                <img class='reseau-img' src="{{ asset('Image/emploi_et_stage/img-reseau.png') }}"/>
+  
+        </section>
+        
+        <section class="container-demande" id="demandes">
+                <img class='demande-img' src="{{ asset('Image/emploi_et_stage/img-demandes.png') }}"/>
+                
+                <div class="demande-1">
+                    <p id="p-demande-1"><b>Demandes</b></p>
+                    <p id="p-demande-2">Vous souhaitez nous rejoindre ou vous avez simplement besoin d’informations ? Notre équipe est à votre écoute pour toutes vos questions.</p>
+                    {# <p id="p-demande-3"><a href='{{ path('app_demande') }}'>Faire une demande &#x203A;</a></p> #}
+                    {# <div class="smallBtn p-demande-3" id="centrer" data-txt="Faire une demande" data-link="{{ path('app_demande') }}"></div> #}
+                </div>    
+  
+        </section>
+        
+        <section class="container-off" id="profils">
+                
+                <div class="off-1">
+                    <p id="p-off-1"><b>Profil de compétences post gaea21</b></p>
+                    <p id="p-off-2">Recruteurs et entreprises, vous cherchez des talents pour vos équipes ? Ils sont passés par gaea21 : un gage de qualité.  N'hésitez pas.</p>
+                    {# <p id="p-off-3"><a href='{{ path('app_profils') }}'>Voir les profils 	&#x203A; </a></p> #}
+                    {# <div class="smallBtn p-off-3" id="centrer" data-txt="Voir les profils" data-link="{{ path('app_profils') }}"></div> #}
+                </div>    
+                <img class='off-img' src="{{ asset('Image/emploi_et_stage/img-competences.png') }}"/>
+  
+        </section>
+           
+
+    </div>
+
+
+  
+
+{% endblock %}
+
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+        {{ encore_entry_script_tags('SmallBtnApp') }}
+{% endblock %}
+
+

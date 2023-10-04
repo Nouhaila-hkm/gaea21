@@ -1,0 +1,79 @@
+// PARTIE CARROUSEL 
+const containerElement = document.getElementById("container");
+const slide = document.querySelector(".slide");
+const prevButton = document.getElementById("g");
+const nextButton = document.getElementById("d");
+const linkNext = document.getElementById("lien_suivant");
+const pathName= window.location.pathname;
+
+// PARTIE FIL DE SUIVI 
+
+const progress = document.getElementById("progression");
+const circles = document.querySelectorAll(".circle");
+
+let currentActive= 1;
+
+// PARTIE CARROUSEL
+
+nextButton.addEventListener("click", (event) => {
+    currentActive++;
+
+    if(currentActive>circles.length){
+        if(pathName==="/coaching/projet/avant"){
+            currentActive=circles.length
+            linkNext.href="/coaching/projet/pendant#projetPendant";
+        }
+        else{
+            currentActive=circles.length
+            linkNext.href="/coaching/humain/pendant#humainPendant";
+        }
+        
+    }
+
+    update();
+
+    const slideWidth = slide.clientWidth;
+    containerElement.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener("click", () => {
+    currentActive--;
+
+    if(currentActive<1){
+        currentActive=1
+    }
+
+    update();
+
+    const slideWidth = slide.clientWidth;
+    containerElement.scrollLeft -= slideWidth;
+});
+
+
+function update(){
+    circles.forEach((circle,index)=>{
+        if(index < currentActive){
+            circle.classList.add('active')
+        }
+        else{
+            circle.classList.remove('active')
+        }
+    })
+
+    const actives= document.querySelectorAll('.active');
+
+    progress.style.width=(actives.length -1 ) / (circles.length - 1)*100 +'%'
+
+    if (currentActive===1){
+        prevButton.disabled=true;
+        nextButton.disabled=false;
+    }
+    else if (currentActive===circles.length) {
+        
+        prevButton.disabled=false;
+    }
+    else{
+        prevButton.disabled=false;
+        nextButton.disabled=false;
+    }
+}

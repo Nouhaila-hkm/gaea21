@@ -1,0 +1,198 @@
+@use 'sass:math';
+@import '../../_function';
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+        background-color: #49a496;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(215, 1920);
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(36px, 1920);
+            }
+        }
+    }
+
+    ._background {
+        background-image: url('../../../../images/QuiSommesNous/header_organigramme.png');
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#main {
+    margin-bottom: 0;
+    .title {
+        h2 {
+            text-align: center;
+            margin-bottom: pxToVw(51px, 1920);
+        }
+    }
+
+    #intro-organeDecisionnel {
+        .schema-organeDecisionnel {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+#personnes {
+    width: pxToPourcent(1920, 1920);
+
+    .membres {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+
+        padding: pxToVw(112, 1920) pxToVw(183, 1920);
+
+        // margin-bottom: pxToVw(114px, 1920);
+
+        &:last-of-type{
+            margin-bottom: pxToVw(100px,1920);
+        }
+
+        &:nth-of-type(even) {
+            background-color: #FBFBF7;
+        
+            & .presentationInitial {
+                flex-direction: row-reverse;
+
+                & .presentation-membres {
+                    margin-right: pxToVw(112, 1920);
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .presentationInitial {
+            display: flex;
+
+            .name,
+            .fonction,
+            h4 {
+                color: #98984b;
+            }
+
+            .photo {
+                width: pxToPourcent(510, 1920);
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .presentation-membres {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: pxToPourcent(1044, 1554);
+
+                gap: pxToVw(20, 1920);
+
+                margin-left: pxToVw(112, 1920);
+
+                .auteur {
+                    display: block;
+                    font-style: italic;
+                }
+
+                .name {
+                    font-size: pxToVw(40px, 1920);
+                    line-height: pxToVw(34px, 1920);
+                    font-weight: 600;
+                }
+
+                .fonction {
+                    font-weight: 600;
+                }
+
+                .citation{
+                    margin: pxToVw(26px, 1920) 0;
+                    height: pxToVw(210px, 1920);
+                }
+
+                .plus {
+       
+                    align-items: center;
+                    gap: pxToVw(30, 1920);
+                    position: relative;
+                    bottom: pxToVw(15px, 1920);
+
+                    cursor: pointer;
+                    display: inline-flex;
+                    width: 26.7052767053%;
+
+                    &>div {
+                        width: pxToVw(24, 1920);
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    svg.rotate {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    width: pxToPourcent(777, 1044);
+                    height: pxToVw(4px, 1920);
+                    background-color: rgba(152, 152, 75, 0.6);
+                }
+            }
+        }
+
+        .hiddenContent {
+            margin-top: pxToVw(75, 1920);
+
+            .formation,
+            .vision,
+            .poste {
+                color: #98984b;
+                font-size: pxToVw(30px, 1920);
+                line-height: pxToVw(34px, 1920);
+                font-weight: 600;
+                margin-bottom: pxToVw(22, 1920);
+            }
+
+            p {
+                margin-bottom: pxToVw(48px, 1920);
+            }
+
+            &.hidde {
+                display: none;
+            }
+        }
+    }
+}
+
+#organizationFin {
+    display: none;
+}

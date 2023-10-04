@@ -1,0 +1,102 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Communautés{% endblock %}
+
+{% block stylesheets %}
+
+     <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+  {{ encore_entry_link_tags('communautes') }}
+    {{ parent() }}
+
+{% endblock %}
+    
+
+{% block body %}
+ {% include "/components/_topbar.html.twig" %}
+
+
+<section id="communautes">
+
+ {% include "/communautes/header.html.twig" %}
+
+
+  {% include "/communautes/sous_menu.html.twig" %}
+
+<section class="member">
+<h3 class="title">Devenez membre de la « communauté gaea21 »</h3>
+<div class="row">
+  <div class="col s6 img">
+    <img src="{{asset("images/communautes/peopleGardening.jpg")}}" alt="people gardening">
+  
+  </div>
+  <div class="col s6 text">
+  <p>Il est impératif d’agir afin de lutter contre les conséquences
+environnementales désastreuses de l’activité humaine sur la planète.</p>
+<p>Pour assurer leur efficacité, gaea21 privilégie le développement de
+solutions individuelles et collectives. La dimension collective
+représentée par les communautés vise à faciliter l’accès aux
+ressources, à disposer de solutions, à échanger et à entrer en matière
+avec des personnes partageant les mêmes valeurs que vous. La
+création de solutions collectives permet également à l’individu de
+s’impliquer dans une thématique qui l’intéresse et sur laquelle il désire
+apporter un changement.</p>
+<p>gaea21 vous propose 17 communautés, toutes étroitement liées et
+complémentaires. En rejoignant une communauté, il est possible de
+faire partie de toutes les autres. Les communautés sont les suivantes :</p>
+  </div>
+
+</div>
+
+
+</section>
+
+<section class="communities">
+<a href="{{path('dimension_humaine')}}"><div class="links"> Dimension humaine </div></a>
+<a href="{{path('valeurs')}}"><div class="links">Valeurs</div></a>
+<a href="{{path('developpement_durable')}}"><div class="links">Développement durable</div></a>
+</section>
+
+<section class="buts">
+    <h3>Buts</h3>
+    <div class="row">
+     <div class="col s6 cards">
+     <img src="{{asset("images/communautes/icons-buts/buts-1.svg")}}" alt="">
+     <p>Les informer, les sensibiliser au
+Développement Durable et leur
+permettre de s’exprimer.</p>
+</div>
+      <div class="col s6 cards">
+      <img src="{{asset("images/communautes/icons-buts/buts-2.svg")}}" alt="">
+      <p>Faire bénéficier ses membres de
+divers avantages.</p>
+</div>
+    </div>
+     
+     <div class="row">
+      <div class="col s6 cards">
+      <img src="{{asset("images/communautes/icons-buts/buts-3.svg")}}" alt="">
+                <p>Permettre à tous ses membres
+          de contribuer à la mise en
+          oeuvre du Développement
+          Durable et aux principes de
+          l’Agenda 21 à travers des
+          projets.</p>
+</div>
+      <div class="col s6 cards">
+      <img src="{{asset("images/communautes/icons-buts/buts-4.svg")}}" alt="">
+                <p>Rassembler des individus, des
+          écoles, des entreprises ou des
+          organisations (ONG, associations,
+          communes, collectivités locales ou
+          autres) autour de valeurs
+          communes et d’idées fortes.</p>
+</div>
+     </div>
+     
+</section>
+
+
+
+</section>
+
+{% endblock %}

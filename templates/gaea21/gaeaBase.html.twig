@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+  {{ parent() }}
+
+  {% include "/components/_topbar.html.twig" %}
+
+
+  <main>
+  {% block main %}
+
+  {% endblock %}
+  </main>
+
+  {# <footer> #}
+  {# {% block footer %}
+    {% include "/gaea21/footer.html.twig" %}
+  {% endblock %} #}
+  {# </footer> #}
+
+{% endblock %}

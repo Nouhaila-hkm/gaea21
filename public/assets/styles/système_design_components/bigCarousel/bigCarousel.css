@@ -1,0 +1,160 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.alice-carousel {
+  box-sizing: border-box;
+  width: 90%;
+  font-size: 1.25vw;
+  position: relative;
+  padding-bottom: 4vw;
+  padding-top: 2vw;
+}
+.alice-carousel__wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+.alice-carousel__dots {
+  display: none;
+}
+.alice-carousel__stage {
+  width: 100%;
+}
+.alice-carousel__stage-item {
+  width: 14.5833333333vw !important;
+  display: inline-block;
+  margin-right: 2.34375vw;
+}
+.alice-carousel__stage-item .item-container {
+  width: 16.9270833333vw;
+  margin: 0;
+  padding: 0;
+}
+.alice-carousel__stage-item .item-container .project {
+  width: 86.1538461538%;
+  height: 14.5833333333vw;
+  border: 1px solid #98984B;
+  border-radius: 23px;
+  color: #98984B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.alice-carousel__stage-item .item-container .project .chevron-bas {
+  width: 15.625%;
+  height: 2.34375vw;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  position: absolute;
+  top: 8.6458333333vw;
+  opacity: 0;
+}
+.alice-carousel__stage-item .item-container .project:hover {
+  background: #98984B;
+  color: white;
+}
+.alice-carousel__stage-item .item-container .project:hover ._btn-decouvrir {
+  opacity: 1;
+}
+.alice-carousel__stage-item .item-container .project p {
+  padding: 3.90625vw 3.4375vw;
+  font-size: 1.5625vw;
+  line-height: 1.875vw;
+  transition: padding-top 0.3s;
+}
+.alice-carousel__stage-item .item-container .project:hover p {
+  padding-top: 0vw;
+}
+.alice-carousel__next-btn {
+  width: initial;
+  padding: 0;
+  position: absolute;
+  top: 8vw;
+  right: 8vw;
+  z-index: 10;
+}
+.alice-carousel__next-btn-wrapper {
+  height: 2.0833333333vw;
+}
+.alice-carousel__next-btn-item {
+  color: transparent;
+}
+.alice-carousel__next-btn-item span {
+  display: inline-block;
+  width: 0.8854166667vw;
+  height: 0.78125vw;
+}
+.alice-carousel__next-btn-item [data-area]::after {
+  content: "";
+}
+.alice-carousel__prev-btn {
+  width: initial;
+  padding: 0;
+  z-index: 10;
+  position: absolute;
+  top: 8vw;
+  left: 7vw;
+}
+.alice-carousel__prev-btn-wrapper {
+  height: 2.0833333333vw;
+}
+.alice-carousel__prev-btn-item {
+  color: transparent;
+}
+.alice-carousel__prev-btn-item span {
+  display: inline-block;
+  width: 0.8854166667vw;
+  height: 0.78125vw;
+}
+.alice-carousel__prev-btn-item [data-area]::after {
+  content: "";
+}
+
+.suivant,
+.precedent {
+  width: 0.8333333333%;
+  height: 1.6145833333vw;
+  position: absolute;
+  top: 69vw;
+}
+
+.precedent {
+  left: 13vw;
+}
+
+.suivant {
+  right: 14vw;
+}
+
+._btn-decouvrir {
+  background-color: white;
+  font-size: 1.09375vw;
+  padding: 1.09375vw 2.1875vw;
+  z-index: 2;
+  color: black !important;
+  text-decoration: none !important;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  top: 8.75vw;
+  left: 2.1875vw;
+  opacity: 0;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+._btn-decouvrir .chevron-btn {
+  height: 1.40625vw;
+}
+
+.currentProject {
+  background-color: #98984B;
+  color: white !important;
+}
+.currentProject p {
+  padding-top: 1.0416666667vw !important;
+}
+
+/*# sourceMappingURL=bigCarousel.css.map */

@@ -1,0 +1,383 @@
+{% extends 'gaea21/gaeaBase.html.twig' %}
+
+{% block stylesheets %}
+    <link href="{{ asset('style/home.css') }}" rel="stylesheet"/>
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('home') }}
+    {{ encore_entry_link_tags('encart') }}
+    {{ encore_entry_link_tags('modalNewsletter') }}
+    {{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+
+    <!-- Carrousel > Text Section : Présentation gaea21 -->
+    <div id="section1">
+        <div id="carousel"></div>
+    </div>
+
+    <!-- Top Icon Cards Section : Login, Nos Communautés, Questionnaire, Themes -->
+    <section id="section2" class="white section -cards _topicon _opacityup">
+        <!-- Login -->
+        <div class="gaeaColorMiddle">
+            <img alt="Icone login" src="{{ asset('Image/icons/IconBperson.svg') }}"/>
+            <span>Le login universel de gaea21</span>
+           <a>Plus d'infos</a>
+        </div>
+        <!-- Nos communautés -->
+        <div class="gaeaGrey">
+            <img alt="Icone Communauty" src="{{ asset('Image/icons/IconBgroup.svg') }}"/>
+            <span>Nos communautés</span>
+            <a>Plus d'infos</a>
+        </div>
+        <!-- Questionnaire -->
+        <div class="gaeaCyan">
+            <img alt="Icone questionnaire" src="{{ asset('Image/icons/IconBpaper.svg') }}"/>
+            <span>Questionnaires Enquêtes Sondages</span>
+            <a>Plus d'infos</a>
+        </div>
+        <!-- Themes -->
+        <div class="gaeaDarkCyan">
+            <img alt="Icone thème" src="{{ asset('Image/icons/IconBhand.svg') }}"/>
+            <span>Thèmes</span>
+            <a>Plus d'infos</a></div>
+    </section>
+
+        
+        <!-- encart temporaire -->
+        <div id="encart">
+        <div class="container-encart"> 
+        <h2>Nouveau site en cours de lancement</h2>
+        <div class="green-container">
+        <img src="{{ asset('images/img-encart-homepage.svg') }}" alt="en construction">
+        <h4>DECOUVREZ NOTRE VERSION BETA ET SUIVEZ NOS MISES A JOUR!</h4>
+        <p>Le lancement officiel du site de gaea21 est prévu pour fin février. Jusqu’à cette date, vous aurez la possibilité de découvrir au fur et à mesure plusieurs fonctionnalités innovantes et attractives.<br> Participez! Commentez!</p>
+            <div class="form">
+            <input class="button" type="button" id="btn_discovery"value="Découvrir">
+        	<form action="/subscribe" method="POST" class="">
+			{# <input class="input flex" id="icon" style="text-indent:17px;" type="email" name="email" placeholder="Email" required> #}
+			<input class="button" type="submit" value="Inscrivez-vous">
+		</form>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- modal newsletter-->
+        <div id="modal-newsletter">
+           
+            <div class="modal-position">
+                <div class="header-modal">
+                <div>
+                    <img src="{{ asset('images/img-encart-homepage.svg') }}">
+                </div>
+                <div>
+                     <div class="close">
+                            X
+                     </div>
+                    <h4>NOUVEAU SITE EN COURS DE LANCEMENT</h4>
+                    <h3>DECOUVREZ NOTRE VERSION BETA ET SUIVEZ NOS MISES A JOUR!</h3>
+                    <p>Le lancement officiel du site de gaea21 est prévu pour fin février. <br>Jusqu’à cette date, vous aurez la possibilité de découvrir au fur et à mesure plusieurs fonctionnalités innovantes et attractives. <br>Participez! Commentez!</p>
+                    <form action="/subscribe" method="POST" class="">
+			            {# <input class="input flex" id="icon" style="text-indent:17px;" type="email" name="email" placeholder="Email" required> #}
+			            <input class="button" type="submit" value="Inscrivez-vous">
+		            </form>
+                </div>
+
+
+                </div>
+                <div class="body-header">
+                    <h2>DERNIERES NOUVEAUTES SUR LE SITE gaea21</h2>
+                    <div class="information-site">
+                        <p>Login/ profil et paramètres</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/login.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path("login")}}">Découvrir</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {# second carte #}
+                     <div class="information-site">
+                        <p>Modèle d’accompagnement gaea21</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/modele.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path('app_modele_accompagnement')}}">Découvrir</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    {# third carte #}
+                     <div class="information-site">
+                        <p>Emploi/ Stage</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/emploi_stage.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path('app_emploi_et_stage')}}">Découvrir</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                    {# fourth carte #}
+                      <div class="information-site">
+                        <p>Alumni</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/alumni.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path('humansGaea21Alumni')}}">Découvrir</a>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    {# fifth carte #}
+                      <div class="information-site">
+                        <p>Organigramme</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/organigramme.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path('app_QuiSommesNous_organigramme')}}">Découvrir</a>
+                                    
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    {# sitxth carte #}
+                     <div class="information-site">
+                        <p>Univers gaea21</p>
+                        <p>16 décembre 2022</p>
+                        <div class="carte-site">
+                            <div>
+                                <img src="{{ asset('images/modalNewsletter/universgaea.png') }}">
+                            </div>
+                            <div>
+                                <p>Vous pouvez maintenant accéder aux pages du modèle d'accompagnement de gaea21, les rubriques(formations, coaching carrière, ...)</p>
+                                <div>
+                                    <a class="button-site" href="{{path('app_QuiSommesNous_univers_gaea')}}">Découvrir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+
+                
+
+                </div>  
+
+            </div>
+            <div id="overlay"></div>
+
+        </div>
+        
+
+    <!-- Title Association pour la mise en oeuvre... -->
+    <div class="white section -text">
+        <h3 class="center">Association pour la mise en oeuvre du développement durable et de l'agenda21</h3>
+    </div>
+
+    <!-- Title Grean Coaching -->
+    <div class="gaeaColorLight section -text">
+        <h3 class="center">Green Coaching / Solutions Gaea21</h3>
+    </div>
+
+    <!-- Thin Cards Section : Individus Familles, Entreprises, Ecoles, Administrations Villes Régions, Entrepreneurs -->
+    <section id="section3" class="gaeaColorLight section -cards _thin _dark">
+        <!-- Individus Familles -->
+        <div class="white">
+            <span>Individus Familles</span>
+            <img alt="Icone famille" src="{{ asset('Image/icons/iconCfamily.svg') }}"/>
+            <a class="button">Découvrir</a>
+        </div>
+        <!-- Entreprises -->
+        <div class="white">
+            <span>Entreprises</span>
+            <img alt="Icone entreprise" src="{{ asset('Image/icons/iconCentreprise.svg') }}"/>
+            <a class="button">Découvrir</a>
+        </div>
+        <!-- Ecoles -->
+        <div class="white">
+            <span>Ecoles</span>
+            <img alt="Icone école" src="{{ asset('Image/icons/iconCschool.svg') }}"/>
+            <a class="button">Découvrir</a>
+        </div>
+        <!-- Administrations Villes Régions -->
+        <div class="white">
+            <span>Administrations Villes Régions</span>
+            <img alt="Icone administration" src="{{ asset('Image/icons/iconCcity.svg') }}"/>
+            <a class="button">Découvrir</a>
+        </div>
+        <!-- Entrepreneurs -->
+        <div class="white">
+            <span>Entrepreneurs</span>
+            <img alt="Icone entrepreneur" src="{{ asset('Image/icons/iconCentrepreneur.svg') }}"/>
+            <a class="button">Découvrir</a>
+        </div>
+    </section>
+
+    <!-- Title Trends -->
+    <div class="white section -text">
+        <h3 class="center">Trends</h3>
+    </div>
+
+    <!-- Leaf on the right side -->
+    <div class="object -rightside">
+        <img src="Image/leaf.svg" id="deco1"/>
+    </div>
+
+    <!-- Thin Cards Section : Statistiques, Politique, Actions / Programmes -->
+    <section id="section4" class="white section -cards _thin _square">
+        <!-- Statistiques -->
+        <a class="white statisticBackground">
+            <span>Statistiques</span>
+        </a>
+        <!-- Politique -->
+        <a class="white politicBackground">
+            <span>Politique</span>
+        </a>
+        <!-- Actions / Programmes -->
+        <a class="white actionProgramBackground">
+            <span>Actions / Programmes</span>
+        </a>
+    </section>
+
+    <!-- Title Agenda -->
+    <div class="white section -text">
+        <h3 class="center">Agenda</h3>
+    </div>
+
+    <!-- Page Button : Pages des événements -->
+    <div class="white section -buttonbar">
+        <h3>gaea21</h3>
+        <h4>changement climatique</h4>
+    </div>
+
+    <!-- Thin Cards Section : Agenda -->
+    <div class="sectionAgenda">
+        <div id="agenda"></div>
+    </div>
+
+    <!-- Title Highlights -->
+    <div class="white section -text">
+        <h3 class="center">Highlights</h3>
+    </div>
+
+    <!-- Small Carrousel : Highlights -->
+    <div class="section">
+        <div id="highlights"></div>
+    </div>
+
+    <!-- Title Empreinte Organisation -->
+    <div class="white section -text">
+        <h3 class="center">Empreinte Organisation</h3>
+    </div>
+
+    <!-- Empreinte Organisation -->
+    <div class="white section -complex">
+        <div>
+            <p>L'empreinte globale de gaea21: <span class="number">?</span>/5</p>
+            <table>
+                <thead>
+                <tr>
+                    <th><img src="{{ asset('Image/icons/IconAearth.svg') }}"/></th>
+                    <th><img src="{{ asset('Image/icons/IconAperson.svg') }}"/></th>
+                    <th><img src="{{ asset('Image/icons/IconAcoin.svg') }}"/></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><span class="number">1000</span><em>tonnes CO2</em>
+                        <p>Impact global environnemental</p></td>
+                    <td><span class="number">9200</span><em>personnes</em>
+                        <p>Impact global social</p></td>
+                    <td><span class="number">74</span><em>milliards</em>
+                        <p>Impact global économique</p></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <a>CALCULER VOTRE EMPREINTE</a>
+            <a>ENTRER DANS LE PROGRAMME</a>
+        </div>
+    </div>
+
+    <!-- Thin Cards Section : Partner -->
+    <div class="sectionPartner">
+        <div id="partner"></div>
+    </div>
+
+    <!-- Nous soutenir -->
+    <section class="backImageDesert">
+        <div class="section -text">
+            <h5 class="center">NOUS SOUTENIR</h5>
+            <hr/>
+        </div>
+        <!-- Thin Cards Section : Individus Familles, Entreprises, Ecoles, Administrations Villes Régions, Entrepreneurs -->
+        <section id="section3" class="section -cards _cardlike _noshadow _dark _tight">
+            <!-- Faire un don -->
+            <a class="backVitre">
+                <span>Faire un don</span>
+                <img alt="Icone famille" src="{{ asset('Image/icons/iconDmain.svg') }}"/>
+            </a>
+            <!-- Devenir membre -->
+            <a class="backVitre">
+                <span>Devenir membre</span>
+                <img alt="Icone entreprise" src="{{ asset('Image/icons/iconDami.svg') }}"/>
+            </a>
+            <!-- Avantages membre -->
+            <a class="backVitre">
+                <span>Avantages membre</span>
+                <img alt="Icone école" src="{{ asset('Image/icons/iconDgroup.svg') }}"/>
+            </a>
+        </section>
+
+        <div class="section -text _dark">
+            <h5 class="center">Merci de votre soutien et de nous aider à combattre le changement climatique afin de
+                créer une société meilleure.</h5>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('home') }}
+    <script src="{{ asset('js/modalNewsletter/modalNewsletter.js') }}"></script> 
+{% endblock %}
+
+  

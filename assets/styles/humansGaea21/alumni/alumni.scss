@@ -1,0 +1,152 @@
+@import '../../function';
+
+
+#alumni {
+
+    @import '../home/gaea21Menu.scss';
+    @import '../temoignages/gaea21Footer.scss';
+
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    .sectionHead {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../../images/humansGaea21/Groupedemasques27.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logoHumans {
+        /* Layout Properties */
+
+        margin-top: pxToPourcent(400px, 7603px);
+        margin-left: pxToPourcent(119px, 1920px);
+        width: pxToPourcent(431px, 1920px);
+        height: auto;
+        background: transparent;
+        opacity: 1;
+
+
+    }
+
+    .p1 {
+
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: pxToPourcent(325px, 7603px);
+        left: pxToPourcent(183px, 1920px);
+        width: pxToPourcent(432px, 1920px);
+        height: auto;
+
+
+        font-family: "Helvetica";
+        font-size: pxToVw(25px, 1920px);
+        color: white;
+
+    }
+
+    #contenu {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: pxToVw(46px, 1920px);
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: pxToVw(84px, 1920px);
+
+            font-family: "Helvetica";
+            font-size: pxToVw(50px, 1920px);
+            font-weight: bold;
+
+            border-bottom: solid 4px #98984C;
+        }
+
+
+        p {
+            left: pxToPourcent(201px, 1920px);
+
+            margin: 0 0 0 0;
+
+            width: pxToPourcent(1088px, 1920px);
+            height: pxToVw(176px, 1920px);
+
+            text-overflow: "";
+            font-family: "Helvetica";
+            font-size: pxToVw(24px, 1920px);
+            text-align: left;
+            overflow: hidden;
+            word-wrap: break-word;
+            margin-bottom: pxToVw(47px, 1920px);
+        }
+
+        .show {
+            height: auto;
+        }
+    }
+
+    #listeLogo {
+        width: pxToPourcent(1160px, 1920px);
+
+
+
+        margin-top: pxToVw(110px, 1920px);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        background-color: #F6F6F6;
+
+        border-radius: 30px;
+
+
+        width: pxToPourcent(500px, 1920px);
+        height: pxToVw(300px, 1920px);
+        opacity: 1;
+        background-size: cover;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-bottom: pxToVw(120px, 1920px);
+        margin-left: pxToPourcent(70px, 1920px);
+        margin-right: pxToPourcent(70px, 1920px);
+
+        img {
+            // max-height: 100%;
+            // max-width: 100%;
+            background: transparent;
+            opacity: 1;
+            border-radius: 30px;
+        }
+    }
+
+}

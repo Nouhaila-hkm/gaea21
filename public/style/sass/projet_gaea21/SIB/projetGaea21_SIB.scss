@@ -1,0 +1,30 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+
+    // display: flex;
+    // align-items: center;
+    text-align: center;
+    // justify-content: center;
+    // gap: pxToVw(20px, 1920);
+    margin-bottom: pxToVw(51px,1920);
+  }
+
+  .intro-SIB{
+    .partie2{
+      margin: pxToVw(44px,1920) 0 ;
+    }
+    .img-dimension{
+      width: pxToPourcent(1290px,1290px);
+      margin-top: pxToVw(50px, 1920);
+
+      img{
+        width: 100%;
+      }
+      
+    }
+  }
+}

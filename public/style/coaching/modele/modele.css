@@ -1,0 +1,186 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.headerAccompagnement {
+  display: flex;
+  height: 40vw;
+  color: white;
+}
+
+#header1, #header2 {
+  width: 50%;
+}
+
+#header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F3D56;
+}
+#header1 article {
+  width: 70%;
+}
+#header1 article h1 {
+  font-size: 2.6041666667vw;
+}
+
+#header2 {
+  background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+  background-position: center;
+}
+
+.listeLiens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.25vw;
+  border: 1px solid grey;
+  margin-bottom: 3.125vw;
+}
+.listeLiens ul {
+  display: flex;
+  gap: 5.9895833333vw;
+  font-size: 1.3020833333vw;
+}
+.listeLiens ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 80.9375%;
+  margin: 0 auto;
+}
+main #prevArrow {
+  display: block;
+  width: 8.8541666667vw;
+}
+
+#cycles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 61.5px;
+}
+
+#cycles > div {
+  width: 24.1666666667vw;
+  height: 14.5833333333vw;
+  margin: 10px;
+}
+
+#projet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/projet.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 23px;
+}
+
+#humain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#statistiques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#sagitil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+#sagitil h2 {
+  font-size: 2.6041666667vw;
+  margin-top: 4.6875vw;
+  margin-bottom: 2.34375vw;
+}
+#sagitil div {
+  font-size: 1.5625vw;
+  margin-bottom: 3.125vw;
+}
+
+#stats {
+  display: flex;
+  width: 100%;
+  margin-bottom: 61px;
+}
+#stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 14.9479166667vw;
+  width: 20%;
+  background-color: rgb(250, 250, 246);
+}
+#stats div h4 {
+  color: #98984B;
+  font-size: 4.375vw;
+}
+#stats div p {
+  font-size: 1.5625vw;
+  font-weight: bold;
+}
+
+#localisation {
+  display: flex;
+  justify-content: space-between;
+}
+#localisation .planete, #localisation .listePays {
+  width: 40%;
+  height: 30.78125vw;
+}
+#localisation .planete > img {
+  width: 100%;
+}
+#localisation .listePays {
+  height: 30.78125vw;
+}
+#localisation .listePays img {
+  height: 20.78125vw;
+  width: 31.25vw;
+}
+#localisation .listePays .liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+#localisation .listePays .liste .item {
+  font-size: 0.9375vw;
+  font-weight: bold;
+  width: 7.8125vw;
+  list-style-type: disc;
+  margin-right: 4.1666666667vw;
+  margin-bottom: 0.9375vw;
+  padding-left: 1.5625vw;
+}
+#localisation .listePays .liste .item:nth-child(3n+3) {
+  margin-right: 0px;
+}
+
+/*# sourceMappingURL=modele.css.map */

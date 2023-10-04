@@ -1,0 +1,144 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+
+    <link href="{{ asset('style/coaching/modele/modele.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+
+
+    <a id="prevArrow" data-link="/coaching"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section id="sagitil">
+        
+            <h2>Chiffres-clés</h2>
+
+            <div>Retrouvez les données statistiques des membres du staff de gaea21, en temps réel.</div>
+                    
+    </section>
+
+    <section >
+
+        <article id="stats">
+        
+            <div>
+                <h4>190</h4>
+                <p>Membres</p>
+            </div>
+
+            <div>
+                <h4>9</h4>
+                <p>Nationalités</p>
+            </div>
+
+            <div>
+                <h4>38</h4>
+                <p>Age</p>
+            </div>
+
+            <div>
+                <h4>58%</h4>
+                <p>Femmes gaeiennes</p>
+            </div>
+
+            <div>
+                <h4>40%</h4>
+                <p>Hommes gaeiens</p>
+            </div>
+        
+        </article>
+
+    </section>
+
+    <section id="localisation">
+
+            <div class="planete"><img src="{{ asset('images/coaching/modele/planisphere.png') }}"></div>
+
+            <div class="listePays">
+
+                <img src="{{ asset('images/coaching/modele/globe.png') }}">
+
+
+                <ul class="liste">
+
+                    <li class="item">France</li>
+                    <li class="item">Royaume-Uni</li>
+                    <li class="item">Tunisie</li>
+
+                    <li class="item">Suisse</li>
+                    <li class="item">Côte d'Ivoire</li>
+                    <li class="item">Maroc</li>
+
+                    <li class="item">Bulgarie</li>
+                    <li class="item">Serbie</li>
+                    <li class="item">République du Congo</li>
+
+                </ul>
+
+
+                
+            </div>
+
+
+    </section>
+
+</main>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+{% endblock %}

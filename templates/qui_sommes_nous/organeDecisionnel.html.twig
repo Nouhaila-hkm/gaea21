@@ -1,0 +1,132 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organeDecisionnel.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Organigramme
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Organigramme</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+{% endblock %}
+
+{% block main %}
+
+	<div class="title">
+		<h2>De quoi s'agit-il ?<h2></div>
+
+			{# Texte d'into #}
+			<article id="intro-organeDecisionnel">
+				<p>Le comité est composé de 3 membres. C’est l’organe décisionnel de l’association. Il définit le programme d’actions, attribue les tâches et coache les membres du bureau de gaea21 dans la réalisation de ses tâches. Enfin, il donne les orientations générales de la politique de l’association.</p>
+				<div class="schema-organeDecisionnel">
+					<img src="{{ asset('images/QuiSommesNous/organigramme/comite.png') }}">
+				</div>
+
+			</article>
+
+		{% endblock %}
+
+
+		{% block personnes %}
+			<div class="membres">
+				<div class="presentationInitial">
+					<div class="photo">
+						<img src="{{ asset('images/QuiSommesNous/organigramme/YvanClaude.png') }}">
+					</div>
+					<section class="presentation-membres">
+							<div>
+								<h3 class="name">Yvan Claude</h3>
+								<small class='fonction'>Président</small>
+							</div>
+							<p class='citation'>«We are visitors on this planet. We are here for ninety or one hundred years at the very most. During that period, we must try to do something good, something useful, with our lives. If you contribute to other people’s happiness, you will find the true goal, the true meaning of life».
+								<span class="auteur">Dalaï-lama</span>
+							</p>
+
+							<div class="plus">
+								<div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+									<g id="Groupe_1055" data-name="Groupe 1055" transform="translate(-208.5 -2751.546)">
+										<path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#98984b" stroke-width="4"/>
+										<line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#98984b" stroke-width="4"/>
+									</g>
+								</svg>
+								</div>
+								<p>En découvrir plus</p>
+							</div>
+					</section>
+
+
+				</div>
+				{# Contenue a afficher ou a masqué #}
+				<section class='hiddenContent hidde'>
+					<h4 class="formation">Formation</h4>
+					<p>Green economist, spécialiste en économie circulaire et théorie des systèmes coach pour PME depuis plus de 20 ans. Consultant au PNUE (Programme des Nations Unies pour l’Environnement) et à la CNUCED (Conférence des Nations Unies pour le Commerce et le Développement) depuis 2001.<br>Coach en entreprise et surtout pour les managers dans le domaine du business development, business strategy, sustainable management, project management, green business development et executive coaching durant les 25 dernières années. Design, implémentation, évaluation et accompagnement de projets de développement et de projets verts et durables pour les régions et les pays, coaching et mentoring.</p>
+					<h4 class="poste">Poste au sein de gaea21</h4>
+					<p>Président / Direction, management des équipes, gestion des projets, design, modélisation et implémentation de modèles d’économie circulaire. Formation.</p>
+					<h4 class="vision">Vision de gaea21</h4>
+					<p>La structure qui relie.</p>
+				</section>
+			</div>
+
+			<div class="membres">
+				<div class="presentationInitial">
+					<div class="photo">
+						<img src="{{ asset('images/QuiSommesNous/organigramme/MarianneTellier.png') }}">
+					</div>
+					<section class="presentation-membres">
+							<div>
+								<h3 class="name">Mariane Tellier</h3>
+								<small class='fonction'>Membre du comité</small>
+							</div>
+							<p class='citation'>« …if you maintain a positive, proactive attitude, you will find yourself free, no matter how restricted your environment. True freedom is the caliber or spiritual capacity that enables one to cope with any circumstance. » 
+							<span class="auteur">Daisaku Ikeda</span>
+							</p>
+
+							<div class="plus">
+							<div>
+								<svg xmlns="http://www.w3.org/2000/svg" width="26.869" height="24.908" viewbox="0 0 26.869 24.908">
+									<g id="Groupe_1055" data-name="Groupe 1055" transform="translate(-208.5 -2751.546)">
+										<path id="Tracé_847" data-name="Tracé 847" d="M1.7.8,12.74,11.84,1.7,22.88" transform="translate(219.801 2752.16)" fill="none" stroke="#98984b" stroke-width="4"/>
+										<line id="Ligne_95" data-name="Ligne 95" x2="24" transform="translate(208.5 2764.5)" fill="none" stroke="#98984b" stroke-width="4"/>
+									</g>
+								</svg>
+								</div>
+								<p>En découvrir plus</p>
+							</div>
+					</section>
+
+
+				</div>
+				{# Contenue a afficher ou a masqué #}
+				<section class='hiddenContent hidde'>
+					<h4 class="formation">Formation</h4>
+					<p>Maîtrise en santé publique et financement des soins de santé.<br>
+					Spécialiste en santé reproductive dans les pays en développement.<br>
+					Chargée de programme chez le Fond Mondial de lutte contre le SIDA, tuberculose & paludisme depuis juin 2011 et co-fondatrice de WoMena Ltd (design, implémentation et évaluation des projets de santé reproductif).</p>
+					<h4 class="poste">Poste au sein de gaea21</h4>
+					<p>Membre du comité.</p>
+					<h4 class="vision">Vision de gaea21</h4>
+					<p>Une organisation qui analyse l'évidence, et formule les solutions.</p>
+				</section>
+			</div>
+
+		
+
+			
+		{% endblock %}
+
+
+		{% block javascripts %}
+			{{parent()}}
+			<script src="{{ asset('js/pagesOrganigrammes/displayContent.js') }}" ></script>
+		{% endblock %}

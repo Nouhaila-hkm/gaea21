@@ -1,0 +1,87 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/analyse.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<h2 class="title_modele lean_title">Coévolution</h2>
+
+       <article class="img_text_article">
+
+
+        <img class="img_with_text coevolution_img" src="{{ asset('images/QuiSommesNous/modele/coevolution.png') }}"/>
+        
+        
+        <div class="text_with_img no_marge valor_size">
+        <p> 
+            En biologie, la coévolution décrit les<br>
+            transformations qui se produisent au cours<br> 
+            de l’évolution entre deux espèces<br> 
+            (coévolution par paire) ou plus de deux<br>
+            espèces (coévolution diffuse) suite à leurs <br>
+            influences réciproques.
+        </p>
+
+        <p>
+            Ce phénomène de coévolution s’observe<br> 
+            dans différents cas :<br>
+            > entre espèces antagonistes : système<br> 
+            hôte-parasite,<br>
+            > proie-prédateur: entre espèces <br>
+            mutualistes.            
+        </p>
+
+       </article>
+
+       <article class="text_size behavior_margin">
+
+        <p>    
+            La coévolution entre deux espèces peut être comprise par analogie avec l’évolution des systèmes <br>
+            virus-antivirus en informatique.<br> 
+            Au début de l’ère informatique, des virus relativement simples ont été créés afin de perturber le<br> 
+            fonctionnement des ordinateurs. En réponse à cette « pression virale informatique », des sociétés se<br>
+            sont spécialisées dans la conception d’antivirus de complexité comparable.<br>
+            Puis, au cours du temps, les virus et par conséquent les antivirus se sont complexifiés.<br>
+        </p>
+        
+
+        <p>
+            De façon similaire, une espèce provoque des changements chez une autre et réciproquement sous<br> 
+            forme de pressions de sélection. Ce mécanisme peut se perpétuer à l’infini, la coévolution est une<br>
+            dynamique auto-entretenue. La coévolution est régie par les mêmes mécanismes darwiniens de<br>
+            l’évolution.
+        </p>
+        <br>
+        <br>
+    </article>
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

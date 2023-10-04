@@ -1,0 +1,131 @@
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+// Color Variables
+$primary-green: #98984b;
+$main-color-shade: #6c6c23;
+$main-color-shadow: #6c6c237b;
+$primary-blue: #00a796;
+$primary-dark-blue: #007263;
+$dark-color: #343434;
+$primary-brown: #484738;
+$background-color: #f4f9f3;
+
+// Font Variables
+$font: 'Roboto';
+$font-size: 18px;
+
+body {
+  font-family: $font;
+  color: $dark-color;
+  font-size: $font-size;
+  /*  Scrollbar colors */
+  & ::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: 0.5rem;
+  }
+  & ::-webkit-scrollbar-track {
+    background-color: $primary-brown;
+    border-radius: 0.5rem;
+  }
+  & ::-webkit-scrollbar-thumb {
+    background-color: $primary-green;
+    border-radius: 20px;
+    border: 0.1em solid transparent;
+    background-clip: content-box;
+  }
+  & ::-webkit-scrollbar-thumb:hover {
+    background-color: $primary-green;
+  }
+}
+
+.btn-primary,
+.btn-warning {
+  background-color: $primary-green;
+  border-color: $primary-green;
+  font-size: 1.3125rem;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background-color: $primary-blue;
+    border-color: $primary-dark-blue;
+  }
+  &:active {
+    background-color: $primary-green;
+    border-color: $main-color-shade;
+  }
+  &:focus {
+    background-color: $primary-green;
+    border-color: $main-color-shade;
+    box-shadow: 0 0 0 0.25rem $main-color-shadow;
+  }
+}
+
+.btn-danger {
+  background-color: $dark-color;
+  border-color: $dark-color;
+  &:hover {
+    background-color: $primary-blue;
+    border-color: $primary-dark-blue;
+  }
+}
+
+.btn-outline-primary {
+  color: $primary-green;
+  border-color: $primary-green;
+  &:hover {
+    background-color: $primary-green;
+    border-color: $primary-green;
+    color: white;
+  }
+}
+
+a {
+  color: $primary-green;
+  &:hover {
+    color: $primary-blue;
+  }
+}
+
+body button.close {
+  color: red;
+  background-color: transparent;
+  border-width: 0;
+  font-size: 1.5rem;
+  &:hover {
+    background-color: $primary-blue;
+    border-color: $primary-dark-blue;
+  }
+  &:active {
+    background-color: $primary-green;
+    border-color: $main-color-shade;
+  }
+  &:focus {
+    background-color: $primary-green;
+    border-color: $main-color-shade;
+    box-shadow: 0 0 0 0.25rem $main-color-shadow;
+  }
+}
+
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.font-weight-italic {
+  font-style: italic;
+}
+
+#showForm {
+  font-size: 28px;
+}
+
+.formResponse {
+  .answer {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+}

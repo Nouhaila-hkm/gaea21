@@ -1,0 +1,168 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+     <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+    {{ encore_entry_link_tags('newsletter') }}
+    {{ parent() }}
+
+	{# <link rel="stylesheet" href="{{ asset('style/newsletter/newsletter.scss') }}"> #}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<script src="https://kit.fontawesome.com/8bff0007f7.js" crossorigin="anonymous"></script>
+
+{% endblock %}
+
+
+
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+    <div id="newsletter" >
+
+        <section class="sectionHeadNewsletter">
+
+            <div class="text">
+                <h2 > Newsletter</h2>
+                {# <p >Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet,
+				 consectetur adipiscing Lorem ipsum dolor sit amet..</p> #}
+            </div>
+
+ </section>
+             <div class="menu">
+            <ul class="liste2">
+                <li class="elemMenu2 ">Organigramme</li>
+                <li class="elemMenu2">Historique</li>
+                <li class="elemMenu2">Partenaires</li>
+                <li class="elemMenu2">Impacts</li>
+                <li class="elemMenu2">Status gaea21</li>
+                <li class="elemMenu2"> <a href="{{path('app_newsletter')}}">Newsletter</a> </li>
+               
+
+            </ul>
+        </div>
+
+<div class="section-newsletter" id="section-newsletter">
+
+
+	<h4>Inscription</h4>
+	<p>Inscrivez-vous à notre newsletter et recevez régulièrement toutes les informations sur nos projets.</p>
+	<div class="form-newsletter">
+	
+		<form action="/subscribe" method="POST" class="form">
+			<input class="input flex" id="icon" style="text-indent:17px;" type="email" name="email" value="{{ app.request.attributes.get('name') }}" placeholder="Email" required>
+		
+			<input class="button" type="submit" value="Abonnez-vous">
+			
+		</form>
+		<div class="bottom">
+			{% for message in app.flashes('error') %}
+        <div class="flash-error">
+            {{ message }}
+        </div>
+    		{% endfor %}
+			{% for message in app.flashes('notice') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    		{% endfor %}
+		<div class="subscribers">{{subscribers}} abonnés nous ont déjà rejoint</div>
+		</div>
+	</div>
+
+	
+</div>
+
+
+<div class="section-comments">
+{% if comments|length == 0 %}
+					<div class="temporary-message-container">
+    				<div class="text">Prochainement retrouvez ici les avis de nos lecteurs</div>
+					<img class="temporary-img" src="{{ asset('images/newsletter/img-messages.jpg') }}" alt="photo">
+					</div>
+				{% else %}
+	<div class="text">Que disent nos lecteurs ?</div>
+
+		
+	<div class="slider-container">
+
+
+
+		<ul class="control" id="custom-control">
+			<li class="prev">
+				<img src="{{ asset('images/newsletter/arrow-left.svg') }}" alt="">
+			</li>
+			<li class="next">
+				<img src="{{ asset('images/newsletter/arrow-right.svg') }}" alt="">
+			</li>
+		</ul>
+
+		<div class="my-slider">
+			{% for comment in comments %}
+
+				<div class="slide">
+					<div class="slider">
+						<div class="card-comment">
+							<div class="image-container">
+								<img src="{{ asset('images/newsletter/avatar-user.svg') }}" alt="photo">
+								<span class="username">{{comment.firstname}}</span>
+							</div>
+
+							<p>{{comment.message}}</p>
+						</div>
+					</div>
+				</div>
+				
+			{% endfor %}
+				
+
+
+		</div>
+
+	</div>
+	{% endif %}
+</div>
+
+	
+
+
+{# <div class="section-message">
+{% for message in app.flashes('comment') %}
+        <div class="flash-notice">
+            {{ message }}
+        </div>
+    {% endfor %} #}
+	{# <div class="row"> #}
+		<div class="section-message">
+				<div class="message">
+			<h5>Votre avis nous intéresse</h5>
+			<p class="comment-text">Avez-vous une remarque qui, vous pensez, serait un bon ajustement pour faire connaître notre newsletter, 
+			peut-être voulez-vous promouvoir ou rejoindre notre équipe ? N’hésitez pas à laisser un commentaire…</p>
+			<button class="button">Connectez-vous</button>
+				</div>
+		</div>
+
+		{# <div class="right col s6">
+
+			<form action="/comment" method="POST">
+				<input type="text" name="firstname" placeholder="Prénom" required>
+				<input type="email" name="email" placeholder="Email" required>
+				<textarea name="message" id="" cols="40" rows="7" maxlength="255" placeholder="Votre message (255 max)" required></textarea>
+				<button>Envoyer le message</button>
+			</form>
+		</div> #}
+	{# </div> #}
+</div>
+
+
+</div>
+
+
+
+
+ 
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('newsletter')}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+	<script type="text/javascript" src="{{ asset('js/newsletter/carousel.js') }}"></script> 
+{% endblock %}

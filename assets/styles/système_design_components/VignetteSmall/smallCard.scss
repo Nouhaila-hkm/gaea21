@@ -1,0 +1,121 @@
+@use "sass:math";
+@import "../../_function";
+
+
+
+._small-card {
+  width: pxToVw(464px,1920);
+  height: pxToVw(280, 1920);
+  border-radius: 23px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+
+  z-index: 12000;
+
+  /********************* OVERLAY DE LA CARD *********************/
+  ._overlay {
+    width: 100%;
+    height: 72.5%;
+    background: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: height .3s;
+
+    .active-arrow {
+      width: pxToVw(40, 1920);
+      height: pxToVw(40, 1920);
+      position: absolute;
+      top: pxToVw(102, 1920);
+      left: pxToVw(212, 1920);
+      z-index: 10000;
+      filter: invert(1);
+      display: none;
+    }
+  }
+
+  /********************* HEADER DE LA CARD + POSITIONNEMENT *********************/
+  ._card-header {
+    color: white;
+    text-align: center;
+    padding-top: pxToVw(41, 1920);
+
+    h2 {
+      font-size: pxToVw(28, 1920);
+      margin: 0;
+    }
+  }
+
+  /********************* BOUTTON LARGE + POSITIONNEMENT *********************/
+  ._large-btn-small-card {
+    background-color: white;
+
+    font-size: pxToVw(21, 1920);
+    padding: pxToVw(21, 1920) pxToVw(42, 1920);
+    z-index: 1;
+
+    color: black !important;
+    text-decoration: none !important;
+
+    border-radius: 50px;
+    border: none;
+
+    position: absolute;
+    top: pxToVw(136, 1920);
+    left: pxToVw(96px, 1554);
+    opacity: 0;
+
+    display: inline-flex;
+    align-items: center;
+
+    transition: all .2s ease;
+
+    .chevron-btn {
+      height: pxToVw(27, 1920);
+    }
+  }
+
+  &:hover ._large-btn-small-card {
+    opacity: 1;
+  }
+
+  ._img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+._disabled-small-card {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1) !important;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  &::before {
+    content: "Bientôt disponible";
+    position: absolute;
+    top: pxToVw(107, 1920);
+    left: pxToVw(120.35, 1920);
+    padding: pxToVw(20.5, 1920) pxToVw(26.65, 1920);
+    background: white;
+    font-size: pxToVw(21, 1920);
+
+  }
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.active-card {
+  transition: none !important;
+
+  &:hover {
+    height: 72.5% !important;
+  }
+}

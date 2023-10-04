@@ -1,0 +1,20 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main .intro-SIB .partie2 {
+  margin: 2.2916666667vw 0;
+}
+#main .intro-SIB .img-dimension {
+  width: 100%;
+  margin-top: 2.6041666667vw;
+}
+#main .intro-SIB .img-dimension img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=projetGaea21_SIB.css.map */

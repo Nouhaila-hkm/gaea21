@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="254.037" height="228.104" viewBox="0 0 254.037 228.104">
+  <g id="Groupe_1352" data-name="Groupe 1352" transform="translate(-1224 -1504.704)">
+    <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(1316.111 1509.505)" fill="#fff" stroke="#989751" stroke-width="3">
+      <ellipse cx="44.963" cy="50.662" rx="44.963" ry="50.662" stroke="none"/>
+      <ellipse cx="44.963" cy="50.662" rx="43.463" ry="49.162" fill="none"/>
+    </g>
+    <path id="Tracé_1675" data-name="Tracé 1675" d="M3915.908-773c8.365,31.54-15.991,29.589-8.88,51.538s13.692,18.669,8.88,38.766" transform="translate(-2554.03 2383.298)" fill="none" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Tracé_1676" data-name="Tracé 1676" d="M3900.5-822.056s32.386,1.234,32.3,37.388" transform="translate(-2536.849 2342.889)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+    <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(1267.982 1539.903)" fill="#fff" stroke="#989751" stroke-width="3">
+      <ellipse cx="44.963" cy="50.662" rx="44.963" ry="50.662" stroke="none"/>
+      <ellipse cx="44.963" cy="50.662" rx="43.463" ry="49.162" fill="none"/>
+    </g>
+    <path id="Tracé_1673" data-name="Tracé 1673" d="M3915.908-773c8.365,31.54-15.991,29.589-8.88,51.538s13.692,18.669,8.88,38.766" transform="translate(-2602.159 2413.695)" fill="none" stroke="#989751" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Tracé_1674" data-name="Tracé 1674" d="M3900.5-822.056s32.386,1.234,32.3,37.388" transform="translate(-2584.978 2373.287)" fill="none" stroke="#989751" stroke-linecap="round" stroke-width="3"/>
+    <g id="Groupe_1159" data-name="Groupe 1159" transform="translate(1224 1504.704)">
+      <g id="Rectangle_3313" data-name="Rectangle 3313" transform="translate(35.435 2.171)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="24.064" height="41.796" stroke="none"/>
+        <rect x="1" y="1" width="22.064" height="39.796" fill="none"/>
+      </g>
+      <g id="Rectangle_3314" data-name="Rectangle 3314" transform="translate(51.226 40.725) rotate(167)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="24.064" height="41.796" stroke="none"/>
+        <rect x="1" y="1" width="22.064" height="39.796" fill="none"/>
+      </g>
+      <g id="Rectangle_3315" data-name="Rectangle 3315" transform="translate(41.739 41.484) rotate(150)" fill="#fff" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <rect width="24.065" height="41.796" stroke="none"/>
+        <rect x="1" y="1" width="22.065" height="39.796" fill="none"/>
+      </g>
+    </g>
+    <path id="Tracé_1679" data-name="Tracé 1679" d="M3878.835-638.277v-12.54l3.938-6.946v-33.912h-7.26V-708.05h7.26v4.01h3.819v-4.01h9.186v4.01h4.088v-4.01h6.643v16.375h-6.643v33.912l3.841,8.02v11.466Z" transform="translate(-2635.214 2369.277)" fill="none" stroke="#000" stroke-width="2"/>
+    <g id="Groupe_1160" data-name="Groupe 1160" transform="translate(1374.189 1626.479)">
+      <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(-0.153 0.089)" fill="#fff" stroke="#000" stroke-width="2">
+        <circle cx="52" cy="52" r="52" stroke="none"/>
+        <circle cx="52" cy="52" r="51" fill="none"/>
+      </g>
+      <path id="Tracé_1684" data-name="Tracé 1684" d="M4084.889-738.115a415.188,415.188,0,0,1,36.453,32.086c18.93,18.759,26.923,4.824,26.923,4.824" transform="translate(-4047.407 741.347)" fill="none" stroke="#000" stroke-width="2"/>
+      <path id="Tracé_1685" data-name="Tracé 1685" d="M4045-695.977s26.868-6.432,54.323,0a96.4,96.4,0,0,1,44.611,24.87" transform="translate(-4044.167 741.656)" fill="none" stroke="#000" stroke-width="2"/>
+      <path id="Tracé_1686" data-name="Tracé 1686" d="M4050.079-663.9S4069.745-659.815,4096-670s37.065,10.306,36.869,18.252c-.168,6.873-5.68,12.253-7.53,13.9.133-.108-.257-1.549-.257-1.549" transform="translate(-4046.952 732.866)" fill="none" stroke="#000" stroke-width="2"/>
+      <path id="Tracé_1687" data-name="Tracé 1687" d="M4208.864-739.668s57.283-14.575,49.558-85.963" transform="translate(-4173.216 839.438)" fill="none" stroke="#000" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

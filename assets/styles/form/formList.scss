@@ -1,0 +1,48 @@
+@import 'formStyles.scss';
+
+body {
+  background: $background-color;
+}
+table {
+  .btn-primary,
+  .btn-warning {
+    background-color: $primary-green;
+    border-color: $primary-green;
+    &:hover {
+      background-color: $primary-blue;
+      border-color: $primary-dark-blue;
+    }
+    &:active {
+      background-color: $primary-green;
+      border-color: $main-color-shade;
+    }
+    &:focus {
+      background-color: $primary-green;
+      border-color: $main-color-shade;
+      box-shadow: 0 0 0 0.25rem $main-color-shadow;
+    }
+  }
+
+  .btn-danger {
+    background-color: $dark-color;
+    border-color: $dark-color;
+    &:hover {
+      background-color: $primary-blue;
+      border-color: $primary-dark-blue;
+    }
+  }
+
+  .btn-outline-primary {
+    color: $primary-green;
+    border-color: $primary-green;
+    &:hover {
+      background-color: $primary-green;
+      border-color: $primary-green;
+      color: white;
+    }
+  }
+
+  .form-check-input:disabled {
+    opacity: 1;
+  }
+}

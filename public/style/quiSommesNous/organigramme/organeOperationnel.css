@@ -1,0 +1,419 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #49a496;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../../images/QuiSommesNous/header_organigramme.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-bottom: 0;
+}
+#main .title h2 {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main #intro-organeDecisionnel .schema-organeDecisionnel img {
+  width: 100%;
+}
+
+#personnes {
+  width: 100%;
+}
+#personnes .membres {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5.8333333333vw 9.53125vw;
+}
+#personnes .membres:last-of-type {
+  margin-bottom: 5.2083333333vw;
+}
+#personnes .membres:nth-of-type(even) {
+  background-color: #FBFBF7;
+}
+#personnes .membres:nth-of-type(even) .presentationInitial {
+  flex-direction: row-reverse;
+}
+#personnes .membres:nth-of-type(even) .presentationInitial .presentation-membres {
+  margin-right: 5.8333333333vw;
+  margin-left: 0;
+}
+#personnes .membres .plus {
+  cursor: pointer;
+  display: inline-flex;
+  width: 26.7052767053%;
+}
+#personnes .membres .presentationInitial {
+  display: flex;
+}
+#personnes .membres .presentationInitial .name,
+#personnes .membres .presentationInitial .fonction,
+#personnes .membres .presentationInitial h4 {
+  color: #5681B9;
+}
+#personnes .membres .presentationInitial .photo {
+  width: 26.5625%;
+}
+#personnes .membres .presentationInitial .photo img {
+  width: 100%;
+}
+#personnes .membres .presentationInitial .presentation-membres {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 67.1814671815%;
+  margin-left: 5.8333333333vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .name {
+  font-size: 2.0833333333vw;
+  line-height: 1.7708333333vw;
+  font-weight: 600;
+}
+#personnes .membres .presentationInitial .presentation-membres .departement {
+  margin: 1.3541666667vw 0;
+  height: 6.7708333333vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .domaines {
+  display: flex;
+  gap: 2.7604166667vw;
+  margin-left: 1.6145833333vw;
+  margin-bottom: 1.5625vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .domaines li {
+  list-style-type: disc !important;
+}
+#personnes .membres .presentationInitial .presentation-membres .domaines li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus {
+  align-items: center;
+  gap: 1.5625vw;
+  position: relative;
+  bottom: 0.78125vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus > div {
+  width: 1.25vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus > div svg {
+  width: 100%;
+  fill: #5681B9;
+  stroke: #5681B9;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus p {
+  margin-bottom: 0;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus svg.rotate {
+  transform: rotate(90deg);
+}
+#personnes .membres .presentationInitial .presentation-membres::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 74.4252873563%;
+  height: 0.2083333333vw;
+  background-color: #5681B9;
+}
+#personnes .membres .hiddenContent {
+  margin-top: 3.90625vw;
+}
+#personnes .membres .hiddenContent p {
+  margin-bottom: 2.5vw;
+}
+#personnes .membres .hiddenContent .organes {
+  display: flex;
+}
+#personnes .membres .hiddenContent .organes .support,
+#personnes .membres .hiddenContent .organes .recherche {
+  width: 9.6525096525%;
+  position: relative;
+}
+#personnes .membres .hiddenContent .organes .support img,
+#personnes .membres .hiddenContent .organes .recherche img {
+  width: 100%;
+}
+#personnes .membres .hiddenContent .organes .support {
+  top: 54px;
+  left: 0;
+}
+#personnes .membres .hiddenContent .organes .recherche {
+  top: 135px;
+  right: 41px;
+}
+#personnes .membres .hiddenContent .organes .liste {
+  width: 72.9086229086%;
+  margin-left: 1.8229166667vw;
+}
+#personnes .membres .hiddenContent .organes .liste li {
+  list-style-type: disc !important;
+  width: 100%;
+}
+#personnes .membres .hiddenContent .organes .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres .hiddenContent .informations {
+  display: flex;
+  margin-top: 2.5520833333vw;
+}
+#personnes .membres .hiddenContent .informations .vide {
+  width: 11.8404118404%;
+}
+#personnes .membres .hiddenContent .informations .liste {
+  width: 72.9086229086%;
+}
+#personnes .membres .hiddenContent .informations .liste li {
+  list-style-type: disc !important;
+  width: 100%;
+}
+#personnes .membres .hiddenContent .informations .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres .hiddenContent .informations .chill {
+  width: 9.6525096525%;
+  position: relative;
+  top: 5.3125vw;
+  right: 7.1354166667vw;
+}
+#personnes .membres .hiddenContent .informations .chill img {
+  width: 100%;
+}
+#personnes .membres .hiddenContent .possibilites {
+  display: flex;
+  margin-top: 2.5520833333vw;
+}
+#personnes .membres .hiddenContent .possibilites .liste {
+  width: 72.9086229086%;
+  margin-left: 1.8229166667vw;
+}
+#personnes .membres .hiddenContent .possibilites .liste li {
+  list-style-type: disc !important;
+  width: 100%;
+}
+#personnes .membres .hiddenContent .possibilites .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres .hiddenContent .possibilites .interactivite {
+  width: 9.6525096525%;
+  position: relative;
+  top: 5.3125vw;
+  left: 0;
+}
+#personnes .membres .hiddenContent .possibilites .interactivite img {
+  width: 100%;
+}
+#personnes .membres .hiddenContent.hidde {
+  display: none;
+}
+#personnes .membres:nth-child(2) .presentationInitial .presentation-membres::after {
+  display: none;
+}
+#personnes .membres:nth-child(2) .presentationInitial .presentation-membres .departement {
+  height: unset;
+}
+#personnes .membres:nth-child(2) .presentationInitial .presentation-membres .liste {
+  margin-left: 1.6145833333vw;
+  margin-bottom: 1.5625vw;
+}
+#personnes .membres:nth-child(2) .presentationInitial .presentation-membres .liste li {
+  list-style-type: disc !important;
+}
+#personnes .membres:nth-child(2) .presentationInitial .presentation-membres .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres:nth-child(3) .presentationInitial .presentation-membres::after {
+  display: none;
+}
+#personnes .membres:nth-child(3) .presentationInitial .presentation-membres .departement {
+  height: unset;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .liste {
+  margin-left: 1.6145833333vw;
+  margin-bottom: 1.5625vw;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .liste li {
+  list-style-type: disc !important;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .plus {
+  align-items: center;
+  gap: 1.5625vw;
+  position: relative;
+  top: 0.78125vw;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .plus > div {
+  width: 1.25vw;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .plus > div svg {
+  width: 100%;
+  fill: #5681B9;
+  stroke: #5681B9;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .plus p {
+  margin-bottom: 0;
+}
+#personnes .membres:nth-child(4) .presentationInitial .presentation-membres .plus svg.rotate {
+  transform: rotate(90deg);
+}
+#personnes .membres:nth-child(4) .hiddenContent h4 {
+  color: #5681B9;
+  margin-bottom: 3.5416666667vw;
+  font-size: 1.7708333333vw;
+  line-height: 1.7708333333vw;
+  font-weight: 600;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-interne {
+  display: flex;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-interne p {
+  width: 77.3487773488%;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-interne .study {
+  width: 9.6525096525%;
+  position: relative;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-interne .study img {
+  width: 100%;
+}
+#personnes .membres:nth-child(4) .hiddenContent .listes {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2.0833333333vw;
+}
+#personnes .membres:nth-child(4) .hiddenContent .listes .liste {
+  width: 38.61003861%;
+  margin-left: 1.8229166667vw;
+}
+#personnes .membres:nth-child(4) .hiddenContent .listes .liste li {
+  list-style-type: disc !important;
+  margin-bottom: 1.0416666667vw;
+}
+#personnes .membres:nth-child(4) .hiddenContent .listes .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-externe {
+  display: flex;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-externe p {
+  width: 70.7850707851vw;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-externe .working {
+  width: 9.6525096525%;
+  position: relative;
+}
+#personnes .membres:nth-child(4) .hiddenContent .formation-externe .working img {
+  width: 100%;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .departement {
+  height: unset;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .listes {
+  display: flex;
+  gap: 10.5729166667vw;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .listes .liste {
+  margin-left: 1.6145833333vw;
+  margin-bottom: 1.5625vw;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .listes .liste li {
+  list-style-type: disc !important;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .listes .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .plus {
+  align-items: center;
+  gap: 1.5625vw;
+  position: relative;
+  top: 0.78125vw;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .plus > div {
+  width: 1.25vw;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .plus > div svg {
+  width: 100%;
+  fill: #5681B9;
+  stroke: #5681B9;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .plus p {
+  margin-bottom: 0;
+}
+#personnes .membres:nth-child(5) .presentationInitial .presentation-membres .plus svg.rotate {
+  transform: rotate(90deg);
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2.0833333333vw;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste {
+  margin-left: 1.8229166667vw;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste li {
+  list-style-type: disc !important;
+  margin-bottom: 1.0416666667vw;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste li::marker {
+  color: #5681B9;
+  font-size: 1.5625vw;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex {
+  display: flex;
+  justify-content: space-between;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex .images {
+  display: flex;
+  align-items: center;
+  gap: 3.59375vw;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex .images .reseaux {
+  width: PxToPourcent(170, 1554);
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex .images .reseaux img {
+  width: 100%;
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex .images .parc {
+  width: PxToPourcent(314, 1554);
+}
+#personnes .membres:nth-child(5) .hiddenContent .listes .liste .liste-flex .images .parc img {
+  width: 100%;
+}
+
+#organizationFin {
+  display: none;
+}
+
+/*# sourceMappingURL=organeOperationnel.css.map */

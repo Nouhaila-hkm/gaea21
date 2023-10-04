@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Confirmation de désinscription{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('form') }}
+    {{ encore_entry_link_tags('desactivateAccountForm') }}
+{% endblock %}
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+    <div class="imgHeader">
+        <img src="{{ asset('imagesgaea21/feuilles_vertes.png') }}" alt="Feuilles vertes" width="100%" height="440"/>
+        <h1 class="textHeader">Êtes-vous vraiment sûr de vouloir désactiver votre compte ?</h1>
+    </div>
+    
+    <div id="desactivateAccountForm" data-id="{{ app.user.gaeauserId }}"></div>
+
+    <div class="formRegistration">
+    <div id="registrationForm"></div>
+        <a class="returnHomepageLink" href="{{ path('userShow')}}">Retour au profil</a>
+    </div>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('form') }}
+        {{ encore_entry_script_tags('desactivateAccountForm') }}
+    {% endblock %}
+{% endblock %}

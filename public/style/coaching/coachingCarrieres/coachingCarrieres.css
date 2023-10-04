@@ -1,0 +1,187 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  width: 100%;
+}
+
+.headerCarriere {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  align-items: center;
+  background-image: url("../../../images/coaching/header.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.headerCarriere div {
+  margin-left: 9.53125vw;
+  width: 53.125vw;
+}
+
+.headerCarriere div h1 {
+  font-size: 3.125vw;
+  font-family: Helvetica, sans-serif;
+}
+
+.headerCarriere div p {
+  font-size: 1.5625vw;
+}
+
+.listeLiens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.25vw;
+  border: 1px solid grey;
+  margin-bottom: 3.125vw;
+}
+
+.listeLiens ul {
+  display: flex;
+  gap: 5.9895833333vw;
+  font-size: 1.3020833333vw;
+}
+
+.listeLiens ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 0 auto;
+  width: 80.9375%;
+}
+
+main a {
+  font-size: 1.5625vw;
+}
+
+main #prevArrow {
+  display: block;
+  width: 8.8541666667vw;
+}
+
+#sagitil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#sagitil h2 {
+  font-size: 2.6041666667vw;
+  margin-bottom: 2.34375vw;
+}
+
+#sagitil div {
+  margin-bottom: 6.0416666667vw;
+}
+
+#sagitil div p {
+  text-align: left;
+  font-size: 1.5625vw;
+}
+
+#cards {
+  margin-top: 8.3854166667vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#cards .card_milieu {
+  margin: 0 64px;
+  margin-bottom: 81px;
+}
+
+#cards .card_bas {
+  margin: 0 64px;
+}
+
+#cards ._large-card ._card-content ._container-img {
+  bottom: -7px;
+}
+
+#cards .largeCard {
+  width: 29.8584298584%;
+  height: 36vw;
+  margin-left: 3rem;
+}
+
+#cards h3 {
+  font-size: 1.5625vw;
+}
+
+#topArrow {
+  display: inline-block;
+  margin-top: 12rem;
+}
+
+.active {
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: auto;
+  margin-bottom: 2rem;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+  font-style: italic;
+}
+
+.notActive {
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 5px 5px 10px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
+}
+
+.coachingVideos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 3fr 1fr;
+
+  gap: 0.7rem;
+}
+
+.video-responsive {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.eachVideos {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.vignette {
+  width: 200%;
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=coachingCarrieres.css.map */

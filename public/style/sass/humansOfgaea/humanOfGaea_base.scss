@@ -1,0 +1,123 @@
+@use "sass:math";
+@import "../_function";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  width: pxToPourcent(1920, 1920);
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(42, 1920);
+  position: relative;
+}
+
+h1 {
+  font-size: pxToVw(60, 1920);
+  line-height: pxToVw(90, 1920);
+  margin: 0;
+}
+
+h2 {
+  font-size: pxToVw(50, 1920);
+  line-height: pxToVw(75, 1920);
+  margin: 0;
+}
+
+ul li {
+  list-style: none !important;
+}
+
+h3,
+h4 {
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(34, 1920);
+  margin: 0;
+}
+
+#header p {
+  font-size: pxToVw(30, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+// HEADER
+
+// #header {
+//   width: 100%;
+//   height: pxToVw(768, 1920);
+//   display: flex;
+
+//   ._text-content {
+//     width: 100%;
+//     height: pxToVw(768, 1920);
+//     display: block;
+
+//     background-color: #464362;
+//     color: white;
+
+//     .text {
+//       margin-left: pxToVw(183, 1920);
+//       margin-right: pxToVw(106, 1920);
+//       margin-top: pxToVw(215, 1920);
+
+//       h2 {
+//         // border: 1px solid black;
+//         margin-bottom: pxToVw(36px, 1920);
+//       }
+//     }
+//   }
+
+//   ._background {
+//     background-image: url("../../../images/PagesProjets/headerDesPagesProjets.png");
+//     width: 100%;
+//     height: pxToVw(768, 1920);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+// }
+
+#prevArrow {
+  // background-color: coral;
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(36, 1920);
+  display: inline-block;
+  margin-top: pxToVw(100, 1920);
+  margin-left: pxToVw(183, 1920);
+}
+
+#topArrow {
+  display: inline-block;
+  margin-left: pxToVw(183, 1920);
+  // background-color: coral;
+  font-size: pxToVw(28, 1920);
+  line-height: pxToVw(36, 1920);
+}
+
+
+
+#main {
+  width: pxToVw(1290, 1920);
+  margin: 0 auto;
+  // // height: pxToVw(700px,1920); // provisoire
+  // background: lightblue; // provisoire
+  margin-bottom: pxToVw(83px, 1920);
+
+  h2 {
+    font-size: pxToVw(50px, 1920);
+    line-height: pxToVw(36px, 1920);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: pxToVw(28, 1920);
+    line-height: pxToVw(42, 1920);
+    margin-bottom: 0;
+  }
+}
+
+#topArrow {
+  margin-bottom: pxToVw(40, 1920);
+}

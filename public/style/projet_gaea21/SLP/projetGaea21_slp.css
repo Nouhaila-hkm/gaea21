@@ -1,0 +1,106 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2.65625vw;
+}
+#main .project-title h2 {
+  line-height: 2.6041666667vw;
+  position: relative;
+  margin-left: 2.0833333333vw;
+}
+#main .project-title .logo {
+  width: 5.6770833333vw;
+}
+#main .project-title img {
+  width: 100%;
+}
+#main .intro-slp .partie-1 {
+  display: flex;
+  gap: 3.3333333333vw;
+  margin-bottom: 6.6666666667vw;
+}
+#main .intro-slp .partie-1 .text {
+  width: 81.8604651163%;
+}
+#main .intro-slp .partie-1 .img-horloge {
+  width: 14.8837209302%;
+}
+#main .intro-slp .partie-1 .img-horloge img {
+  width: 100%;
+}
+#main .intro-slp .partie-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 4.2248062016vw;
+}
+#main .intro-slp .partie-2 .text {
+  width: 79.2248062016%;
+}
+#main .intro-slp .partie-2 .img-comm {
+  width: 16.6666666667%;
+}
+#main .intro-slp .partie-2 .img-comm img {
+  width: 100%;
+}
+#main .intro-slp .partie-3 {
+  margin-top: 4.3410852713vw;
+}
+#main .intro-slp .partie-3 p:first-of-type {
+  margin-bottom: 4.8062015504vw;
+}
+#main .intro-slp .partie-3 p:last-of-type {
+  margin-bottom: 4.3410852713vw;
+}
+#main #processus {
+  font-size: 1.25vw;
+  line-height: 1.5104166667vw;
+  margin-bottom: 4.1666666667vw;
+}
+#main #processus :nth-child(n+1) {
+  margin-bottom: 0.78125vw;
+}
+#main #processus .list-processus {
+  width: 85.2713178295%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2.6041666667vw;
+  margin-top: 2.0833333333vw;
+}
+#main #processus .list-processus .processus {
+  width: 24.7272727273%;
+  font-weight: bold;
+}
+#main #processus .list-processus .processus .numero {
+  display: inline-block;
+  padding: 0.3636363636vw 0.7272727273vw;
+  background: #989751;
+  border-radius: 50%;
+  color: white;
+}
+#main #sous-programmes p:first-of-type {
+  margin-bottom: 2.6041666667vw;
+}
+#main #sous-programmes .sous-programmes {
+  width: 85.2713178295%;
+  margin: 4.8697916667vw auto 8.3854166667vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.1454545455vw 1.8181818182vw;
+}
+#main #sous-programmes .sous-programmes .btn-popup {
+  width: 22.5454545455%;
+  height: 4.1666666667vw;
+}
+#main #sous-programmes p:last-of-type {
+  margin-bottom: 4.7395833333vw;
+}
+
+/*# sourceMappingURL=projetGaea21_slp.css.map */

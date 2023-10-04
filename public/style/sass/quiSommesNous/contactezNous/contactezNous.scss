@@ -1,0 +1,89 @@
+@use "sass:math";
+@import "../../_function";
+
+#tertiaryMenu {
+  display: none;
+}
+
+#projects,#vignettes{
+  display: none;
+}
+
+#encartProjet{
+  display: none;
+}
+
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+       
+        background-color:#98984B;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(164, 1920);
+            text-align: center;
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(75.38, 1920);
+                font-size: pxToVw(60, 1920);
+            }
+            img{
+                width: pxToVw(434.1, 1920);
+                height: pxToVw(282.54, 1920);
+                //margin-top: pxToVw(75.38, 1920);
+                margin-bottom: pxToVw(164.54, 1920);
+            }
+        }
+        
+    }
+
+    ._background {
+        background-image: url("../../../../images/QuiSommesNous/contactezNous/contactezNous.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#main {
+    margin-top: pxToVw(21, 1920);
+    // border: 1px solid black;
+  
+    .text-content {
+      // border: 1px solid black;
+      margin: 0 auto;
+      text-align: justify;
+  
+      h2 {
+        font-weight: bold;
+        text-align: center;
+  
+        margin-bottom: pxToVw(55, 1920);
+       
+      }
+  
+      p {
+          text-align: center;
+      }
+  
+      .description {
+        margin-bottom: pxToVw(120, 1920);
+      }
+    }
+}
+
+
+#organizationDebut, #organizationFin{
+    display:none
+}

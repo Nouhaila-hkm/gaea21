@@ -1,0 +1,162 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+	{{ parent() }}
+	{{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('platformEntree') }}
+	<link href="{{ asset('style/loginuniversel/loginUniversel.css') }}" rel="stylesheet"/>
+
+{% endblock %}
+
+{% block title %}Gaea21 || Login Universel
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+<main>
+
+	<section class="head_section">
+		<article>
+			<div>
+				<h1>Le login universel de gaea21</h1>
+				<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
+				<a href="">S'inscrire <span> ></span></a>
+			</div>
+		</article>
+		<article>
+			<a href="#about">De quoi s’agit-il ?</a>
+			<a href="#functioning">Comment ça fonctionne ?</a>
+			<a href="#platform">Plateformes</a>
+			<a href="#target">Cibles</a>
+		</article>
+	</section>
+	{# De quoi s’agit-il ? section#}
+	<section id="about">
+		<article>
+
+			<img src="{{ asset('images/loginUniversel/ladypc.png') }}" alt="fille using son ordinateur">
+
+		</article>
+		<article>
+			<h3>De quoi s’agit-il ?</h3>
+			<p>gaea21 propose un univers de sites (<span>plateformes</span>) pour
+				<span>différentes cibles
+				</span>afin de mettre en place des modèles d’action de changement de comportement sur-mesure pour réduire l’impact environnemental de chaque cible. Afin de faciliter votre expérience utilisateur chez nous, le login universel gaea21 est un système de création de compte universel.</p>
+		</article>
+	</section>
+
+	{# Comment ça fonctionne ? section#}
+
+	<section id="functioning">
+		<h3>Comment ça fonctionne ?</h3>
+		{# stage1 #}
+		<article>
+
+			<img src="{{ asset('images/loginUniversel/etape1.svg') }}">
+
+			<p>
+				Pour commencer, vous devez créer un compte d’utilisateur universel. Depuis la page d’accueil de gaea21, cliquez sur le logo de XXX dans le coin supérieur droit;
+			</p>
+		</article>
+		{# stage2 #}
+		<article>
+
+			<img src="{{ asset('images/loginUniversel/etape2.svg') }}">
+
+			<p>
+				Cliquez sur « Créer un compte universel gaea21 ». Saisissez vos renseignements dans les champs requis.
+			</p>
+		</article>
+		{# stage3 #}
+		<article>
+
+			<img src="{{ asset('images/loginUniversel/etape3.svg') }}">
+
+			<p>
+				Une fois le compte créé, le login universel vous permet d’<span>accéder à tous vos comptes</span>
+				en utilisant une seule connexion avec le même identifiant et mot de passe.
+			</p>
+		</article>
+	</section>
+
+	{# Voilà pourquoi le login universel est si bien SECTION #}
+	<section class="whyisgood">
+		<p>Voilà pourquoi le login universel est si bien.</p>
+	</section>
+	<section class="experience">
+		<p>Le login universel de gaea21
+		</p>
+		<p>vous offre une expérience utilisateur simplifiée !</p>
+		<ol>
+			<li>en vous intégrant sur toutes les plateformes gaea21 rejointes.</li>
+			<li>en vous améliorant l’administration.</li>
+			<li>en vous offrant une vue d’ensemble sur vos programmes au travers du tableau de navigation.</li>
+		</ol>
+	</section>
+
+	{# les plateformes de gaea21 SECTION #}
+	<section id="platform">
+		<h3 class="title">Les plateformes de gaea21</h3>
+		<p class="contenu">En joignant les plateformes de gaea21, vous obtenez les outils nécessaires pour mettre en place des solutions d’accompagnement pour un changement de comportement, réduire votre impact et améliorer votre empreinte.</p>
+         <div id="platform_carousel"></div>
+         <span class="ligne"></span>
+	</section>
+
+    {# les cibles de gaea21 SECTION #}
+	<section id="target">
+		<h3>Les cibles</h3>
+		<p>Vous pouvez naviguer avec facilité entre les différents sites et programmes de gaea21 tels que le Répertoire Verts, Grow your Own, etc., en utilisant une seule connexion. Pour ce faire, les plateformes gaea21 sont regroupées par cible que pouvez retrouver et joindre ci-dessous.</p>
+         
+
+         {# Individus Familles #}
+        <article>
+            <p>Individus Familles</p>
+            <img src="{{ asset('Image/icons/iconCfamily.svg') }}">
+            <a class="discovery-button" href="">Découvrir  ></a>
+        </article>
+
+            {# Entreprises #}
+        <article>
+            <p>Entreprises</p>
+            <img src="{{ asset('Image/icons/iconCentreprise.svg') }}">
+            <a href="" class="discovery-button">Découvrir  ></a>
+        </article>
+
+             {# Administrations Villes Régions #}
+        <article>
+            <p>Administrations Villes Régions</p>
+            <img src="{{ asset('Image/icons/iconCcity.svg') }}">
+            <a href="" class="discovery-button">Découvrir  ></a>
+        </article>
+
+               {# Associations ONG  #}
+        <article>
+            <p>Associations ONG</p>
+             <img src="{{ asset('Image/icons/iconCfamily.svg') }}">
+            <a href="" class="discovery-button">Découvrir  ></a>
+        </article>
+
+                {# Porteurs de projets #}
+        <article>
+            <p>Porteurs de projets</p>
+             <img src="{{ asset('Image/icons/iconCfamily.svg') }}">
+            <a href="" class="discovery-button">Découvrir  ></a>
+        </article>
+        
+	</section>
+
+
+</main>
+
+
+{# <footer>
+	{% block footer %}
+		{% include "/gaea21/footer.html.twig" %}
+	{% endblock %}
+</footer> #}
+            {% block javascript %}
+				  {{ encore_entry_script_tags('platformEntree') }}
+                  {# {{ parent() }} #}
+			{% endblock %}
+{% endblock %}

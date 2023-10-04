@@ -1,0 +1,31 @@
+@use "sass:math";
+@import "../../_function";
+
+.previous{
+
+    display:flex;
+    align-items: center;
+    font-size:pxToVw(28,1920);
+    line-height: pxToVw(36,1920);
+    transition: all .1s;
+
+    a{
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    .svg-prev{
+        transform: scale(.4);
+        // align-self: end;
+    }
+
+    &:hover{
+        border-bottom:2px solid black;
+        cursor:pointer;
+
+        .svg-prev{
+            transform:scale(.5);
+            stroke-width: 3;
+        }
+    }
+}

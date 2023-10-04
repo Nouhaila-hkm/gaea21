@@ -1,0 +1,125 @@
+.gaeaLife {
+  padding-top: pxToVw(115px, 1920px);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleGaeaLife {
+  margin-top: 0;
+  margin-bottom: pxToVw(93px, 1920px);
+  font-family: "Helvetica";
+  font-size: pxToVw(50px, 1920px);
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+
+.carouselLife {
+  height: pxToVw(750px, 1920px) !important;
+  width: 100%;
+  background-color: white !important;
+  opacity: 1;
+}
+
+.carousel {
+  height: 100% !important;
+  background-color: white !important;
+}
+
+.carousel-item {
+  width: pxToPourcent(2304px, 1920px);
+}
+
+.imagesGaeaLife {
+  width: pxToPourcent(2649px, 1920px) !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  z-index: 0;
+  background-color: white !important;
+}
+
+.lifeImage {
+  height: 335px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.scrollImage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.scrollRow {
+  height: 29px;
+  width: 71px;
+  width: 14px;
+  margin-top: 43px;
+}
+
+.indicator {
+  height: 16px;
+  width: 71px;
+  margin-left: pxToPourcent(54px, 1920px);
+  margin-right: pxToPourcent(54px, 1920px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.scrollCercle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #989655;
+  border-radius: 50% 50% 50% 50%;
+}
+
+.modalLife {
+  position: relative !important;
+  height: pxToVw(550px, 1920px);
+  z-index: 2;
+  opacity: 1;
+  background-color: white;
+}
+
+.closeModal {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: start !important;
+  padding-right: pxToPourcent(20px, 1920px);
+  color: white;
+}
+
+.imgModal {
+  height: 92%;
+}
+
+.titreModal {
+  position: absolute;
+  top: pxToVw(510px, 1920px);
+  margin: 0 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: pxToVw(25px, 1920px);
+}
+
+.grandModal {
+  background-color: rgba(77, 77, 77, 0.7);
+  width: 100%;
+  height: 94%;
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=gaea21Life.css.map */

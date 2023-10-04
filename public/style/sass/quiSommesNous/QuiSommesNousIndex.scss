@@ -1,0 +1,43 @@
+@use "sass:math";
+@import "../_function";
+
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+  display: block;
+
+  
+    width: 100%;
+    height: pxToVw(768, 1920);
+
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.3) 0%), url("../../../images/QuiSommesNous//header_quiSommesNous.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 36%;
+
+  
+
+  ._text-content {
+    width: 38.8%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: pxToVw(183px, 1920);
+    position: relative;
+    top: 25.2%;
+
+    .header-title {
+      margin-bottom: pxToVw(50px, 1920);
+    }
+  }
+}
+
+#organizationDebut {
+  display: none;
+}
+
+#organizationFin {
+  display: none;
+}

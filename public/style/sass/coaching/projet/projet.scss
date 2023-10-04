@@ -1,0 +1,241 @@
+@use "sass:math";
+@import "../../_function";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    // font-family: Helvetica, sans-serif;
+    // line-height: ;
+}
+
+.headerAccompagnement{
+    display: flex;
+    height: pxToVw(768,1920);
+    color: white;
+}
+
+#header1,#header2{
+    width: 50%;
+}
+
+#header1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3F3D56;
+    
+    article{
+        width: 70%;
+
+        h1{
+            font-size: pxToVw(50,1920);
+        }
+
+    }
+}
+
+#header2{
+    background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+    background-position: center;
+}
+
+
+
+.listeLiens{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: pxToVw(120,1920);
+    border: 1px solid grey;
+    margin-bottom: pxToVw(60,1920);
+    ul{
+        display: flex;
+        gap: pxToVw(115,1920);
+        font-size: pxToVw(25,1920);
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+main, #suiteMain{
+    width:pxToPourcent(1554, 1920); 
+    margin: 0 auto;
+    
+    #prevArrow{
+        display: block;
+        width: pxToVw(170,1920);
+    }
+}
+
+
+#cycles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 61.5px;
+}
+
+#cycles>div{
+    width: pxToVw(464,1920);
+    height: pxToVw(280,1920);
+    margin: 10px;
+}
+
+#projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/projet.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 23px;
+}
+
+#humain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+#statistiques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url("../../../images/coaching/accompagnement/humain.png");
+    background-position: center;
+    border-radius: 23px;
+    background-size: cover;
+}
+
+#vieGaeien{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: pxToVw(1290,1920);
+    margin: 0 auto;
+
+    h2{
+        font-size: pxToVw(50,1920);
+        margin-top: pxToVw(90,1920);
+        margin-bottom: pxToVw(45,1920);
+    }
+    div{
+        font-size: pxToVw(28,1920);
+    }
+}
+
+.decouvrir{
+    font-size: pxToVw(21,1920);
+    margin-top: pxToVw(45,1920);
+    width: pxToVw(181,1920);
+    height: pxToVw(61,1920);
+    background-color: #98984B;
+    border-radius: pxToVw(45,1920);
+    border: #98984B;
+    color: white;
+    span{
+        font-size: pxToVw(25,1920);
+    }
+}
+
+.decouvrir:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#avant,#pendant,#apres{
+    h2{
+        font-size: pxToVw(40,1920);
+    }
+    p{
+        font-size: pxToVw(30,1920);
+    }
+}
+
+#avant{
+    display: flex;
+    justify-content: space-between;
+    margin-top: pxToVw(123,1920);
+    #imageAvant{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #paragrapheAvant{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+#pendant{
+
+    display: flex;
+    width: pxToVw(1920,1920);
+
+    #imagePendant{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #paragraphePendant{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(247, 247, 248);
+        width: 50%;
+    
+
+        #containerParaPendant{
+            width: 70%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+}
+
+#apres{
+    display: flex;
+    justify-content: space-between;
+
+    #imageApres{
+        width: 50%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    #paragrapheApres{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+#avant, #pendant, #apres{
+    margin-bottom: pxToVw(123,1920);
+}

@@ -1,0 +1,105 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.stop {
+  overflow: hidden;
+}
+
+#main {
+  display: none;
+}
+
+#organizationFin {
+  display: none;
+}
+
+.modele_text {
+  margin-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.hidden {
+  display: none;
+}
+
+.modele_img {
+  width: 20vw;
+  height: 20vw;
+  margin-top: 2vw;
+  float: left;
+}
+
+.h2_modele {
+  margin-left: 4%;
+}
+
+.text_modal {
+  margin-bottom: 3rem;
+}
+
+.img_list_title {
+  margin-left: 20vw;
+  width: 34.53125vw;
+}
+
+.img_tools {
+  width: 8.75vw;
+  margin-left: 24.84375vw;
+  margin-right: 2.6041666667vw;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools_content {
+  display: flex;
+}
+
+.tools_text {
+  font-size: 1.25vw;
+  margin-top: 2%;
+  width: 46.71875vw;
+}
+
+.valor_size {
+  width: 45vw;
+}
+
+.transmission {
+  margin-left: 9.53125vw !important;
+}
+
+.img_tools {
+  width: 8.75vw;
+  margin-left: 24.84375vw;
+  margin-right: 2.6041666667vw;
+}
+
+.img_list_title {
+  margin-left: 20vw;
+  width: 34.53125vw;
+}
+
+.inter_page {
+  width: 80.9375vw;
+  margin-left: 9.53125vw;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.projet_text {
+  font-weight: bolder;
+  font-size: 2.3vw;
+  margin-bottom: 5%;
+}
+
+.img_projet {
+  margin-left: 11.25vw;
+  width: 77.5520833333vw;
+}
+
+/*# sourceMappingURL=gestion_projet.css.map */

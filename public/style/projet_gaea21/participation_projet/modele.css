@@ -1,0 +1,66 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.modele_list {
+  list-style: disc !important;
+  margin-left: 2.5vw;
+  line-height: 3.5rem;
+  font-weight: 600;
+}
+
+.top_inclusion {
+  margin-left: 9.53125vw;
+  margin-top: 5%;
+  line-height: 6rem;
+}
+
+.inclusion_img {
+  margin-left: 9.53125vw;
+  margin-right: 1.40625vw;
+  width: 10vw;
+}
+
+.inclusion_article {
+  display: flex;
+}
+
+.inclusion_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: -2%;
+}
+
+.know_more {
+  width: 10.2604166667vw;
+  margin-left: 36vw;
+  margin-top: -1vw;
+}
+
+.know_more, .modele_more:hover {
+  cursor: pointer;
+}
+
+.modele_more {
+  width: 10.2604166667vw;
+  margin-left: 1.5vw;
+}
+
+.second {
+  margin-left: 13.5%;
+}
+
+.impact {
+  margin-bottom: 3%;
+}
+
+.end_text {
+  margin-bottom: 10%;
+}
+
+.resize {
+  width: 45vw;
+}
+
+/*# sourceMappingURL=modele.css.map */

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192.414" height="131.502" viewBox="0 0 192.414 131.502">
+  <g id="Groupe_2070" data-name="Groupe 2070" transform="translate(-873.956 -2713.284)">
+    <g id="Icon_feather-package" data-name="Icon feather-package" transform="translate(875.456 2714.919)">
+      <path id="Tracé_1708" data-name="Tracé 1708" d="M105.957,39.5,11.25,6.315" transform="translate(36.104 7.801)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_1709" data-name="Tracé 1709" d="M193.914,92.5V41.351c-.008-4.564-4.018-8.779-10.523-11.061L109.73,4.716a33.176,33.176,0,0,0-21.046,0L15.023,30.29c-6.5,2.282-10.515,6.5-10.523,11.061V92.5c.008,4.564,4.018,8.779,10.523,11.061l73.661,25.574a33.176,33.176,0,0,0,21.046,0l73.661-25.574C189.9,101.277,193.906,97.062,193.914,92.5Z" transform="translate(-4.5 -3.003)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_1710" data-name="Tracé 1710" d="M4.905,10.44,96.771,42.727,188.637,10.44" transform="translate(-2.064 21.258)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Tracé_1711" data-name="Tracé 1711" d="M18,82.446V18" transform="translate(76.707 45.921)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <line id="Ligne_268" data-name="Ligne 268" y1="33.397" x2="92.978" transform="translate(920.314 2728.104)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-width="2"/>
+    <line id="Ligne_269" data-name="Ligne 269" y2="66" transform="translate(919.193 2761.501)" fill="none" stroke="#98984b" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

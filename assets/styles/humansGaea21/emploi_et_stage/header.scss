@@ -1,0 +1,65 @@
+@import '../../function';
+
+
+
+#header {
+
+    .sectionHead {
+        // width: 100%; 
+        display: flex;
+        // flex-direction : row;
+    }
+
+    .header1,
+    .header2 {
+        display: flex;
+        vertical-align: top;
+    }
+
+    .header1 {
+        margin-left: pxToPourcent(0px, 1920px);
+        width: pxToPourcent(964px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: #49A496;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .header2 {
+        margin-left: 0px;
+        width: pxToPourcent(956px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../..//images/Groupe de masques 389.jpg') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-title {
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: pxToPourcent(500px, 1920px);
+        color: #FFFFFF;
+        font-size: pxToVw(50px, 1920px);
+    }
+
+    .p-texte {
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: pxToPourcent(40px, 1920px);
+        width: pxToPourcent(1260px, 1920px);
+        height: pxToPourcent(1120px, 1920px);
+        color: white;
+        font-size: pxToVw(30px, 1920px) !important;
+        text-align: justify;
+
+
+    }
+}

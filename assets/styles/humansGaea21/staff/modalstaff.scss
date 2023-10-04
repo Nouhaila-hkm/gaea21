@@ -1,0 +1,110 @@
+.modalStaff {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto 10% auto auto auto auto auto auto auto;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    background-color: white;
+    border: 1px solid #98984C;
+    border-radius: 12px;
+    // left: calc(50% - 125px);
+    bottom: 70px;
+    padding: 2rem;
+    min-height: 40vw;
+    width: 50vw;
+    margin-left: 30%;
+    margin-top: 5%;
+
+    inset: 210% auto auto 50%;
+    transform: translate(0%, 0%);
+
+    .cross-container {
+        width: 8%;
+        min-width: 2rem;
+        position: absolute;
+        top: -6%;
+        right: -4%;
+    }
+
+    .close {
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .modalStaffPic {
+        display: grid;
+        grid-row: 1 / 4;
+        width: 17vw;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .modalLocalisation {
+        font-weight: lighter;
+        font-size: small;
+        margin-top: -2rem;
+    }
+
+    .modalSection {
+        display: grid;
+        grid-column: 1 / 3;
+        margin-bottom: 1rem;
+        color: #98984C;
+        font-weight: bold;
+        width: fit-content;
+
+        .modalText {
+            color: black;
+            font-weight: normal;
+            display: grid;
+            grid-column: none;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+.modalTags {
+    margin-top: 0;
+
+    .modalProjects {
+        font-size: small;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+
+        .project {
+            background-color: #dedea453;
+            border-radius: 5px;
+            margin-bottom: 0.4rem;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .modalSubprojects {
+        font-size: small;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+
+        .project {
+            background-color: #cadae277;
+            border-radius: 5px;
+            margin-bottom: 0.4rem;
+            padding-left: 0.6rem;
+            padding-right: 0.6rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+#sectionProjects {
+    margin-bottom: 1%;
+}

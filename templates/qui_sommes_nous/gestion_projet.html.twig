@@ -1,0 +1,247 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/gestion_projet.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+
+	<h2 class="title_modele">Gestion de projets</h2>
+
+
+		<article class="text_size text_form">
+			<p>
+				Le système d’organisation interne et de travail de gaea21 est basé sur la gestion de projets et la recherche
+				de l’efficacité opérationnelle. Les formations théoriques en gestion de projets ne permettent pas de développer
+				des compétences réelles en gestion de projets. Il n’y a pas d’acquis sans pratique, ni expérience de terrain.
+				C’est sur cette base que s’établit le modèle de gaea21.
+			</p>
+
+			<p>	
+				 Afin que les différentes équipes soient à même de répondre
+				aux besoins et de mener à bien les projets de l’association, plusieurs outils ainsi qu’une méthodologie ont été mis
+				en place.
+			</p>
+
+			<p>
+
+				 Le challenge à relever consiste à être capable de développer plusieurs projets simultanément dans
+				des domaines d’activités différents en intégrant la collaboration de personnes dotées de profils,
+				de niveaux de compétences et de niveaux d’expérience variables.
+			</p>
+
+			<p>
+				 L’action de gaea21 s’articule par conséquent autour des points suivants :<br>
+				<b>> Une méthodologie en quatre étapes clés</b> : lancement-planification-contrôle et clôture
+				inscrite dans une logique systémique, pluridisciplinaire et durable.<br>
+				<b> > Une procédure projets internes</b> claire et basée
+				sur la rigueur de mise en place et de respect des délais.
+			</p>
+		</article>
+
+        <img class="img_projet" src="{{ asset('images/QuiSommesNous/modele/plan_projet.svg') }}"/>
+
+        <article class="text_size text_form">
+            <p>
+                <b>> Un suivi de l’évolution des projets</b> à travers plusieurs outils créés afin de permettre aux équipes de<br>
+                gérer de front plusieurs projets et plusieurs compétences.
+            </p>
+
+            <p>
+                La gestion de projet chez gaea21 s’articule autour de d’<b>outils complémentaires</b> :
+            </p>
+        </article>
+
+        <img class="img_list_title" src="{{ asset('images/QuiSommesNous/modele/projet_management.svg') }}"/>
+
+        <article class="tools">
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>TSC (tableau suivi collaborateur)</b><br>
+                    Ce tableau permet de suivre le parcours du nouveau collaborateur,
+                    son contexte de recrutement, ses projets et ses objectifs au sein de gaea21…<br>
+                </p>
+            </div>
+            <div id="ModalModele1"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Tableau de compétences métier</b><br>
+                    Ce tableau permet de choisir les métiers gaea21 correspondant au profil carrière
+                    du collaborateur. Il comprend deux parties: l’une une fiche métier qui répertorie
+                    tous les métiers possibles…<br>
+                </p>
+            </div>
+            <div id="ModalModele2"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Cahier des charges spécifiques</b><br>
+                    Il est complémentaire au modèle de collaboration,
+                    le cahier des charges spécifiques indique de manière plus précise les tâches
+                    que le collaborateur aura à effectuer…<br>
+                </p>
+            </div>
+            <div id="ModalModele3"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Tableau de suivi des équipes</b><br>
+                    Ce tableau permet au coordinateur de prendre connaissance des projets, compétences et réalisations
+                    de chaque membre de l’équipe. Il permet d’identifier les points forts et atouts de
+                    chacun dans le projet…<br>
+                </p>
+            </div>
+            <div id="ModalModele4"></div>
+        </article>
+
+        <img class="img_list_title" src="{{ asset('images/QuiSommesNous/modele/projet_gestion.svg') }}"/>
+
+        <article class="tools">
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Executive summary</b><br>
+                    Tout comme un CV, il présente globalement et de manière concise le résumé du projet,
+                    ses objectifs, ses étapes, ses stratégies et son impact au plan social, environnemental,
+                    économique…<br>
+                </p>
+            </div>
+            <div id="ModalModele5"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Gantt</b><br>
+                    Un outil de pilotage de projet qui permet d’ordonnancer les différentes tâches
+                    à effectuer dans le temps, de connaître le timing de toutes les opérations et
+                    de prévenir leurs chevauchements…<br>
+                </p>
+            </div>
+            <div id="ModalModele6"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Rapport d’activités</b><br>
+                    Chaque semaine la qualité de travail du collaborateur est évaluée par un système de notation.
+                    Le collaborateur y inscrit les nouvelles tâches communiquées par le coordinateur qui lui
+                    transmet ses nouvelles tâches,…<br>
+                </p>
+            </div>
+            <div id="ModalModele7"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Rapport hebdomadaire</b><br>
+                    Chaque semaine, les jeudis avant midi, le président et l’équipe formation
+                    interne reçoivent des coordinateurs ce document qui présente synthétiquement
+                    les avancées du projet, les réalisations par équipe…<br>
+                </p>
+            </div>
+            <div id="ModalModele8"></div>
+
+            <div class="tools_content">
+                <img class="img_tools" src="{{ asset('images/QuiSommesNous/modele/Rectangle.svg') }}"/>
+                <p class="tools_text">
+                    <b>Action log</b><br>
+                    chaque semaine, le coordinateur reçoit le document qui lui permet d’évaluer chaque membre
+                    de l’équipe, d’une part les performances, c’est-à-dire, le rapport entre les ressources
+                    employées et la réussite…<br>
+                </p>
+            </div>
+            <div id="ModalModele9"></div>
+        </article>
+
+        <img class="inter_page" src="{{ asset('images/QuiSommesNous/modele/inter_page.svg') }}"/>
+
+        <article class="img_text_article">
+			
+			<img class="img_with_text" src="{{ asset('images/QuiSommesNous/modele/valoriser.png') }}"/>
+
+			<div class="text_with_img valor_size no_marge">
+				<p class="projet_text">
+				    Valoriser les compétences et aider au<br>
+                    développement des individus
+				</p>
+
+				<p>Le modèle collaboratif de gaea21 est base sur 3 dimensions :</p>
+				<ul class="modele_list valor">
+					<li class="modele_list">la transmission du savoir par un système juniors-seniors</li>
+					<li class="modele_list">la pluridisciplinarité par la gestion transversale des projets</li>
+                    <li class="modele_list">la gestion des compétences à travers la formation continue
+                    et un système de monitoring et d’évaluation intégré à chaque tâche et à chaque projet.</li>
+
+				</ul>
+			</div>	
+		</article>
+
+        <article class="img_text_article">
+
+			<div class="text_with_img valor_size no_marge transmission">
+				<p class="projet_text">
+				    L’acquisition et la transmission<br>
+                     du savoir
+				</p>
+
+				<p>
+                    gaea21 accueille une variété de <b>profils avec des niveaux d’expérience et de formation différents.</b>
+                    Le challenge consiste à les faire collaborer harmonieusement tout en réalisant des projets.
+                    Le <b>système juniors-seniors</b> s’organise selon 2 options permettent d’y répondre efficacement.
+                </p>
+
+                <p>    
+                    L’encadrement par un ou plusieurs seniors qui s’occupent de la gestion du projet, répartit les
+                    taches, organise les étapes, les échéances, le suivi des taches et les livrables.
+                    Leur rôle consiste a s’assurer de l’exécution et du succès du projet.
+                    Ils garantissent aussi l’acquisition d’expérience et de compétences par le junior.
+                </p>
+			</div>
+
+            <img class="img_with_text" src="{{ asset('images/QuiSommesNous/modele/transmission.png') }}"/>	
+		</article>
+
+        <article class="text_size text_form transmission">
+            <p>
+                <b>Le peer-reviewing</b> avec la mise en place d’une équipe de plusieurs juniors
+                travaille sur un projet sur la base d’une recherche puis analyse de données puis
+                création d’un modèle synthétique avant application au projet. Le travail est collectif
+                et fait l’objet d’une évaluation à l’intérieur du groupe de juniors travaillant sur le projet
+                puis d’une validation par le cadre du département et/ou un membre senior de gaea21.
+            </p>
+        </article>
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+        {{ encore_entry_script_tags('ModalModele') }}
+		{% endblock %}
+

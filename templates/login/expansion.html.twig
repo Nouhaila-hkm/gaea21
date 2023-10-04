@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'expansion de compte{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('form') }}
+    {{ encore_entry_link_tags('expansionForm') }}
+{% endblock %}
+
+
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+    <div class="imgHeader">
+        <img src="{{ asset('imagesgaea21/feuilles_vertes.png') }}" alt="Feuilles vertes" width="100%" height="440"/>
+        <h1 class="textHeader">Expansion</h1>
+    </div>
+
+    <div class="formRegistration">
+        <div class="expansionForm" data-gaea-user-id={{ gaeauser_id }}></div>
+        <a class="returnHomepageLink" href="{{ path('home') }}">Retour à l'accueil</a>
+    </div>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('form') }}
+        {{ encore_entry_script_tags('expansionForm') }}
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,29 @@
+<article>
+	<h3><a href="{{ url('article',{'article':article.id,'langue':langue}) }}#mainarticle">{{ article.content.title }}</a></h3>
+	<span>
+		<time datetime="{{ article.content.dateCreation|date("Y-m-d") }}">{{ article.content.dateCreation|date("M. d Y") }}</time>
+		 - {{ article.content.author }}
+	</span>
+{#
+	<img src="{{ assetOr("Image/article/"~article.id~".png","Image/imageGaea21.jpg") }}"/>
+#}
+	<img src="{{article.content.image }}"/>
+	{{ article.content.formatedText|truncatehtml(0,250,true)|raw }}
+	{% for share in article.shares %}
+		<a
+			style="background-color:{{ share.tool.colorCode }}; color:{{ share.tool.foregroundColorCode }};"
+			href="{{ url('articleshare',{'article':article.id,'tool':share.tool.id,'langue':langue}) }}"
+			title="Share on {{ share.tool.name }}"
+			target="_blank"
+		>
+			<img src="{{ asset("Image/socials/"~share.tool.name~".png") }}"/>
+			<span>{{ share.count|niceNumber }}</span>
+		</a>
+	{% endfor %}
+	<span class="tags">
+		Tagué avec :
+		{% for tag in article.content.tags %}
+			<a href="{{ createGET(["category","search"],{"tag": tag.normalized}) }}">{{tag.rawText}}</a>{{ loop.last ? " " : ","}}
+		{% endfor %}
+	</span>
+</article>

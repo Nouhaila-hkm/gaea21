@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Ajouter des fields </h1>
+
+<div id="like_button_container"></div>
+
+{% endblock %}
+
+{% block javascripts %}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"> </script> 
+
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<script type="text/babel" src="{{asset('js/section.js')}}"></script>
+
+{% endblock %}
+
+

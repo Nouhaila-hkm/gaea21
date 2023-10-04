@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    <link href="{{ asset('style/coaching/av_pt_ap/av_pt_ap.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+    <a id="prevArrow" data-link="/coaching/projet"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# DE QUOI S'AGIT-IL #}
+    <section class="projet" id="projetPendant">
+        
+            <h2>Le cycle de vie du gaeien / projet <span>pendant</span> !</h2>
+            <div><p class="projetDesc">Descriptif des outils de suivi, de gestion de projet, de gestion de la compétence, d’évaluation individuelle et de management d’équipe de gaea21.</p></div>
+
+            <div class="stepsContainer">
+                
+
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+                <div class="pointilleAv"></div>
+
+                <div class="progressContainer">
+                
+                    <div class="progression" id="progression"></div>
+
+                    <div class="circle active"><p class="pendant">Compétence métier</p></div>
+
+                    <div class="circle"><p class="pendant">Suivi / RH projet + RH coaching</p></div>
+
+                    <div class="circle"><p class="pendant">Evaluations hebdomadaires</p></div>
+
+
+                </div>
+
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+                <div class="pointille"></div>
+            </div>
+                    
+    </section>
+
+</main>
+
+<div id="carrousel">
+
+    <button id="g"><a id="lien_avant">&#8249;</a></button>
+
+    <div id="container">
+
+        <div class="slide">
+            <div class="slideImg center">
+                <img class="pendant1" src="{{ asset('images/coaching/projet/competence_metier_top.png') }}">
+                <img class="pendant2" src="{{ asset('images/coaching/projet/competence_metier_bottom.png') }}">
+            </div>
+            <div class="slideContent">
+
+                <h3>Compétence métier</h3>
+                <p>Dans un premier temps, on va établir un <b>bilan de compétences métiers</b> d'entrée de nouveau collaborateur. A partir d'une matrice de compétences spécifique pour chaque métier, on va établir un profil de compétences-métier individuel pour chacune des compétences, sur la base d'une échelle à 3 niveaux pour chaque compétence listée :&nbsp</p>
+
+                <ul>
+                    <li><p>Niveau 1 : bases ou à développer</p></li>
+                    <li><p>Niveau 2 : maitrise</p></li>
+                    <li><p>Niveau 3 : expertise</p></li>
+                </ul>
+
+                <p>Ensuite, ce profil compétences est reporté dans un <b>tableau de suivi</b> dans lequel sera appliquée la règle des 70/30 (70% des projets et tâches attribués le seront en fonction des compétences références - niveaux 2 et 3. 30% des projets attribués le seront sur la base des compétences à développer - niveau 1- ) pour l'attribution des sous projets spécifiques sur lesquels va collaborer le nouvel arrivant.</p>
+
+            </div>
+        </div>
+        
+        <div class="slide">
+            <div class="slideImg"><img class="pendant3" src="{{ asset('images/coaching/projet/suivi_rh.png') }}"></div>
+            <div class="slideContent">
+
+                <h3>Suivi / RH projet + RH coaching</h3>
+                <p>En parrallèle, il est encadré par deux équipes, <b>l'équipe référents</b>, et <b>le pôle coaching</b> qui sont chargés de le suivre et d'évaluer l'évolution de son niveau pour chaque compétence spécifique appliquée (l'objectif est de passer de niveau 1 à niveau 2 et de niveau 2 à niveau 3 pour chaque compétence) afin d'être en mesure de les valider (sessions hebdomadaires, mi stage, fin de stage bilan de compétences de sortie).</p>
+
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="slideImg">
+                <img class="pendant4" src="{{ asset('images/coaching/projet/eval_hebdo_top.png') }}">
+                <img class="pendant5" src="{{ asset('images/coaching/projet/eval_hebdo_bottom.png') }}">
+            </div>
+            <div class="slideContent">
+
+                <h3>Evaluations hebdomadaires</h3>
+                <p>Ensuite, il y a le modèle d'<b>évaluation hebdomadaire</b> de gaea21. La personne est évaluée chaque semaine sur 3 dimensions (4 si coordinateur de projet / sous-projet). <br>Dans la première dimension le coordinateur va évaluer la <b>qualité du livrable</b> (déterminé à l'avance et structuré dans un outil gantt) sur une échelle de 1 à 6, ensuite le coach RH du projet évalue son <b>comportement</b> son <b>organisation</b> et son <b>professionnalisme</b> (suivi des outils de gestion de temps / tâches / projet individuels mis à la disposition de chaque membre de gaea21), et enfin le département community management évalue son <b>engagement écologique / valeurs</b> (partage et participation active aux discussions, évènements et actions et à la cause de la transition écologique défendue par notre organisation).
+                <br>
+                <br>
+                Ces évaluations hebdomadaires sont reportées dans le <b>Journal de bord</b> (JDB) de chaque membre de gaea21 et sont additionnées pour constituer la note de l'évaluation de la mi-stage ou de la fin de stage. Cette évaluation se fait pour toute personne exerçant son activité avec gaea21.</p>
+
+            </div>
+        </div>
+
+    </div>
+    
+    
+    <button id="d"><a id="lien_suivant">&#8250;</a></button>
+
+</div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('carrouselCoachingPendant') }}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+{% endblock %}

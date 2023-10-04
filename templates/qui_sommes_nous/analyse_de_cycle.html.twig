@@ -1,0 +1,109 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/analyse.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+	<h2 class="title_modele">Analyse de cycle de vie</h2>
+
+		<article class="text_size text_form">
+			<p>
+				Le concept de cycle de vie d’un produit représente les différentes étapes par lesquelles passe chaque 
+                produit lors de son existence : développement, lancement, croissance, maturité, déclin et fin de vie.
+			</p>
+
+		</article>
+
+       
+        <img class="img_toto" src="{{ asset('images/QuiSommesNous/modele/cycle.png') }}"/>
+        <img class="img_titre_analyse" src="{{ asset('images/QuiSommesNous/modele/titre_analyse.png') }}"/>
+
+        <article class="text_size text_form">
+
+
+
+            <p>
+                Son analyse va permettre à une entreprise soucieuse de limiter ses impacts négatifs, de mesurer : 
+            </p>
+            </br>
+            <p>
+                > <b>les inputs nécessaires</b> à la réalisation des activités comprises dans les différentes étapes (matières premières, conditions des ressources humaines,..) 
+            </p>
+            </br>
+            <p>
+                > <b>les outputs générés</b> par ces activités (émissions Co2, pollution,..)
+            </p>
+
+            <p>
+                La gestion de projet chez gaea21 s’articule autour de d’<b>outils complémentaires</b> :
+            </p>
+        </article>
+
+
+        <article class="text_size text_form">
+           <p>
+            Au-delà, l’analyse du cycle de vie permet à l’entreprise d’identifier et de maîtriser l’ensemble de ses 
+            processus entre la conception et la fin de vie des produits ou services qu’elle propose. Elle lui donne 
+            les directions d’actions et détermine les points et les domaines d’amélioration. L’intégration de 
+            processus de cycle de vie à l’entreprise génère de la valeur ajoutée matérielle et immatérielle. 
+            </p>
+            </br>
+            <p>
+            Dans ce contexte, il nous a paru judicieux d’associer le LEAN management (optimisation de l’efficacité 
+            des processus) à l’analyse de cycle de vie (découpage de toutes les étapes d’un produit ou service). 
+            Leur combinaison a pour conséquence:
+            </p>
+        </article>
+
+
+        <article class="text_size text_form">
+            <ul>
+                <b><li class="puces"> 
+                    d’augmenter la productivité de l’entreprise 
+                </li></b>
+            <br>
+                <b><li class="puces"> 
+                    d’augmenter les marges bénéficiaires de l’entreprise 
+                </li></b>
+            <br>
+                <b><li class="puces"> 
+                        de modifier le rapport social à l’intérieur de l’entreprise par la participation et 
+                         l’implication de l’ensemble du personnel. 
+                </li></b>
+            </ul>
+        </article>
+
+        <img class="img_cycle_vie" src="{{ asset('images/QuiSommesNous/modele/circle_of_life.svg') }}"/>
+
+
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

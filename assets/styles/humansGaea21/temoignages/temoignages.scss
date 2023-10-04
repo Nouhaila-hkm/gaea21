@@ -1,0 +1,159 @@
+@import '../../function';
+
+.topbar {
+    top: 0px;
+    left: 0px;
+    width: pxToPourcent(1920px, 1920px);
+    height: pxToVw(120px, 1920px);
+    font-size: pxToVw(20px, 1920px) !important;
+}
+
+.liTopbar {
+    font-size: pxToVw(20px, 1920px) !important;
+}
+
+.material-icons.black-text.medium {
+    display: block !important;
+
+}
+
+#temoignage {
+
+    @import '../home/gaea21Menu.scss';
+    @import './menuButton.scss';
+    @import './navBar.scss';
+    @import './contenu.scss';
+    @import './gaea21Footer.scss';
+    @import './temoignagesEcrits.scss';
+    @import './temEcritsDetail.scss';
+    @import './podcast.scss';
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    .sectionHead {
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../../images/humansGaea21/Groupedemasques27.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logoHumans {
+        /* Layout Properties */
+
+        margin-top: pxToPourcent(400px, 7603px);
+        margin-left: pxToPourcent(119px, 1920px);
+        width: pxToPourcent(431px, 1920px);
+        height: auto;
+        background: transparent;
+        opacity: 1;
+
+
+    }
+
+    .p1 {
+
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: pxToPourcent(325px, 7603px);
+        left: pxToPourcent(183px, 1920px);
+        width: pxToPourcent(432px, 1920px);
+        height: auto;
+
+
+        font-family: "Helvetica";
+        font-size: pxToVw(25px, 1920px);
+        color: white;
+
+    }
+
+    #hearderTemoignage {
+        width: 100%;
+        padding-top: pxToVw(55px, 1920px);
+
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .back {
+            position: relative;
+            top: pxToVw(-180px, 1920px);
+            left: pxToPourcent(-900px, 1920px);
+
+            width: pxToPourcent(18px, 1920px);
+        }
+    }
+
+    .titreTemoignage {
+        margin-top: 0;
+        margin-bottom: pxToVw(32px, 1920px);
+
+        font-family: "Helvetica";
+        font-size: pxToVw(50px, 1920px);
+        font-weight: bold;
+
+        border-bottom: solid 4px #0E7263;
+    }
+
+    .titreParagraphe {
+        left: pxToPourcent(201px, 1920px);
+
+        margin: 0 0 0 0;
+
+        font-family: "Helvetica";
+        font-size: pxToVw(24px, 1920px);
+
+        margin-bottom: pxToVw(47px, 1920px);
+    }
+
+    #somLettre {
+        width: pxToPourcent(1424px, 1920px);
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {
+            height: pxToVw(36px, 1920px);
+            font-size: pxToVw(30px, 1920px);
+            margin: 0 0 0 0;
+        }
+    }
+
+    #contenue {
+        width: 100%;
+        margin-top: pxToVw(113px, 1920px);
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        background-color: white;
+
+    }
+
+    #somLettre {
+        p {
+            cursor: pointer;
+        }
+    }
+}

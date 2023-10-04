@@ -1,0 +1,116 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/PDI/projetGaea21_PDI.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/PDI
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+	<img class="project-logo" src="{{asset('images/PagesProjets/page_pdi/logoPDI.png')}}" alt='logo PDI'>
+		<h2>Plateforme<br> des initiatives<h2>
+	</div>
+
+	<section class="intro-pdi">
+		<article class="partie1">
+			<div class="img-histogramme">
+				<img class="img-graphique" src="{{asset('images/PagesProjets/page_pdi/histogramme.png')}}" alt='histogramme'>
+			</div>
+			<div class="text1">
+				<p><b>La Plateforme des initiatives</b> de gaea21 a pour objectif d'être le <b>premier réseau</b> regroupant des projets partageats une même vision.<br>Les ressources, les compétences (matérielles et/ou intellectuelles) et les initiatives sont centralisées et mutualisées de manière participative.</p>
+			</div>
+		</article>
+
+		<article class="partie2">
+			<div class="text2">
+				<p>Il s'agit ainsi d'un outil permettant d'avoir un <b>aperçu global</b> de tous les projets et initiatives sur le thème du developpement durrable lancés dans une région définie.</p>
+			</div>
+			<div class="img-ecologie">
+				<img class="img-mainverte" src="{{asset('images/PagesProjets/page_pdi/ecologie.png')}}" alt='main avec une feuille dessus'>
+			</div>
+		</article>
+	</section>
+
+	<section class="acteurs">
+		<p><b>PDI</b> s’adresse à des acteurs très variés&nbsp;:</p>
+		<ul class="list-acteur">
+			<li class="acteur"><span class="disc"></span>Associations</li>
+			<li class="acteur"><span class="disc"></span>Administrations</li>
+			<li class="acteur"><span class="disc"></span>Ecoles / universités</li>
+			<li class="acteur"><span class="disc"></span>Agence de l'ONU et autres organisations internationales</li>
+			<li class="acteur"><span class="disc"></span>Investisseurs</li>
+			<li class="acteur"><span class="disc"></span>Personne en recherche d'emploi ou d'un stage,<br>mais également aux personnes ayant un projet d'entrepreunariat.</li>
+		</ul>
+	</section>
+
+	<article class='partie3'>
+		<p>Etre présent sur la <b>plateforme PDI</b> permettra de <b>mettre en lumière son projet</b>, 
+		<b>trouver et créer des synergies</b> avec d’autres acteurs ainsi que <b>trouver de la main d’oeuvre</b> afin de 
+		faire participer activement des personnes en renseignant ses besoins 
+		(bénévole pour les entités non lucratives et rémunérée pour les autres).</p>
+
+		<p><b>PDI</b> permettra également à travers une <b>plateforme intégrée de financement d’investir</b> dans des projets. <br>
+		S’il s’agit de:</p>
+
+		<ul>
+			<li>
+				<img src="{{asset('images/icone_svg_png/fleche-verte.png')}}" alt=""> projets non lucratifs les dons seront sans contrepartie
+			</li>
+			<li>
+				<img src="{{asset('images/icone_svg_png/fleche-verte.png')}}" alt=""> projets lucratifs tout investissement permettra de recevoir des revenus cas échéant
+			</li>
+		</ul>
+
+		<p>Un tableau permettra de suivre de manière continue les avancées du projet pour 
+		ainsi observer de manière concrète à quoi à servi l’investissement.</p>
+	</article>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Plateforme des initiatives' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Plateforme des initiatives'  
+				})}}" >
+	</div>
+{% endblock %}

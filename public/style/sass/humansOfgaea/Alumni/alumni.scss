@@ -1,0 +1,273 @@
+@use "sass:math";
+@import "../../_function";
+
+/* HEADER */
+
+#header {
+  width: 100%;
+  height: pxToVw(768, 1920);
+  display: flex;
+
+  ._text-content {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: block;
+
+    background-color: #49A496;
+    color: white;
+
+    .text {
+      margin-left: pxToVw(183, 1920);
+      margin-right: pxToVw(106, 1920);
+      margin-top: pxToVw(215, 1920);
+
+      h2 {
+        // border: 1px solid black;
+        margin-bottom: pxToVw(36px, 1920);
+      }
+    }
+  }
+
+  ._background {
+    background-image: url("../../../../images/humansOfGaea/Alumni/header-Alumni.png");
+    width: 100%;
+    height: pxToVw(768, 1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+  }
+}
+
+/* Sous-Menu*/
+
+#secondaryNav {
+
+  .navigation-item {
+    padding-right: pxToVw(160, 1920);
+  }
+}
+
+/* Main */
+
+#main {
+  margin-top: pxToVw(21, 1920);
+
+/* Global */
+
+  .first-menu {
+    .first-menu_item {
+      list-style-type: disc !important;
+      margin-left: pxToVw(60, 1920);
+    }
+  }
+
+  .second-menu {
+    .second-menu_item {
+      list-style-type: none !important;
+      margin-left: pxToVw(45, 1920);
+    }
+  }
+
+  .third-menu {
+    .third-menu_item {
+      list-style-type: none !important;
+      margin-left: pxToVw(67, 1920);
+    }
+  }
+
+  .fourth-menu {
+    .fourth-menu_item {
+      list-style-type: none !important;
+      margin-left: pxToVw(100, 1920);
+    }
+  }
+
+  .section-start {
+    display: block !important;
+    margin-bottom: pxToVw(60px, 1920);
+
+
+    .container-fleche_grise {
+      display: inline-block;
+      width: pxToPourcent(27, 1290px);
+      position: relative;
+      left: pxToVw(-122, 1920);
+
+      .fleche_grise {
+        width: 100%;
+      }
+    }
+
+    span {
+      position: relative;
+      left: pxToVw(-54px, 1920);
+      font-weight: bold;
+    }
+
+  }
+
+  .project-title {
+    text-align: center;
+    margin-bottom: pxToVw(51px, 1920);
+  }
+
+  #autres {
+    display: flex;
+    justify-content: space-around;
+    margin-top: pxToVw(88px, 1920);
+    margin-bottom: pxToVw(130px, 1920);
+
+    .smallCard{
+      width: pxToVw(464px,1920);
+    }
+
+    ._small-card ._overlay ._card-header h2 {
+      font-size: pxToVw(30px, 1920) !important;
+      line-height: pxToVw(36px, 1920) !important;
+    }
+  }
+
+  /* Texte d'intro */
+  #presentation_alumni {
+    margin-bottom: pxToVw(100, 1920);
+
+    p:nth-of-type(2) {
+      margin: pxToVw(30px, 1920) 0;
+    }
+  }
+
+  /* Première option */
+  #alumni_simple {
+
+    #package_simple {
+
+      .package_simple_infos {
+        display: flex;
+
+        .text-container {
+          width: pxToPourcent(860, 1290);
+        }
+      }
+
+      .img-container {
+        width: pxToPourcent(503, 1290);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: pxToVw(30, 1920);
+
+        .img-cafe {
+          width: pxToPourcent(382, 503);
+          position: relative;
+          top: pxToVw(-37px, 1920);
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .img-profile {
+          width: pxToPourcent(351, 503);
+          position: relative;
+          top: pxToVw(0px, 1920);
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* Séparateur */
+  .separator {
+    width: 100%;
+    height: pxToVw(2px, 1920);
+    background: grey;
+  }
+
+/* Deuxième option */
+
+  #alumni_cotisation {
+
+    .section-start {
+      margin-top: pxToVw(70px, 1920);
+    }
+
+
+    #package_cotisation {
+
+      .text-container {
+
+        .first-flex {
+          display: flex;
+
+          &>div {
+            width: pxToPourcent(900px, 1290);
+          }
+
+          .first-img {
+            width: pxToPourcent(153, 503);
+
+            position: relative;
+            top: pxToVw(-35px, 1920);
+
+            img {
+              width: 100%;
+              position: absolute;
+              top: pxToVw(-62px, 1920);
+            }
+          }
+        }
+
+        .second-flex {
+          display: flex;
+
+          .shooting {
+            width: pxToPourcent(274, 503);
+            position: relative;
+            top: pxToVw(20px, 1920);
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .third-flex {
+          display: flex;
+
+          .hierachie {
+            width: pxToPourcent(218.7, 503);
+            position: relative;
+            top: pxToVw(10px, 1920);
+
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+/* Accès programmes Alumni */
+  #acces_programmes {
+    margin-top: pxToVw(107, 1920);
+
+    .programmes {
+      margin-top: pxToVw(93, 1920);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: pxToVw(60px, 1920);
+    }
+  }
+
+  .largeBtn {
+    text-align: center;
+    margin-top: pxToVw(87, 1920);
+    margin-bottom: pxToVw(70, 1920);
+  }
+}

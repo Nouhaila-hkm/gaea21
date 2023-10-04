@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modification de votre annonce{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('editAnnounce') }}
+{% endblock %}
+
+{% block body %}
+    <h1>Modification de votre annonce</h1>
+
+    {% set array = [] %}
+    {% for announceSection in announce.announceSections %}
+        {% set array = array|merge([[announceSection.title, announceSection.content ]]) %}
+    {% endfor %}
+
+    <div id="editAnnounceTemplate" data-announce-id="{{ announce.id }}" data-title="{{ announce.title }}" data-collaborators="{{ announce.collaborators|json_encode|e('html_attr') }}" data-sections="{{ array|json_encode|e('html_attr') }}"></div>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('editAnnounce') }}
+    {% endblock %}
+{% endblock %}

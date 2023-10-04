@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Valeurs{% endblock %}
+
+{% block stylesheets %}
+     <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+  {{ encore_entry_link_tags('communautes') }}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+ {% include "/components/_topbar.html.twig" %}
+
+ <section id="communautes">
+
+ {% include "/communautes/header.html.twig" %}
+ {% include "/communautes/sous_menu.html.twig" %}
+
+ <h2 class="title">Valeurs</h2>
+
+<div class="valeurs-icons-container">
+
+
+		<div class="slider-item">
+			<div class="icon">
+				<img src="{{asset("images/communautes/Eco-mobilite.svg")}}" alt="mobilité">
+				<button>Mobilité</button>
+			</div>
+		</div>
+
+
+		<div class="slider-item">
+			<div class="icon">
+				<img src="{{asset("images/communautes/ecohome.png")}}" alt="eco-home">
+				<button>Eco-Home</button>
+			</div>
+		</div>
+
+		<div class="slider-item">
+			<div class="icon">
+				<img src="{{asset("images/communautes/ambassadeurs.png")}}" alt="ambassadeurs">
+				<button>Ambassadeur</button>
+			</div>
+
+		</div>
+		<div class="slider-item">
+			<div class="icon">
+				<img src="{{asset("images/communautes/emploi.svg")}}" alt="emploi">
+				<button>Emploi</button>
+			</div>
+
+		</div>
+
+</div>
+
+
+
+
+
+
+ {% include "/communautes/activites.html.twig" %}
+
+
+
+</section>
+
+{% endblock %}

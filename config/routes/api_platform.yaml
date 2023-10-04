@@ -1,0 +1,9 @@
+api_platform:
+    resource: .
+    type: api_platform
+    prefix: /api
+
+api_platform2:
+    resource: .
+    type: api_platform
+    prefix: /apiTest

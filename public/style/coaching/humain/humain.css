@@ -1,0 +1,223 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.headerAccompagnement {
+  display: flex;
+  height: 40vw;
+  color: white;
+}
+
+#header1, #header2 {
+  width: 50%;
+}
+
+#header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F3D56;
+}
+#header1 article {
+  width: 70%;
+}
+#header1 article h1 {
+  font-size: 2.6041666667vw;
+}
+
+#header2 {
+  background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+  background-position: center;
+}
+
+.listeLiens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.25vw;
+  border: 1px solid grey;
+  margin-bottom: 3.125vw;
+}
+.listeLiens ul {
+  display: flex;
+  gap: 5.9895833333vw;
+  font-size: 1.3020833333vw;
+}
+.listeLiens ul a:hover {
+  text-decoration: underline;
+}
+
+main, #suiteMain {
+  width: 80.9375%;
+  margin: 0 auto;
+}
+main #prevArrow, #suiteMain #prevArrow {
+  display: block;
+  width: 8.8541666667vw;
+}
+
+#cycles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 61.5px;
+}
+
+#cycles > div {
+  width: 24.1666666667vw;
+  height: 14.5833333333vw;
+  margin: 10px;
+}
+
+#projet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/projet.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 23px;
+}
+
+#humain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#statistiques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#vieGaeien {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 67.1875vw;
+  margin: 0 auto;
+}
+#vieGaeien h2 {
+  font-size: 2.6041666667vw;
+  margin-top: 4.6875vw;
+  margin-bottom: 2.34375vw;
+}
+#vieGaeien div {
+  font-size: 1.5625vw;
+}
+
+.decouvrir {
+  font-size: 1.09375vw;
+  margin-top: 2.34375vw;
+  width: 9.4270833333vw;
+  height: 3.1770833333vw;
+  background-color: #98984B;
+  border-radius: 2.34375vw;
+  border: #98984B;
+  color: white;
+}
+.decouvrir span {
+  font-size: 1.3020833333vw;
+}
+
+.decouvrir:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#avant h2, #pendant h2, #apres h2 {
+  font-size: 2.0833333333vw;
+}
+#avant p, #pendant p, #apres p {
+  font-size: 1.5625vw;
+}
+
+#avant {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6.40625vw;
+}
+#avant #imageAvant {
+  width: 50%;
+}
+#avant #imageAvant img {
+  width: 100%;
+  height: 100%;
+}
+#avant #paragrapheAvant {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pendant {
+  display: flex;
+  width: 100vw;
+}
+#pendant #imagePendant {
+  width: 50%;
+}
+#pendant #imagePendant img {
+  width: 100%;
+  height: 100%;
+}
+#pendant #paragraphePendant {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 247, 248);
+  width: 50%;
+}
+#pendant #paragraphePendant #containerParaPendant {
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#apres {
+  display: flex;
+  justify-content: space-between;
+}
+#apres #imageApres {
+  width: 50%;
+}
+#apres #imageApres img {
+  width: 100%;
+  height: 100%;
+}
+#apres #paragrapheApres {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#avant, #pendant, #apres {
+  margin-bottom: 6.40625vw;
+}
+
+/*# sourceMappingURL=humain.css.map */

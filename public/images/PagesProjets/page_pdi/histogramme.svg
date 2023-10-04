@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="196.328" height="149.11" viewBox="0 0 196.328 149.11">
+  <g id="Groupe_2090" data-name="Groupe 2090" transform="translate(-456.581 -1193.872)">
+    <line id="Ligne_256" data-name="Ligne 256" x2="1.492" y2="98.751" transform="matrix(-0.259, -0.966, 0.966, -0.259, 471.5, 1236.5)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_247" data-name="Ligne 247" y1="49" transform="matrix(-0.259, -0.966, 0.966, -0.259, 519.632, 1293.818)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_248" data-name="Ligne 248" x1="69" y1="66" transform="matrix(-0.259, -0.966, 0.966, -0.259, 519.985, 1293.205)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_249" data-name="Ligne 249" x1="45" y2="55" transform="matrix(-0.259, -0.966, 0.966, -0.259, 577.524, 1252.941)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_250" data-name="Ligne 250" x1="70" y1="18" transform="matrix(-0.259, -0.966, 0.966, -0.259, 566.608, 1281.748)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_251" data-name="Ligne 251" x1="119" y2="43" transform="matrix(-0.259, -0.966, 0.966, -0.259, 596.677, 1324.42)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_252" data-name="Ligne 252" y1="109" x2="49" transform="matrix(-0.259, -0.966, 0.966, -0.259, 532.926, 1341.502)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_253" data-name="Ligne 253" x2="74" y2="12" transform="matrix(-0.259, -0.966, 0.966, -0.259, 638.212, 1313.291)" fill="none" stroke="#000" stroke-width="3"/>
+    <line id="Ligne_254" data-name="Ligne 254" y1="61" x2="49" transform="matrix(-0.259, -0.966, 0.966, -0.259, 579.291, 1329.078)" fill="none" stroke="#000" stroke-width="3"/>
+    <g id="Ellipse_51" data-name="Ellipse 51" transform="matrix(-0.259, -0.966, 0.966, -0.259, 629.727, 1327.988)" fill="#fff" stroke="#989751" stroke-width="3">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="10.5" fill="none"/>
+    </g>
+    <g id="Ellipse_54" data-name="Ellipse 54" transform="matrix(-0.259, -0.966, 0.966, -0.259, 557.393, 1224.172)" fill="#fff" stroke="#989751" stroke-width="3">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="10.5" fill="none"/>
+    </g>
+    <g id="Ellipse_55" data-name="Ellipse 55" transform="matrix(-0.259, -0.966, 0.966, -0.259, 558.123, 1296.445)" fill="#fff" stroke="#989751" stroke-width="3">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="10.5" fill="none"/>
+    </g>
+    <line id="Ligne_255" data-name="Ligne 255" x1="67.322" y2="32.157" transform="matrix(-0.259, -0.966, 0.966, -0.259, 488.924, 1301.527)" fill="none" stroke="#000" stroke-width="3"/>
+    <circle id="Ellipse_52" data-name="Ellipse 52" cx="12" cy="12" r="12" transform="matrix(-0.259, -0.966, 0.966, -0.259, 622.165, 1253.402)" fill="#989751"/>
+    <circle id="Ellipse_53" data-name="Ellipse 53" cx="12" cy="12" r="12" transform="matrix(-0.259, -0.966, 0.966, -0.259, 510.793, 1309.127)" fill="#989751"/>
+    <circle id="Ellipse_56" data-name="Ellipse 56" cx="12" cy="12" r="12" transform="matrix(-0.259, -0.966, 0.966, -0.259, 462.793, 1251.34)" fill="#989751"/>
+  </g>
+</svg>

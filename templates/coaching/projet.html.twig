@@ -1,0 +1,132 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page Coaching{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('smallCardApp') }}
+    {{ encore_entry_link_tags('prevArrowApp') }}
+    {{ encore_entry_link_tags('SmallBtnApp') }}
+
+    <link href="{{ asset('style/coaching/projet/projet.css') }}" rel="stylesheet"/>
+    
+{% endblock %}
+
+
+{% block body %}
+{% include "/components/_topbar.html.twig" %}
+
+{# HEADER #}
+
+<section class="headerAccompagnement">
+    <div id="header1">
+        <article>
+            <h1>Le modèle d'accompagnement de gaea21</h1>
+            <p></p>
+        </article>
+    </div>
+
+    <div id="header2">
+    </div>
+</section>
+
+{# LISTE AVEC DES LIENS #}
+<div class="listeLiens">
+    <ul>
+        <li><a href="/coaching/modele_accompagnement">Le modèle d'accompagnement de gaea21</a></li>
+        <li><a href="#">Gestion de carrières</a></li>
+        <li><a href="/emploi-et-stage">Emploi / Stages</a></li>
+        <li><a href="#">Partenaires Formation / Emploi</a></li>
+    </ul>
+</div>
+
+{# MAIN #}
+<main>
+
+
+
+    <a id="prevArrow" data-link="/coaching"></a>
+
+    {# CYCLES #}
+    <section id="cycles">
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / projet" data-imgsrc="{{ asset('images/coaching/accompagnement/projet.png') }}" data-activecard="true" data-link="/coaching/projet"></div>
+
+        <div class="smallCard" data-title="Cycle de vie du gaeien / humain" data-imgsrc="{{ asset('images/coaching/accompagnement/humain2.png') }}" data-activecard="true" data-link="/coaching/humain"></div>
+
+        <div class="smallCard" data-title="Statistiques" data-imgsrc="{{ asset('images/coaching/accompagnement/statistiques.png') }}" data-activecard="true" data-link="/coaching/modele_accompagnement2"></div>
+        
+    </section>
+
+    {# VIE GAEIEN #}
+    <section id="vieGaeien">
+        
+            <h2>Le cycle de vie du gaeien / projet</h2>
+
+            <div><p><b>Objectif: Développer la structuration, l’organisation, la gestion de projet et le management durable.</b>
+            <br> Retrouvez les étapes de notre modèle d’accompagnement interne personnalisé et à destination de tous nos collaborateurs.</p></div>
+                    
+    </section>
+
+
+    {# AVANT #}
+    <section id="avant">
+        <div id="imageAvant"><img src="{{ asset('images/coaching/projet/avant_projet.png') }}"></div>
+        <div id="paragrapheAvant">
+
+            <h2>Avant</h2>
+            <p>Descriptif des étapes d’identification des compétences et de mise en place de tout nouvel.lle arrivant.e dans le staff gaea21.</p>
+            <div class="smallBtn" id="centrer"data-txt="Découvrir" data-link="/coaching/projet/avant"></div>
+
+
+        </div>
+    </section>
+
+</main>
+
+    {# PENDANT #}
+
+    <section id="pendant">
+
+        <div id="paragraphePendant">
+            <div id="containerParaPendant">
+                <h2>Pendant</h2>
+                <p>Descriptif des outils de suivi, de gestion de projet, de gestion de la compétence, d’évaluation individuelle et de management d’équipe de gaea21.</p> 
+                <div class="smallBtn" id="centrer"data-txt="Découvrir" data-link="/coaching/projet/pendant"></div>
+
+            </div>
+
+        </div>
+
+        <div id="imagePendant"><img src="{{ asset('images/coaching/projet/pendant_projet.png') }}"></div>
+
+
+    </section>
+
+<section id="suiteMain">
+
+    {# APRES #}
+    <section id="apres">
+        <div id="imageApres"><img src="{{ asset('images/coaching/projet/apres_projet.png') }}"></div>
+        <div id="paragrapheApres">
+
+            <h2>Après</h2>
+            <p>Validation des livrables et des compétences métiers acquises. Etablissement d’une carte compétence individuelle.</p>
+            <div class="smallBtn" id="centrer"data-txt="Découvrir" data-link="/coaching/projet/apres"></div>
+
+
+        </div>
+    </section>
+
+</section>
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{parent()}}
+    {{ encore_entry_script_tags('smallCardApp') }}
+    {{ encore_entry_script_tags('prevArrowApp') }}
+    {{ encore_entry_script_tags('SmallBtnApp') }}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Créer une nouvelle annonce{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('newAnnounce') }}
+{% endblock %}
+
+{% block body %}
+    <h1>Créer une nouvelle annonce</h1>
+    <div id="newAnnounceTemplate"></div>
+
+    {% block javascripts %}
+        {{ parent() }}
+        {{ encore_entry_script_tags('newAnnounce') }}
+    {% endblock %}
+{% endblock %}

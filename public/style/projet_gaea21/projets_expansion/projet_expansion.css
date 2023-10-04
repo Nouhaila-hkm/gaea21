@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-size: 1.25vw;
+  line-height: calc(29 / 24);
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+body .simple_arrow_prev {
+  position: absolute;
+  top: 54.84375vw;
+  left: 7.2395833333vw;
+  width: 0.8854166667%;
+  height: 1.7708333333vw;
+}
+
+/* ******************************************************* */
+.header {
+  width: 100%;
+  height: 40vw;
+  background-image: url("../../../images/humansGaea21/Groupedemasques27.png");
+  /* Background image is centered vertically and horizontally at all times */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  background-size: cover;
+  position: relative;
+}
+.header__container {
+  position: absolute;
+  top: 11.0416666667vw;
+  left: 7.03125vw;
+  transform: translate(-50%, -pxToVw(135px, 1920px));
+}
+.header__container__title {
+  display: inline-block;
+  font-size: 3.6458333333vw;
+  font-weight: bold;
+  border-bottom: 4px solid black;
+  padding-bottom: 0.7291666667vw;
+}
+.header__container__subtext {
+  width: 31.25%;
+  font-size: 1.3020833333vw;
+}
+
+/***********************************************************/
+#main {
+  width: 56.6666666667%;
+  margin: 0 auto;
+}
+#main h2 {
+  display: flex;
+  align-items: center;
+  display: inline-block;
+  padding-bottom: 0.625vw;
+  border-bottom: 4px solid #989751;
+  margin-top: 3.4895833333vw;
+  margin-bottom: 3.4895833333vw;
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main .article1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.8645833333vw;
+}
+#main .article1 p:first-of-type {
+  margin-bottom: 1.5625vw;
+}
+#main .article1 .img-calendrier {
+  width: 48.4375%;
+  margin-right: 1.3541666667vw;
+}
+#main #links {
+  margin-top: 7.8125vw;
+}
+#main #links .site {
+  display: flex;
+  justify-content: space-around;
+  /*************************/
+  /*************************/
+}
+#main #links .site .website,
+#main #links .site .brochure,
+#main #links .site .poster {
+  width: 20.2205882353%;
+  height: 11.4583333333vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.625vw;
+  font-size: 1.25vw;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 13px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+  background-color: #c6c6c6;
+}
+#main #links .site .website::after {
+  content: "";
+  width: 100%;
+  font-size: 10.9090909091vw;
+  background-color: transparent;
+}
+#main #links .site .website:hover::after {
+  content: "Site en cour de création";
+  background-color: #c8c8c8b0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: black;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  padding: 20px;
+}
+#main #links .site .brochure::after {
+  content: "";
+  font-size: 10.9090909091vw;
+  width: 100%;
+  background-color: transparent;
+}
+#main #links .site .brochure:hover::after {
+  content: "Brochure en cour de création";
+  background-color: #c8c8c8b0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: black;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  padding: 20px;
+}
+#main #links .site .poster::after {
+  content: "";
+  font-size: 10.9090909091vw;
+  width: 100%;
+  background-color: transparent;
+}
+#main #links .site .poster:hover::after {
+  content: "Poster en cour de créaion";
+  background-color: #c8c8c8b0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  color: black;
+  font-size: 1.25vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  padding: 20px;
+}
+#main #links .site .website-svg,
+#main #links .site .brochure-svg,
+#main #links .site .poster-svg {
+  width: 58.1818181818%;
+}
+#main #links .status {
+  text-align: center;
+  margin-top: 2.2916666667vw;
+}
+
+/*# sourceMappingURL=projet_expansion.css.map */

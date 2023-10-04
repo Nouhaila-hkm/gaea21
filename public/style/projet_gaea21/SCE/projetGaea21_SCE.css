@@ -1,0 +1,178 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main .intro-sce .partie1 p:first-of-type {
+  margin-bottom: 2.34375vw;
+}
+#main .intro-sce .partie1 p:last-of-type {
+  margin-bottom: 3.5416666667vw;
+}
+#main .intro-sce .partie2 {
+  display: flex;
+  margin-bottom: 3.5416666667vw;
+  gap: 7.0542635659vw;
+}
+#main .intro-sce .partie2 .img-city {
+  width: 14.3410852713%;
+}
+#main .intro-sce .partie2 .img-city img {
+  width: 100%;
+  position: relative;
+  top: 1px;
+}
+#main .intro-sce .partie2 p {
+  width: 78.6046511628%;
+}
+#main .intro-sce .partie3 p:first-of-type {
+  margin-bottom: 1.4583333333vw;
+}
+#main .intro-sce #categories {
+  display: flex;
+  gap: 3.8759689922vw;
+  margin-top: 4.6875vw;
+}
+#main .intro-sce #categories .categorie1 {
+  width: 48.0620155039%;
+  height: 21.4583333333vw;
+  border-radius: 13px;
+  margin-bottom: 6.3020833333vw;
+  background: #F6F6F6;
+  transition: background-color 0.3s;
+}
+#main .intro-sce #categories .categorie1 .text {
+  display: flex;
+  margin-bottom: 1.5625vw;
+  font-size: 1.3020833333vw;
+  line-height: 1.875vw;
+}
+#main .intro-sce #categories .categorie1 .text p {
+  width: 81.6129032258%;
+  margin-right: 1.3541666667vw;
+}
+#main .intro-sce #categories .categorie1 .text .fleche-svg {
+  width: 6.2903225806%;
+  display: inline-block;
+  margin-right: 1.6129032258vw;
+  margin-left: 1.6129032258vw;
+}
+#main .intro-sce #categories .categorie1 .text .fleche-svg svg {
+  width: 100%;
+}
+#main .intro-sce #categories .categorie1 .developper {
+  display: none;
+}
+#main .intro-sce #categories .categorie2 {
+  width: 48.0620155039%;
+  height: 21.4583333333vw;
+  border-radius: 13px;
+  margin-bottom: 6.3020833333vw;
+  background: #F6F6F6;
+  transition: background-color 0.3s;
+}
+#main .intro-sce #categories .categorie2 .text {
+  display: flex;
+  margin-bottom: 1.5625vw;
+  font-size: 1.3020833333vw;
+  line-height: 1.875vw;
+}
+#main .intro-sce #categories .categorie2 .text p {
+  width: 81.6129032258%;
+  margin-right: 1.3541666667vw;
+}
+#main .intro-sce #categories .categorie2 .text .fleche-svg {
+  width: 6.2903225806%;
+  display: inline-block;
+  margin-right: 1.6129032258vw;
+  margin-left: 1.6129032258vw;
+}
+#main .intro-sce #categories .categorie2 .text .fleche-svg svg {
+  width: 100%;
+}
+#main .intro-sce #categories .categorie2 .text-adevelopper {
+  display: none;
+  margin-bottom: 1.5625vw;
+  font-size: 1.3020833333vw;
+  line-height: 1.875vw;
+}
+#main .intro-sce #categories .categorie2 .text-adevelopper p {
+  width: 81.6129032258%;
+  margin-right: 1.3541666667vw;
+}
+#main .intro-sce #categories .categorie2 .text-adevelopper .fleche-svg {
+  width: 6.2903225806%;
+  display: inline-block;
+  margin-right: 1.6129032258vw;
+  margin-left: 1.6129032258vw;
+}
+#main .intro-sce #categories .categorie2 .text-adevelopper .fleche-svg svg {
+  width: 100%;
+}
+#main .intro-sce #categories .categorie2 .suite {
+  display: none;
+}
+#main .intro-sce #categories .categorie1 .first,
+#main .intro-sce #categories .categorie1 .second,
+#main .intro-sce #categories .categorie2 .first,
+#main .intro-sce #categories .categorie2 .second {
+  font-size: 1.5625vw;
+  line-height: 1.9270833333vw;
+  color: #98984C;
+  text-align: center;
+  margin: 1.3541666667vw 4.6354166667vw;
+  transition: all 0.3s;
+}
+#main .intro-sce #categories .categorie1 .btn-plus,
+#main .intro-sce #categories .categorie2 .btn-plus {
+  display: inline-block;
+  padding: 0 0.6770833333vw;
+  border-radius: 50px;
+  position: relative;
+  bottom: 1.0416666667vw;
+  left: 14.6354166667vw;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#main .intro-sce #categories .categorie1 .btn-moins,
+#main .intro-sce #categories .categorie2 .btn-moins {
+  display: none;
+  padding: 0 0.8333333333vw;
+  border-radius: 50px;
+  position: relative;
+  bottom: 1.0416666667vw;
+  left: 14.6354166667vw;
+  border: 1px solid black;
+  cursor: pointer;
+}
+#main .intro-sce #categories .categorie1:hover,
+#main .intro-sce #categories .categorie2:hover {
+  background-color: #98984C;
+}
+#main .intro-sce #categories .categorie1:hover .first, #main .intro-sce #categories .categorie1:hover .second, #main .intro-sce #categories .categorie1:hover .fleche-svg svg path, #main .intro-sce #categories .categorie1:hover .fleche-svg .fleche-svg,
+#main .intro-sce #categories .categorie2:hover .first,
+#main .intro-sce #categories .categorie2:hover .second,
+#main .intro-sce #categories .categorie2:hover .fleche-svg svg path,
+#main .intro-sce #categories .categorie2:hover .fleche-svg .fleche-svg {
+  color: white;
+  fill: white;
+  stroke: white;
+}
+#main .partie3 .article {
+  display: flex;
+  gap: 1.5503875969vw;
+}
+#main .partie3 .article p {
+  width: 79.1472868217vw;
+}
+#main .partie3 .article .img-map {
+  width: 17.519379845%;
+}
+#main .partie3 .article .img-map img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=projetGaea21_SCE.css.map */

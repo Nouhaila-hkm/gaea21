@@ -1,0 +1,109 @@
+@use "sass:math";
+@import "../../_function";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  //   font-family: Helvetica, sans-serif;
+  font-size: pxToVw(24, 1920);
+  line-height: calc(29/24);
+}
+
+body {
+  width: pxToPourcent(1920px, 1920px);
+  // font-family: "Helvetica";
+  position: relative;
+
+  .simple_arrow_prev {
+    position: absolute;
+    top: pxToVw(1053, 1920);
+
+    left: pxToVw(139, 1920);
+
+    width: pxToPourcent(17,1920);
+    height: pxToVw(34,1920);
+
+  }
+}
+
+/* ******************************************************* */
+
+.header {
+  width: 100%;
+  height: pxToVw(768px, 1920px);
+  background-image: url("../../../images/humansGaea21/Groupedemasques27.png");
+  /* Background image is centered vertically and horizontally at all times */
+
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+
+  background-size: cover;
+  position: relative;
+
+  &__container {
+    // margin-left: pxToVw(135px, 1920px);
+    position: absolute;
+    top: pxToVw(212px, 1920px);
+    left: pxToVw(135px, 1920px);
+    transform: translate(-50%, -pxToVw(135px, 1920px));
+
+    &__title {
+      display: inline-block;
+      font-size: pxToVw(70px, 1920px);
+      font-weight: bold;
+      border-bottom: 4px solid black;
+      padding-bottom: pxToVw(14px, 1920px);
+      // margin-bottom: pxToVw(26px, 190px);
+    }
+
+    &__subtext {
+      width: pxToPourcent(600px, 1920px);
+      font-size: pxToVw(25px, 1920px);
+    }
+  }
+}
+
+
+#main {
+  width: pxToPourcent(1088, 1920);
+  margin: 0 auto;
+
+  h2 {
+    display: inline-block;
+    border-bottom: 4px solid #989751;
+    padding-bottom: pxToVw(12, 1920);
+    margin: pxToVw(70, 1920) 0;
+
+    // border-top: 1px solid black;
+
+    font-size: pxToVw(50, 1920);
+    // font-weight: bold;
+
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .text-flex1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: pxToVw(50, 1920);
+
+    p:first-of-type {
+      margin-bottom: pxToVw(30, 1920);
+
+    }
+  }
+
+  .text-flex2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    p:first-of-type {
+      margin-bottom: pxToVw(30, 1920);
+    }
+  }
+}

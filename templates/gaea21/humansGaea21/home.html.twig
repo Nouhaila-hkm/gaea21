@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ encore_entry_link_tags('homeHumansGaea21') }}
+    {{ parent() }}
+    
+{% endblock %}
+
+
+{% block body %}
+    {% include "/components/_topbar.html.twig" %}
+    
+    <div id="humansGaea21">
+    
+    
+    <section class="sectionHead">
+        <img class="logoHumans" src="{{ asset('images/humansGaea21/logoHumans.png') }}"/>
+        <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <div class="menu">
+        <ul class="liste">
+            <li class="elemMenu">Le modèle d'accompagnement</li>
+            <li class="elemMenu">Le profil de compétences post gaea21</li>
+            <li class="elemMenu">Emploi/stages</li>
+            <li class="elemMenu">Témoignages</li>
+            
+        </ul>
+        <img class='elemSuiv' src="{{ asset('images/humansGaea21/nextElem.png') }}"/>
+
+    </div>
+    
+    <section id='section2' class="section2">
+        
+    </section>
+    
+    <div class="divTemoignage">
+        <a href="/humansGaea21/temoignages"><img  id="btn-temoignage" class="temoignage" src="{{ asset('images/humansGaea21/Groupe 911.png')}}"/></a>
+    </div>
+
+    <section id="gaeaLife" class="gaeaLife">
+    
+    </section>
+    
+    <section id="gaeaVideo" class="gaeaVideo">
+    
+    </section>
+
+    <footer id="humansFooter" class="titleGaeaFooter">
+
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </div>
+    
+{% endblock %}
+
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %} 
+
+
+{% block stylesheets %} 
+    {{ parent() }}
+    {{ encore_entry_link_tags('topBar') }}
+    {{ encore_entry_link_tags('profils') }} 
+    {{ encore_entry_link_tags('header') }}
+    {{ encore_entry_link_tags('profils-details') }}
+    
+    
+{% endblock %}
+
+{% block body %}
+  
+    <div id="profils">
+ 
+{% include "/emploi_et_stage/header.html.twig" %}
+
+ <section class="competence-1">
+
+            <div class="img-1">
+                <img class='comp-img' src="{{ asset('Image/emploi_et_stage/icon-competences.svg')}}"/>
+            </div>
+
+            <div class="p-t"><b>Profil de compétences post gaea21</b></div>
+
+        </section>
+       
+
+       <div class="return-link">
+       <a href="{{ path('app_profils') }}"> <img src="{{ asset('Image/emploi_et_stage/offres/arrow-left.svg')}}" alt=""> Retour aux résultats de recherche</a> 
+       </div>
+
+       <div id="profils-details"></div>
+
+
+       
+       
+       </div>
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('homeHumansGaea21')}}
+    {{encore_entry_script_tags('profils-details')}}
+{% endblock %}

@@ -1,0 +1,257 @@
+@use "sass:math";
+@import "../../_function";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  //   font-family: Helvetica, sans-serif;
+  font-size: pxToVw(24, 1920);
+  line-height: calc(29 / 24);
+}
+
+body {
+  width: pxToPourcent(1920px, 1920px);
+  // font-family: "Helvetica";
+  position: relative;
+
+  .simple_arrow_prev {
+    position: absolute;
+    top: pxToVw(1053, 1920);
+
+    left: pxToVw(139, 1920);
+
+    width: pxToPourcent(17, 1920);
+    height: pxToVw(34, 1920);
+
+    // background-color: #989751;
+    // border-radius: 50px;
+  }
+}
+
+/* ******************************************************* */
+
+.header {
+  width: 100%;
+  height: pxToVw(768px, 1920px);
+  background-image: url("../../../images/humansGaea21/Groupedemasques27.png");
+  /* Background image is centered vertically and horizontally at all times */
+
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+
+  background-size: cover;
+  position: relative;
+
+  &__container {
+    position: absolute;
+    top: pxToVw(212px, 1920px);
+    left: pxToVw(135px, 1920px);
+    transform: translate(-50%, -pxToVw(135px, 1920px));
+
+    &__title {
+      display: inline-block;
+      font-size: pxToVw(70px, 1920px);
+      font-weight: bold;
+      border-bottom: 4px solid black;
+      padding-bottom: pxToVw(14px, 1920px);
+      // margin-bottom: pxToVw(26px, 190px);
+    }
+
+    &__subtext {
+      width: pxToPourcent(600px, 1920px);
+      font-size: pxToVw(25px, 1920px);
+    }
+  }
+}
+
+/***********************************************************/
+
+#main {
+  width: pxToPourcent(1088, 1920);
+  margin: 0 auto;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    padding-bottom: pxToVw(12, 1920);
+    border-bottom: 4px solid #989751;
+    margin-top: pxToVw(67, 1920);
+    margin-bottom: pxToVw(67, 1920);
+
+    font-size: pxToVw(50, 1920);
+    font-weight: bold;
+
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .article1 {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: pxToVw(55, 1920);
+
+    p:first-of-type {
+      margin-bottom: pxToVw(30, 1920);
+    }
+
+    .img-calendrier {
+      width: pxToPourcent(930, 1920);
+      margin-right: pxToVw(26, 1920);
+    }
+  }
+
+  #links {
+    margin-top: pxToVw(150, 1920);
+
+    .site {
+      display: flex;
+      justify-content: space-around;
+
+      .website,
+      .brochure,
+      .poster {
+        width: pxToPourcent(220, 1088);
+        height: pxToVw(220, 1920);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: pxToVw(12, 1920);
+
+        font-size: pxToVw(24, 1920);
+
+        text-align: center;
+
+        position: relative;
+
+        transition: all 0.3s ease;
+
+        // A retirer une fois le site créée
+        // color:rgba(0,0,0,0.5);
+
+        border-radius: 13px;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+
+        // A retirer une fois le site créée
+        background-color: #c6c6c6;
+      }
+
+      /*************************/
+
+      // A retirer une fois le contenue accessible et remplacé par :
+      // .website:hover,
+      // .brochure:hover,
+      // .poster:hover{
+      //   background:#989751;
+      //   cursor: pointer;
+      // }
+
+      .website::after {
+        content: "";
+        width: 100%;
+        font-size: pxToVw(24, 220);
+        background-color: transparent;
+        // transition: background-color;
+      }
+
+      .website:hover::after {
+        content: "Site en cour de création";
+        background-color: #c8c8c8b0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        color: black;
+        font-size: pxToVw(24, 1920);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+        padding: 20px;
+      }
+
+      .brochure::after {
+        content: "";
+        font-size: pxToVw(24, 220);
+        width: 100%;
+        background-color: transparent;
+        // transition: background-color;
+      }
+
+      .brochure:hover::after {
+        content: "Brochure en cour de création";
+        background-color: #c8c8c8b0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        color: black;
+        font-size: pxToVw(24, 1920);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+
+        padding: 20px;
+      }
+
+      .poster::after {
+        content: "";
+        font-size: pxToVw(24, 220);
+        width: 100%;
+        background-color: transparent;
+        // transition: background-color;
+        // transition: opacity .3s ease;
+      }
+
+      .poster:hover::after {
+        content: "Poster en cour de créaion";
+        background-color: #c8c8c8b0;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        color: black;
+        font-size: pxToVw(24, 1920);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13px;
+        padding: 20px;
+      }
+      /*************************/
+
+      .website-svg,
+      .brochure-svg,
+      .poster-svg {
+        width: pxToPourcent(128, 220);
+        // height: pxToVw(120, 1920);
+
+        // position: relative;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+      }
+
+      // .website-svg img,
+      // .brochure-svg img,
+      // .poster-svg img {
+      //   width: 100%;
+      // }
+    }
+
+    .status {
+      text-align: center;
+      margin-top: pxToVw(44, 1920);
+    }
+  }
+}

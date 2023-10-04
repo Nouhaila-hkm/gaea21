@@ -1,0 +1,246 @@
+@import '../function';
+
+.box {
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    margin-left: pxToPourcent(183px, 1920px);
+}
+
+.eye {
+    position: absolute;
+    bottom: 10%;
+    display: inline-block;
+    font-size: pxToVw(25px, 1920px);
+    right: 3%;
+
+}
+
+.usershow {
+  position: relative;
+  bottom: 0;
+  display: inline-block;
+  font-size: pxToVw(25px, 1920px);
+  right: 0;
+}
+
+
+.box2 {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+}
+
+#firstName {
+    grid-area: firstname;
+}
+
+#lastName {
+    grid-area: lastname;
+}
+
+#phone {
+    grid-area: phone;
+}
+
+#country {
+    grid-area: country;
+}
+
+#city {
+    grid-area: city;
+}
+
+#adress {
+    grid-area: address;
+}
+
+.inside-box {
+    background-color: #98984B;
+    color: white;
+    padding: 30px;
+    font-size: 1.1vw;
+    margin-right: pxToPourcent(102px, 1920px);
+    border-radius: 23px;
+    height: pxToPourcent(900px, 973px);
+    width: pxToPourcent(370px, 1920px);
+    text-align: left;
+
+}
+
+.inside-box  li {
+    margin-bottom: 3vw;
+}
+
+.inside-box:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.inputForm {
+    border: solid 1px #ACA9BB !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    padding-left: 10px !important;
+    height: 2.7vw !important;
+    box-shadow: none !important;
+}
+
+.update{
+    margin-top: 10%;
+    border-radius: 20px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.password {
+    margin-top: 8%;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+  background: #98984B;
+  color: white !important;
+  border: none;
+  height: 3vw;
+  border-radius: 20px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.buttonUpdate:hover {
+    cursor: pointer;
+}
+
+#updateAccountForm {
+    width: 100%;
+    margin-left: 40px;
+
+}
+
+.componentFormsUpdate {
+    display: grid;
+    grid-gap: 20px;
+    width: pxToPourcent(600x, 973px);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+            "title title title title"
+            "firstname firstname lastname lastname"
+            "phone phone phone phone"
+            "city city country country"
+            "address address address address";
+}
+
+.componentFormsPassword {
+    display: grid;
+    width: pxToPourcent(600x, 973px);
+    margin-left: 2.5vw;
+    margin-top: 4vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "mdp mdp mdp mdp"
+    "newmdp newmdp newmdp newmdp"
+    "confirmmdp confirmmdp confirmmdp confirmmdp"
+    "button button button button";
+}
+
+
+#field0 {
+    grid-area: mdp;
+}
+
+#field1 {
+    grid-area: newmdp;
+}
+
+#field2 {
+    grid-area: confirmmdp;
+}
+
+
+.profil {
+    font-size: pxToVw(40px, 1920px);
+    margin-left: pxToPourcent(183px, 1920px);
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+
+.header {
+    width: 100%;
+}
+
+.avatar {
+    width: pxToVw(250px, 1920px);
+    height: pxToVw(250px, 1920px);
+    position: absolute;
+    left: pxToVw(183px, 1920px);
+    top: pxToVw(540px, 1920px);
+}
+
+.username {
+    position: absolute;
+    color: #98984B;
+    font-size: pxToVw(35px, 1920px);;
+    left: pxToVw(450px, 1920px);
+    top: 37vw;
+}
+
+.username::after {
+    content: url(../../../public/Image/user-profil/after.svg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info-perso {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: pxToPourcent(58px, 2862px);
+    text-align: center;
+    grid-area: title;
+}
+
+
+.select {
+    background-color: #B2B278;
+    border-radius: 40px;
+    padding: 0.7vw;
+    width: 18vw;
+    display: block;
+}
+
+.box-link:hover {
+    background-color: #B2B278;
+    border-radius: 40px;
+    padding: 0.7vw;
+    width: 19vw;
+    display: block;
+}
+
+span:hover {
+    background-color: #B2B278;
+    border-radius: 40px;
+    padding: 0.7vw;
+    width: 18vw;
+    display: block;
+}
+
+.easy-edit-wrapper {
+    display: none;
+}
+
+.box-link {
+    color: white !important;
+}

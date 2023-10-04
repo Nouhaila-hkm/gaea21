@@ -1,0 +1,10 @@
+<div>
+{% if app.user %}
+<div data-connected="true" id="navbar"></div>
+{% else %}
+<div data-connected="false" id="navbar"></div>
+{% endif %}
+
+</div>
+{{ encore_entry_script_tags('navbar') }}
+

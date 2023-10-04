@@ -1,0 +1,77 @@
+@use "sass:math";
+@import "../../_function";
+
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+
+
+#header {
+  width: 100%;
+  height: pxToVw(768, 1920);
+  display: flex;
+
+  ._text-content {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: block;
+
+    background-color: #707070;
+    color: white;
+
+    .text {
+      // width: pxToVw(777,1920);
+      margin-left: pxToVw(183, 1920);
+      margin-right: pxToVw(106, 1920);
+      margin-top: pxToVw(215, 1920);
+
+      h2 {
+        font-size: pxToVw(60, 1920);
+        line-height: pxToVw(70, 1920);
+        margin-bottom: pxToVw(36px, 1920);
+      }
+
+    }
+  }
+
+  ._background {
+    background-image: url('../../../images/PagesProjets/page_expansion/header_expansion.png');
+    width: 100%;
+    height: pxToVw(768, 1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+
+#tertiaryMenu {
+  display: none;
+}
+
+#main {
+
+  .project-title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    // gap: pxToVw(5px, 1920);
+    margin-bottom: pxToVw(51px, 1920);
+  }
+
+  .intro-expansion {
+    .partie1 {
+      display: flex;
+
+      margin-bottom: pxToVw(80,1290);
+      .text {
+        width: pxToPourcent(976, 1290);
+        margin-left: pxToVw(71.38,1290);
+      }
+
+      .img-hearth {width: pxToPourcent(242,1290);
+      background-color: coral;}
+    }
+  }
+
+}

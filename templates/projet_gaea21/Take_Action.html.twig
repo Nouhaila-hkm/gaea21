@@ -1,0 +1,83 @@
+{# Chemin à indiqué : depuis le fichier ou tu l'appel #}
+
+
+{% extends 'projet_gaea21/baseProjets.html.twig' %}
+
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{asset('style/projet_gaea21/TA/projetGaea21_TA.css')}}">
+{% endblock %}
+
+{% block title %}gaea21/Projet/TA
+{% endblock %}
+
+{% block main %}
+	<div class="project-title">
+		<h2>Take Action Program<h2>
+	</div>
+	<section class="intro-ta">
+		<article class="article1">
+			<div class="text1">
+				<p><b>Take Action Program</b> est un programme d'accompagnement et représente toutes les communautés SLP prêtes à passer à l'action en faveur de l'environnement et à adopter un comportement éco-responsable.
+				Take Action permet d'intégrer un réseau très large et diversifié de personnes ayan les mêmes valeurs et la même volonté d'agir durablement pour l'environnement.</p>
+				<p>Le but est que les différentes communautés de <b>SLP</b> entrent en action afin de provoquer un changement
+				de comportement et de système, ce qui arrive dès de <b>3,5%</b> de la population s'engage et modifie ses habitudes. 
+				Ces communautés sont inter-reliées entres elles et sont complémentaires.</p>
+			</div>		
+			<div class='img-reseau'><img src="{{asset('images/PagesProjets/page_ta/img-reseau.png')}}" alt="image de personnes connectées"></div>
+		</article>
+		<article class="article2">
+			<p>Take Action Program est l'une des <b>10 communautés</b> proposées aux individus&nbsp;:</p>
+			<div class="img-ta">
+				<img src="{{asset('images/PagesProjets/page_ta/10coms.png')}}" alt="les dix communautés de gaea21">
+			</div>
+		</article>
+		<article class="article3">
+			<p>Les participants y recevront des <b>conseils</b>, des <b>astuces</b>, des <b>invitations à des événements</b> ainsi
+			que <b>d'autre bonus</b> s'ils rejoignent la communauté. Ils pourront également <b>discuter</b> avec d'autres participants et <b>donner ou recevoir</b> des conseils. En fonction de leurs actions, ils obtiendront des <b>récompenses</b> basées sur un système de points. Le programme d'accompagnement est payant.</p>
+		</article>
+	</section>
+
+{% endblock %}
+
+{% block formulaires %}
+	<h2 class='joinUs'>Rejoignez l'aventure gaea21</h2>
+
+	<div class="formulaires">			
+		<div class="more-links"
+			data-title="Partenariat"
+			data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Partenariat', 
+					'projet' : 'Take Action Program' 
+				})}}" 
+			data-iconsvg={{asset('images/icone_svg_png/partner.svg') }}
+			data-disabled="false"
+			data-description="Devenez partenaire du projet.">
+		</div>
+		<div class="more-links"
+			data-title="Soutenir"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/donation.svg') }}
+			data-disabled="true"
+			data-description="Soutenez le projet.">
+		</div>
+		<div class="more-links"
+			data-title="Participer"
+			data-link="#"
+			data-iconsvg={{asset('images/icone_svg_png/people.svg') }}
+			data-disabled="true"
+			data-description="Rejoignez l'équipe du projet.">
+		</div>					
+	</div>
+	<p class='ou'>ou</p>
+	<div 
+		class="largeBtn" 
+		data-txt="Nous contacter" 
+		data-link="
+				{{ path("form_build_projet", { 
+					'formInfo': 'Contact', 
+					'projet' : 'Take Action Program'  
+				})}}" >
+	</div>
+{% endblock %}

@@ -1,0 +1,100 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    // gap: pxToVw(5px, 1920);
+    margin-bottom: pxToVw(51px,1920);
+
+    .logo{
+      width: pxToVw(226px,1920);
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: pxToVw(11px, 1920);
+
+    .intro_text {
+
+      .partie2 {
+        margin-top: pxToVw(45px, 1920);
+      }
+    }
+.article_img{
+// width: pxToPourcent(521,1290);
+
+  width: 378%;
+    .intro_img {
+
+      width: 100%;
+
+    }}
+  }
+
+
+
+  .outils-rv {
+    margin-top: pxToVw(51px, 1920);
+
+    .liste_des_services:nth-of-type(odd) {
+      margin: pxToVw(51px, 1920) 0;
+    }
+
+    .liste_des_services {
+
+      .services {
+        display: flex;
+        align-items: center;
+        gap: pxToVw(10px, 1920);
+        font-weight: bold;
+
+        .disc {
+          display: block;
+          width: pxToPourcent(15px, 1290px);
+          height: pxToVw(15px, 1920);
+          background-color: black;
+          border-radius: 50%;
+        }
+      }
+
+      .service {
+        padding-left: pxToVw(29px, 1920);
+      }
+    }
+  }
+
+  .appli_mobile {
+    border: 1px solid #989751;
+    border-radius: 23px;
+    padding: pxToVw(57px, 1920);
+    margin-top: pxToVw(111px, 1920);
+
+    display: flex;
+    align-items: center;
+
+    .intro-appli-mobile {
+      margin-left: pxToVw(67px, 1920);
+    }
+
+    .img-appli {
+      width: pxToPourcent(880, 1290);
+      height: pxToVw(296, 1920);
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

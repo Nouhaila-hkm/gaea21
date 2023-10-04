@@ -1,0 +1,213 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#alumni {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#alumni .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+
+#alumni .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#alumni .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+
+#alumni .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+
+#alumni .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+
+#alumni .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+
+#alumni footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+#alumni .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+
+#alumni .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+
+#alumni .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+
+#alumni .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+#alumni html,
+#alumni body {
+  height: 100%;
+  width: 100%;
+}
+
+#alumni .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#alumni .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+
+#alumni .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+
+#alumni #contenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.3958333333vw;
+}
+
+#alumni #contenu h1 {
+  margin-top: 0;
+  margin-bottom: 4.375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #98984C;
+}
+
+#alumni #contenu p {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  width: 56.6666666667%;
+  height: 9.1666666667vw;
+  text-overflow: "";
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  text-align: left;
+  overflow: hidden;
+  word-wrap: break-word;
+  margin-bottom: 2.4479166667vw;
+}
+
+#alumni #contenu .show {
+  height: auto;
+}
+
+#alumni #listeLogo {
+  width: 60.4166666667%;
+  margin-top: 5.7291666667vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#alumni .logo {
+  background-color: #F6F6F6;
+  border-radius: 30px;
+  width: 26.0416666667%;
+  height: 15.625vw;
+  opacity: 1;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6.25vw;
+  margin-left: 3.6458333333%;
+  margin-right: 3.6458333333%;
+}
+
+#alumni .logo img {
+  background: transparent;
+  opacity: 1;
+  border-radius: 30px;
+}
+
+/*# sourceMappingURL=alumni.css.map */

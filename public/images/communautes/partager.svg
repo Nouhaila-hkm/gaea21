@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142.728" height="133.744" viewBox="0 0 142.728 133.744">
+  <defs>
+    <filter id="Tracé_1829" x="4.439" y="0" width="136.705" height="64.309" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_1830" x="4.318" y="75.065" width="136.949" height="58.679" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ligne_168" x="0" y="72.284" width="28.948" height="42.624" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ligne_171" x="113.779" y="21.088" width="28.948" height="42.624" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ligne_169" x="1.275" y="71.396" width="43.399" height="34.399" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ligne_170" x="99.75" y="27.897" width="42.006" height="37.006" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_887" data-name="Groupe 887" transform="translate(-970.026 -3606.904)">
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Tracé_1829)">
+      <path id="Tracé_1829-2" data-name="Tracé 1829" d="M-17217.627,8818.3s10.238-37.732,54.664-37.4,54.242,37.4,54.242,37.4" transform="translate(17235.97 -8770.9)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Tracé_1830)">
+      <path id="Tracé_1830-2" data-name="Tracé 1830" d="M-17217.627,8780.905s10.238,31.931,54.664,31.646,54.242-31.646,54.242-31.646" transform="translate(17235.97 -8694.81)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Ligne_168)">
+      <line id="Ligne_168-2" data-name="Ligne 168" y1="15.676" x2="2" transform="translate(13.47 82.76)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Ligne_171)">
+      <line id="Ligne_171-2" data-name="Ligne 171" y1="15.676" x2="2" transform="translate(127.25 31.56)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Ligne_169)">
+      <line id="Ligne_169-2" data-name="Ligne 169" x1="15" y1="6" transform="translate(15.47 82.6)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 970.03, 3606.9)" filter="url(#Ligne_170)">
+      <line id="Ligne_170-2" data-name="Ligne 170" x1="13" y1="8" transform="translate(114.25 39.4)" fill="none" stroke="#467b33" stroke-linecap="round" stroke-width="8"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+@use "sass:math";
+@import "../_function";
+
+
+#encartProjet {display: none;}
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+  display: block;
+
+  .header-background {
+    width: 100%;
+    height: pxToVw(768, 1920);
+
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 0.3) 0%), url("../../../images/PagesProjets/page_main/header-page-projet.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 36%;
+
+  }
+
+  .header-content {
+    width: 38.8%;
+    color: white;
+    margin-left: pxToVw(183px, 1920);
+    position: relative;
+    top: 25.2%;
+
+    .header-title {
+      margin-bottom: pxToVw(50px, 1920);
+    }
+  }
+}
+
+// RÉARANGEMENT DU CONTENU PRINCIPALE DE LA PAGE POUR CETTE PAGE QUI N'EN A PAS BESOIN
+#prevArrow {
+  display: none;
+}
+#secondaryNav{display: none;}
+#topArrow {
+  display: none;
+}
+
+#ProjetCarousel {
+  display: none;
+}
+
+#vignettes{
+  display:none;
+}
+
+
+#main {
+  margin-top: pxToVw(95, 1920);
+
+  .text-content {
+    width: pxToVw(1290, 1920);
+    margin: 0 auto;
+    text-align: justify;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: pxToVw(55, 1920);
+    }
+  }
+}
+
+#projects {
+  width: pxToPourcent(1554px, 1920);
+  margin-top: pxToVw(121px, 1920);
+  margin-bottom: pxToVw(80px, 1920);
+
+
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: pxToVw(80px,1920);
+
+    .largeCard {
+      width: pxToPourcent(464px, 1554);
+      height: pxToVw(650px, 1920);
+    }
+  }
+}

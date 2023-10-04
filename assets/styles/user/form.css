@@ -1,0 +1,45 @@
+/* header img + title */
+.imgHeader {
+  position: relative !important;
+}
+
+.textHeader {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: transparent !important;
+  color: white;
+  margin: 0;
+}
+
+/* Form position */
+.userForm {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 33vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: transparent !important;
+}
+
+.formLabel {
+  color: black;
+  font-size: larger;
+  background-color: transparent !important;
+}
+
+.userForm input {
+  border: 1px solid gray !important;
+}
+
+.formButton {
+  align-self: center;
+  font-size: x-large;
+  color: white;
+  background-color: rgb(152, 152, 77) !important;
+  width: 15vw;
+  height: 2em;
+}/*# sourceMappingURL=form.css.map */

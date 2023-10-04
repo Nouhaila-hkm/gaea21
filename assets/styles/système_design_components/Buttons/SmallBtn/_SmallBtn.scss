@@ -1,0 +1,48 @@
+@use "sass:math";
+@import "../../../_function";
+
+
+.smallBtnLink {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    border-radius: 50px;
+
+    .btnContent {
+        display: flex;
+        align-items: center;
+        background-color: #98984B;
+    
+        padding: pxToVw(18, 1920) pxToVw(31, 1920);
+        text-decoration: none;
+        color: white;
+    
+    
+        gap: pxToVw(5, 1920);
+        border-radius: 50px;
+    
+        font-size: pxToVw(18, 1920);
+        line-height: pxToVw(31, 1920);
+        
+
+        p{
+            margin-bottom: 0 !important;
+        }
+    .chevron-btn {
+        display: block;
+        //   align-items: center;
+        height: pxToVw(28, 1920);
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        // position:relative;
+        // top: 1px;
+    }
+}
+
+    &:hover {
+        background-color: #B2B278;
+        text-decoration: none;
+        color: white;
+    }
+}
+

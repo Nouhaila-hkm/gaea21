@@ -1,0 +1,52 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Organigramme
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content">
+		<div class="text">
+			<h2>Organigramme</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_background"></div>
+
+{% endblock %}
+
+
+{% block main %}
+
+	<div class="title">
+		<h2>Comment fonctionnons-nous ?<h2></div>
+
+			{# Texte d'into #}
+			<article id="intro-organigramme">
+				<p>L’association gaea21 est composée d’un comité et d’un bureau exécutif qui en assurent le fonctionnement. Ces deux organes sont en relation avec un conseil des sages (ou sustainability council) qui a une fonction de consultation et de représentation.</p>
+
+				<div class="schema-organisation">
+					<img src="{{asset('images/QuiSommesNous/organigramme/schema-organisation.png')}}" alt="schema-organisation">
+				</div>
+
+			</article>
+
+
+
+
+
+		{% endblock %}
+
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}

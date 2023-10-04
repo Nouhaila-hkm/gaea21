@@ -1,0 +1,120 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dimension humaine{% endblock %}
+
+{% block stylesheets %}
+     <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet"/>
+  {{ encore_entry_link_tags('communautes') }}
+    {{ parent() }}
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<script src="https://kit.fontawesome.com/8bff0007f7.js" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block body %}
+ {% include "/components/_topbar.html.twig" %}
+
+ <section id="communautes">
+
+ {% include "/communautes/header.html.twig" %}
+ {% include "/communautes/sous_menu.html.twig" %}
+
+ <h2 class="title">Dimension Humaine</h2>
+
+	<div class="icons-container">
+  
+		<ul class="control" id="custom-control">
+			<li class="prev">
+				{# <i class="fas fa-angle-left fa-2x"></i> #}
+			</li>
+			<li class="next">
+				<img src="{{asset("images/communautes/arrow-right.svg")}}" alt="">
+			</li>
+		</ul>
+
+		<div class="my-slider">
+
+       
+
+       
+			<div class="slider-item">
+				<div class="icon">
+				
+				<img src="{{asset("images/communautes/3,5.png")}}" alt="3.5%">
+				
+					
+					<button>3,5%</button>
+				</div>
+			</div>
+           
+       
+			<div class="slider-item">
+				<div class="icon">
+				
+					<img src="{{asset("images/communautes/points.png")}}" alt="Points communautaires">
+					
+					<button>Points communautaires</button>
+				</div>
+            </div>
+		
+			<div class="slider-item">
+				<div class="icon">
+					
+					<img src="{{asset("images/communautes/je-cherche.png")}}" alt="je cherche">
+					
+					<button>Je cherche</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/aidetonvoisin.png")}}" alt="aide ton voisin">
+					<button>Aide à ton voisin</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/Eco-mobilite.svg")}}" alt="eco-mobilité">
+					<button>Mobilité</button>
+				</div>
+
+			</div>
+			<div class="slider-item">
+				<div class="icon">
+					<img src="{{asset("images/communautes/emploi.svg")}}" alt="emploi">
+					<button>Emploi</button>
+				</div>
+
+			</div>
+         
+		</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ {% include "/communautes/activites.html.twig" %}
+
+
+ 
+
+</section>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{encore_entry_script_tags('communautes')}}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+	<script type="text/javascript" src="{{ asset('js/communautes/carousel.js') }}"></script> 
+{% endblock %}

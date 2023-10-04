@@ -1,0 +1,65 @@
+.menu {
+    left: 0px;
+    width: pxToPourcent(1920px, 1920px);
+    height: pxToVw(100px, 1920px);
+
+    background-color: white;
+
+    border-bottom: 1px solid;
+
+    display: flex;
+    align-items: center;
+}
+
+.liste {
+    margin: 0 0 0 0;
+
+    margin-left: pxToPourcent(183px, 1920px);
+    width: pxToPourcent(1503px, 1920px);
+    height: pxToVw(29px, 1920px);
+
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.liste2 {
+    margin: 0 0 0 0;
+
+    margin-left: pxToPourcent(183px, 1920px);
+    width: pxToPourcent(1630px, 1920px);
+    height: pxToVw(29px, 1920px);
+
+    position: absolute;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.elemMenu {
+    font-family: "Helvetica";
+    font-size: pxToVw(25px, 1920px);
+}
+
+.elemMenu2:hover {
+    font-family: "Helvetica";
+    font-size: pxToVw(25px, 1920px);
+    color: olive;
+    font-weight: bold;
+
+
+
+}
+
+.elemSuiv {
+
+    //left: pxToPourcent(1719px, 1920px);
+    width: pxToPourcent(18px, 1920px);
+
+    height: pxToVw(16px, 1920px);
+
+    margin-left: pxToPourcent(1719px, 1920px);
+
+    position: absolute;
+}

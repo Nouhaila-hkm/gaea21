@@ -1,0 +1,38 @@
+@use "sass:math";
+@import "../../_function";
+
+.backTop {
+    font-size: pxToVw(28, 1920);
+    line-height: pxToVw(36, 1920);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    left: 84%;
+    z-index: 100;
+    background-color: #98984C;
+    border-radius: 30% 30% 30% 30%;
+    padding: 0.7rem;
+
+    transition: all .1s;
+
+    a {
+        text-decoration: none !important;
+        color: black !important;
+    }
+
+    .svg-top {
+        transform: scale(.8);
+        stroke-width: 2;
+    }
+
+    &:hover {
+        border-bottom: 2px solid black;
+
+        cursor: pointer;
+
+        .svg-top {
+            transform: scale(.5)
+        }
+    }
+}

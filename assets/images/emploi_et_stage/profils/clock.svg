@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25.001" viewBox="0 0 25 25.001">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Icon" d="M12.5,25A12.5,12.5,0,0,1,3.661,3.661,12.5,12.5,0,1,1,21.339,21.339,12.419,12.419,0,0,1,12.5,25ZM6.233,13.222a.71.71,0,1,0,0,1.419h7.142V4.487a.71.71,0,0,0-1.42,0v8.734Z" transform="translate(1.5 1.5)"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_95" data-name="Groupe 95" transform="translate(-1.5 -1.5)">
+    <path id="Icon-2" data-name="Icon" d="M12.5,25A12.5,12.5,0,0,1,3.661,3.661,12.5,12.5,0,1,1,21.339,21.339,12.419,12.419,0,0,1,12.5,25ZM6.233,13.222a.71.71,0,1,0,0,1.419h7.142V4.487a.71.71,0,0,0-1.42,0v8.734Z" transform="translate(1.5 1.5)"/>
+  </g>
+</svg>

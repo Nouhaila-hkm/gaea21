@@ -1,0 +1,26 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header ._backgroundpartenaire {
+  background-image: url("../../../../images/QuiSommesNous/partenaire/backgroundpartenaire.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .partenaire {
+  background-color: #BE6650 !important;
+}
+
+#partenaire {
+  width: 67.9vw;
+  margin: 0 auto;
+  display: block;
+}
+
+#partenaire {
+  display: block !important;
+}
+
+/*# sourceMappingURL=partenaire.css.map */

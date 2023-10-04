@@ -1,0 +1,59 @@
+@use "sass:math";
+@import "../../_function";
+
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+
+        background-color: #49A496;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(215, 1920);
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(36px, 1920);
+            }
+        }
+    }
+
+    ._background {
+        background-image: url("../../../../images/QuiSommesNous/header_organigramme.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#organizationDebut{display: none;}
+#partenaire{display: none;}
+
+
+#main {
+    .title {
+        h2 {
+            text-align: center;
+            margin-bottom: pxToVw(51px, 1920);
+        }
+    }
+
+    #intro-organigramme {
+        .schema-organisation {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

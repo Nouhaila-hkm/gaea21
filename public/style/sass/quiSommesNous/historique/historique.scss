@@ -1,0 +1,212 @@
+@use "sass:math";
+@import "../../_function";
+
+
+// RÉARANGEMENT DU HEADER POUR LA PAGE PRINCIPALE
+#header {
+    width: 100%;
+    height: pxToVw(768, 1920);
+    display: flex;
+
+    ._text-content {
+        width: 100%;
+        height: pxToVw(768, 1920);
+        display: block;
+
+        background-color: #707070;
+        color: white;
+
+        .text {
+            margin-left: pxToVw(183, 1920);
+            margin-right: pxToVw(106, 1920);
+            margin-top: pxToVw(215, 1920);
+
+            h2 {
+                // border: 1px solid black;
+                margin-bottom: pxToVw(36px, 1920);
+            }
+        }
+    }
+
+    ._background {
+        background-image: url("../../../../images/QuiSommesNous/historique/header-historique.png");
+        width: 100%;
+        height: pxToVw(768, 1920);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#main {
+    .title {
+        h2 {
+            text-align: center;
+            margin-bottom: pxToVw(51px, 1920);
+        }
+    }
+
+    #intro-historique {
+        margin-bottom: pxToVw(90, 1920);
+
+        li {
+            margin-left: pxToVw(15px, 1290);
+        }
+    }
+
+    #historique {
+        .text-align {
+            text-align: center;
+        }
+
+        .phases {
+
+            display: flex;
+            justify-content: space-between;
+
+            .boite {
+                width: pxToPourcent(245, 1290);
+                height: pxToVw(191, 1920);
+                border: 1px solid black;
+                border-radius: pxToVw(23px, 1920);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    font-size: pxToVw(24px, 1920);
+                    line-height: pxToVw(20px, 1920) !important;
+
+                    padding-top: pxToVw(10px, 1920);
+
+                    .title {
+                        font-weight: bold;
+                    }
+
+                    .plus {
+                        display: inline-block;
+                        border: 1px solid black;
+                        border-radius: 50%;
+
+                        font-size: pxToVw(25px, 1920);
+                        line-height: pxToVw(30px, 1920);
+
+                        padding: 0 pxToVw(8px, 1920);
+
+                        position: absolute;
+                        bottom: pxToVw(10px, 1920);
+
+                        cursor: pointer;
+                    }
+                }
+
+                .phase-suivante {
+                    width: pxToVw(12, 1920);
+                    display: inline-block;
+                    position: absolute;
+                    top: pxToVw(68, 1920);
+                    right: pxToVw(-15, 1920);
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .phase-content {
+            .hidden-content {
+
+                width: pxToPourcent(503, 1290);
+                border: 1px solid black;
+                border-radius: pxToVw(23px, 1920);
+
+                position: relative;
+
+                margin-top: pxToVw(20, 1920);
+
+                display: none;
+
+                padding: pxToVw(25px, 1920) pxToVw(20px, 1920) 0 pxToVw(30px, 1920);
+
+                font-size: pxToVw(26px, 1920);
+                line-height: pxToVw(36px, 1920) !important;
+
+                .moins {
+                    display: inline-block;
+                    border: 1px solid black;
+                    border-radius: 50%;
+
+                    transform: translateX(-85%);
+                    position: relative;
+                    top: pxToVw(0px, 1920);
+                    left: 50%;
+
+                    cursor: pointer;
+                    line-height: pxToVw(20px, 1920);
+                    ;
+                    padding: 0 pxToVw(8px, 1920);
+                    ;
+                    padding-bottom: pxToVw(6px, 1920);
+                    ;
+                    margin-bottom: pxToVw(12px, 1920);
+                }
+
+                &.display {
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
+
+.left-264 {
+    position: relative;
+    left: pxToVw(264, 1920);
+}
+
+.left-521 {
+    position: relative;
+    left: pxToVw(521, 1920);
+}
+
+.left-787 {
+    position: relative;
+    left: pxToVw(787, 1920);
+}
+
+.p1 {
+    background-color: #D4E6DC;
+}
+
+.p2 {
+    background-color: #E6E6D4;
+}
+
+.p3 {
+    background-color: #FFFFE0;
+}
+
+.p4 {
+    background-color: #FFF2E0;
+}
+
+.p5 {
+    background-color: #FFD0C6;
+}
+
+#organizationDebut {
+    display: none !important;
+}
+
+#organizationFin {
+    display: none !important;
+}
+
+#partenaire {
+    display: none !important;
+}

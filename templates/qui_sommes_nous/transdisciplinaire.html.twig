@@ -1,0 +1,132 @@
+{% extends 'qui_sommes_nous/quiSommesNous_base.html.twig' %}
+
+
+{% block stylesheets %}
+	{{parent()}}
+	<link rel="stylesheet" href="{{asset('style/quiSommesNous/organigramme/organigramme.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/modele.css')}}">
+    <link rel="stylesheet" href="{{asset('style/quiSommesNous/modele/transdisciplinaire.css')}}">
+
+
+{% endblock %}
+
+{% block title %}gaea21/Qui sommes-nous ?/Modèle_gaea21
+{% endblock %}
+
+
+{% block header %}
+	<div class="_text-content modele">
+		<div class="text">
+			<h2>Le modèle gaea21</h2>
+			{# <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, illo quia mollitia qui dolore numquam commodi itaque nostrum nobis alias possimus.</p> #}
+		</div>
+	</div>
+	<div class="_backgroundmodele"></div>
+
+{% endblock %}
+
+{% block modele %}
+
+
+        <h2 class="title_modele">Modèle pluri et transdisciplinaire</h2>
+
+        <article class="text_size text_form">
+            <p>
+                <b>La pluridisciplinarité</b> concerne l’étude d’un objet d’une seule et même discipline
+                par plusieurs disciplines à la fois.
+            </p>
+
+            <p>
+                La connaissance de l’objet dans sa propre discipline est approfondie
+                par un apport pluridisciplinaire fécond, qui apporte un plus à la discipline en question,
+                mais ce «plus» est au service exclusif de cette même discipline.
+            </p>
+
+            <p>
+                Autrement dit, la démarche pluridisciplinaire déborde les disciplines mais sa finalité
+                reste inscrite dans le cadre de la recherche d’une discipline.
+            </p>
+
+            <p>	
+                <b>L’interdisciplinarité</b> a une ambition différente de celle de la pluridisciplinarité.
+                Elle concerne le transfert des méthodes d’une discipline à l’autre
+                La transdisciplinarité s’intéresse à la dynamique engendrée par l’action de plusieurs niveaux
+                de réalités à la fois. La découverte de cette dynamique passe nécessairement par la connaissance
+                disciplinaire. La transdisciplinarité, tout en n’étant pas une nouvelle discipline
+                ou une nouvelle hyperdiscipline, se nourrit de la recherche disciplinaire, qui, à son tour,
+                est éclairée d’une manière nouvelle et féconde par la connaissance transdisciplinaire.
+                Dans ce sens, les recherches disciplinaires et transdisciplinaires ne sont pas antagonistes
+                mais complémentaires.
+            </p>
+
+            <p>
+                <b>Le concept de transdisciplinarite est la base du concept de gaea21 du 1+1=3.</b>
+            </p>
+
+            <p>
+            Le développement durable ne peut donc se concevoir qu’à travers une approche globale
+            (systémique), pluri, inter et transdisciplinaire.
+            </p>
+
+            <p>
+                En effet, de notre point de vue, mettre en place un projet durable implique une parfaite collaboration
+                entre les disciplines:
+            </p>
+        </article>
+
+        <img class="disciplines" src="{{ asset('images/QuiSommesNous/modele/disciplines.PNG') }}"/>
+
+
+        <article class="text_size text_form article_trans">
+            <p>
+                Tout cela en maîtrisant les problématiques <b>sociales</b> et <b>médicales</b> dans lesquelles elles s’intègrent.
+            </p>
+
+            <p>
+                Or, personne au monde ne possède un tel niveau ni une telle variété de compétences.
+                La solution réside donc dans une approche <b>pluri, inter et transdisciplinaire</b> et le <b>développement
+                d’un réseau de compétences.</b>
+            </p>
+
+            <p>
+                C’est le fondement de l’organisation et du fonctionnement de l’association gaea21
+                qui intègre <b>5 secteurs d’activité</b> :
+            </p>
+            <div id="TransCard"></div>
+
+            <p>Les 5 départements doivent collaborer ensemble à la réalisation de nos projets.</p>
+        </article>
+
+
+
+        <h2 class="title_modele">Dimensions et disciplines intégrées</h2>
+
+        <article class="text_size text_form">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do.
+            </p>
+
+
+<section class="dimension_card">
+    <div class="smallBox" data-title="Gestion de projet" data-link="/QuiSommesNous/gestionprojet" data-image="{{asset('images/QuiSommesNous/modele/gestion_projet.png')}}"></div>
+    <div class="smallBox" data-title="Analyse de cycle de vie" data-link="/QuiSommesNous/analyse" data-image="{{asset('images/QuiSommesNous/modele/analyse.png')}}"></div>
+    <div class="smallBox" data-title="Lean management" data-link="/QuiSommesNous/lean" data-image="{{asset('images/QuiSommesNous/modele/lean.png')}}"></div>
+</section>
+
+<section class="dimension_card">
+    <div class="smallBox" data-title="Coévolution" data-link="/QuiSommesNous/coevolution" data-image="{{asset('images/QuiSommesNous/modele/coevo.png')}}"></div>
+    <div class="smallBox" data-title="Behaviorism" data-link="/QuiSommesNous/behavior" data-image="{{asset('images/QuiSommesNous/modele/beha.png')}}"></div>
+    <div class="smallBox" data-title="Accélérateur économique" data-link="/QuiSommesNous/multiplicateureco" data-image="{{asset('images/QuiSommesNous/modele/accel.png')}}"></div>
+</section>
+
+
+{% endblock %}
+
+		{% block javascripts %}
+			{{parent()}}
+			{# <script src="{{ asset('js/pagesHistorique/story.js') }}" ></script> #}
+		{% endblock %}
+

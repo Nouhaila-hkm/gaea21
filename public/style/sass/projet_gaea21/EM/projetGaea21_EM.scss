@@ -1,0 +1,136 @@
+@use "sass:math";
+@import "../../_function";
+
+
+
+#main {
+
+  .project-title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: pxToVw(26px, 1920);
+    margin-bottom: pxToVw(26px, 1920);
+
+    .logo {
+      width: pxToVw(160.85, 1920);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .intro-ecominds {
+
+    .cercle {
+      width: pxToPourcent(714, 1290);
+      margin: 0 auto;
+      margin-top: pxToVw(36, 1920);
+      margin-bottom: pxToVw(50, 1920);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p:nth-of-type(2){margin-bottom: pxToVw(50px,1920);}
+    p:nth-of-type(4){margin-top: pxToVw(70px,1920);}
+    p:nth-of-type(4){margin-bottom: pxToVw(50px,1920);}
+    p:nth-of-type(5){margin-bottom: pxToVw(50px,1920);}
+
+    .avantages-ecominds {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: pxToVw(80, 1290);
+      margin-top: pxToVw(38, 1920);
+
+      .tarifs {
+        width: pxToPourcent(300, 1290);
+        height: pxToVw(260, 1920);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .euro {
+          width: pxToPourcent(173, 300);
+          margin: 0 auto;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          text-align: center;
+          padding: 0 pxToVw(10px, 1920);
+        }
+      }
+
+      .package {
+        width: pxToPourcent(300, 1290);
+        height: pxToVw(260, 1920);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: pxToVw(44px, 1920);
+
+        .paquet {
+          width: pxToPourcent(189, 300);
+          margin: 0 auto;
+          position: relative;
+          top: pxToVw(35px, 1920);
+          left: 0;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+
+      .contrat {
+        width: pxToPourcent(300, 1290);
+        height: pxToVw(260, 1920);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: pxToVw(11px, 1920);
+
+        .contract {
+          width: pxToPourcent(154, 300);
+          margin: 0 auto;
+
+          img {
+            width: 93%;
+          }
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    .dimensions {
+      width: pxToPourcent(1088, 1290);
+      margin: pxToVw(50, 1920) auto pxToVw(65, 1920);
+
+      img {
+        width: 100%;
+      }
+
+    }
+
+    .smallBox_popup_em {
+      margin-top: pxToVw(60, 1920);
+      margin-bottom: pxToVw(60, 1920);
+    }
+
+  }
+}

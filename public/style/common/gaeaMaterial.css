@@ -1,0 +1,80 @@
+/* Color */
+  .gaeaColorLight{ background-color: #F5F5EE; }
+
+  .gaeaColor { background-color: rgb(99, 119, 33);
+  }
+  .gaeaColorMiddle { background-color: #98984B }
+  .gaeaGrey { background-color: #484738 }
+  .gaeaCyan { background-color: #00A796 }
+  .gaeaDarkCyan { background-color: #007263 }
+
+  .textColor { color: rgb(99, 119, 33); }
+
+  .backGreen { background-color: #C1C192; }
+  .backBlue { background-color: #91C0B8; }
+  .backPink { background-color: #B791C0; }
+  .backRed { background-color: #FF5E61; }
+  .backOrange { background-color: #D88F00; }
+
+  .backVitre { background-color: rgb(255,255,255,0.5); }
+/* */
+
+/* Background Image */
+  .backImageSlide1{
+    background-image: url('../../Image/slide/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageSlide2{
+    background-image: url('../../Image/slide/slide2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageSlide3{
+    background-image: url('../../Image/slide/slide3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageSlide4{
+    background-image: url('../../Image/slide/slide4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageSlide5{
+    background-image: url('../../Image/slide/slide5.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .backImageDiap1{
+    background-image: url('../../Image/diap/diap1.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageDiap2{
+    background-image: url('../../Image/diap/diap2.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageDiap3{
+    background-image: url('../../Image/diap/diap3.png');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageDesert{
+    background-image: url('../../Image/desert.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .backImageGreenhand{
+    background-image: url('../../Image/background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+/* */
+
+/* Background Gradient */
+  .backGreenBlueGradient{
+    background: linear-gradient(90deg,#828858 0%,#839791 50%);
+  }
+/* */

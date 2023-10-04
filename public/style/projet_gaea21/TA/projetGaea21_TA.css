@@ -1,0 +1,46 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2.65625vw;
+}
+#main .intro-ta .article1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 2.480620155vw;
+}
+#main .intro-ta .article1 .text1 {
+  width: 77.3643410853%;
+}
+#main .intro-ta .article1 p:first-of-type {
+  margin-bottom: 3.9534883721vw;
+}
+#main .intro-ta .article1 .img-reseau {
+  align-self: flex-end;
+  width: 20.1550387597%;
+  position: relative;
+  bottom: 0.7751937984vw;
+}
+#main .intro-ta .article1 .img-reseau img {
+  width: 100%;
+}
+#main .intro-ta .article2 {
+  margin-top: 6.511627907vw;
+}
+#main .intro-ta .article2 .img-ta {
+  margin: 3.8759689922vw auto 7.7519379845vw;
+  width: 86.5891472868%;
+}
+#main .intro-ta .article2 .img-ta img {
+  width: 100%;
+}
+#main .intro-ta .article3 {
+  margin-top: 8.7596899225vw;
+}
+
+/*# sourceMappingURL=projetGaea21_TA.css.map */

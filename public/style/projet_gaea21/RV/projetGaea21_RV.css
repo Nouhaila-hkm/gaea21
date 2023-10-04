@@ -1,0 +1,73 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#main .project-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2.65625vw;
+}
+#main .project-title .logo {
+  width: 11.7708333333vw;
+}
+#main .project-title img {
+  width: 100%;
+}
+#main .intro {
+  display: flex;
+  align-items: center;
+  gap: 0.5729166667vw;
+}
+#main .intro .intro_text .partie2 {
+  margin-top: 2.34375vw;
+}
+#main .intro .article_img {
+  width: 378%;
+}
+#main .intro .article_img .intro_img {
+  width: 100%;
+}
+#main .outils-rv {
+  margin-top: 2.65625vw;
+}
+#main .outils-rv .liste_des_services:nth-of-type(odd) {
+  margin: 2.65625vw 0;
+}
+#main .outils-rv .liste_des_services .services {
+  display: flex;
+  align-items: center;
+  gap: 0.5208333333vw;
+  font-weight: bold;
+}
+#main .outils-rv .liste_des_services .services .disc {
+  display: block;
+  width: 1.1627906977%;
+  height: 0.78125vw;
+  background-color: black;
+  border-radius: 50%;
+}
+#main .outils-rv .liste_des_services .service {
+  padding-left: 1.5104166667vw;
+}
+#main .appli_mobile {
+  border: 1px solid #989751;
+  border-radius: 23px;
+  padding: 2.96875vw;
+  margin-top: 5.78125vw;
+  display: flex;
+  align-items: center;
+}
+#main .appli_mobile .intro-appli-mobile {
+  margin-left: 3.4895833333vw;
+}
+#main .appli_mobile .img-appli {
+  width: 68.2170542636%;
+  height: 15.4166666667vw;
+}
+#main .appli_mobile .img-appli img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=projetGaea21_RV.css.map */

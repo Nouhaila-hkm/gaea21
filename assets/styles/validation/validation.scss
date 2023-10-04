@@ -1,0 +1,35 @@
+@import '../function';
+
+.validation {
+    display: flex;
+    align-items: center;
+    padding-top: 17vw;
+}
+
+.log {
+    width: 20%;
+}
+
+.boxbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-left: 4vw;
+}
+
+.inscriptionvalidate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envelope {
+    width: pxToVw(244px, 1920px);
+    margin-left: 22vw;
+    margin-top: 3vw;
+    margin-right: 1vw;
+}
+
+.validationtext {
+    font-size: 1.2vw;
+}

@@ -1,0 +1,211 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+.headerAccompagnement {
+  display: flex;
+  height: 40vw;
+  color: white;
+}
+
+#header1, #header2 {
+  width: 50%;
+}
+
+#header1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F3D56;
+}
+#header1 article {
+  width: 70%;
+}
+#header1 article h1 {
+  font-size: 2.6041666667vw;
+}
+
+#header2 {
+  background-image: url("../../../images/coaching/accompagnement/accompagnement.png");
+  background-position: center;
+}
+
+.listeLiens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6.25vw;
+  border: 1px solid grey;
+  margin-bottom: 3.125vw;
+}
+.listeLiens ul {
+  display: flex;
+  gap: 5.9895833333vw;
+  font-size: 1.3020833333vw;
+}
+.listeLiens ul a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: 80.9375%;
+  margin: 0 auto;
+}
+main #prevArrow {
+  display: block;
+  width: 8.8541666667vw;
+}
+
+#cycles {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 61.5px;
+}
+
+#cycles > div {
+  width: 24.1666666667vw;
+  height: 14.5833333333vw;
+  margin: 10px;
+}
+
+#projet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/projet.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 23px;
+}
+
+#humain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#statistiques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url("../../../images/coaching/accompagnement/humain.png");
+  background-position: center;
+  border-radius: 23px;
+  background-size: cover;
+}
+
+#sagitil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+#sagitil h2 {
+  font-size: 2.6041666667vw;
+  margin-top: 4.6875vw;
+  margin-bottom: 2.34375vw;
+}
+#sagitil div {
+  font-size: 1.5625vw;
+}
+
+.vide {
+  width: 100%;
+  height: 11.0416666667vw;
+  background-color: rgb(250, 250, 246);
+  margin-top: 3.3333333333vw;
+}
+
+#cycle_humain > img, #cycle_projet > img {
+  width: 100%;
+}
+
+#cycles2 > article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+#cycles2 > article div {
+  width: 40%;
+  margin: 1px;
+}
+#cycles2 > article div p {
+  font-size: 1.5625vw;
+}
+#cycles2 > article h2 {
+  font-size: 2.0833333333vw;
+}
+#cycles2 > article .btnContent {
+  width: 100%;
+}
+
+.decouvrir {
+  font-size: 1.09375vw;
+  margin-top: 2.34375vw;
+  width: 9.4270833333vw;
+  height: 3.1770833333vw;
+  background-color: #98984B;
+  border-radius: 2.34375vw;
+  border: #98984B;
+  color: white;
+}
+.decouvrir span {
+  font-size: 1.3020833333vw;
+}
+
+.decouvrir:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#statsContainer h2 {
+  font-size: 2.0833333333vw;
+}
+#statsContainer #stats {
+  display: flex;
+  width: 100%;
+  margin-bottom: 61px;
+}
+#statsContainer #stats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 14.9479166667vw;
+  width: 20%;
+  background-color: rgb(250, 250, 246);
+}
+#statsContainer #stats div h4 {
+  color: #98984B;
+  font-size: 4.375vw;
+}
+#statsContainer #stats div p {
+  font-size: 1.5625vw;
+  font-weight: bold;
+}
+
+#centrer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 161px;
+}
+
+/*# sourceMappingURL=modeleAccompagnement.css.map */

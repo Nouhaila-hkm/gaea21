@@ -1,0 +1,103 @@
+.gaeaVideo{
+    padding-top: pxToVw(115px, 1920px);
+
+    background-color: white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.titleGaeaVideo{
+    margin-top: 0;
+    margin-bottom: pxToVw(93px, 1920px);
+
+    font-family: "Helvetica";
+    font-size: pxToVw(50px, 1920px);
+    font-weight: bold;
+
+    border-bottom: solid 4px #989655;
+
+}
+
+#carouselGaeaVideo{
+    height: pxToVw(900px, 1920px) !important;
+}
+.itemVideo{
+    width: 80% !important;
+}
+.videosGaea{    
+    width:100% !important;
+    
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.video{
+    background-color : lightgray;
+
+    border-radius: 10px;
+    height: pxToVw(431px, 1920px);
+    width: pxToPourcent(500px, 1920px) !important;
+
+    margin-left: pxToPourcent(15px, 1920px);
+    margin-right: pxToPourcent(15px,1920px);
+    margin-bottom: pxToVw(20px, 1920px);
+
+    padding-top: pxToVw(321px, 1920px);
+    padding-left: pxToPourcent(31px, 1920px);
+}
+
+.videoTitle, .videoSubTitle {
+    background-color: white;
+
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: pxToVw(18px, 1920px);
+
+    margin:0;
+    padding:7px;
+    padding-right: pxToPourcent(15px, 1920px);
+    padding-top: pxToVw(10px, 1920px);
+    padding-bottom: 0;
+
+    width: fit-content;
+}
+
+.videoTitle{
+    border-radius: 10px 10px 0 0;
+}
+
+.videoSubTitle {
+    border-radius: 0 10px 10px 10px;
+}
+
+.scrollImage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.scrollRow{
+    height: 29px;
+    width: 71px;
+    width: 14px;
+
+    margin-top: 33px;
+    //margin-top: 5px;
+}
+
+.scrollCercle{
+    height: 16px;
+    width: 71px;
+    
+    margin-top: 38px;
+    margin-left: pxToPourcent(54px, 1920px);
+    margin-right: pxToPourcent(54px, 1920px);
+}

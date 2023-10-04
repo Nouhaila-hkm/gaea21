@@ -1,0 +1,31 @@
+@import "formStyles.scss";
+
+body {
+  background: $background-color;
+}
+
+.filter-border {
+  background-color: $primary-green;
+  color: white;
+}
+
+.text-size-normal {
+  font-size: $font-size;
+}
+
+.form-data {
+  h3 {
+    color: #ffffff;
+    border-radius: 1rem;
+    background-color: $primary-blue;
+  }
+
+  .response {
+    border-style: dashed;
+    border-bottom: none;
+    border-top: none;
+    border-color: $primary-green;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+  }
+}

@@ -1,0 +1,30 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.secondary-nav {
+  width: pxToPourcent(3975, 1920);
+  position: relative;
+}
+.secondary-nav .next-arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.secondary-nav__menu {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ccc;
+  padding: pxToVw(15, 1920);
+}
+.secondary-nav__menu .item {
+  padding: pxToVw(20, 1920);
+  border-radius: 13px;
+  transition: all 0.3s ease;
+}
+.secondary-nav__menu .item:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}/*# sourceMappingURL=navbar_pages_projet.css.map */

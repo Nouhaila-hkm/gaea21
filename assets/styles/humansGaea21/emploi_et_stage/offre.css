@@ -1,0 +1,107 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}
+
+#offre html,
+#offre body {
+  height: 100%;
+  width: 100%;
+}
+
+#offre .sectionHead {
+  display: flex;
+}
+
+#offre .header1,
+#offre .header2 {
+  display: flex;
+  vertical-align: top;
+}
+
+#offre .header1 {
+  margin-left: 0%;
+  width: 50.2083333333%;
+  height: 40vw;
+  background: #49A496;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#offre .header2 {
+  margin-left: 0px;
+  width: 49.7916666667%;
+  height: 40vw;
+  background: transparent url("../../..//images/Groupe de masques 389.jpg") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#offre .p-title {
+  margin-left: 9.53125%;
+  margin-top: 26.0416666667%;
+  color: #FFFFFF;
+  font-size: 2.6041666667vw;
+  font-family: "Helvetica Neue", medium;
+}
+
+#offre .p-texte {
+  margin-left: 9.53125%;
+  margin-top: 2.0833333333%;
+  width: 41.6666666667%;
+  height: 58.3333333333%;
+  color: white;
+  font-size: 1.5625vw !important;
+  font-family: "Helvetica Neue", Regular;
+}
+
+#offre .offre-1 {
+  display: flex;
+}
+
+#offre .img-1 {
+  margin-left: 9.53125vw;
+  margin-top: 4.1666666667vw;
+  width: 5.8854166667vw;
+  height: 5.8333333333vw;
+  background-color: #989756;
+  border-radius: 0.5208333333vw;
+}
+
+#offre .p-t {
+  margin-top: 5.2083333333vw;
+  margin-left: 2.6041666667vw;
+  margin-bottom: 5.2083333333vw;
+  font-size: 2.6041666667vw;
+  font-family: "Helvetica Neue", bold;
+}
+
+#offre .offre-img {
+  margin-left: 1.3020833333vw;
+  margin-top: 1.3020833333vw;
+  width: 3.28125vw;
+  height: 3.28125vw;
+}
+
+/*# sourceMappingURL=offre.css.map */

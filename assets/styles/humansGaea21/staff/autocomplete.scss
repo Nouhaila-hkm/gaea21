@@ -1,0 +1,50 @@
+.no-suggestions {
+    margin-top: 0.8rem;
+    color: #98984C;
+    padding: 0.5rem;
+}
+
+.projects {
+    position: sticky;
+    background-color: white;
+    box-shadow: 0 5px 5px 1px rgb(159, 158, 158);
+    border: 1px solid whitesmoke;
+    border-radius: 5%;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    // max-height: 143px;
+    overflow-y: visible;
+    padding-left: 0;
+    width: calc(300px + 1rem);
+
+    li {
+        padding: 0.5rem;
+
+        &:hover {
+            background-color: #98984C;
+            color: white;
+            cursor: pointer;
+            font-weight: 700;
+
+            &:first-child {
+                border-radius: 0px 8px 0px 0px;
+            }
+
+            &:last-child {
+                border-radius: 0px 0px 8px 0px;
+            }
+        }
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid #999;
+        }
+    }
+}
+
+.projects-active {
+    background-color: #98984C;
+    color: white;
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -1,0 +1,50 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+.topbar {
+  background-color: white !important;
+}
+
+.btn-floating i {
+  width: auto;
+}
+
+.btn-floating.btn-large i {
+  height: 0;
+}
+
+.white-text {
+  background-color: rgb(152, 152, 77);
+}
+
+.ulTopbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: auto;
+}
+
+.liTopbar {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: larger;
+}
+
+.topbar {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 6.25vw;
+  font-size: 1.0416666667vw !important;
+}
+
+.liTopbar {
+  font-size: 1.0416666667vw !important;
+}
+
+.material-icons.black-text.medium {
+  display: block !important;
+}/*# sourceMappingURL=topbar.css.map */

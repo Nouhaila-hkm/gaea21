@@ -1,0 +1,156 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#header {
+  width: 100%;
+  height: 40vw;
+  display: flex;
+}
+#header ._text-content {
+  width: 100%;
+  height: 40vw;
+  display: block;
+  background-color: #49a496;
+  color: white;
+}
+#header ._text-content .text {
+  margin-left: 9.53125vw;
+  margin-right: 5.5208333333vw;
+  margin-top: 11.1979166667vw;
+}
+#header ._text-content .text h2 {
+  margin-bottom: 1.875vw;
+}
+#header ._background {
+  background-image: url("../../../../images/QuiSommesNous/header_organigramme.png");
+  width: 100%;
+  height: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main {
+  margin-bottom: 0;
+}
+#main .title h2 {
+  text-align: center;
+  margin-bottom: 2.65625vw;
+}
+#main #intro-organeDecisionnel .schema-organeDecisionnel img {
+  width: 100%;
+}
+
+#personnes {
+  width: 100%;
+}
+#personnes .membres {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 5.8333333333vw 9.53125vw;
+}
+#personnes .membres:last-of-type {
+  margin-bottom: 5.2083333333vw;
+}
+#personnes .membres:nth-of-type(even) {
+  background-color: #FBFBF7;
+}
+#personnes .membres:nth-of-type(even) .presentationInitial {
+  flex-direction: row-reverse;
+}
+#personnes .membres:nth-of-type(even) .presentationInitial .presentation-membres {
+  margin-right: 5.8333333333vw;
+  margin-left: 0;
+}
+#personnes .membres .presentationInitial {
+  display: flex;
+}
+#personnes .membres .presentationInitial .name,
+#personnes .membres .presentationInitial .fonction,
+#personnes .membres .presentationInitial h4 {
+  color: #98984b;
+}
+#personnes .membres .presentationInitial .photo {
+  width: 26.5625%;
+}
+#personnes .membres .presentationInitial .photo img {
+  width: 100%;
+}
+#personnes .membres .presentationInitial .presentation-membres {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 67.1814671815%;
+  gap: 1.0416666667vw;
+  margin-left: 5.8333333333vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .auteur {
+  display: block;
+  font-style: italic;
+}
+#personnes .membres .presentationInitial .presentation-membres .name {
+  font-size: 2.0833333333vw;
+  line-height: 1.7708333333vw;
+  font-weight: 600;
+}
+#personnes .membres .presentationInitial .presentation-membres .fonction {
+  font-weight: 600;
+}
+#personnes .membres .presentationInitial .presentation-membres .citation {
+  margin: 1.3541666667vw 0;
+  height: 10.9375vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus {
+  align-items: center;
+  gap: 1.5625vw;
+  position: relative;
+  bottom: 0.78125vw;
+  cursor: pointer;
+  display: inline-flex;
+  width: 26.7052767053%;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus > div {
+  width: 1.25vw;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus > div svg {
+  width: 100%;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus p {
+  margin-bottom: 0;
+}
+#personnes .membres .presentationInitial .presentation-membres .plus svg.rotate {
+  transform: rotate(90deg);
+}
+#personnes .membres .presentationInitial .presentation-membres::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 74.4252873563%;
+  height: 0.2083333333vw;
+  background-color: rgba(152, 152, 75, 0.6);
+}
+#personnes .membres .hiddenContent {
+  margin-top: 3.90625vw;
+}
+#personnes .membres .hiddenContent .formation,
+#personnes .membres .hiddenContent .vision,
+#personnes .membres .hiddenContent .poste {
+  color: #98984b;
+  font-size: 1.5625vw;
+  line-height: 1.7708333333vw;
+  font-weight: 600;
+  margin-bottom: 1.1458333333vw;
+}
+#personnes .membres .hiddenContent p {
+  margin-bottom: 2.5vw;
+}
+#personnes .membres .hiddenContent.hidde {
+  display: none;
+}
+
+#organizationFin {
+  display: none;
+}
+
+/*# sourceMappingURL=organeDecisionnel.css.map */

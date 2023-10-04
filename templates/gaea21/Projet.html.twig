@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  {% include '/main/topbar.html.twig' %}
+ 
+  <section class="sectionArticle white">
+  <div class="container">
+  <h5 class="center">
+    Gestion des articles
+  </h5>
+  <div class="card-panel transparent">
+    {{ form_start(formArticle) }}
+    <div class="row">
+      
+        {{ form_row(formArticle.DateCreation,{'attr':{'type':'date' }}) }}
+      <div class="input-field col s12">
+        <i class="material-icons textColor prefix">date_range</i>
+        {{ form_row(formArticle.Date2) }}
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons textColor prefix">date_range</i>
+        {{ form_row(formArticle.Date3) }}
+      </div>
+      {# <div class="input-field col s6">
+        <i class="material-icons textColor prefix">assignment</i>
+        {{ form_widget(formArticle.contents) }}
+      </div> #}
+      {# <div class="input-field col s6">
+        <i class="material-icons textColor prefix">assignment</i>
+        {{ form_widget(formArticle.categories) }}
+      </div> #}
+      <div class="col s6">
+        <button type="reset"
+          class="btn red darken-4 waves-effect waves-light"
+          style="border-radius:100px; margin-top:10%;">
+          <i class="material-icons">cancel</i>
+          Annuler
+        </button>
+        <button type="submit"
+          class="btn gaeaColor"
+          style="border-radius:100px; margin-top:10%;">
+          <i class="material-icons">done</i>
+          Valider
+        </button>
+      </div>
+    </div>
+    {{ form_end(formArticle) }}
+  </div>
+  </div>
+  </section>
+{% endblock %}

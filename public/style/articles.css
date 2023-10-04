@@ -1,0 +1,432 @@
+@charset "UTF-8";
+@import 'common.css';
+/* Section ( section )
+  Une section occupe l'écran sur toutes sa largeur.
+  @abstract
+  @modifiers
+    _dark : si l'image est sombre
+*/
+.section {
+  width: 100%;
+  --text-back: white;
+  --text-back2: #EBEAE6;
+  --text-color: black;
+  --text-color-weak: #6F6F6F;
+  --text-color2: #98984B;
+  --text-special: #E0DDC9;
+  --text-special2: #378A61;
+  --text-negative: #ff0000;
+  color: var(--text-color);
+  background-color: var(--text-back);
+  padding: 0;
+  padding-left: 12.96875vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.section._dark {
+  --text-back: #201D1D;
+  --text-back2: #282424;
+  --text-color: white;
+  --text-color2: #ABAB59;
+  --text-special: #1C4530;
+  --text-special2: #43A875;
+}
+
+/* */
+/* Image Text ( section -imagetext )
+  @extend Section(section)
+  @shape (h2|p)*
+*/
+.section.-imagetext {
+  background-size: cover;
+  padding-top: 2.65625vw;
+  padding-bottom: 1.7708333333vw;
+}
+.section.-imagetext * {
+  margin-left: 40.7291666667vw;
+  margin-top: 1.1458333333vw;
+  margin-bottom: 1.1458333333vw;
+}
+.section.-imagetext h2 {
+  font-size: 2.8125vw;
+  font-weight: bold;
+}
+.section.-imagetext p {
+  font-size: 1.5625vw;
+  width: 41.0416666667vw;
+}
+
+/* */
+/* Button List ( section -buttonlist )
+  @extend Section(section)
+  @shape a*
+*/
+.section.-buttonlist {
+  background-size: cover;
+  padding-left: 12.96875vw;
+  padding-right: 12.96875vw;
+  align-items: center;
+  height: 6.25vw;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top: solid 0.0520833333vw var(--text-color);
+  border-bottom: solid 0.0520833333vw var(--text-color);
+}
+.section.-buttonlist a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.3958333333vw;
+  height: 3.3333333333vw;
+  font-size: 1.3020833333vw;
+  border-radius: 0.5208333333vw;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.section.-buttonlist a._selected {
+  background-color: var(--text-special);
+}
+.section.-buttonlist a::before {
+  position: absolute;
+  top: 4.7916666667vw;
+  content: "";
+  display: block;
+  height: 0.2083333333vw;
+  width: 120%;
+  left: -10%;
+  background-color: var(--text-color2);
+  opacity: 0;
+  transition: 0.2s;
+}
+.section.-buttonlist a:hover::before {
+  opacity: 1;
+}
+.section.-buttonlist a:hover {
+  color: var(--text-color2);
+}
+
+/* */
+/* Button Stack ( section -buttonstack )
+  @extend Section(section)
+  @shape a*
+*/
+.section.-buttonstack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 2.8125vw;
+  padding-bottom: 0.78125vw;
+}
+.section.-buttonstack a {
+  background-color: var(--text-back2);
+  margin-top: 1.09375vw;
+  margin-right: 3.6458333333vw;
+  margin-bottom: 1.09375vw;
+  padding: 0.78125vw;
+  border-radius: 0.5208333333vw;
+  font-size: 1.5625vw;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.section.-buttonstack a._selected {
+  background-color: var(--text-special2);
+  color: var(--text-back);
+}
+.section.-buttonstack a:hover {
+  transform: scale(1.05, 1.05);
+}
+
+/* */
+/* Search Bar Section ( section -seachbar )
+  @extend Section(section)
+  @shape (<div>(input[type=search]|img)*</div>)*
+*/
+.section.-searchbar {
+  display: flex;
+  flex-direction: row;
+  padding-top: 0.78125vw;
+  padding-bottom: 0.78125vw;
+  align-items: center;
+}
+.section.-searchbar > * {
+  display: flex;
+  flex-direction: row;
+  height: 3.6458333333vw;
+  border-radius: 0.5208333333vw;
+  box-shadow: 0.0520833333vw 0.0520833333vw 0.4166666667vw -0.2604166667vw var(--text-color);
+  align-items: center;
+  margin-left: 0.5208333333vw;
+  margin-right: 0.5208333333vw;
+  transition: 0.5s;
+}
+.section.-searchbar > * > * {
+  margin-left: 1.1979166667vw;
+  margin-right: 1.1979166667vw;
+}
+.section.-searchbar > * > input {
+  border: none;
+  outline: none;
+  font-size: 1.5625vw;
+  width: 14.0625vw;
+  height: auto;
+  margin: 0;
+}
+.section.-searchbar > * > input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.section.-searchbar > * > img {
+  width: 1.640625vw;
+  height: 1.640625vw;
+}
+.section.-searchbar > * > a.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3020833333vw;
+  padding: 0.2083333333vw;
+  padding-left: 1.0416666667vw;
+  padding-right: 1.0416666667vw;
+  border-radius: 0.5208333333vw;
+  box-shadow: 0.0520833333vw 0.0520833333vw 0.4166666667vw -0.2604166667vw var(--text-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section.-searchbar > * > a.tag::after {
+  content: "x";
+  font-weight: bold;
+  font-size: 1.5625vw;
+  padding: none;
+  padding-left: 0.78125vw;
+}
+.section.-searchbar > * > a.tag:hover {
+  background-color: var(--text-negative);
+  color: var(--text-back);
+}
+.section.-searchbar > * > a.button {
+  display: flex;
+  width: 1.640625vw;
+  height: 1.640625vw;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section.-searchbar > * > a.button > img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.section.-searchbar > * > a.button:hover {
+  transform: scale(1.3, 1.3);
+}
+
+/* */
+/* Article List Section ( section -articlelist )
+  @extend Section(section)
+  @shape (<>(h3|p|a|.tags|img)*</>)*
+  @modifiers
+    _small
+*/
+.section.-articlelist {
+  /* SMALL */
+  /* */
+  display: flex;
+  flex-direction: column;
+  padding-right: 12.96875vw;
+}
+.section.-articlelist._small {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section.-articlelist._small > * {
+  width: 33.8541666667vw;
+  margin-bottom: 3.046875vw;
+  padding-bottom: 0.234375vw;
+}
+.section.-articlelist._small > * > * {
+  margin-top: 0.19921875vw;
+  margin-bottom: 0.19921875vw;
+}
+.section.-articlelist._small > * > h3 {
+  font-size: 1.171875vw;
+}
+.section.-articlelist._small > * > p {
+  font-size: 0.65625vw;
+  line-height: 0.75vw;
+}
+.section.-articlelist._small > * > span {
+  font-size: 0.65625vw;
+}
+.section.-articlelist._small > * > a {
+  font-size: 0.9375vw;
+  margin-left: 0.1875vw;
+  margin-right: 0.1875vw;
+  height: 1.2890625vw;
+}
+.section.-articlelist._small > * > *.tags {
+  font-size: 0.46875vw;
+  margin-top: 1.171875vw;
+}
+.section.-articlelist._small > * > *.tags > * {
+  margin-right: 0.1171875vw;
+}
+.section.-articlelist._small > * > *.tags::before {
+  margin-right: 0.3515625vw;
+}
+.section.-articlelist._small > * > img {
+  width: 14.0625vw;
+  height: 7.34375vw;
+}
+.section.-articlelist._small > * > img + p {
+  width: 18.75vw;
+  padding-left: 1.5104166667vw;
+  padding-right: 1.171875vw;
+}
+.section.-articlelist > * {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 6.7708333333vw;
+  padding-bottom: 0.5208333333vw;
+}
+.section.-articlelist > *::before {
+  content: "";
+  background-color: var(--text-back2);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  height: 0.15625vw;
+  width: 84%;
+}
+.section.-articlelist > * > * {
+  margin-top: 0.4427083333vw;
+  margin-bottom: 0.4427083333vw;
+}
+.section.-articlelist > * > h3 {
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  color: var(--text-special2);
+  width: 100%;
+}
+.section.-articlelist > * > p {
+  width: auto;
+  font-size: 1.4583333333vw;
+  line-height: 1.6666666667vw;
+}
+.section.-articlelist > * > p > strong {
+  font-size: inherit;
+  font-weight: bold;
+}
+.section.-articlelist > * > p > em {
+  font-size: inherit;
+}
+.section.-articlelist > * > span {
+  display: block;
+  font-size: 1.4583333333vw;
+  font-style: italic;
+  font-weight: lighter;
+  width: 100%;
+  color: var(--text-color-weak);
+}
+.section.-articlelist > * > a {
+  display: flex;
+  font-size: 1.8229166667vw;
+  font-weight: bold;
+  margin-left: 0.4166666667vw;
+  margin-right: 0.4166666667vw;
+  padding: 0;
+  padding-left: 0.625vw;
+  padding-right: 0.625vw;
+  height: 2.8645833333vw;
+}
+.section.-articlelist > * > a > img {
+  margin: 0;
+  width: auto;
+  height: 70%;
+  align-self: center;
+}
+.section.-articlelist > * > a > *:not(:last-child) {
+  margin-right: 0.5208333333vw;
+  text-align: center;
+}
+.section.-articlelist > * > *.tags {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.0416666667vw;
+  margin-top: 2.6041666667vw;
+  cursor: pointer;
+}
+.section.-articlelist > * > *.tags > a {
+  font-size: inherit;
+}
+.section.-articlelist > * > *.tags > a:hover {
+  text-decoration: underline;
+}
+.section.-articlelist > * > *.tags > * {
+  margin-right: 0.2604166667vw;
+}
+.section.-articlelist > * > *.tags::before {
+  content: "";
+  display: flex;
+  align-self: center;
+  height: 1em;
+  width: 1em;
+  margin-right: 0.78125vw;
+  background-image: url("../Image/smallicons/link.svg");
+  background-size: cover;
+}
+.section.-articlelist > * > img {
+  width: 31.4583333333vw;
+  height: 16.5104166667vw;
+  align-self: center;
+}
+.section.-articlelist > * > img + p {
+  width: 41.6666666667vw;
+  padding-left: 3.3333333333vw;
+  padding-right: 2.6041666667vw;
+}
+
+/* Page Number ( section -pagenumber )
+  @extend Section(section)
+  @shape (span|a)*
+*/
+.section.-pagenumber {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 12.96875vw;
+  padding-bottom: 6.9270833333vw;
+}
+.section.-pagenumber > * {
+  margin-left: 0.3125vw;
+  margin-right: 0.3125vw;
+}
+.section.-pagenumber > span {
+  font-size: 3.125vw;
+  font-weight: bold;
+}
+.section.-pagenumber > a {
+  font-size: 1.1458333333vw;
+  color: var(--text-color-weak);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.section.-pagenumber > a:hover {
+  transform: scale(1.4, 1.4);
+}
+
+/* */
+/* */
+
+/*# sourceMappingURL=articles.css.map */

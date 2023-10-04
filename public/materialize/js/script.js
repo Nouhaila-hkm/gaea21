@@ -1,0 +1,19 @@
+
+       $(document).ready(()=>{
+         $('.sidenav').sidenav();
+         $(".dropdown-trigger").dropdown();
+         $('.carousel').carousel();
+         $("#SousMenu").hide();
+         $('#Items').on('click',function(){
+           $("#SousMenu").hide(); 
+        });  
+        $('#SousMenu').slideDown({
+           duration:1000
+          });
+         $('select').formSelect();
+           $('.modal').modal({
+            dismissible:false,
+            inDuration:1000,
+            outDuration:1000
+        });
+      });

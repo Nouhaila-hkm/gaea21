@@ -1,0 +1,103 @@
+@import '../function';
+
+.box_card {
+    width: pxToVw(280, 1920);
+    margin-bottom: pxToPourcent(119, 1920);
+    box-shadow: 0px 3px 6px #00000040;
+    border-radius: 23px;
+    height: auto;
+}
+
+.img_cards {
+    max-width: 100%;
+}
+
+.cards_text {
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 5%;
+    font-size: 1.1vw;
+}
+
+.cards_button {
+    width: pxToVw(202, 1920);
+    height: pxToVw(67, 1920);
+    margin-left: pxToPourcent(39, 280);
+    border-radius: 3vw;
+    border: none;
+    box-shadow: 0px 3px 6px #00000040;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    background: #3434340b;
+}
+
+.cards_button:hover {
+    background: #3434344d;
+}
+
+.cards_align {
+    display: flex;
+    gap: pxToPourcent(50, 1920);
+    margin-left: pxToPourcent(160, 1920);
+    margin-top: pxToPourcent(70, 1920);;
+}
+
+#button1, #button2, #button3, #button4, #button5 {
+    position: relative;
+}
+
+#button1 {
+    top: 3.3vw;
+}
+
+#button3, #button4, #button2 {
+    top: -1vw;
+}
+
+#button5 {
+    top: -1vw;
+}
+
+.chevron {
+    width: 0.8vw;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+/*CSS pour le background des images*/
+
+.overlay-image {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay-image img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.overlay-image .hover-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+
+    background-color: #00000032;
+    color: white;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1.1vw;
+}
+
+.overlay-image .hover-image {
+    opacity: 1;
+}

@@ -1,0 +1,121 @@
+@use "sass:math";
+@import "../../_function";
+
+#main {
+
+  .project-title {
+    text-align: center;
+    margin-bottom: pxToVw(51px, 1920);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .project-logo {
+      width: pxToPourcent(180, 1290);
+    }
+
+    h2 {
+      font-size: pxToVw(50px, 1920);
+      line-height: pxToVw(50px, 1920);
+      font-weight: 600;
+
+      position: relative;
+      top: pxToVw(10px, 1290);
+      padding-left: pxToVw(12px, 1920);
+    }
+  }
+
+  .intro-pdi {
+    display: flex;
+    flex-direction: column;
+    // gap: pxToVw(85px,1920);
+
+    .partie1 {
+      display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+
+      margin-bottom: pxToVw(8px, 12900);
+
+      .text1 {
+        width: pxToPourcent(1014, 1290);
+        padding-left: pxToVw(39px, 1290);
+      }
+
+      .img-histogramme {
+        width: pxToPourcent(196, 1290);
+        position: relative;
+        bottom: pxToVw(12, 1920);
+
+        .img-graphique {
+          width: 100%;
+
+        }
+      }
+    }
+
+    .partie2 {
+      display: flex;
+      // justify-content: space-between;
+      align-items: flex-end;
+      margin-top: pxToVw(35px, 1920);
+
+      .text2 {
+        padding-right: pxToVw(39px, 1920);
+        width: pxToPourcent(1071, 1290);
+
+
+      }
+
+      .img-ecologie {
+        width: pxToPourcent(166px, 1290);
+
+        .img-mainverte {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .acteurs {
+    margin-top: pxToVw(83, 1920);
+
+    .list-acteur {
+      margin-top: pxToVw(17, 1920);
+
+      .acteur {
+
+        .disc {
+          display: inline-block;
+          width: pxToPourcent(15, 1290);
+          height: pxToVw(14, 1920);
+          background: black;
+          margin: 0 pxToVw(15, 1290);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .partie3{
+    p:first-of-type{
+      margin-bottom: pxToVw(50,1920);
+    }
+
+    ul li{
+      display: flex;
+      align-items: center;
+      gap: pxToVw(20px,1290);
+
+      img{
+        display: block;
+        width: pxToPourcent(42,1290);
+      }
+    }
+
+
+    p:nth-of-type(2){ margin-bottom: pxToVw(17px,1920);}
+  }
+
+}

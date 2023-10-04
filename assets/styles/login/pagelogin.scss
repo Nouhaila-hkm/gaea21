@@ -1,0 +1,167 @@
+@import '../_function';
+
+.img-background {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../../../public/Image/login/gaea-conexion.png);
+}
+
+.formRegistration {
+    width: pxToVw(700px, 1920px);
+    height: 20vw;
+    position: absolute;
+    top: 25vw;
+    left: pxToVw(610px, 1920px);
+}
+
+.welcome {
+    position: absolute;
+    top: 8vw;
+    left: pxToVw(667px, 1920px);
+    width: pxToVw(587px, 1920px);
+}
+
+#mail, #mdp {
+    width: pxToVw(700px, 1920px);
+    border-radius: 10px !important;
+    border: 1px solid #ACA9BB !important;
+}
+
+
+.loginsectionformbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.login {
+  margin-top: 4vw;
+  width: 50%;
+}
+
+#connect {
+    position: relative;
+    left: pxToVw(175px, 1920px);
+    top: 4vw;
+
+}
+
+.connectwhenregister {
+    top: 19vw !important;
+}
+
+#register {
+    position: absolute;
+    left: pxToVw(175px, 1920px);
+    top: 13vw;
+}
+
+.bubble {
+    width: pxToVw(300px, 1920px);
+    height: pxToVw(300px, 1920px);
+    margin-left: 3vw;
+}
+
+.bubble-row {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 7vw;
+    animation-duration: 1s;
+    animation-name: smooth;
+}
+
+#forgot, #mdplogin, #mail, #login, .logintext, .imgbutton {
+    animation-duration: 1s;
+    animation-name: smooth;
+}
+
+.imgbutton {
+    width: 9vw;
+    height: 2.5vw;
+    font-size: pxToVw(20px, 1920px);
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    position: absolute;
+    top: 7vw;
+}
+
+
+.imgbutton:hover {
+    cursor: pointer;
+}
+
+.individu {
+    left: -13vw;
+
+}
+
+.entreprise {
+    left: 6.1vw;
+}
+
+.administration {
+    left: 24.8vw;
+}
+
+.ecole {
+    left: 43.4vw;
+}
+
+.logintext {
+    position: relative;
+    top: -10vw;
+    text-align: center;
+    font-size: pxToVw(32px, 1920px);
+}
+
+#forgot {
+    position: relative;
+    left: pxToVw(225px, 1920px);
+    top: -6vw;
+}
+
+#login {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+}
+
+.labelForm, .easy-edit-wrapper {
+    display: none;
+}
+
+#mdplogin {
+    margin-top: 5%;
+}
+
+.pass-wrapper {
+    position: relative;
+    display: flex;
+}
+
+
+.hidden {
+    display: none;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.return {
+    position: relative;
+    left: pxToVw(183px, 1920px);
+    top: pxToVw(100px, 1920px);
+}
+
+@keyframes smooth {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

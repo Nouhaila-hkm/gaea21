@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-size: 1.25vw;
+  line-height: 1.2083333333;
+}
+
+body {
+  width: 100%;
+  position: relative;
+}
+body .simple_arrow_prev {
+  position: absolute;
+  top: 54.84375vw;
+  left: 7.2395833333vw;
+  width: 0.8854166667%;
+  height: 1.7708333333vw;
+}
+
+/* ******************************************************* */
+.header {
+  width: 100%;
+  height: 40vw;
+  background-image: url("../../../images/humansGaea21/Groupedemasques27.png");
+  /* Background image is centered vertically and horizontally at all times */
+  background-repeat: no-repeat;
+  /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */
+  background-size: cover;
+  position: relative;
+}
+.header__container {
+  position: absolute;
+  top: 11.0416666667vw;
+  left: 7.03125vw;
+  transform: translate(-50%, -pxToVw(135px, 1920px));
+}
+.header__container__title {
+  display: inline-block;
+  font-size: 3.6458333333vw;
+  font-weight: bold;
+  border-bottom: 4px solid black;
+  padding-bottom: 0.7291666667vw;
+}
+.header__container__subtext {
+  width: 31.25%;
+  font-size: 1.3020833333vw;
+}
+
+#main {
+  margin-bottom: 1.3020833333vw;
+}
+#main .text-container {
+  width: 56.6666666667%;
+  margin: 0 auto;
+  margin-bottom: 1.3020833333vw;
+}
+#main .text-container h2 {
+  display: inline-block;
+  border-bottom: 4px solid #989751;
+  padding-bottom: 0.625vw;
+  margin: 3.6458333333vw 0;
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#main .text-container p:nth-of-type(even) {
+  margin: 1.5625vw 0;
+}
+
+/*# sourceMappingURL=projets_pilotes.css.map */

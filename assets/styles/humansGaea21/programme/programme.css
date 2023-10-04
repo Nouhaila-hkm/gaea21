@@ -1,0 +1,266 @@
+/* $swidthbase = width only */
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en %*/
+/*pour faire le calcul pour transformer les px en vw*/
+#programme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#programme .menu {
+  left: 0px;
+  width: 100%;
+  height: 5.2083333333vw;
+  background-color: white;
+  border-bottom: 1px solid;
+  display: flex;
+  align-items: center;
+}
+#programme .liste {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 78.28125%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#programme .liste2 {
+  margin: 0 0 0 0;
+  margin-left: 9.53125%;
+  width: 84.8958333333%;
+  height: 1.5104166667vw;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+}
+#programme .elemMenu {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+}
+#programme .elemMenu2:hover {
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: olive;
+  font-weight: bold;
+}
+#programme .elemSuiv {
+  width: 0.9375%;
+  height: 0.8333333333vw;
+  margin-left: 89.53125%;
+  position: absolute;
+}
+#programme footer {
+  padding-top: 6.9270833333vw;
+  padding-bottom: 2.0833333333vw;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0 !important;
+  margin-bottom: 0 !important;
+}
+#programme .bottomBar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3.8020833333vw;
+}
+#programme .noteGaea {
+  margin-right: 3.8020833333%;
+  margin-left: 3.8020833333%;
+}
+#programme .noteTitle {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: bold;
+}
+#programme .noteText {
+  height: 1.25vw;
+  font-family: "Helvetica";
+  font-size: 1.0416666667vw;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+#programme html, #programme body {
+  height: 100%;
+  width: 100%;
+}
+#programme .sectionHead {
+  left: 0px;
+  width: 100%;
+  height: 40vw;
+  background: transparent url("../../../images/humansGaea21/Groupedemasques27.png") 0% 0% no-repeat padding-box;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+}
+#programme .logoHumans {
+  /* Layout Properties */
+  margin-top: 5.2610811522%;
+  margin-left: 6.1979166667%;
+  width: 22.4479166667%;
+  height: auto;
+  background: transparent;
+  opacity: 1;
+}
+#programme .p1 {
+  margin-left: 9.53125%;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 4.2746284361%;
+  left: 9.53125%;
+  width: 22.5%;
+  height: auto;
+  font-family: "Helvetica";
+  font-size: 1.3020833333vw;
+  color: white;
+}
+#programme #contenu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.3958333333vw;
+}
+#programme #contenu h1 {
+  margin-top: 0;
+  margin-bottom: 4.375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#programme #contenu p {
+  left: 10.46875%;
+  margin: 0 0 0 0;
+  width: 57.2916666667%;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  text-align: left;
+  margin-bottom: 2.4479166667vw;
+}
+#programme #contact {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5.7291666667vw;
+}
+#programme #contact .gaeaContact {
+  padding-top: 5.9895833333vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#programme #contact .titleGaeaContacte {
+  margin-top: 0;
+  margin-bottom: 4.84375vw;
+  font-family: "Helvetica";
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  border-bottom: solid 4px #989655;
+}
+#programme #contact .formContact {
+  width: 56.6666666667%;
+  padding-top: 3.75vw;
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#programme #contact .formChamps {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2.5%;
+  margin-bottom: 2.4479166667vw;
+  padding-right: 21.1458333333%;
+}
+#programme #contact .fromLabel, #programme #contact .messageLabel {
+  height: 1.875vw;
+  margin-right: 13px;
+  display: inline-block;
+  font-family: "Helvetica";
+  font-weight: bold;
+  font-size: 1.5625vw;
+  color: black;
+}
+#programme #contact .champsCont {
+  height: 2.1875vw !important;
+  width: auto !important;
+  border-radius: 10px !important;
+  background-color: white !important;
+  border: 0px !important;
+  flex: 1 0 auto !important;
+}
+#programme #contact .champsMessage {
+  display: flex;
+  flex-direction: column;
+}
+#programme #contact .messageLabel {
+  margin-left: 2.5%;
+  margin-bottom: 1.09375vw;
+}
+#programme #contact .contMessage {
+  margin-left: 2.5% !important;
+  margin-right: 2.5% !important;
+  margin-bottom: 3.6458333333vw !important;
+  width: auto !important;
+  height: 19.0104166667vw;
+  border: 0;
+  border-radius: 15px;
+  background-color: white;
+}
+#programme #contact .send {
+  padding-left: 1.5625%;
+  padding-right: 1.5625%;
+  margin-bottom: 2.8645833333vw;
+  height: 1.875vw;
+  width: auto;
+  border: 0;
+  border-radius: 1.0416666667vw;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5019607843);
+  background-color: #F8F8F8;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#programme #contact .send:hover {
+  background-color: #98984C;
+  color: white;
+}
+#programme #contact .butText {
+  font-family: "Helvetica";
+  font-size: 1.5625vw;
+  font-weight: bold;
+  margin-left: 1.40625%;
+  margin-right: 1.40625%;
+  margin-top: 0px;
+  margin-top: pxToVm(2px, 1920px);
+  margin-bottom: 0.1041666667vw;
+}
+#programme #contact .titleGaeaContacte {
+  margin-bottom: 0;
+}
+#programme #contact p {
+  margin: 0 0 0 0;
+  margin-top: 1.5625vw;
+  margin-bottom: 2.6041666667vw;
+  font-family: "Helvetica";
+  font-size: 1.25vw;
+  text-align: center;
+}/*# sourceMappingURL=programme.css.map */

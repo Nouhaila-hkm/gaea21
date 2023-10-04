@@ -1,0 +1,105 @@
+@import '../../function';
+
+
+#magazine{
+
+    @import '../home/gaea21Menu.scss';
+    @import '../temoignages/gaea21Footer.scss';
+    @import 'book.scss';
+    @import 'archive.scss';
+    @import 'pageArchive.scss';
+
+    html, body{
+        height: 100%;
+        width: 100%;
+    }
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    .sectionHead{
+        left: 0px;
+        width: pxToPourcent(1920px, 1920px);
+        height: pxToVw(768px, 1920px);
+
+        background: transparent url('../../../images/humansGaea21/Groupedemasques27.png') 0% 0% no-repeat padding-box;
+        background-size: cover;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .logoHumans{
+        /* Layout Properties */
+
+        margin-top: pxToPourcent(400px, 7603px);
+        margin-left: pxToPourcent(119px, 1920px);
+        width: pxToPourcent(431px, 1920px); 
+        height: auto;
+        background: transparent;
+        opacity: 1;
+
+       
+    }
+
+    .p1{
+
+        margin-left: pxToPourcent(183px, 1920px);
+        margin-top: 0;
+        margin-right: 0;
+        margin-bottom: pxToPourcent(325px, 7603px);
+        left: pxToPourcent(183px, 1920px);
+        width: pxToPourcent(432px, 1920px);
+        height: auto;
+    
+
+        font-family: "Helvetica";
+        font-size: pxToVw(25px, 1920px);
+        color: white;
+        
+    }
+
+    #HeaderMagazine{
+        width: 100%;
+        padding-top: pxToVw(55px, 1920px);
+
+        background-color: white;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            margin-top: 0;
+            margin-bottom: pxToVw(80px, 1920px);
+    
+            font-family: "Helvetica";
+            font-size: pxToVw(50px,1920px);
+            font-weight: bold;
+    
+            border-bottom: solid 4px #98984C;
+        }
+        
+    
+        p{
+            left:pxToPourcent(201px, 1920px);
+    
+            margin: 0 0 0 0;
+
+            width: pxToPourcent(1100px, 1920px);
+        
+            font-family: "Helvetica";
+            font-size: pxToVw(24px, 1920px);
+            text-align: left;
+    
+            margin-bottom: pxToVw(47px, 1920px);
+        }
+
+    }
+}

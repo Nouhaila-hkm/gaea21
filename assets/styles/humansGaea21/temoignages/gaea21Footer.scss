@@ -1,0 +1,52 @@
+
+footer{
+    padding-top: pxToVw(133px, 1920px);
+    padding-bottom: pxToVw(40px, 1920px);
+    padding-left:  0;
+    padding-right: 0;
+    width: 100%;
+
+    background-color: white;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+.bottomBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: pxToVw(73px, 1920px);
+}
+
+.noteGaea{
+    margin-right: pxToPourcent(73px,1920px);
+    margin-left: pxToPourcent(73px,1920px);
+}
+
+.noteTitle{
+    height: pxToVw(24px, 1920px);
+
+    font-family: "Helvetica";
+    font-size: pxToVw(20px, 1920px);
+    font-weight: bold;
+
+}
+
+.noteText{
+    height: pxToVw(24px, 1920px);
+
+    font-family: "Helvetica";
+    font-size: pxToVw(20px, 1920px);
+    font-weight: 100;
+
+    margin: 0;
+    padding: 0;
+}
